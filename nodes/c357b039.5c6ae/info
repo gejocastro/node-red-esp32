@@ -1,0 +1,3 @@
+Recibe el nombre de archivo en msg.payload.File, y lo concatena con la ruta (relativa a ~, directorio base de nodered).
+
+Envía el resultado en msg.filename, como input para el nodo file, que descarga el archivo correspondiente.

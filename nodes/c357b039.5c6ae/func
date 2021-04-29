@@ -1,0 +1,3 @@
+msg.filename="log/old/"+msg.payload.File;
+return msg;
+

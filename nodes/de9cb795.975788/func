@@ -1,0 +1,27 @@
+msg.topic="subject";
+msg.from="Nodered test station";
+
+
+return msg;
+
+/*Sends the msg.payload as an email, with a subject of msg.topic.
+
+The default message recipient can be configured in the node, if it is left blank it should be set using the msg.to property of the incoming message. If left blank you can also specify any or all of: msg.cc, msg.bcc, msg.replyTo, msg.inReplyTo, msg.references, msg.headers, or msg.priority properties.
+
+You may optionally set msg.from in the payload which will override the userid default value.
+Gmail users
+
+If you are accessing Gmail you may need to either enable an application password, or enable less secure access via your Google account settings.
+Details
+
+The payload can be html format. You may supply a separate plaintext version using msg.plaintext. If you don't and msg.payload contains html, it will also be used for the plaintext. msg.plaintext will be ignored if msg.payload doesn't contain html.
+
+If the payload is a binary buffer then it will be converted to an attachment. The filename should be set using msg.filename. Optionally msg.description can be added for the body text.
+
+Alternatively you may provide msg.attachments which should contain an array of one or more attachments in nodemailer format.
+
+If required by your recipient you may also pass in a msg.envelope object, typically containing extra from and to properties.
+
+If you have own signed certificates, Nodemailer can complain about that and refuse sending the message. In this case you can try switching off TLS.
+
+Note: uses SMTP with SSL to port 465*/

@@ -1,0 +1,10 @@
+var string = JSON.stringify(msg.payload);
+var objectValue = JSON.parse(string);
+var temperature= objectValue['esp32/temperature'];
+var humidity=objectValue['esp32/humidity'];
+//var moisture=objectValue['esp32/analog'];
+var led=objectValue['esp32/output'];
+msg.payload = new Date()+"," + temperature + "," + humidity + "," + led; 
+//msg.payload= url;
+return msg;
+

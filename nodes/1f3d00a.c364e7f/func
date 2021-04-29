@@ -1,0 +1,2 @@
+msg.payload=global.get("visited[1]");
+return msg;

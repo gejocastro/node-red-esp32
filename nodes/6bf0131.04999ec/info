@@ -1,0 +1,1 @@
+Lee la variable global visited, que almacena las 4 últimas tabs visitadas. Hace un corrimiento hacia de las posiciones hacia la primera, completando la última con cero.

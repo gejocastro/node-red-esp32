@@ -1,0 +1,2 @@
+Recibe feedback de state del sonoff. 
+Al ser pulsado envía un string "on" u "off", dependiente de su estado anterior (off u on). 

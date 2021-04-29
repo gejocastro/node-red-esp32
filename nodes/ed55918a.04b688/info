@@ -1,0 +1,1 @@
+AL recibir mensaje del botón, levanta el rango A1:E5000 (ignora vacíos) de la gsheet de log DB ESP32. La publica como nested array 

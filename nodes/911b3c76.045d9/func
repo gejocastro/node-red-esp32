@@ -1,0 +1,13 @@
+msg.payload=
+    {
+        command:"download",
+        arguments:[
+            "csv",
+            "data.csv",
+           /* false*/
+            ], 
+        /*"returnPromise": false*/
+
+    }
+
+return msg

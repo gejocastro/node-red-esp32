@@ -1,0 +1,6 @@
+Genera el arbol de decisiones en base a los datos de entrenamiento. 
+Genera el modelo de los datos en la carpeta y con el nombre de usuario de destino.
+
+Los otros parámetros ni idea. 
+Hay algo acá:
+https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html

@@ -1,0 +1,11 @@
+var array=global.get('visited');
+repeated=array[0]==msg.tab;
+if (!repeated) {
+    for (i=0; i<3;i++) {
+        array[3-i]=array[3-i-1];
+        }
+    array[0]=msg.tab;
+    }
+global.set('visited',array );
+msg.payload=array;
+return msg;

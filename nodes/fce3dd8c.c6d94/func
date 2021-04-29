@@ -1,0 +1,8 @@
+var string = JSON.stringify(msg.payload);
+var objectValue = JSON.parse(string);
+var temperature= objectValue['esp32/temperature'];
+var humidity=objectValue['esp32/humidity'];
+var hum=parseInt(humidity).toFixed(0);
+msg.payload = 'Temperature: '+ temperature+ "°C <br/>"+ 'Humidity: '+ hum+"%RH"; 
+//msg.payload= url;
+return msg;

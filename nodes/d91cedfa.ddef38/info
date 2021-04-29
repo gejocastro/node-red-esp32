@@ -1,0 +1,3 @@
+Escribe un comando en el dispositivo seleccionado, para cambiar su estado (en esat caso, el comando on u off del switch previo.
+
+ -- Probar si se puede pasar device como parámetro Moustache {{}} para elegir a qu[e dispositivo enviarle el comando en funci[on de un elemento del mensaje --
