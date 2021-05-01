@@ -59,7 +59,7 @@
         "id": "e0a332e8.f3fc38",
         "type": "tab",
         "label": "Alarmas",
-        "disabled": false,
+        "disabled": true,
         "info": ""
     },
     {
