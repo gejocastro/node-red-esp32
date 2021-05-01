@@ -8,7 +8,6 @@
         "node-red-contrib-git-nodes": "~0.2.2",
         "node-red-contrib-git-ui": "~0.1.10",
         "node-red-contrib-google-sheets": "~0.1.0",
-        "node-red-contrib-machine-learning": "~1.0.8",
         "node-red-contrib-play-audio": "^2.5.0",
         "node-red-contrib-ui-clock": "~1.0.1",
         "node-red-contrib-ui-led": "~0.4.9",
@@ -19,7 +18,8 @@
         "node-red-node-random": "^0.4.0",
         "node-red-node-serialport": "^0.14.0",
         "node-red-node-smooth": "^0.1.2",
-        "node-red-node-ui-table": "~0.3.10"
+        "node-red-node-ui-table": "~0.3.10",
+        "node-red-contrib-machine-learning-v2": "1.0.9"
     },
     "node-red": {
         "settings": {
