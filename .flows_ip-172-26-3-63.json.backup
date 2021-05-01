@@ -255,10 +255,8 @@
             "ed55918a.04b688",
             "b02391bd.5c47d"
         ],
-        "x": 14,
-        "y": 299,
-        "w": 1412,
-        "h": 82
+        "x": 0,
+        "y": 0
     },
     {
         "id": "1c64706a.59b6c8",
@@ -273,9 +271,7 @@
             "5d6e3ef.60bd6c"
         ],
         "x": 574,
-        "y": 499,
-        "w": 592,
-        "h": 82
+        "y": 499
     },
     {
         "id": "cd6b5625.5238f8",
@@ -4818,7 +4814,7 @@
         "method": "get",
         "action": "",
         "sheet": "1t87zKsf-IVLHc_1948lBuJFM0jjjdprb6qn3pAlpqkc",
-        "cells": "Sheet1!A1:E25000",
+        "cells": "Sheet1!A1:E10000",
         "flatten": false,
         "name": "Get gsheet",
         "x": 290,
