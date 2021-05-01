@@ -5667,8 +5667,8 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 500,
-        "y": 80,
+        "x": 470,
+        "y": 40,
         "wires": []
     }
 ]
