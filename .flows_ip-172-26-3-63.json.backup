@@ -5562,7 +5562,7 @@
         "type": "function",
         "z": "22e2030e.b824d4",
         "name": "Filtro de saltos de linea",
-        "func": "if (msg.payload == \"on\" || msg.payload==\"off\")\n{msg.topic=\"gejo\";\n    return msg}",
+        "func": "if (msg.payload == \"on\" || msg.payload==\"off\")\n    {return msg}",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
