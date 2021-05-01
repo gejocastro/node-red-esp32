@@ -23,7 +23,8 @@
                 "default": "#0094CE",
                 "baseColor": "#0094CE",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
+                "edited": true,
+                "reset": false
             },
             "darkTheme": {
                 "default": "#097479",
@@ -113,11 +114,56 @@
         "id": "be6ea5bd.469898",
         "type": "ui_group",
         "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "8fef06cc.090ab8",
+        "type": "ui_tab",
+        "name": "Tab 2",
+        "icon": "dashboard",
+        "order": 2
+    },
+    {
+        "id": "7fd01e7d.11d6a",
+        "type": "ui_group",
+        "name": "Group 1",
         "tab": "62ea5b04.31b9bc",
         "order": 1,
         "disp": true,
         "width": "6",
         "collapse": false
+    },
+    {
+        "id": "85bbe5af.aae608",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "62ea5b04.31b9bc",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "39728786.8dfb1",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "62ea5b04.31b9bc",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "7dba963b.2fbd3",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "8fef06cc.090ab8",
+        "order": 1,
+        "disp": true,
+        "width": 6
     },
     {
         "id": "b86ffbbb.f10bc",
@@ -160,8 +206,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 980,
-        "y": 260,
+        "x": 990,
+        "y": 460,
         "wires": []
     },
     {
@@ -187,7 +233,7 @@
         "type": "ui_gauge",
         "z": "e22c6ca2.5134b8",
         "name": "",
-        "group": "be6ea5bd.469898",
+        "group": "85bbe5af.aae608",
         "order": 0,
         "width": 0,
         "height": 0,
@@ -213,7 +259,7 @@
         "type": "ui_chart",
         "z": "e22c6ca2.5134b8",
         "name": "",
-        "group": "be6ea5bd.469898",
+        "group": "85bbe5af.aae608",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -250,6 +296,140 @@
         "wires": [
             [
                 "a9454da4.541078"
+            ]
+        ]
+    },
+    {
+        "id": "535a4888.6dbec8",
+        "type": "inject",
+        "z": "e22c6ca2.5134b8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "6",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 330,
+        "y": 460,
+        "wires": [
+            [
+                "191bd1b6.2a9c56"
+            ]
+        ]
+    },
+    {
+        "id": "31518fae.c5697",
+        "type": "debug",
+        "z": "e22c6ca2.5134b8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 900,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "191bd1b6.2a9c56",
+        "type": "random",
+        "z": "e22c6ca2.5134b8",
+        "name": "",
+        "low": "0",
+        "high": 10,
+        "inte": "false",
+        "property": "payload",
+        "x": 480,
+        "y": 580,
+        "wires": [
+            [
+                "de79b4ac.f83688",
+                "ac1bbe02.628158"
+            ]
+        ]
+    },
+    {
+        "id": "de79b4ac.f83688",
+        "type": "ui_gauge",
+        "z": "e22c6ca2.5134b8",
+        "name": "",
+        "group": "7dba963b.2fbd3",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 770,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "ac1bbe02.628158",
+        "type": "ui_chart",
+        "z": "e22c6ca2.5134b8",
+        "name": "",
+        "group": "7fd01e7d.11d6a",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 670,
+        "y": 680,
+        "wires": [
+            [
+                "31518fae.c5697"
             ]
         ]
     }
