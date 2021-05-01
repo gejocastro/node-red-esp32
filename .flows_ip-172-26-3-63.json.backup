@@ -256,7 +256,9 @@
             "b02391bd.5c47d"
         ],
         "x": 14,
-        "y": 299
+        "y": 299,
+        "w": 1412,
+        "h": 82
     },
     {
         "id": "1c64706a.59b6c8",
@@ -271,7 +273,9 @@
             "5d6e3ef.60bd6c"
         ],
         "x": 574,
-        "y": 499
+        "y": 499,
+        "w": 592,
+        "h": 82
     },
     {
         "id": "cd6b5625.5238f8",
@@ -2266,8 +2270,7 @@
         "y": 760,
         "wires": [
             [
-                "f2026c0a.990db",
-                "a6f7aef4.1dfdc"
+                "f2026c0a.990db"
             ]
         ]
     },
@@ -3893,7 +3896,7 @@
         "type": "debug",
         "z": "ea943a79.b3e358",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": true,
@@ -4756,7 +4759,7 @@
         "z": "22e2030e.b824d4",
         "name": "",
         "topic": "update",
-        "qos": "",
+        "qos": "0",
         "retain": "",
         "respTopic": "",
         "contentType": "",
@@ -5300,40 +5303,6 @@
         "wires": []
     },
     {
-        "id": "6d3bec88.249c74",
-        "type": "debug",
-        "z": "740b988e.6d58e",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 1230,
-        "y": 440,
-        "wires": []
-    },
-    {
-        "id": "a6f7aef4.1dfdc",
-        "type": "debug",
-        "z": "740b988e.6d58e",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 890,
-        "y": 540,
-        "wires": []
-    },
-    {
         "id": "76a6c129.9b00e",
         "type": "function",
         "z": "22e2030e.b824d4",
@@ -5597,6 +5566,91 @@
         "statusType": "auto",
         "x": 1190,
         "y": 600,
+        "wires": []
+    },
+    {
+        "id": "f3460932.e62d78",
+        "type": "exec",
+        "z": "740b988e.6d58e",
+        "command": "ls -la ~",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "Lists files in dir",
+        "x": 464,
+        "y": 1224,
+        "wires": [
+            [
+                "769d58a0.3763d"
+            ],
+            [],
+            []
+        ],
+        "info": "Ejecuta un ls en el shell, para listar los archivos históricos de logs, que rotan diariamente (linux logrotate) en la carpeta /log/old/\n\nLa salida es un string separado por saltos de linea con un archivo en cada línea"
+    },
+    {
+        "id": "769d58a0.3763d",
+        "type": "debug",
+        "z": "740b988e.6d58e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 710,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "b6e1f755.cb231",
+        "type": "inject",
+        "z": "740b988e.6d58e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "7",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 320,
+        "y": 1360,
+        "wires": [
+            [
+                "f3460932.e62d78"
+            ]
+        ]
+    },
+    {
+        "id": "6d3bec88.249c74",
+        "type": "debug",
+        "z": "740b988e.6d58e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1230,
+        "y": 440,
         "wires": []
     }
 ]
