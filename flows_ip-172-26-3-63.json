@@ -1,0 +1,5656 @@
+[
+    {
+        "id": "ea943a79.b3e358",
+        "type": "tab",
+        "label": "Variables MQTT",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "740b988e.6d58e",
+        "type": "tab",
+        "label": "Archivos y logs",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "1e1daf04.126739",
+        "type": "tab",
+        "label": "Tablero",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "f931e135.d0c29",
+        "type": "tab",
+        "label": "Modo de operaciòn",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "d749cdc9.d28c6",
+        "type": "tab",
+        "label": "Navigation",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "e924d20f.9ce478",
+        "type": "tab",
+        "label": "Google Sheet",
+        "disabled": false,
+        "info": "Recibe los datos de las variables publicados por el esp mediante MQTT, y los formatea para ser enviados a google script que escribe en google sheet. \nLevanta los datos de google sheets y los publica en tabla en el dashboard"
+    },
+    {
+        "id": "7fb1182.bf64368",
+        "type": "tab",
+        "label": "Sound Output",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "24684854.3f88a8",
+        "type": "tab",
+        "label": "Pruebas con Sonoff",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "e0a332e8.f3fc38",
+        "type": "tab",
+        "label": "Alarmas",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "22e2030e.b824d4",
+        "type": "tab",
+        "label": "Machine Learning",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "3a8c6532.d84b42",
+        "type": "group",
+        "z": "d749cdc9.d28c6",
+        "name": "Links desde tabs a principal",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "4927765a.95d3",
+            "d4a06274.649078",
+            "8eea35e2.16dba8",
+            "b870740b.44b998",
+            "f15d50d6.84c2d"
+        ],
+        "x": -6,
+        "y": 99
+    },
+    {
+        "id": "cfd71c3b.62ad5",
+        "type": "group",
+        "z": "d749cdc9.d28c6",
+        "name": "Botones back en las diferentes tabs",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "bbb77bf1.dc3d58",
+            "84f1a4f6.9d613",
+            "9a267f89.3ae5b8",
+            "71392fe7.706f28",
+            "734b9d37.2af744"
+        ],
+        "x": 14,
+        "y": 799
+    },
+    {
+        "id": "e9a3077.08c0378",
+        "type": "group",
+        "z": "d749cdc9.d28c6",
+        "name": "Motor de navegación",
+        "style": {
+            "stroke": "#0070c0",
+            "fill": "#0070c0",
+            "fill-opacity": "0.17",
+            "label": true
+        },
+        "nodes": [
+            "efcee0a1.35f83",
+            "e0ca6f5f.f2b4f8",
+            "b0caa359.57da18",
+            "8138f9ca.54f19",
+            "4831236d.d3e264",
+            "8997b957.c059e8",
+            "654a8bf0.411a6c",
+            "64960f21.a6e418",
+            "77417b26.2c2dd4",
+            "53f96285.afae5c",
+            "106f7e33.54e59a",
+            "197c4940.63435f",
+            "c66babe.f87c8d8",
+            "6bf0131.04999ec",
+            "1ccf1312.5e368d",
+            "1f3d00a.c364e7f",
+            "a1aa12d6.e76ff8",
+            "9580e924.c5c528",
+            "587f60cc.ab0a18",
+            "5eabfdc6.be7e14"
+        ],
+        "x": 454,
+        "y": 279
+    },
+    {
+        "id": "7e88e231.3018cc",
+        "type": "group",
+        "z": "ea943a79.b3e358",
+        "name": "Chart y gauge de variables del esp32",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "131bbded.d8d8da",
+            "b8d102b0.0e9df8",
+            "844e9367.e150b8",
+            "a0f51bb9.6d6cf",
+            "85579d63.ba70f",
+            "b39ad2b6.826198"
+        ],
+        "x": 94,
+        "y": 379,
+        "w": 1052,
+        "h": 262
+    },
+    {
+        "id": "c67599e8.f83b88",
+        "type": "group",
+        "z": "ea943a79.b3e358",
+        "name": "Botón para recibir valor de variable analógica",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "3f61d062.3be37",
+            "3332e8ea.edd9e8"
+        ],
+        "x": 74,
+        "y": 919,
+        "w": 512,
+        "h": 82
+    },
+    {
+        "id": "a495c9ab.3fd74",
+        "type": "group",
+        "z": "ea943a79.b3e358",
+        "name": "Controles on/off de led en esp32",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "3a1acf2b.d6171",
+            "717a61d0.825df",
+            "9d49032a.2d5b48",
+            "c39e357d.0135d",
+            "49acb94c.e04f9",
+            "182b238.026b35d"
+        ],
+        "x": 74,
+        "y": 39,
+        "w": 772,
+        "h": 222
+    },
+    {
+        "id": "fd8a84dc.33c088",
+        "type": "group",
+        "z": "d749cdc9.d28c6",
+        "name": "Pantalla siguiente en las barras de navegación",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "293d7dc4.3850fa",
+            "7848bb7a.4e1374",
+            "d0fde4e3.bcb1b",
+            "b8c864cb.d34068",
+            "f947f450.ea2ec8"
+        ],
+        "x": -6,
+        "y": 479
+    },
+    {
+        "id": "e808bf9.aaaecc",
+        "type": "group",
+        "z": "ea943a79.b3e358",
+        "name": "Control PWM de led mediante slider y presentación en pantalla",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "e7db3dfa.0c52",
+            "f248ce86.f4ca6",
+            "f6b1b4b1.df8978",
+            "c2a283d4.e5cdf8",
+            "64d8ffc2.e0f2a"
+        ],
+        "x": 64,
+        "y": 1019,
+        "w": 642,
+        "h": 182
+    },
+    {
+        "id": "dd07bb49.117478",
+        "type": "group",
+        "z": "e924d20f.9ce478",
+        "name": "Lee datos de Gsheet",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "4eeed860.8e5e5",
+            "8b0e1df2.8058e8",
+            "8a422262.6b0558",
+            "5cfbd44e.45dbbc",
+            "d2b0304d.19c73",
+            "ed55918a.04b688",
+            "b02391bd.5c47d"
+        ],
+        "x": 14,
+        "y": 299,
+        "w": 1412,
+        "h": 82
+    },
+    {
+        "id": "1c64706a.59b6c8",
+        "type": "group",
+        "z": "e924d20f.9ce478",
+        "name": "Pruebas descargar tabla // Funciona!!",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "911b3c76.045d9",
+            "5d6e3ef.60bd6c"
+        ],
+        "x": 574,
+        "y": 499,
+        "w": 592,
+        "h": 82
+    },
+    {
+        "id": "cd6b5625.5238f8",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "34.230.246.56",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": "",
+        "info": "El servidor Mosquito está configurado con usuario user y password password. "
+    },
+    {
+        "id": "356fecc8.cc0a9c",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#3e9167",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Pruebas con el ESP32",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ba50b77f.0e2ef8",
+        "type": "ui_group",
+        "name": "Humedad relativa",
+        "tab": "b27a6bc6.fbb248",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "b27a6bc6.fbb248",
+        "type": "ui_tab",
+        "name": "ESP32",
+        "icon": "fa-microchip",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "73fa3d32.30e364",
+        "type": "ui_tab",
+        "name": "Principal",
+        "icon": "fa-home",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5233a975.68bcd",
+        "type": "ui_group",
+        "name": "Comandos",
+        "tab": "b27a6bc6.fbb248",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "54eb79f4.6de7",
+        "type": "ui_group",
+        "name": "Navigation",
+        "tab": "b27a6bc6.fbb248",
+        "order": 1,
+        "disp": false,
+        "width": "33",
+        "collapse": false
+    },
+    {
+        "id": "6ea8b2b6.d3a0dc",
+        "type": "ui_tab",
+        "name": "Tablero general",
+        "icon": "fa-battery-full",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ccb065ce.916ad8",
+        "type": "ui_group",
+        "name": "Parametros electricos",
+        "tab": "6ea8b2b6.d3a0dc",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "5835d873.b18fc",
+        "type": "ui_group",
+        "name": "Tendencias",
+        "tab": "6ea8b2b6.d3a0dc",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "f2fea55f.8454c",
+        "type": "ui_group",
+        "name": "Variable analógica",
+        "tab": "6ea8b2b6.d3a0dc",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "56032ee3.3718a8",
+        "type": "ui_group",
+        "name": "Group 4",
+        "tab": "6ea8b2b6.d3a0dc",
+        "order": 4,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "11c86017.7c55e",
+        "type": "ui_group",
+        "name": "Navigation",
+        "tab": "6ea8b2b6.d3a0dc",
+        "order": 1,
+        "disp": false,
+        "width": "30",
+        "collapse": false
+    },
+    {
+        "id": "57688a27.88c264",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ccb065ce.916ad8",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "788f24a3.d612e4",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ccb065ce.916ad8",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e94ab13.7adb45",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "5835d873.b18fc",
+        "order": 1,
+        "width": "1",
+        "height": "1"
+    },
+    {
+        "id": "e3161e02.e86888",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "f2fea55f.8454c",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5821d0e6.81c778",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "56032ee3.3718a8",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "82435372.55fee",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "5835d873.b18fc",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b2a9b366.91147",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "5835d873.b18fc",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ea1feed7.ec073",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "5835d873.b18fc",
+        "order": 3,
+        "width": "1",
+        "height": "1"
+    },
+    {
+        "id": "83d15182.eb6538",
+        "type": "ui_group",
+        "name": "Modo de operaciòn",
+        "tab": "498bb452.aed384",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "498bb452.aed384",
+        "type": "ui_tab",
+        "name": "Información de secuencia",
+        "icon": "fa-code",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "755c98f3.ea334",
+        "type": "ui_group",
+        "name": "Input",
+        "tab": "498bb452.aed384",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a3ae9a9d.387f38",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "73fa3d32.30e364",
+        "order": 2,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a87bb2bb.01863",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "73fa3d32.30e364",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "636f40c1.dacda",
+        "type": "ui_tab",
+        "name": "Logfile",
+        "icon": "fa-table",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9c98081c.cecc6",
+        "type": "ui_group",
+        "name": "",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a7eeab9.88e15d8",
+        "type": "ui_group",
+        "name": "Temperatura",
+        "tab": "b27a6bc6.fbb248",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "6a82adf1.65eb3c",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "5233a975.68bcd",
+        "order": 5,
+        "width": "5",
+        "height": "2"
+    },
+    {
+        "id": "8ff5bd02.5b1d1",
+        "type": "ui_group",
+        "name": "Http Response",
+        "tab": "636f40c1.dacda",
+        "order": 1,
+        "disp": false,
+        "width": "5",
+        "collapse": false
+    },
+    {
+        "id": "9db1e284.270f5",
+        "type": "ui_group",
+        "name": "Table container",
+        "tab": "636f40c1.dacda",
+        "order": 3,
+        "disp": false,
+        "width": "15",
+        "collapse": false
+    },
+    {
+        "id": "83a78176.6c246",
+        "type": "ui_group",
+        "name": "Navigation",
+        "tab": "498bb452.aed384",
+        "order": 1,
+        "disp": false,
+        "width": "30",
+        "collapse": false
+    },
+    {
+        "id": "ab907530.644f18",
+        "type": "ui_group",
+        "name": "Navigation",
+        "tab": "636f40c1.dacda",
+        "order": 5,
+        "disp": false,
+        "width": "34",
+        "collapse": false
+    },
+    {
+        "id": "2ffff2c6.695906",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ab907530.644f18",
+        "order": 2,
+        "width": "14",
+        "height": 1
+    },
+    {
+        "id": "c5abb893.47caa8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ab907530.644f18",
+        "order": 4,
+        "width": "14",
+        "height": 1
+    },
+    {
+        "id": "e3c6a09c.287238",
+        "type": "ui_group",
+        "name": "Retrieve Gsheet",
+        "tab": "636f40c1.dacda",
+        "order": 4,
+        "disp": false,
+        "width": "16",
+        "collapse": false
+    },
+    {
+        "id": "e5619d8f.db854",
+        "type": "ui_group",
+        "name": "Separator",
+        "tab": "636f40c1.dacda",
+        "order": 2,
+        "disp": false,
+        "width": "3",
+        "collapse": false
+    },
+    {
+        "id": "f99e5c59.8cd42",
+        "type": "ui_group",
+        "name": "Group 3",
+        "tab": "78cf2686.576e78",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "d064d5d0.b32de",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "e5619d8f.db854",
+        "order": 3,
+        "width": "3",
+        "height": "5"
+    },
+    {
+        "id": "8a2fe6bf.57efc8",
+        "type": "ui_group",
+        "name": "Group 4",
+        "tab": "78cf2686.576e78",
+        "order": 2,
+        "disp": false,
+        "width": "9",
+        "collapse": false
+    },
+    {
+        "id": "78cf2686.576e78",
+        "type": "ui_tab",
+        "name": "Machine Learning",
+        "icon": "fa-rocket ",
+        "order": 10,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "bce7c592.91fef8",
+        "type": "ui_group",
+        "name": "Group 3",
+        "tab": "73fa3d32.30e364",
+        "order": 3,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "9517598a.95fb98",
+        "type": "ui_group",
+        "name": "Navigation",
+        "tab": "78cf2686.576e78",
+        "order": 4,
+        "disp": false,
+        "width": "34",
+        "collapse": false
+    },
+    {
+        "id": "8c89ee7d.d82468",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "da20068b.68827",
+        "order": 1,
+        "width": "34",
+        "height": "6"
+    },
+    {
+        "id": "da20068b.68827",
+        "type": "ui_group",
+        "name": "Separator",
+        "tab": "78cf2686.576e78",
+        "order": 3,
+        "disp": false,
+        "width": "34",
+        "collapse": false
+    },
+    {
+        "id": "db22a8a3.cd9be8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "9517598a.95fb98",
+        "order": 2,
+        "width": "14",
+        "height": 1
+    },
+    {
+        "id": "cb5342cd.4249d8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "9517598a.95fb98",
+        "order": 4,
+        "width": "14",
+        "height": 1
+    },
+    {
+        "id": "37deca18.376f7e",
+        "type": "ui_spacer",
+        "d": true,
+        "name": "spacer",
+        "group": "da20068b.68827",
+        "order": 2,
+        "width": 1,
+        "height": "2"
+    },
+    {
+        "id": "88b23f12.ba41f8",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "22",
+        "collapse": false
+    },
+    {
+        "id": "9c643f4a.77ad3",
+        "type": "gauth"
+    },
+    {
+        "id": "722857b3.91f78",
+        "type": "ewelink-credentials",
+        "info": "Conexión a la API de ewelink para accionar y monitorear los dispositivos de la cuenta. \nLa cuenta principal de los dispositivos es otra, y comparte los mismos con ésta. De esa forma se evita el problema de que ewelink no permite 2 sesiones activas. \n\nLa conexión es inestable. A veces se desloguea sin razón. Además, la respuesta es lenta, demora casi un segundo en enviar la orden de cambio de estado, y el mismo tiempo en recibir feedback"
+    },
+    {
+        "id": "131bbded.d8d8da",
+        "type": "mqtt in",
+        "z": "ea943a79.b3e358",
+        "g": "7e88e231.3018cc",
+        "name": "",
+        "topic": "esp32/temperature",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "cd6b5625.5238f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 210,
+        "y": 460,
+        "wires": [
+            [
+                "7e2c1896.5a4ae",
+                "85579d63.ba70f",
+                "b8d102b0.0e9df8"
+            ]
+        ]
+    },
+    {
+        "id": "b8d102b0.0e9df8",
+        "type": "ui_chart",
+        "z": "ea943a79.b3e358",
+        "g": "7e88e231.3018cc",
+        "name": "esp32/temperature chart",
+        "group": "a7eeab9.88e15d8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "40",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 990,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "844e9367.e150b8",
+        "type": "mqtt in",
+        "z": "ea943a79.b3e358",
+        "g": "7e88e231.3018cc",
+        "name": "",
+        "topic": "esp32/humidity",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "cd6b5625.5238f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 200,
+        "y": 560,
+        "wires": [
+            [
+                "7e2c1896.5a4ae",
+                "a0f51bb9.6d6cf",
+                "b39ad2b6.826198"
+            ]
+        ]
+    },
+    {
+        "id": "b689c3a.6af304",
+        "type": "ui_toast",
+        "z": "ea943a79.b3e358",
+        "position": "bottom right",
+        "displayTime": "4",
+        "highlight": "green",
+        "sendall": false,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": true,
+        "topic": "ESP32",
+        "name": "notification",
+        "x": 1110,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "a0f51bb9.6d6cf",
+        "type": "ui_gauge",
+        "z": "ea943a79.b3e358",
+        "g": "7e88e231.3018cc",
+        "name": "",
+        "group": "ba50b77f.0e2ef8",
+        "order": 1,
+        "width": "6",
+        "height": 5,
+        "gtype": "gage",
+        "title": "esp32/humidity gauge",
+        "label": "%RH",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 980,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "7e2c1896.5a4ae",
+        "type": "join",
+        "z": "ea943a79.b3e358",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "0.3",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 450,
+        "y": 720,
+        "wires": [
+            [
+                "fce3dd8c.c6d94",
+                "2e1fae52.20b19a"
+            ]
+        ]
+    },
+    {
+        "id": "24ee44ef.1eb16c",
+        "type": "mqtt in",
+        "z": "ea943a79.b3e358",
+        "name": "",
+        "topic": "esp32/output",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "cd6b5625.5238f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 150,
+        "y": 860,
+        "wires": [
+            [
+                "9015ecb6.aac73"
+            ]
+        ]
+    },
+    {
+        "id": "4ef650f.bcc9e3",
+        "type": "function",
+        "z": "740b988e.6d58e",
+        "name": "",
+        "func": "//msg.payload = {Time: new Date(), Temperature:msg.payload, Humidity: msg.payload, Led:msg.payload}\nmsg.payload = {Time: new Date(), Temperature:msg.payload, Humidity: msg.payload, Led:msg.payload}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 140,
+        "wires": [
+            [
+                "7e460402.828c04"
+            ]
+        ]
+    },
+    {
+        "id": "7e460402.828c04",
+        "type": "file",
+        "z": "740b988e.6d58e",
+        "name": "log",
+        "filename": "/home/bitnami/log/record",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 770,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9c05f0a0.2c295",
+        "type": "mqtt in",
+        "z": "740b988e.6d58e",
+        "name": "",
+        "topic": "esp32/humidity",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "cd6b5625.5238f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 140,
+        "y": 140,
+        "wires": [
+            [
+                "4ef650f.bcc9e3"
+            ]
+        ]
+    },
+    {
+        "id": "ba739038.95658",
+        "type": "mqtt in",
+        "z": "740b988e.6d58e",
+        "name": "",
+        "topic": "esp32/temperature",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "cd6b5625.5238f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 150,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5a1d153b.e88474",
+        "type": "ui_gauge",
+        "z": "1e1daf04.126739",
+        "name": "",
+        "group": "ccb065ce.916ad8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Corriente",
+        "label": "ampere",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "120",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 980,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "fc9fa264.7c87",
+        "type": "ui_chart",
+        "z": "1e1daf04.126739",
+        "name": "Registro V",
+        "group": "5835d873.b18fc",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "label": "Tension",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "##",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "250",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 990,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "735a4d93.d19514",
+        "type": "random",
+        "z": "1e1daf04.126739",
+        "name": "random",
+        "low": "223",
+        "high": "236",
+        "inte": "false",
+        "property": "payload",
+        "x": 220,
+        "y": 480,
+        "wires": [
+            [
+                "5fb6331.d86aecc"
+            ]
+        ],
+        "inputLabels": [
+            "input"
+        ]
+    },
+    {
+        "id": "6f2f5640.1bb57",
+        "type": "debug",
+        "z": "1e1daf04.126739",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 990,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "5fb6331.d86aecc",
+        "type": "function",
+        "z": "1e1daf04.126739",
+        "name": "Redondeo decimal",
+        "func": "msg.payload = msg.payload.toFixed(2);\nmsg.topic = 'Voltage';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 380,
+        "wires": [
+            [
+                "6f2f5640.1bb57",
+                "fc9fa264.7c87",
+                "9cbfe281.96842",
+                "d6dbf51e.40f6c8",
+                "81a9261c.6abe08"
+            ]
+        ]
+    },
+    {
+        "id": "d0bb8ef7.ff3108",
+        "type": "random",
+        "z": "1e1daf04.126739",
+        "name": "random",
+        "low": "0.81",
+        "high": "0.95",
+        "inte": "false",
+        "property": "payload",
+        "x": 220,
+        "y": 620,
+        "wires": [
+            [
+                "a0586a7a.9c4a98"
+            ]
+        ],
+        "inputLabels": [
+            "input"
+        ]
+    },
+    {
+        "id": "a0586a7a.9c4a98",
+        "type": "function",
+        "z": "1e1daf04.126739",
+        "name": "Redondeo decimal",
+        "func": "msg.payload = msg.payload.toFixed(2);\nmsg.topic = 'PF'; \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 580,
+        "wires": [
+            [
+                "a610d266.43fcc",
+                "9a77df8f.e4939",
+                "d6dbf51e.40f6c8",
+                "50970e08.0676b",
+                "81a9261c.6abe08"
+            ]
+        ]
+    },
+    {
+        "id": "aca0c4b1.1d091",
+        "type": "inject",
+        "z": "1e1daf04.126739",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "10",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 50,
+        "y": 600,
+        "wires": [
+            [
+                "d0bb8ef7.ff3108",
+                "735a4d93.d19514",
+                "269dcccc.64d694"
+            ]
+        ]
+    },
+    {
+        "id": "a610d266.43fcc",
+        "type": "ui_gauge",
+        "z": "1e1daf04.126739",
+        "name": "",
+        "group": "ccb065ce.916ad8",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Factor de potencia",
+        "label": "",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "1",
+        "colors": [
+            "#e60000",
+            "#e6e600",
+            "#02e605"
+        ],
+        "seg1": ".84",
+        "seg2": ".92",
+        "x": 1010,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "9cbfe281.96842",
+        "type": "ui_gauge",
+        "z": "1e1daf04.126739",
+        "name": "",
+        "group": "ccb065ce.916ad8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Voltaje",
+        "label": "Volt",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "250",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 970,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "269dcccc.64d694",
+        "type": "random",
+        "z": "1e1daf04.126739",
+        "name": "random",
+        "low": "80",
+        "high": "85",
+        "inte": "false",
+        "property": "payload",
+        "x": 220,
+        "y": 780,
+        "wires": [
+            [
+                "954bdcba.44fe5"
+            ]
+        ],
+        "inputLabels": [
+            "input"
+        ]
+    },
+    {
+        "id": "954bdcba.44fe5",
+        "type": "function",
+        "z": "1e1daf04.126739",
+        "name": "Redondeo decimal",
+        "func": "msg.payload = msg.payload.toFixed(2);\nmsg.topic = 'Current';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 780,
+        "wires": [
+            [
+                "5a1d153b.e88474",
+                "fcd2df75.8a6038",
+                "d6dbf51e.40f6c8",
+                "81a9261c.6abe08"
+            ]
+        ]
+    },
+    {
+        "id": "fcd2df75.8a6038",
+        "type": "ui_chart",
+        "z": "1e1daf04.126739",
+        "name": "Registro I",
+        "group": "5835d873.b18fc",
+        "order": 4,
+        "width": "0",
+        "height": "0",
+        "label": "Corriente",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "##",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "120",
+        "removeOlder": "60",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 980,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9a77df8f.e4939",
+        "type": "ui_chart",
+        "z": "1e1daf04.126739",
+        "name": "Registro PF",
+        "group": "5835d873.b18fc",
+        "order": 6,
+        "width": "0",
+        "height": "0",
+        "label": "Factor de potencia",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "auto",
+        "interpolate": "linear",
+        "nodata": "##",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "1",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 990,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d6dbf51e.40f6c8",
+        "type": "ui_chart",
+        "z": "1e1daf04.126739",
+        "name": "Multichart",
+        "group": "56032ee3.3718a8",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "label": "Eléctricos",
+        "chartType": "bar",
+        "legend": "true",
+        "xformat": "auto",
+        "interpolate": "step",
+        "nodata": "##",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 980,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bb9adf5e.8aecf",
+        "type": "mqtt in",
+        "z": "1e1daf04.126739",
+        "name": "",
+        "topic": "esp32/analog",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "cd6b5625.5238f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 90,
+        "y": 180,
+        "wires": [
+            [
+                "f9ffd31e.a16ae"
+            ]
+        ]
+    },
+    {
+        "id": "7f0243f4.80549c",
+        "type": "ui_gauge",
+        "z": "1e1daf04.126739",
+        "name": "",
+        "group": "f2fea55f.8454c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "scaled 0-100%",
+        "format": "{{value | number:1}}%",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "60",
+        "seg2": "85",
+        "x": 490,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "af4aac19.8a3cd",
+        "type": "ui_text_input",
+        "z": "f931e135.d0c29",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "755c98f3.ea334",
+        "order": 1,
+        "width": "3",
+        "height": "3",
+        "passthru": false,
+        "mode": "number",
+        "delay": 300,
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 160,
+        "y": 360,
+        "wires": [
+            [
+                "5b2d8261.5f77d4"
+            ]
+        ]
+    },
+    {
+        "id": "f31a11b3.fe5e58",
+        "type": "debug",
+        "z": "f931e135.d0c29",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 790,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "5b2d8261.5f77d4",
+        "type": "function",
+        "z": "f931e135.d0c29",
+        "name": "",
+        "func": "switch (msg.payload ) {\ncase 1: msg.payload=msg.payload+\" Ready to start\"; break;\ncase 2: msg.payload=msg.payload+\" Starting\";break ;\ncase 3: msg.payload=msg.payload+\" Service\";break ;\ncase 4: msg.payload=msg.payload+\" Normal stop\";break ;\ncase 5: msg.payload=msg.payload+\" Emergency stop\";break ;\ncase 6: msg.payload=msg.payload+\" Not ready\";break ;\ndefault: msg.payload=\"General Failure\";break;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 360,
+        "wires": [
+            [
+                "f31a11b3.fe5e58",
+                "2ccf71c7.38098e"
+            ]
+        ]
+    },
+    {
+        "id": "2ccf71c7.38098e",
+        "type": "ui_template",
+        "z": "f931e135.d0c29",
+        "group": "83d15182.eb6538",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div ng-bind.html>\n<table>\n    <tr>\n<th><div ng-bind-html=\"Status\"></div></th>\n<th><div ng-bind-html=\"msg.payload\"></div></th>\n</tr>\n</table>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 1020,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3f61d062.3be37",
+        "type": "mqtt out",
+        "z": "ea943a79.b3e358",
+        "g": "c67599e8.f83b88",
+        "name": "",
+        "topic": "esp32/retrieve",
+        "qos": "2",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cd6b5625.5238f8",
+        "x": 480,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "3332e8ea.edd9e8",
+        "type": "ui_button",
+        "z": "ea943a79.b3e358",
+        "g": "c67599e8.f83b88",
+        "name": "Recibir valor analogico",
+        "group": "f2fea55f.8454c",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Update Analog value",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-arrow-circle-o-down",
+        "payload": "retrieve",
+        "payloadType": "str",
+        "topic": "esp32/retrieve",
+        "topicType": "msg",
+        "x": 210,
+        "y": 960,
+        "wires": [
+            [
+                "3f61d062.3be37"
+            ]
+        ],
+        "inputLabels": [
+            "ni"
+        ],
+        "outputLabels": [
+            "out"
+        ]
+    },
+    {
+        "id": "50970e08.0676b",
+        "type": "debug",
+        "z": "1e1daf04.126739",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 950,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "efcee0a1.35f83",
+        "type": "ui_ui_control",
+        "z": "d749cdc9.d28c6",
+        "g": "e9a3077.08c0378",
+        "name": "",
+        "events": "change",
+        "x": 860,
+        "y": 620,
+        "wires": [
+            [
+                "64960f21.a6e418",
+                "197c4940.63435f",
+                "1ccf1312.5e368d"
+            ]
+        ]
+    },
+    {
+        "id": "e0ca6f5f.f2b4f8",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "d": true,
+        "g": "e9a3077.08c0378",
+        "name": "",
+        "group": "a3ae9a9d.387f38",
+        "order": 1,
+        "width": 6,
+        "height": 6,
+        "passthru": true,
+        "label": "Principal",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-home fa-4x",
+        "payload": "0",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 640,
+        "y": 400,
+        "wires": [
+            [
+                "efcee0a1.35f83"
+            ]
+        ]
+    },
+    {
+        "id": "b0caa359.57da18",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "e9a3077.08c0378",
+        "name": "",
+        "group": "a3ae9a9d.387f38",
+        "order": 2,
+        "width": 6,
+        "height": 6,
+        "passthru": false,
+        "label": "Tablero general",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-battery-full fa-4x",
+        "payload": "Tablero general",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 620,
+        "y": 460,
+        "wires": [
+            [
+                "efcee0a1.35f83"
+            ]
+        ]
+    },
+    {
+        "id": "8138f9ca.54f19",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "e9a3077.08c0378",
+        "name": "",
+        "group": "a87bb2bb.01863",
+        "order": 2,
+        "width": 6,
+        "height": 6,
+        "passthru": false,
+        "label": "Informacion de secuencia",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-code fa-4x",
+        "payload": "Información de secuencia",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 590,
+        "y": 520,
+        "wires": [
+            [
+                "efcee0a1.35f83"
+            ]
+        ]
+    },
+    {
+        "id": "4831236d.d3e264",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "e9a3077.08c0378",
+        "name": "",
+        "group": "a87bb2bb.01863",
+        "order": 1,
+        "width": 6,
+        "height": 6,
+        "passthru": false,
+        "label": "ESP32",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-microchip fa-4x",
+        "payload": "1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 650,
+        "y": 580,
+        "wires": [
+            [
+                "efcee0a1.35f83"
+            ]
+        ]
+    },
+    {
+        "id": "85579d63.ba70f",
+        "type": "ui_gauge",
+        "z": "ea943a79.b3e358",
+        "g": "7e88e231.3018cc",
+        "name": "",
+        "group": "a7eeab9.88e15d8",
+        "order": 1,
+        "width": "6",
+        "height": "5",
+        "gtype": "gage",
+        "title": "esp32/temperature gauge",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "35",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 1000,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "b39ad2b6.826198",
+        "type": "ui_chart",
+        "z": "ea943a79.b3e358",
+        "g": "7e88e231.3018cc",
+        "name": "esp32/humidity chart",
+        "group": "ba50b77f.0e2ef8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": "30",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 980,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "347f969e.fbc90a",
+        "type": "inject",
+        "z": "f931e135.d0c29",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "2",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 140,
+        "y": 200,
+        "wires": [
+            [
+                "12aff989.4136be",
+                "fdc73a4.02f2548"
+            ]
+        ]
+    },
+    {
+        "id": "12aff989.4136be",
+        "type": "function",
+        "z": "f931e135.d0c29",
+        "name": "",
+        "func": "a=a+1;\nif (a>6) a=0;\nmsg.payload=a;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\na=0;",
+        "finalize": "",
+        "libs": [],
+        "x": 340,
+        "y": 200,
+        "wires": [
+            [
+                "6c9d29b.f4293d8",
+                "5b2d8261.5f77d4",
+                "af4aac19.8a3cd"
+            ]
+        ]
+    },
+    {
+        "id": "6c9d29b.f4293d8",
+        "type": "debug",
+        "z": "f931e135.d0c29",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 590,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "fdc73a4.02f2548",
+        "type": "debug",
+        "z": "f931e135.d0c29",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 330,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "e50af479.83b02",
+        "type": "inject",
+        "z": "d749cdc9.d28c6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 60,
+        "wires": [
+            [
+                "15dc2864.4d4cf8"
+            ]
+        ]
+    },
+    {
+        "id": "f9ffd31e.a16ae",
+        "type": "range",
+        "z": "1e1daf04.126739",
+        "minin": "0",
+        "maxin": "4095",
+        "minout": "0",
+        "maxout": "100",
+        "action": "scale",
+        "round": false,
+        "property": "payload",
+        "name": "",
+        "x": 280,
+        "y": 180,
+        "wires": [
+            [
+                "7f0243f4.80549c"
+            ]
+        ]
+    },
+    {
+        "id": "cf07fe3.c3218",
+        "type": "http request",
+        "z": "e924d20f.9ce478",
+        "name": "Google Script http request",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "{{{payload}}}",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 1000,
+        "y": 140,
+        "wires": [
+            [
+                "c018727a.996b58"
+            ]
+        ],
+        "info": "\nEnvía una solicitud GET al script de google que registra los datos formateados en la función previa"
+    },
+    {
+        "id": "2c4b4e94.56f66a",
+        "type": "mqtt in",
+        "z": "e924d20f.9ce478",
+        "name": "",
+        "topic": "esp32/temperature",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "cd6b5625.5238f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 110,
+        "y": 60,
+        "wires": [
+            [
+                "969feee0.81e0d8"
+            ]
+        ]
+    },
+    {
+        "id": "9b29e5b1.0146d8",
+        "type": "mqtt in",
+        "z": "e924d20f.9ce478",
+        "name": "",
+        "topic": "esp32/output",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "cd6b5625.5238f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 130,
+        "y": 240,
+        "wires": [
+            [
+                "969feee0.81e0d8"
+            ]
+        ]
+    },
+    {
+        "id": "735005ac.36c384",
+        "type": "mqtt in",
+        "z": "e924d20f.9ce478",
+        "name": "",
+        "topic": "esp32/humidity",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "cd6b5625.5238f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 120,
+        "y": 120,
+        "wires": [
+            [
+                "969feee0.81e0d8"
+            ]
+        ]
+    },
+    {
+        "id": "9e84ff22.5acbb",
+        "type": "mqtt in",
+        "z": "e924d20f.9ce478",
+        "name": "",
+        "topic": "esp32/analog",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "cd6b5625.5238f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 130,
+        "y": 180,
+        "wires": [
+            [
+                "969feee0.81e0d8"
+            ]
+        ]
+    },
+    {
+        "id": "58bd03dd.e075f4",
+        "type": "function",
+        "z": "e924d20f.9ce478",
+        "name": "Creates request url for gscript",
+        "func": "//var GAS_ID=\"AKfycbwmJ2vtlly8Ssb28i2aoQuN1WGoQN3iCimZVIedZ-1SH9RA5jD5w9x3xmfk38H0gYl3\";\n//var GAS_ID=\"AKfycbwlDAJ8p5mE8yxE_8IDN3Ku97DQ-Jl9i2wMBBD4ZPizbchZzCvDjIh5Gm3cMFneSq8w\";\nvar GAS_ID=\"AKfycbx3_RU5X5gF8T-fxFtbvqU4KqlHiy1nrrS3vSI_yKdWZG2pPWYThsRsx--SNLTEa55Q\";\nvar string = JSON.stringify(msg.payload);\nvar objectValue = JSON.parse(string);\nvar temperature= objectValue['esp32/temperature'];\nvar humidity=objectValue['esp32/humidity'];\nvar moisture=objectValue['esp32/analog'];\nvar event=objectValue['esp32/output'];\nhost = \"script.google.com\";\nmsg.payload = host+\"/macros/s/\" + GAS_ID + \"/exec?temperature=\" + temperature + \"&humidity=\" + humidity + \"&moisture=\" + moisture + \"&event=\" + event; \n//msg.payload= url;\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 140,
+        "wires": [
+            [
+                "cf07fe3.c3218"
+            ]
+        ],
+        "info": "Crea la URL que se enviará a http request. Para ello, levanta los valores de las corrrespondientes claves dentro del objeto, y los coloca en variables que luego concatenará para construir la URL.\n\nEl GAS_ID es el código de aplicación de google script apps"
+    },
+    {
+        "id": "969feee0.81e0d8",
+        "type": "join",
+        "z": "e924d20f.9ce478",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "4",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 410,
+        "y": 140,
+        "wires": [
+            [
+                "58bd03dd.e075f4"
+            ]
+        ],
+        "info": "Recibe los valores de las 4 variables de entrada, y las combina en un objeto. Hasta no recibir las 4 entradas no envía data. "
+    },
+    {
+        "id": "c018727a.996b58",
+        "type": "ui_template",
+        "z": "e924d20f.9ce478",
+        "d": true,
+        "group": "8ff5bd02.5b1d1",
+        "name": "HTTP Response",
+        "order": 1,
+        "width": 5,
+        "height": 11,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 1270,
+        "y": 140,
+        "wires": [
+            []
+        ],
+        "info": "Este nodo recibe la respuesta de google script y la publica"
+    },
+    {
+        "id": "6fef3d8e.102544",
+        "type": "file in",
+        "z": "740b988e.6d58e",
+        "name": "load log file",
+        "filename": "",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 770,
+        "y": 760,
+        "wires": [
+            [
+                "f2026c0a.990db"
+            ]
+        ]
+    },
+    {
+        "id": "65bcfde3.c92364",
+        "type": "ui_button",
+        "z": "740b988e.6d58e",
+        "name": "Get actual log",
+        "group": "e5619d8f.db854",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "label": "Último log",
+        "tooltip": "Recarga el log del día",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-refresh",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "",
+        "topicType": "str",
+        "x": 260,
+        "y": 720,
+        "wires": [
+            [
+                "4f13f7f8.d9021"
+            ]
+        ],
+        "info": "Botón para cargar el log actual. \n\nSe presiona al iniciar el flow (inject once) para cargar siempre el log actual al inicio.\n\nEnvía un true para disparar las funciones que cargan el archivo y muestran el nombre de archivo en pantalla"
+    },
+    {
+        "id": "f2026c0a.990db",
+        "type": "csv",
+        "z": "740b988e.6d58e",
+        "name": "Parses csv",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "Time, Temperature, Humidity, Led",
+        "skip": "0",
+        "strings": false,
+        "include_empty_strings": false,
+        "include_null_values": "",
+        "x": 950,
+        "y": 760,
+        "wires": [
+            [
+                "1ab91860.dd58a8"
+            ]
+        ]
+    },
+    {
+        "id": "5dabfc2e.571294",
+        "type": "mqtt in",
+        "z": "740b988e.6d58e",
+        "name": "",
+        "topic": "esp32/temperature",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "cd6b5625.5238f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 130,
+        "y": 360,
+        "wires": [
+            [
+                "54353e82.0b1248"
+            ]
+        ]
+    },
+    {
+        "id": "86fdda3e.144fd8",
+        "type": "mqtt in",
+        "z": "740b988e.6d58e",
+        "name": "",
+        "topic": "esp32/output",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "cd6b5625.5238f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 110,
+        "y": 480,
+        "wires": [
+            [
+                "54353e82.0b1248"
+            ]
+        ]
+    },
+    {
+        "id": "10302c50.43b71c",
+        "type": "mqtt in",
+        "z": "740b988e.6d58e",
+        "name": "",
+        "topic": "esp32/humidity",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "cd6b5625.5238f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 120,
+        "y": 420,
+        "wires": [
+            [
+                "54353e82.0b1248"
+            ]
+        ]
+    },
+    {
+        "id": "54353e82.0b1248",
+        "type": "join",
+        "z": "740b988e.6d58e",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "3",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 450,
+        "y": 440,
+        "wires": [
+            [
+                "3c1d802.6a5e3"
+            ]
+        ],
+        "info": "Recibe los valores de las 3 variables de entrada, y las combina en un objeto. Hasta no recibir las 3 entradas no envía data. "
+    },
+    {
+        "id": "3c1d802.6a5e3",
+        "type": "function",
+        "z": "740b988e.6d58e",
+        "name": "",
+        "func": "var string = JSON.stringify(msg.payload);\nvar objectValue = JSON.parse(string);\nvar temperature= objectValue['esp32/temperature'];\nvar humidity=objectValue['esp32/humidity'];\n//var moisture=objectValue['esp32/analog'];\nvar led=objectValue['esp32/output'];\nmsg.payload = new Date()+\",\" + temperature + \",\" + humidity + \",\" + led; \n//msg.payload= url;\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 440,
+        "wires": [
+            [
+                "af443fdd.0dd32"
+            ]
+        ],
+        "info": "Crea un string separado por comas como entrada para el csv"
+    },
+    {
+        "id": "af443fdd.0dd32",
+        "type": "file",
+        "z": "740b988e.6d58e",
+        "name": "record.csv",
+        "filename": "/home/bitnami/log/record.csv",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1030,
+        "y": 440,
+        "wires": [
+            [
+                "6d3bec88.249c74"
+            ]
+        ]
+    },
+    {
+        "id": "8997b957.c059e8",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "e9a3077.08c0378",
+        "name": "",
+        "group": "a3ae9a9d.387f38",
+        "order": 3,
+        "width": 6,
+        "height": 6,
+        "passthru": false,
+        "label": "Logfile",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-table fa-4x",
+        "payload": "Logfile",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 650,
+        "y": 620,
+        "wires": [
+            [
+                "efcee0a1.35f83"
+            ]
+        ]
+    },
+    {
+        "id": "9a1dbdf8.f9d2b8",
+        "type": "tail",
+        "z": "740b988e.6d58e",
+        "d": true,
+        "name": "record.csv tail",
+        "filetype": "text",
+        "split": "[\\r]{0,1}\\n",
+        "filename": "record.csv",
+        "inputs": 0,
+        "x": 690,
+        "y": 680,
+        "wires": [
+            [
+                "f2026c0a.990db"
+            ]
+        ]
+    },
+    {
+        "id": "1ab91860.dd58a8",
+        "type": "function",
+        "z": "740b988e.6d58e",
+        "name": "Reverse",
+        "func": "msg.payload.reverse();\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1140,
+        "y": 760,
+        "wires": [
+            [
+                "fa191708.fb4ec"
+            ]
+        ],
+        "info": "Invierte el orden de los objetos (para ver primero en la tabla el último log del csv)"
+    },
+    {
+        "id": "654a8bf0.411a6c",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "d": true,
+        "g": "e9a3077.08c0378",
+        "name": "",
+        "group": "",
+        "order": 1,
+        "width": "6",
+        "height": "6",
+        "passthru": true,
+        "label": "Back",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-arrow-left fa-4x",
+        "payload": "visited[1]",
+        "payloadType": "global",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 650,
+        "y": 920,
+        "wires": [
+            [
+                "efcee0a1.35f83",
+                "6bf0131.04999ec"
+            ]
+        ]
+    },
+    {
+        "id": "64960f21.a6e418",
+        "type": "function",
+        "z": "d749cdc9.d28c6",
+        "d": true,
+        "g": "e9a3077.08c0378",
+        "name": "",
+        "func": "var array=global.get('visited');\nrepeated=array[0]==msg.tab;\nif (!repeated) {\n    array[1]=array[0];\n    array[0]=msg.tab;}\nglobal.set('visited',array );\nmsg.payload=array;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 520,
+        "wires": [
+            [
+                "77417b26.2c2dd4"
+            ]
+        ],
+        "info": "Lee la variable global visited, que almacena las dos últimas tabs visitadas (anterior y actual). Para evitar que se registre la pantalla actual al presionar varias veces el mismo link, solo si la actual y la registrada son diferentes, se coloca la actual en el primer lugar del array, y la anterior en el seguno. Podría hacerse para más cantidad de registros aumentando el largo del array"
+    },
+    {
+        "id": "77417b26.2c2dd4",
+        "type": "debug",
+        "z": "d749cdc9.d28c6",
+        "g": "e9a3077.08c0378",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1270,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "bbb77bf1.dc3d58",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "cfd71c3b.62ad5",
+        "name": "Back en Tablero general",
+        "group": "11c86017.7c55e",
+        "order": 3,
+        "width": "2",
+        "height": "2",
+        "passthru": true,
+        "label": "Previous",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-arrow-left",
+        "payload": "visited[1]",
+        "payloadType": "global",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 210,
+        "y": 900,
+        "wires": [
+            [
+                "654a8bf0.411a6c",
+                "1f3d00a.c364e7f",
+                "9580e924.c5c528"
+            ]
+        ]
+    },
+    {
+        "id": "4927765a.95d3",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "3a8c6532.d84b42",
+        "name": "Principal en Tablero General",
+        "group": "11c86017.7c55e",
+        "order": 1,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Home",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "home",
+        "payload": "0",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 140,
+        "y": 180,
+        "wires": [
+            [
+                "e0ca6f5f.f2b4f8",
+                "a1aa12d6.e76ff8"
+            ]
+        ]
+    },
+    {
+        "id": "81a9261c.6abe08",
+        "type": "ui_chart",
+        "z": "1e1daf04.126739",
+        "name": "Multichart",
+        "group": "56032ee3.3718a8",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "label": "Eléctricos",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "auto",
+        "interpolate": "step",
+        "nodata": "##",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 980,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "53f96285.afae5c",
+        "type": "change",
+        "z": "d749cdc9.d28c6",
+        "g": "e9a3077.08c0378",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "visited",
+                "pt": "global",
+                "to": "[0,0,0,0]",
+                "tot": "bin"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1030,
+        "y": 320,
+        "wires": [
+            []
+        ],
+        "info": "Establece el array visited, queguard las ultimas 4 pantallas visitadas."
+    },
+    {
+        "id": "106f7e33.54e59a",
+        "type": "inject",
+        "z": "d749cdc9.d28c6",
+        "g": "e9a3077.08c0378",
+        "name": "Run once at start",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 650,
+        "y": 320,
+        "wires": [
+            [
+                "53f96285.afae5c"
+            ]
+        ]
+    },
+    {
+        "id": "197c4940.63435f",
+        "type": "function",
+        "z": "d749cdc9.d28c6",
+        "g": "e9a3077.08c0378",
+        "name": "",
+        "func": "var array=global.get('visited');\nrepeated=array[0]==msg.tab;\nif (!repeated) {\n    for (i=0; i<3;i++) {\n        array[3-i]=array[3-i-1];\n        }\n    array[0]=msg.tab;\n    }\nglobal.set('visited',array );\nmsg.payload=array;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1080,
+        "y": 620,
+        "wires": [
+            [
+                "c66babe.f87c8d8"
+            ]
+        ],
+        "info": "Lee la variable global visited, que almacena las 4 últimas tabs visitadas (anterior y actual). Para evitar que se registre la pantalla actual al presionar varias veces el mismo link, solo si la actual y la registrada son diferentes, se coloca la actual en el primer lugar del array, y la anterior en el seguno. Podría hacerse para más cantidad de registros aumentando el largo del array"
+    },
+    {
+        "id": "c66babe.f87c8d8",
+        "type": "debug",
+        "z": "d749cdc9.d28c6",
+        "g": "e9a3077.08c0378",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1290,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "6bf0131.04999ec",
+        "type": "function",
+        "z": "d749cdc9.d28c6",
+        "g": "e9a3077.08c0378",
+        "name": "Updates visited",
+        "func": "var array=global.get('visited');\n//repeated=array[0]==msg.tab;\n//if (!repeated) {\n    for (i=0; i<3;i++) {\n        array[i]=array[i+1];\n        }\n    array[3]=0;\n    \nglobal.set('visited',array );\n//msg.payload=array;\n//return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 860,
+        "wires": [
+            []
+        ],
+        "info": "Lee la variable global visited, que almacena las 4 últimas tabs visitadas. Hace un corrimiento hacia de las posiciones hacia la primera, completando la última con cero."
+    },
+    {
+        "id": "84f1a4f6.9d613",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "cfd71c3b.62ad5",
+        "name": "Back en ESP32",
+        "group": "54eb79f4.6de7",
+        "order": 3,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Previous",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-arrow-left",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 240,
+        "y": 840,
+        "wires": [
+            [
+                "654a8bf0.411a6c",
+                "1f3d00a.c364e7f",
+                "9580e924.c5c528"
+            ]
+        ]
+    },
+    {
+        "id": "d4a06274.649078",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "3a8c6532.d84b42",
+        "name": "Principal en ESP32",
+        "group": "54eb79f4.6de7",
+        "order": 1,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Home",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "home",
+        "payload": "0",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 140,
+        "wires": [
+            [
+                "e0ca6f5f.f2b4f8",
+                "a1aa12d6.e76ff8"
+            ]
+        ]
+    },
+    {
+        "id": "108c35f9.37879a",
+        "type": "function",
+        "z": "7fb1182.bf64368",
+        "name": "\"Led \"+ Status",
+        "func": "msg.payload=\"Led \" + msg.payload\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 380,
+        "wires": [
+            [
+                "a6801b8a.fe9d08",
+                "6675f8a4.4122b",
+                "fac6aadf.26a3e"
+            ]
+        ],
+        "inputLabels": [
+            "led status"
+        ],
+        "info": "\n\nCo;ncatena LED con el estado de la se;al de output al led, para formatear el text a ejecutar por el tts"
+    },
+    {
+        "id": "b028189f.ce13a",
+        "type": "mqtt in",
+        "z": "7fb1182.bf64368",
+        "name": "",
+        "topic": "esp32/output",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "cd6b5625.5238f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 210,
+        "y": 380,
+        "wires": [
+            [
+                "108c35f9.37879a"
+            ]
+        ]
+    },
+    {
+        "id": "a6801b8a.fe9d08",
+        "type": "play audio",
+        "z": "7fb1182.bf64368",
+        "d": true,
+        "name": "Editor audio out",
+        "voice": "0",
+        "x": 630,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "6675f8a4.4122b",
+        "type": "debug",
+        "z": "7fb1182.bf64368",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 610,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "fac6aadf.26a3e",
+        "type": "ui_audio",
+        "z": "7fb1182.bf64368",
+        "d": true,
+        "name": "Dashboard audio out",
+        "group": "a87bb2bb.01863",
+        "voice": "urn:moz-tts:sapi:Microsoft Zira Desktop - English (United States)?en-US",
+        "always": true,
+        "x": 730,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "8eea35e2.16dba8",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "3a8c6532.d84b42",
+        "name": "Principal en Informaci[on de secuencia",
+        "group": "83a78176.6c246",
+        "order": 1,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Home",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "home",
+        "payload": "0",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 170,
+        "y": 240,
+        "wires": [
+            [
+                "e0ca6f5f.f2b4f8",
+                "a1aa12d6.e76ff8"
+            ]
+        ]
+    },
+    {
+        "id": "9a267f89.3ae5b8",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "cfd71c3b.62ad5",
+        "name": "Back en informaci[on de secuencia",
+        "group": "83a78176.6c246",
+        "order": 2,
+        "width": "2",
+        "height": "2",
+        "passthru": true,
+        "label": "Previous",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-arrow-left",
+        "payload": "visited[1]",
+        "payloadType": "global",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 180,
+        "y": 960,
+        "wires": [
+            [
+                "654a8bf0.411a6c",
+                "1f3d00a.c364e7f",
+                "9580e924.c5c528"
+            ]
+        ]
+    },
+    {
+        "id": "b1e13a50.f812d",
+        "type": "comment",
+        "z": "d749cdc9.d28c6",
+        "name": "Widget de reloj analógico",
+        "info": "",
+        "x": 160,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "2103ed7a.704452",
+        "type": "comment",
+        "z": "d749cdc9.d28c6",
+        "name": "Navegación por las distintas tabs",
+        "info": "",
+        "x": 210,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "1ccf1312.5e368d",
+        "type": "debug",
+        "z": "d749cdc9.d28c6",
+        "g": "e9a3077.08c0378",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "tab",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "fce3dd8c.c6d94",
+        "type": "function",
+        "z": "ea943a79.b3e358",
+        "name": "",
+        "func": "var string = JSON.stringify(msg.payload);\nvar objectValue = JSON.parse(string);\nvar temperature= objectValue['esp32/temperature'];\nvar humidity=objectValue['esp32/humidity'];\nvar hum=parseInt(humidity).toFixed(0);\nmsg.payload = 'Temperature: '+ temperature+ \"°C <br/>\"+ 'Humidity: '+ hum+\"%RH\"; \n//msg.payload= url;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 720,
+        "wires": [
+            [
+                "b689c3a.6af304",
+                "10e8cc7a.b2efdc"
+            ]
+        ]
+    },
+    {
+        "id": "10e8cc7a.b2efdc",
+        "type": "debug",
+        "z": "ea943a79.b3e358",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "3a1acf2b.d6171",
+        "type": "mqtt out",
+        "z": "ea943a79.b3e358",
+        "g": "a495c9ab.3fd74",
+        "name": "",
+        "topic": "esp32/output",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cd6b5625.5238f8",
+        "x": 750,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "717a61d0.825df",
+        "type": "inject",
+        "z": "ea943a79.b3e358",
+        "d": true,
+        "g": "a495c9ab.3fd74",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0",
+        "topic": "",
+        "payload": "on",
+        "payloadType": "str",
+        "x": 290,
+        "y": 80,
+        "wires": [
+            [
+                "49acb94c.e04f9"
+            ]
+        ]
+    },
+    {
+        "id": "9d49032a.2d5b48",
+        "type": "inject",
+        "z": "ea943a79.b3e358",
+        "d": true,
+        "g": "a495c9ab.3fd74",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "30",
+        "topic": "",
+        "payload": "off",
+        "payloadType": "str",
+        "x": 290,
+        "y": 120,
+        "wires": [
+            [
+                "49acb94c.e04f9"
+            ]
+        ]
+    },
+    {
+        "id": "c39e357d.0135d",
+        "type": "ui_button",
+        "z": "ea943a79.b3e358",
+        "g": "a495c9ab.3fd74",
+        "name": "Led ON",
+        "group": "5233a975.68bcd",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "On",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "green",
+        "icon": "wi-wu-sunny",
+        "payload": "on",
+        "payloadType": "str",
+        "topic": "esp32/output",
+        "topicType": "msg",
+        "x": 160,
+        "y": 180,
+        "wires": [
+            [
+                "49acb94c.e04f9"
+            ]
+        ],
+        "inputLabels": [
+            "in"
+        ],
+        "outputLabels": [
+            "out"
+        ]
+    },
+    {
+        "id": "49acb94c.e04f9",
+        "type": "ui_switch",
+        "z": "ea943a79.b3e358",
+        "g": "a495c9ab.3fd74",
+        "name": "",
+        "label": "switch",
+        "tooltip": "Led control",
+        "group": "5233a975.68bcd",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "output",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "x": 510,
+        "y": 220,
+        "wires": [
+            [
+                "3a1acf2b.d6171",
+                "de9cb795.975788",
+                "141ec717.03c6f9"
+            ]
+        ]
+    },
+    {
+        "id": "182b238.026b35d",
+        "type": "ui_button",
+        "z": "ea943a79.b3e358",
+        "g": "a495c9ab.3fd74",
+        "name": "Led OFF",
+        "group": "5233a975.68bcd",
+        "order": 2,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "label": "Off",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "red",
+        "icon": "wi-wu-sunny",
+        "payload": "off",
+        "payloadType": "str",
+        "topic": "esp32/output",
+        "topicType": "msg",
+        "x": 160,
+        "y": 220,
+        "wires": [
+            [
+                "49acb94c.e04f9"
+            ]
+        ],
+        "inputLabels": [
+            "in"
+        ],
+        "outputLabels": [
+            "out"
+        ]
+    },
+    {
+        "id": "1f3d00a.c364e7f",
+        "type": "function",
+        "z": "d749cdc9.d28c6",
+        "d": true,
+        "g": "e9a3077.08c0378",
+        "name": "Previous screen",
+        "func": "msg.payload=global.get(\"visited[1]\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 860,
+        "wires": [
+            [
+                "efcee0a1.35f83",
+                "6bf0131.04999ec"
+            ]
+        ]
+    },
+    {
+        "id": "a1aa12d6.e76ff8",
+        "type": "function",
+        "z": "d749cdc9.d28c6",
+        "g": "e9a3077.08c0378",
+        "name": "Home screen",
+        "func": "msg.payload=0\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 360,
+        "wires": [
+            [
+                "efcee0a1.35f83"
+            ]
+        ]
+    },
+    {
+        "id": "293d7dc4.3850fa",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "fd8a84dc.33c088",
+        "name": "Next screen en ESP32",
+        "group": "54eb79f4.6de7",
+        "order": 3,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Next",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-arrow-right",
+        "payload": "+1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 140,
+        "y": 520,
+        "wires": [
+            [
+                "587f60cc.ab0a18"
+            ]
+        ]
+    },
+    {
+        "id": "587f60cc.ab0a18",
+        "type": "function",
+        "z": "d749cdc9.d28c6",
+        "g": "e9a3077.08c0378",
+        "name": "Next screen",
+        "func": "msg.payload=\"+1\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 740,
+        "wires": [
+            [
+                "efcee0a1.35f83"
+            ]
+        ]
+    },
+    {
+        "id": "9580e924.c5c528",
+        "type": "function",
+        "z": "d749cdc9.d28c6",
+        "g": "e9a3077.08c0378",
+        "name": "Previous screen",
+        "func": "msg.payload=\"-1\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 800,
+        "wires": [
+            [
+                "efcee0a1.35f83"
+            ]
+        ]
+    },
+    {
+        "id": "71392fe7.706f28",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "cfd71c3b.62ad5",
+        "name": "Previous en logfile",
+        "group": "ab907530.644f18",
+        "order": 1,
+        "width": "2",
+        "height": "2",
+        "passthru": true,
+        "label": "Previous",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-arrow-left",
+        "payload": "visited[1]",
+        "payloadType": "global",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 230,
+        "y": 1020,
+        "wires": [
+            [
+                "9580e924.c5c528"
+            ]
+        ]
+    },
+    {
+        "id": "7848bb7a.4e1374",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "fd8a84dc.33c088",
+        "name": "Next screen en Tablero General",
+        "group": "11c86017.7c55e",
+        "order": 3,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Next",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-arrow-right",
+        "payload": "+1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 170,
+        "y": 580,
+        "wires": [
+            [
+                "587f60cc.ab0a18"
+            ]
+        ]
+    },
+    {
+        "id": "d0fde4e3.bcb1b",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "fd8a84dc.33c088",
+        "name": "Next screen en Informacion de secuencia",
+        "group": "83a78176.6c246",
+        "order": 3,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Next",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-arrow-right",
+        "payload": "+1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 200,
+        "y": 640,
+        "wires": [
+            [
+                "587f60cc.ab0a18"
+            ]
+        ]
+    },
+    {
+        "id": "b8c864cb.d34068",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "fd8a84dc.33c088",
+        "name": "Next screen en Logfile",
+        "group": "ab907530.644f18",
+        "order": 5,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Next",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-arrow-right",
+        "payload": "+1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 140,
+        "y": 700,
+        "wires": [
+            [
+                "587f60cc.ab0a18"
+            ]
+        ]
+    },
+    {
+        "id": "b870740b.44b998",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "3a8c6532.d84b42",
+        "name": "Principal en Logfile",
+        "group": "ab907530.644f18",
+        "order": 3,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Home",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "home",
+        "payload": "0",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 300,
+        "wires": [
+            [
+                "a1aa12d6.e76ff8"
+            ]
+        ]
+    },
+    {
+        "id": "da369c9d.1fcde8",
+        "type": "ui_date_picker",
+        "z": "d749cdc9.d28c6",
+        "d": true,
+        "name": "",
+        "label": "",
+        "group": "9c98081c.cecc6",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 450,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6c3cdf08.81d43",
+        "type": "inject",
+        "z": "d749cdc9.d28c6",
+        "name": "",
+        "props": [
+            {
+                "p": "enabled",
+                "v": "false",
+                "vt": "bool"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 110,
+        "y": 120,
+        "wires": [
+            [
+                "da369c9d.1fcde8"
+            ]
+        ]
+    },
+    {
+        "id": "c2a283d4.e5cdf8",
+        "type": "function",
+        "z": "ea943a79.b3e358",
+        "g": "e808bf9.aaaecc",
+        "name": "Escalona luminosidad",
+        "func": "if (msg.payload!=0)\nmsg.payload=Math.trunc (msg.payload / 25)+1;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 1120,
+        "wires": [
+            [
+                "64d8ffc2.e0f2a"
+            ]
+        ]
+    },
+    {
+        "id": "e7db3dfa.0c52",
+        "type": "mqtt out",
+        "z": "ea943a79.b3e358",
+        "g": "e808bf9.aaaecc",
+        "name": "",
+        "topic": "esp32/led_control",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cd6b5625.5238f8",
+        "x": 590,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "f248ce86.f4ca6",
+        "type": "ui_slider",
+        "z": "ea943a79.b3e358",
+        "g": "e808bf9.aaaecc",
+        "name": "",
+        "label": "Led PWM",
+        "tooltip": "",
+        "group": "5233a975.68bcd",
+        "order": 6,
+        "width": "6",
+        "height": "1",
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 150,
+        "y": 1060,
+        "wires": [
+            [
+                "e7db3dfa.0c52",
+                "c2a283d4.e5cdf8"
+            ]
+        ],
+        "info": "Slider que establece el valor analogico a pasar al esp32 por esp32/led_control. EL valor es escalado en el esp multiplicando por 2.55 (poría escalarse acá y pasar ya el valor 8 bits)"
+    },
+    {
+        "id": "f6b1b4b1.df8978",
+        "type": "mqtt in",
+        "z": "ea943a79.b3e358",
+        "d": true,
+        "g": "e808bf9.aaaecc",
+        "name": "",
+        "topic": "esp32/led_control",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "cd6b5625.5238f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 180,
+        "y": 1160,
+        "wires": [
+            [
+                "f248ce86.f4ca6"
+            ]
+        ]
+    },
+    {
+        "id": "e04685e6.66c3e",
+        "type": "ui_template",
+        "z": "f931e135.d0c29",
+        "group": "83d15182.eb6538",
+        "name": "df",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<h1>HTML Title</h1><div layout=\"row\" layout-align=\"space-between\">\n  <p>The number is</p>\n  <font color=\"{{((msg.payload || 0) % 2 === 0) ? 'green' : 'red'}}\">\n    {{(msg.payload || 0) % 2 === 0 ? 'even' : 'odd'}}\n  </font>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "x": 790,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ce2bd14.862ddb",
+        "type": "inject",
+        "z": "f931e135.d0c29",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "555",
+        "payloadType": "num",
+        "x": 430,
+        "y": 520,
+        "wires": [
+            [
+                "e04685e6.66c3e"
+            ]
+        ]
+    },
+    {
+        "id": "d7372b35.c47d5",
+        "type": "ui_switch",
+        "z": "24684854.3f88a8",
+        "name": "Sonoff 10007cb0e9",
+        "label": "Sonoff - {{msg.payload}}",
+        "tooltip": "",
+        "group": "f2fea55f.8454c",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "x": 580,
+        "y": 380,
+        "wires": [
+            [
+                "d91cedfa.ddef38"
+            ]
+        ],
+        "info": "Recibe feedback de state del sonoff. \nAl ser pulsado envía un string \"on\" u \"off\", dependiente de su estado anterior (off u on). "
+    },
+    {
+        "id": "cc8bc127.e0c0a8",
+        "type": "debug",
+        "z": "24684854.3f88a8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 870,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "20741af9.d5f8b6",
+        "type": "function",
+        "z": "24684854.3f88a8",
+        "name": "",
+        "func": "msg.payload=msg.payload.state;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 240,
+        "wires": [
+            [
+                "b97a79c1.abc2a",
+                "d7372b35.c47d5"
+            ]
+        ],
+        "info": "Filta el objeto recibido de Power State Read, extrayento el elemento\n.state, que es un string con el texto on u off. Ese mismo texto se usa como feeedaback para marcar el estado del switch de comando"
+    },
+    {
+        "id": "b97a79c1.abc2a",
+        "type": "debug",
+        "z": "24684854.3f88a8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 850,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "d41ecfa2.e31718",
+        "type": "debug",
+        "z": "24684854.3f88a8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1150,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "14bbe03f.f371d8",
+        "type": "debug",
+        "z": "24684854.3f88a8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 350,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "d6c62fca.fc392",
+        "type": "delay",
+        "z": "24684854.3f88a8",
+        "d": true,
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 250,
+        "y": 260,
+        "wires": [
+            [
+                "79532827.981228"
+            ]
+        ]
+    },
+    {
+        "id": "de9cb795.975788",
+        "type": "function",
+        "z": "ea943a79.b3e358",
+        "name": "Format email",
+        "func": "msg.topic=\"subject\";\nmsg.from=\"Nodered test station\";\n\n\nreturn msg;\n\n/*Sends the msg.payload as an email, with a subject of msg.topic.\n\nThe default message recipient can be configured in the node, if it is left blank it should be set using the msg.to property of the incoming message. If left blank you can also specify any or all of: msg.cc, msg.bcc, msg.replyTo, msg.inReplyTo, msg.references, msg.headers, or msg.priority properties.\n\nYou may optionally set msg.from in the payload which will override the userid default value.\nGmail users\n\nIf you are accessing Gmail you may need to either enable an application password, or enable less secure access via your Google account settings.\nDetails\n\nThe payload can be html format. You may supply a separate plaintext version using msg.plaintext. If you don't and msg.payload contains html, it will also be used for the plaintext. msg.plaintext will be ignored if msg.payload doesn't contain html.\n\nIf the payload is a binary buffer then it will be converted to an attachment. The filename should be set using msg.filename. Optionally msg.description can be added for the body text.\n\nAlternatively you may provide msg.attachments which should contain an array of one or more attachments in nodemailer format.\n\nIf required by your recipient you may also pass in a msg.envelope object, typically containing extra from and to properties.\n\nIf you have own signed certificates, Nodemailer can complain about that and refuse sending the message. In this case you can try switching off TLS.\n\nNote: uses SMTP with SSL to port 465*/",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 80,
+        "wires": [
+            [
+                "10fd91fc.f7400e",
+                "81a88767.faac5"
+            ]
+        ]
+    },
+    {
+        "id": "81a88767.faac5",
+        "type": "debug",
+        "z": "ea943a79.b3e358",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1190,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "141ec717.03c6f9",
+        "type": "debug",
+        "z": "ea943a79.b3e358",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 930,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "3a85b173.5ec2d6",
+        "type": "exec",
+        "z": "740b988e.6d58e",
+        "command": "ls /home/bitnami/log/old",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "Lists files in dir",
+        "x": 300,
+        "y": 1120,
+        "wires": [
+            [
+                "7d0b755c.afaf34"
+            ],
+            [],
+            []
+        ],
+        "info": "Ejecuta un ls en el shell, para listar los archivos históricos de logs, que rotan diariamente (linux logrotate) en la carpeta /log/old/\n\nLa salida es un string separado por saltos de linea con un archivo en cada línea"
+    },
+    {
+        "id": "7d0b755c.afaf34",
+        "type": "csv",
+        "z": "740b988e.6d58e",
+        "name": "Formats to table",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "File",
+        "skip": "0",
+        "strings": false,
+        "include_empty_strings": false,
+        "include_null_values": "",
+        "x": 520,
+        "y": 1120,
+        "wires": [
+            [
+                "cde0a4ab.62da5",
+                "68d0a43c.e02984"
+            ]
+        ],
+        "info": "A partir del listado de archivos en el directorio, los formatea en un objeto csv de una columna (File), y con tantas filas como entradas tiene el listado de entrada. "
+    },
+    {
+        "id": "c357b039.5c6ae",
+        "type": "function",
+        "z": "740b988e.6d58e",
+        "name": "Format selected filename",
+        "func": "msg.filename=\"log/old/\"+msg.payload.File;\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 780,
+        "wires": [
+            [
+                "6fef3d8e.102544",
+                "56437cde.2e2794"
+            ]
+        ],
+        "info": "Recibe el nombre de archivo en msg.payload.File, y lo concatena con la ruta (relativa a ~, directorio base de nodered).\n\nEnvía el resultado en msg.filename, como input para el nodo file, que descarga el archivo correspondiente."
+    },
+    {
+        "id": "a18d01f5.000dc",
+        "type": "inject",
+        "z": "740b988e.6d58e",
+        "name": "Run once",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.2",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 80,
+        "y": 960,
+        "wires": [
+            [
+                "3a85b173.5ec2d6",
+                "65bcfde3.c92364"
+            ]
+        ]
+    },
+    {
+        "id": "cde0a4ab.62da5",
+        "type": "function",
+        "z": "740b988e.6d58e",
+        "d": true,
+        "name": "",
+        "func": "/* var length=msg.payload.length;\nfor (i=0; i < length; i++)\n{msg.payload[length-i]=msg.payload[length-i-1]};\nmsg.payload[0]={File:\"../record.csv\"};*/ \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 1040,
+        "wires": [
+            [
+                "6b69c65a.414e78"
+            ]
+        ],
+        "info": "--Deprecated--\n\nEsta función agregaba el nombre \"record.csv\" al inicio de la lista de archivos.  "
+    },
+    {
+        "id": "4f13f7f8.d9021",
+        "type": "function",
+        "z": "740b988e.6d58e",
+        "name": "Format filename",
+        "func": "msg.filename=\"log/record.csv\";\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 720,
+        "wires": [
+            [
+                "6fef3d8e.102544",
+                "56437cde.2e2794"
+            ]
+        ],
+        "info": "Crea un string separado por comas como entrada para el csv"
+    },
+    {
+        "id": "eb4dd089.1f21b8",
+        "type": "ui_text",
+        "z": "740b988e.6d58e",
+        "group": "9db1e284.270f5",
+        "order": 1,
+        "width": "15",
+        "height": "1",
+        "name": "Shows logfile name",
+        "label": "<b>Mostrando archivo: ",
+        "format": "<font color = red >{{msg.filename}}",
+        "layout": "row-left",
+        "x": 1330,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "56437cde.2e2794",
+        "type": "function",
+        "z": "740b988e.6d58e",
+        "name": "Extracts fileneme (pathless)",
+        "func": "str=msg.filename;\n//msg.filename=str.substring(0, str.lastIndexOf(\"/\"));\n\n  x = str.lastIndexOf('/');\n  if (x >= 0) // Unix-based path\n    msg.filename=str.substr(x+1);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 900,
+        "wires": [
+            [
+                "eb4dd089.1f21b8"
+            ]
+        ],
+        "info": "Crea un string separado por comas como entrada para el csv"
+    },
+    {
+        "id": "68d0a43c.e02984",
+        "type": "function",
+        "z": "740b988e.6d58e",
+        "name": "Add Filter and reverse",
+        "func": "msg.ui_control = {};\nmsg.ui_control.tabulator = {\n    headerFilterPlaceholder:\"filtrar...\",\n    columns:[{headerFilter:true,field:\"File\"}]};\n\nmsg.payload.reverse();        \nreturn msg;\n/*v\nmsg.ui_control = {};\nmsg.ui_control.tabulator = {\n    headerFilterPlaceholder:\"filtrar...\",\n     columns:[{title:\"Timestamp\", field:\"Time\", headerFilter:true,  width:\"40%\",align:\"left\"},\n            {title:\"Temperature\", field:\"Temperature\", headerFilter:true, width:\"14%\",align:\"center\",topCalc:\"avg\",headerFilterPlaceholder:\"<=...\", headerFilterFunc:\"<=\",},\n            {title:\"Humidity\", field:\"Humidity\", headerFilter:true, width:\"14%\",align:\"center\"},\n            {title:\"Analog\", field:\"Analog\", headerFilter:true, width:\"14%\",align:\"center\"},\n            {title:\"Led2\", field:\"Led\", headerFilter:true, width:\"14%\",align:\"center\"}]} \n        \nreturn msg;*/",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 1120,
+        "wires": [
+            [
+                "6b69c65a.414e78"
+            ]
+        ]
+    },
+    {
+        "id": "3b2f0180.bc870e",
+        "type": "watch",
+        "z": "740b988e.6d58e",
+        "name": "Watch for new files",
+        "files": "/home/bitnami/log/old",
+        "recursive": "",
+        "x": 90,
+        "y": 1280,
+        "wires": [
+            [
+                "3a85b173.5ec2d6"
+            ]
+        ]
+    },
+    {
+        "id": "bfbb2cab.4c8a8",
+        "type": "watch",
+        "z": "740b988e.6d58e",
+        "d": true,
+        "name": "Update file",
+        "files": "log/record.csv",
+        "recursive": "",
+        "x": 60,
+        "y": 860,
+        "wires": [
+            [
+                "65bcfde3.c92364"
+            ]
+        ]
+    },
+    {
+        "id": "4eeed860.8e5e5",
+        "type": "function",
+        "z": "e924d20f.9ce478",
+        "g": "dd07bb49.117478",
+        "name": "Layout de tabla y filtros",
+        "func": "msg.ui_control = {};\nmsg.ui_control.tabulator = {\n    headerFilterPlaceholder:\"filtrar...\",\n     columns:[{title:\"Timestamp\", field:\"Time\", headerFilter:true,  width:\"40%\",align:\"left\"},\n            {title:\"Temperature\", field:\"Temperature\", headerFilter:true, width:\"14%\",align:\"center\",topCalc:\"avg\",headerFilterPlaceholder:\"<=...\", headerFilterFunc:\"<=\",},\n            {title:\"Humidity\", field:\"Humidity\", headerFilter:true, width:\"14%\",align:\"center\"},\n            {title:\"Analog\", field:\"Analog\", headerFilter:true, width:\"14%\",align:\"center\"},\n            {title:\"Led2\", field:\"Led\", headerFilter:true, width:\"14%\",align:\"center\"}]} \n        \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1150,
+        "y": 340,
+        "wires": [
+            [
+                "8a422262.6b0558",
+                "1358edc9.ef8042"
+            ]
+        ]
+    },
+    {
+        "id": "8b0e1df2.8058e8",
+        "type": "function",
+        "z": "e924d20f.9ce478",
+        "g": "dd07bb49.117478",
+        "name": "Reverse",
+        "func": "msg.payload.reverse();\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 340,
+        "wires": [
+            [
+                "4eeed860.8e5e5"
+            ]
+        ],
+        "info": "Invierte el orden de los objetos (para ver primero en la tabla el último log del gsheet)"
+    },
+    {
+        "id": "5cfbd44e.45dbbc",
+        "type": "csv",
+        "z": "e924d20f.9ce478",
+        "g": "dd07bb49.117478",
+        "name": "Csv string to csv array",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "Time, Temperature, Humidity, Analog, Led",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": false,
+        "include_null_values": "",
+        "x": 740,
+        "y": 340,
+        "wires": [
+            [
+                "8b0e1df2.8058e8"
+            ]
+        ]
+    },
+    {
+        "id": "911b3c76.045d9",
+        "type": "function",
+        "z": "e924d20f.9ce478",
+        "g": "1c64706a.59b6c8",
+        "name": "Download filtered table data",
+        "func": "msg.payload=\n    {\n        command:\"download\",\n        arguments:[\n            \"csv\",\n            \"data.csv\",\n           /* false*/\n            ], \n        /*\"returnPromise\": false*/\n\n    }\n\nreturn msg\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 540,
+        "wires": [
+            [
+                "8a422262.6b0558"
+            ]
+        ]
+    },
+    {
+        "id": "d2b0304d.19c73",
+        "type": "csv",
+        "z": "e924d20f.9ce478",
+        "g": "dd07bb49.117478",
+        "name": "Obj Array to csv string",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "Time, Temperature, Humidity, Analog, Led",
+        "skip": "0",
+        "strings": false,
+        "include_empty_strings": false,
+        "include_null_values": "",
+        "x": 500,
+        "y": 340,
+        "wires": [
+            [
+                "5cfbd44e.45dbbc"
+            ]
+        ]
+    },
+    {
+        "id": "5d6e3ef.60bd6c",
+        "type": "ui_button",
+        "z": "e924d20f.9ce478",
+        "g": "1c64706a.59b6c8",
+        "name": "Download trigger",
+        "group": "e3c6a09c.287238",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Download filtered data",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "a",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 690,
+        "y": 540,
+        "wires": [
+            [
+                "911b3c76.045d9"
+            ]
+        ]
+    },
+    {
+        "id": "b02391bd.5c47d",
+        "type": "ui_button",
+        "z": "e924d20f.9ce478",
+        "g": "dd07bb49.117478",
+        "name": "Get trigger",
+        "group": "e3c6a09c.287238",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "label": "Actualizar de gsheet",
+        "tooltip": "Descarga el registro de la BBDD de Ssheet",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-download",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 340,
+        "wires": [
+            [
+                "ed55918a.04b688"
+            ]
+        ]
+    },
+    {
+        "id": "b49da98f.fbfaf",
+        "type": "inject",
+        "z": "e924d20f.9ce478",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 440,
+        "wires": [
+            [
+                "ed55918a.04b688"
+            ]
+        ]
+    },
+    {
+        "id": "259c4c65.c0ce74",
+        "type": "ui_button",
+        "z": "22e2030e.b824d4",
+        "name": "",
+        "group": "f99e5c59.8cd42",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Load DATASET",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "test",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 160,
+        "y": 40,
+        "wires": [
+            [
+                "9d0bd4b0.d38c98",
+                "ed520ee0.aebaf8"
+            ]
+        ],
+        "info": "Botón que dispaar la carga del dataset"
+    },
+    {
+        "id": "3f126d80.f6c312",
+        "type": "ui_form",
+        "z": "22e2030e.b824d4",
+        "name": "",
+        "label": "",
+        "group": "f99e5c59.8cd42",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Temp, hum:",
+                "value": "label",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "label": ""
+        },
+        "payload": "",
+        "submit": "Predict",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": false,
+        "x": 130,
+        "y": 300,
+        "wires": [
+            [
+                "4883e854.019928"
+            ]
+        ]
+    },
+    {
+        "id": "4883e854.019928",
+        "type": "function",
+        "z": "22e2030e.b824d4",
+        "name": "",
+        "func": "msg.payload=msg.payload.label;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 300,
+        "wires": [
+            [
+                "892d87fc.4b658"
+            ]
+        ]
+    },
+    {
+        "id": "892d87fc.4b658",
+        "type": "csv",
+        "z": "22e2030e.b824d4",
+        "name": "",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "",
+        "skip": "0",
+        "strings": false,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 450,
+        "y": 300,
+        "wires": [
+            [
+                "ba4782d5.5219b8"
+            ]
+        ]
+    },
+    {
+        "id": "2e1fae52.20b19a",
+        "type": "function",
+        "z": "ea943a79.b3e358",
+        "name": "",
+        "func": "var string = JSON.stringify(msg.payload);\nvar objectValue = JSON.parse(string);\nvar temperature= objectValue['esp32/temperature'];\nvar humidity=objectValue['esp32/humidity'];\nif (temperature>30)\n    {msg.payload=\"on\";}\nelse if (humidity>95)   \n    {msg.payload=\"on\";}\nelse if (temperature*humidity>2500)\n{msg.payload=\"on\";}\nelse \n{msg.payload=\"off\";}\n\n//msg.payload= url;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 160,
+        "y": 340,
+        "wires": [
+            [
+                "49acb94c.e04f9",
+                "1d3030a4.0847af"
+            ]
+        ]
+    },
+    {
+        "id": "1d3030a4.0847af",
+        "type": "debug",
+        "z": "ea943a79.b3e358",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 470,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "fc88a0eb.693928",
+        "type": "ui_button",
+        "z": "22e2030e.b824d4",
+        "name": "",
+        "group": "f99e5c59.8cd42",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Evaluate DATASET",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 420,
+        "wires": [
+            [
+                "f98def15.6810c",
+                "27c51991.723dc6"
+            ]
+        ]
+    },
+    {
+        "id": "7f873d7f.0b756c",
+        "type": "ui_button",
+        "z": "22e2030e.b824d4",
+        "name": "",
+        "group": "f99e5c59.8cd42",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Classify DATASET",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "\"\"",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "7460b420.09567c"
+            ]
+        ],
+        "info": "BOtón de disparo para la carga del dataset en el arbol de decisiones"
+    },
+    {
+        "id": "12ae7649.f7aa12",
+        "type": "ui_text",
+        "z": "22e2030e.b824d4",
+        "group": "8a2fe6bf.57efc8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Classify result",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1300,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "ddaa4a8f.2d5b98",
+        "type": "ui_text",
+        "z": "22e2030e.b824d4",
+        "group": "8a2fe6bf.57efc8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Load result",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1110,
+        "y": 40,
+        "wires": [],
+        "info": "Muestra en pantalla el resultado de la función que genera el dataset"
+    },
+    {
+        "id": "f9090332.155098",
+        "type": "ui_text",
+        "z": "22e2030e.b824d4",
+        "group": "8a2fe6bf.57efc8",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Evaluation result",
+        "format": "{{msg.payload|number:4}}",
+        "layout": "row-spread",
+        "x": 1310,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "64cca0e9.74067",
+        "type": "ui_text",
+        "z": "22e2030e.b824d4",
+        "group": "8a2fe6bf.57efc8",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Prediction result",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1300,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "e9f784b6.bb9088",
+        "type": "ui_button",
+        "z": "22e2030e.b824d4",
+        "name": "",
+        "group": "8a2fe6bf.57efc8",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Clear",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "\"\"",
+        "payloadType": "json",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 850,
+        "y": 220,
+        "wires": [
+            [
+                "ddaa4a8f.2d5b98",
+                "12ae7649.f7aa12",
+                "64cca0e9.74067",
+                "f9090332.155098"
+            ]
+        ]
+    },
+    {
+        "id": "5eabfdc6.be7e14",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "e9a3077.08c0378",
+        "name": "",
+        "group": "bce7c592.91fef8",
+        "order": 3,
+        "width": 6,
+        "height": 6,
+        "passthru": false,
+        "label": "Machine Learning",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-rocket fa-4x",
+        "payload": "Machine Learning",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 690,
+        "y": 660,
+        "wires": [
+            [
+                "efcee0a1.35f83"
+            ]
+        ]
+    },
+    {
+        "id": "f15d50d6.84c2d",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "3a8c6532.d84b42",
+        "name": "Principal en M learning",
+        "group": "9517598a.95fb98",
+        "order": 3,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Home",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "home",
+        "payload": "0",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 360,
+        "wires": [
+            [
+                "a1aa12d6.e76ff8"
+            ]
+        ]
+    },
+    {
+        "id": "f947f450.ea2ec8",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "fd8a84dc.33c088",
+        "name": "Next en M learning",
+        "group": "9517598a.95fb98",
+        "order": 5,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Next",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-arrow-right",
+        "payload": "+1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 760,
+        "wires": [
+            [
+                "587f60cc.ab0a18"
+            ]
+        ]
+    },
+    {
+        "id": "734b9d37.2af744",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "cfd71c3b.62ad5",
+        "name": "Previous en M learning",
+        "group": "9517598a.95fb98",
+        "order": 1,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Previous",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-arrow-left",
+        "payload": "+1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 250,
+        "y": 1080,
+        "wires": [
+            [
+                "9580e924.c5c528"
+            ]
+        ]
+    },
+    {
+        "id": "fe635ddf.8af3e8",
+        "type": "ui_text",
+        "z": "22e2030e.b824d4",
+        "group": "da20068b.68827",
+        "order": 1,
+        "width": "27",
+        "height": "3",
+        "name": "Explanation",
+        "label": "",
+        "format": "<b>Load Dataset</b> dfdf",
+        "layout": "row-left",
+        "x": 1110,
+        "y": 520,
+        "wires": [],
+        "info": "**Load Dataset**, Lee el csv de datos, y divide su contenido en sets de entrenamiento y prueba. Classify dataset genera el modelo de predicción basado en el set de entrenamiento. Evaluate DS compara las salidas del set de testeo con el resultado del modelo para los inputs del set de testeo, indicando el grado de exactitud lograda. En el cuadro de texto se ingresa un par tempreatura, humedad, y al enviarlo se predice el estado de la salida predicha en función de las variables de entrada. El botón Clear borra el contenido mostrado."
+    },
+    {
+        "id": "ed520ee0.aebaf8",
+        "type": "mqtt out",
+        "z": "22e2030e.b824d4",
+        "name": "",
+        "topic": "update",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cd6b5625.5238f8",
+        "x": 220,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "ed55918a.04b688",
+        "type": "GSheet",
+        "z": "e924d20f.9ce478",
+        "g": "dd07bb49.117478",
+        "creds": "9c643f4a.77ad3",
+        "method": "get",
+        "action": "",
+        "sheet": "1t87zKsf-IVLHc_1948lBuJFM0jjjdprb6qn3pAlpqkc",
+        "cells": "Sheet1!A1:E25000",
+        "flatten": false,
+        "name": "Get gsheet",
+        "x": 290,
+        "y": 340,
+        "wires": [
+            [
+                "d2b0304d.19c73"
+            ]
+        ],
+        "info": "AL recibir mensaje del botón, levanta el rango A1:E5000 (ignora vacíos) de la gsheet de log DB ESP32. La publica como nested array "
+    },
+    {
+        "id": "79532827.981228",
+        "type": "ewelink-power-state-read",
+        "z": "24684854.3f88a8",
+        "name": "",
+        "deviceId": "10007cb0e9",
+        "channel": "1",
+        "auth": "722857b3.91f78",
+        "x": 480,
+        "y": 120,
+        "wires": [
+            [
+                "cc8bc127.e0c0a8",
+                "20741af9.d5f8b6"
+            ]
+        ],
+        "info": "Al recibir un mensaje en la entrada, lee el estado del sensor segúnn id. Se usa para dar feedback al interruptor sobre el estado real del dispositivo.\nmsg.payload es un objeto con 3 elementos: \nstatus: (ok, ...)\nstate: (\"on\", \"off\")\nchannel: ... //se usa con dispositivos de más de una acción\n\n"
+    },
+    {
+        "id": "d91cedfa.ddef38",
+        "type": "ewelink-power-state-write",
+        "z": "24684854.3f88a8",
+        "name": "",
+        "deviceId": "10007cb0e9",
+        "channel": 1,
+        "auth": "722857b3.91f78",
+        "x": 920,
+        "y": 380,
+        "wires": [
+            [
+                "d41ecfa2.e31718"
+            ]
+        ],
+        "info": "Escribe un comando en el dispositivo seleccionado, para cambiar su estado (en esat caso, el comando on u off del switch previo.\n\n -- Probar si se puede pasar device como parámetro Moustache {{}} para elegir a qu[e dispositivo enviarle el comando en funci[on de un elemento del mensaje --"
+    },
+    {
+        "id": "4f7329b0.a23568",
+        "type": "ewelink-event-listener",
+        "z": "24684854.3f88a8",
+        "name": "",
+        "deviceId": "10007cb0e9",
+        "auth": "722857b3.91f78",
+        "x": 120,
+        "y": 120,
+        "wires": [
+            [
+                "14bbe03f.f371d8",
+                "d6c62fca.fc392",
+                "79532827.981228"
+            ]
+        ],
+        "info": "Este nodo escucha eventos en las devices seleccionadas, y los informa en msg.payload, en formato de objeto. En este caso, el elemento deviceid identifica el dispositivo, y  params.switch indica el estado del mismo.\nEn este caso, usamos el nodo para detectar que hubo un evento, y el nodo PowerStateRead se encarga de leer el estado del sensor, pero podría filtrarse la salida con una función y derivar el mensaje a la salida correspondiente directamente, sin pasar por el Power State Read."
+    },
+    {
+        "id": "9015ecb6.aac73",
+        "type": "ui_led",
+        "z": "ea943a79.b3e358",
+        "order": 4,
+        "group": "5233a975.68bcd",
+        "width": "0",
+        "height": "0",
+        "label": "Status",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#808080",
+                "value": "off",
+                "valueType": "str"
+            },
+            {
+                "color": "#008000",
+                "value": "on",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": false,
+        "name": "Led verde",
+        "x": 450,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "64d8ffc2.e0f2a",
+        "type": "ui_led",
+        "z": "ea943a79.b3e358",
+        "g": "e808bf9.aaaecc",
+        "order": 7,
+        "group": "5233a975.68bcd",
+        "width": "1",
+        "height": "1",
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#fffffb",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffffd2",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff9b",
+                "value": "2",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff62",
+                "value": "3",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff24",
+                "value": "4",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "5",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": true,
+        "shape": "circle",
+        "showGlow": false,
+        "name": "led amarillo",
+        "x": 610,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "15dc2864.4d4cf8",
+        "type": "ui_clock",
+        "z": "d749cdc9.d28c6",
+        "d": true,
+        "name": "",
+        "group": "9c98081c.cecc6",
+        "order": 1,
+        "width": 6,
+        "height": 5,
+        "x": 470,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "fa191708.fb4ec",
+        "type": "ui_table",
+        "z": "740b988e.6d58e",
+        "group": "9db1e284.270f5",
+        "name": "Presents logfile",
+        "order": 2,
+        "width": 15,
+        "height": "13",
+        "columns": [
+            {
+                "field": "Time",
+                "title": "Timestamp",
+                "width": "54%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Temperature",
+                "title": "Temperature",
+                "width": "14%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Humidity",
+                "title": "Humidity",
+                "width": "14%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Led",
+                "title": "Led",
+                "width": "14%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 1340,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "6b69c65a.414e78",
+        "type": "ui_table",
+        "z": "740b988e.6d58e",
+        "group": "e5619d8f.db854",
+        "name": "Shows file list",
+        "order": 2,
+        "width": "3",
+        "height": "8",
+        "columns": [
+            {
+                "field": "File",
+                "title": "Histórico",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 1,
+        "cts": true,
+        "x": 1060,
+        "y": 1120,
+        "wires": [
+            [
+                "3a85b173.5ec2d6",
+                "c357b039.5c6ae"
+            ]
+        ],
+        "info": "Muestra el listado de archivos en una tabla de una sola columna, la propiedad \"File\",  con el título \"Histórico\".\n\nCUando es seleccionada una fila mediante click, envía el texto de la misma (nombre de archivo) en un objeto de msg.payload llamado File."
+    },
+    {
+        "id": "8a422262.6b0558",
+        "type": "ui_table",
+        "z": "e924d20f.9ce478",
+        "g": "dd07bb49.117478",
+        "group": "e3c6a09c.287238",
+        "name": "",
+        "order": 2,
+        "width": 16,
+        "height": "12",
+        "columns": [],
+        "outputs": 1,
+        "cts": true,
+        "x": 1350,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1358edc9.ef8042",
+        "type": "ui_table",
+        "z": "e924d20f.9ce478",
+        "d": true,
+        "group": "e3c6a09c.287238",
+        "name": "Table bck",
+        "order": 3,
+        "width": 16,
+        "height": 10,
+        "columns": [
+            {
+                "field": "Time",
+                "title": "Timestamp",
+                "width": "40%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Temperature",
+                "title": "Temperature",
+                "width": "14%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Humidity",
+                "title": "Humidity",
+                "width": "14%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Analog",
+                "title": "Analog",
+                "width": "14%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Led",
+                "title": "Led",
+                "width": "14%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 1360,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "9d0bd4b0.d38c98",
+        "type": "create dataset",
+        "z": "22e2030e.b824d4",
+        "name": "generate dataset",
+        "path": "log/gsheet.csv",
+        "saveFolder": "ai",
+        "saveName": "test",
+        "input": "1,2,3",
+        "output": "4",
+        "trainingPartition": "80",
+        "shuffle": true,
+        "seed": "3",
+        "x": 450,
+        "y": 40,
+        "wires": [
+            [
+                "fedc6d1a.6d49a8"
+            ]
+        ],
+        "info": "\n\nGenera el dataset a partir del archivo csv seleccionado en path.\nGuarda los resultados en la carpeta ~/ai, subcrpeta test, y divide automáticamente en un set de testing y uno de training. En training partition se coloca el porcentaje de la data que se destinan a entrenamiento. Hay una opción de barajar los datos, pero no entiendo para qué sería (supongo que si los datos están ordenados se puede hallar una relación con el indexado, pero no está muy documentadio nada).\nEn el campo input se seleccionan cuáles son las columnas de entrada del csv (separadas por coma), y en output cuál es la salida. "
+    },
+    {
+        "id": "7460b420.09567c",
+        "type": "load dataset",
+        "z": "22e2030e.b824d4",
+        "name": "",
+        "datasetFolder": "ai/test/",
+        "datasetName": "",
+        "partition": "train.csv",
+        "input": true,
+        "output": true,
+        "x": 330,
+        "y": 160,
+        "wires": [
+            [
+                "6257273c.502b1",
+                "20e8b8af.441fd"
+            ],
+            []
+        ],
+        "info": "Carga el dataset, en este caso el de entrenamiento, en sus variables de entrada y salida, para alimentarlo al algoritmo a entrenar."
+    },
+    {
+        "id": "f98def15.6810c",
+        "type": "load dataset",
+        "z": "22e2030e.b824d4",
+        "name": "",
+        "datasetFolder": "ai/test",
+        "datasetName": "",
+        "partition": "test.csv",
+        "input": false,
+        "output": true,
+        "x": 370,
+        "y": 440,
+        "wires": [
+            [
+                "76a6c129.9b00e"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "27c51991.723dc6",
+        "type": "load dataset",
+        "z": "22e2030e.b824d4",
+        "name": "",
+        "datasetFolder": "ai/test",
+        "datasetName": "",
+        "partition": "test.csv",
+        "input": true,
+        "output": false,
+        "x": 250,
+        "y": 660,
+        "wires": [
+            [
+                "9dbc742.8b6ef88"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ba4782d5.5219b8",
+        "type": "predictor",
+        "z": "22e2030e.b824d4",
+        "name": "decision tree classifier predictor",
+        "modelPath": "ai/dt",
+        "modelName": "model",
+        "x": 770,
+        "y": 300,
+        "wires": [
+            [
+                "6fd0cf4f.1daa3",
+                "217c5f77.92d998"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "26e8c19b.f12546",
+        "type": "predictor",
+        "z": "22e2030e.b824d4",
+        "name": "decision tree classifier predictor",
+        "modelPath": "ai/dt",
+        "modelName": "model",
+        "x": 650,
+        "y": 640,
+        "wires": [
+            [
+                "e12aeae4.0dfe88"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "121b537b.6a540d",
+        "type": "assessment",
+        "z": "22e2030e.b824d4",
+        "name": "",
+        "score": "accuracy_score",
+        "x": 830,
+        "y": 420,
+        "wires": [
+            [
+                "4f2e38e6.10b448"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b0f2ccbc.152868",
+        "type": "decision tree classifier",
+        "z": "22e2030e.b824d4",
+        "name": "decision tree classifier trainer",
+        "savePath": "ai/dt",
+        "saveName": "model",
+        "maxDepth": "",
+        "criterion": "gini",
+        "splitter": "best",
+        "x": 710,
+        "y": 160,
+        "wires": [
+            [
+                "11682266.402fc6"
+            ],
+            []
+        ],
+        "info": "Genera el arbol de decisiones en base a los datos de entrenamiento. \nGenera el modelo de los datos en la carpeta y con el nombre de usuario de destino.\n\nLos otros parámetros ni idea. \nHay algo acá:\nhttps://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html"
+    },
+    {
+        "id": "6257273c.502b1",
+        "type": "k neighbors classifier",
+        "z": "22e2030e.b824d4",
+        "d": true,
+        "name": "",
+        "savePath": "ai/dt",
+        "saveName": "model",
+        "neighbors": "",
+        "weights": "uniform",
+        "x": 640,
+        "y": 100,
+        "wires": [
+            [
+                "12ae7649.f7aa12"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "10fd91fc.f7400e",
+        "type": "e-mail",
+        "z": "ea943a79.b3e358",
+        "d": true,
+        "server": "smtp.gmail.com",
+        "port": "465",
+        "secure": true,
+        "tls": true,
+        "name": "equiposmdelaiglesia@gmail.com",
+        "dname": "",
+        "x": 1260,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "76a6c129.9b00e",
+        "type": "function",
+        "z": "22e2030e.b824d4",
+        "name": "Filtro de saltos de linea",
+        "func": "if (msg.payload.length > 1)\n{return msg}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 420,
+        "wires": [
+            [
+                "121b537b.6a540d"
+            ]
+        ]
+    },
+    {
+        "id": "9dbc742.8b6ef88",
+        "type": "function",
+        "z": "22e2030e.b824d4",
+        "name": "Filtro de saltos de linea",
+        "func": "if (msg.payload.length > 1)\n{return msg}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 560,
+        "wires": [
+            [
+                "26e8c19b.f12546"
+            ]
+        ]
+    },
+    {
+        "id": "e12aeae4.0dfe88",
+        "type": "function",
+        "z": "22e2030e.b824d4",
+        "name": "Filtro de saltos de linea",
+        "func": "if (msg.payload.length > 1)\n{return msg}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 520,
+        "wires": [
+            [
+                "121b537b.6a540d"
+            ]
+        ]
+    },
+    {
+        "id": "4f2e38e6.10b448",
+        "type": "function",
+        "z": "22e2030e.b824d4",
+        "name": "Filtro de saltos de linea",
+        "func": "if (msg.payload.type !=\"string\")\n{return msg}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 400,
+        "wires": [
+            [
+                "f9090332.155098"
+            ]
+        ]
+    },
+    {
+        "id": "11682266.402fc6",
+        "type": "function",
+        "z": "22e2030e.b824d4",
+        "name": "Filtro de saltos de linea",
+        "func": "if (msg.payload.length > 1)\n{return msg}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 160,
+        "wires": [
+            [
+                "12ae7649.f7aa12"
+            ]
+        ]
+    },
+    {
+        "id": "20e8b8af.441fd",
+        "type": "function",
+        "z": "22e2030e.b824d4",
+        "name": "Filtro de saltos de linea",
+        "func": "if (msg.payload.length > 1)\n{return msg}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 220,
+        "wires": [
+            [
+                "b0f2ccbc.152868"
+            ]
+        ]
+    },
+    {
+        "id": "fedc6d1a.6d49a8",
+        "type": "function",
+        "z": "22e2030e.b824d4",
+        "name": "Filtro de saltos de linea",
+        "func": "if (msg.payload.length > 1)\n{return msg}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 40,
+        "wires": [
+            [
+                "ddaa4a8f.2d5b98"
+            ]
+        ]
+    },
+    {
+        "id": "b62ac602.707678",
+        "type": "mqtt in",
+        "z": "22e2030e.b824d4",
+        "name": "",
+        "topic": "update",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "cd6b5625.5238f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 130,
+        "y": 740,
+        "wires": [
+            [
+                "9629da92.563ca"
+            ]
+        ]
+    },
+    {
+        "id": "9629da92.563ca",
+        "type": "GSheet",
+        "z": "22e2030e.b824d4",
+        "creds": "9c643f4a.77ad3",
+        "method": "get",
+        "action": "",
+        "sheet": "1t87zKsf-IVLHc_1948lBuJFM0jjjdprb6qn3pAlpqkc",
+        "cells": "Sheet1!A10000:E12000",
+        "flatten": false,
+        "name": "Get gsheet",
+        "x": 270,
+        "y": 740,
+        "wires": [
+            [
+                "f219ab94.2f8e3"
+            ]
+        ],
+        "info": "AL recibir mensaje del botón, levanta el rango A1:E5000 (ignora vacíos) de la gsheet de log DB ESP32. La publica como nested array "
+    },
+    {
+        "id": "f219ab94.2f8e3",
+        "type": "csv",
+        "z": "22e2030e.b824d4",
+        "name": "Obj Array to csv string",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "Time, Temperature, Humidity, Analog, Led",
+        "skip": "0",
+        "strings": false,
+        "include_empty_strings": false,
+        "include_null_values": "",
+        "x": 500,
+        "y": 740,
+        "wires": [
+            [
+                "cf2ceaca.4002b"
+            ]
+        ]
+    },
+    {
+        "id": "cf2ceaca.4002b",
+        "type": "file",
+        "z": "22e2030e.b824d4",
+        "name": "write gsheet.csv",
+        "filename": "log/gsheet.csv",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 760,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6fd0cf4f.1daa3",
+        "type": "function",
+        "z": "22e2030e.b824d4",
+        "name": "Filtro de saltos de linea",
+        "func": "if (msg.payload == \"on\" || msg.payload==\"off\")\n    {return msg}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 300,
+        "wires": [
+            [
+                "64cca0e9.74067",
+                "e9d4307a.e3fa58"
+            ]
+        ]
+    },
+    {
+        "id": "217c5f77.92d998",
+        "type": "debug",
+        "z": "22e2030e.b824d4",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "e9d4307a.e3fa58",
+        "type": "debug",
+        "z": "22e2030e.b824d4",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1190,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "f3460932.e62d78",
+        "type": "exec",
+        "z": "740b988e.6d58e",
+        "command": "ls -la ~",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "Lists files in dir",
+        "x": 464,
+        "y": 1224,
+        "wires": [
+            [
+                "769d58a0.3763d"
+            ],
+            [],
+            []
+        ],
+        "info": "Ejecuta un ls en el shell, para listar los archivos históricos de logs, que rotan diariamente (linux logrotate) en la carpeta /log/old/\n\nLa salida es un string separado por saltos de linea con un archivo en cada línea"
+    },
+    {
+        "id": "769d58a0.3763d",
+        "type": "debug",
+        "z": "740b988e.6d58e",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 710,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "b6e1f755.cb231",
+        "type": "inject",
+        "z": "740b988e.6d58e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "7",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 320,
+        "y": 1360,
+        "wires": [
+            [
+                "f3460932.e62d78"
+            ]
+        ]
+    },
+    {
+        "id": "6d3bec88.249c74",
+        "type": "debug",
+        "z": "740b988e.6d58e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1230,
+        "y": 440,
+        "wires": []
+    }
+]

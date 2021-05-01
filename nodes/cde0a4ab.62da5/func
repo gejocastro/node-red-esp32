@@ -1,0 +1,5 @@
+/* var length=msg.payload.length;
+for (i=0; i < length; i++)
+{msg.payload[length-i]=msg.payload[length-i-1]};
+msg.payload[0]={File:"../record.csv"};*/ 
+return msg;

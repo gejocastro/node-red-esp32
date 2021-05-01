@@ -1,0 +1,8 @@
+<div ng-bind.html>
+<table>
+    <tr>
+<th><div ng-bind-html="Status"></div></th>
+<th><div ng-bind-html="msg.payload"></div></th>
+</tr>
+</table>
+</div>

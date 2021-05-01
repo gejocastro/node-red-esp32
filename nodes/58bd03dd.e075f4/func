@@ -1,0 +1,14 @@
+//var GAS_ID="AKfycbwmJ2vtlly8Ssb28i2aoQuN1WGoQN3iCimZVIedZ-1SH9RA5jD5w9x3xmfk38H0gYl3";
+//var GAS_ID="AKfycbwlDAJ8p5mE8yxE_8IDN3Ku97DQ-Jl9i2wMBBD4ZPizbchZzCvDjIh5Gm3cMFneSq8w";
+var GAS_ID="AKfycbx3_RU5X5gF8T-fxFtbvqU4KqlHiy1nrrS3vSI_yKdWZG2pPWYThsRsx--SNLTEa55Q";
+var string = JSON.stringify(msg.payload);
+var objectValue = JSON.parse(string);
+var temperature= objectValue['esp32/temperature'];
+var humidity=objectValue['esp32/humidity'];
+var moisture=objectValue['esp32/analog'];
+var event=objectValue['esp32/output'];
+host = "script.google.com";
+msg.payload = host+"/macros/s/" + GAS_ID + "/exec?temperature=" + temperature + "&humidity=" + humidity + "&moisture=" + moisture + "&event=" + event; 
+//msg.payload= url;
+return msg;
+

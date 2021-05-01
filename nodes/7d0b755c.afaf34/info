@@ -1,0 +1,1 @@
+A partir del listado de archivos en el directorio, los formatea en un objeto csv de una columna (File), y con tantas filas como entradas tiene el listado de entrada. 

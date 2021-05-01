@@ -1,0 +1,8 @@
+var array=global.get('visited');
+repeated=array[0]==msg.tab;
+if (!repeated) {
+    array[1]=array[0];
+    array[0]=msg.tab;}
+global.set('visited',array );
+msg.payload=array;
+return msg;

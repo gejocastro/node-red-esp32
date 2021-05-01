@@ -1,0 +1,3 @@
+Crea la URL que se enviará a http request. Para ello, levanta los valores de las corrrespondientes claves dentro del objeto, y los coloca en variables que luego concatenará para construir la URL.
+
+El GAS_ID es el código de aplicación de google script apps

@@ -1,0 +1,10 @@
+msg.ui_control = {};
+msg.ui_control.tabulator = {
+    headerFilterPlaceholder:"filtrar...",
+     columns:[{title:"Timestamp", field:"Time", headerFilter:true,  width:"40%",align:"left"},
+            {title:"Temperature", field:"Temperature", headerFilter:true, width:"14%",align:"center",topCalc:"avg",headerFilterPlaceholder:"<=...", headerFilterFunc:"<=",},
+            {title:"Humidity", field:"Humidity", headerFilter:true, width:"14%",align:"center"},
+            {title:"Analog", field:"Analog", headerFilter:true, width:"14%",align:"center"},
+            {title:"Led2", field:"Led", headerFilter:true, width:"14%",align:"center"}]} 
+        
+return msg;

@@ -1,0 +1,5 @@
+Botón para cargar el log actual. 
+
+Se presiona al iniciar el flow (inject once) para cargar siempre el log actual al inicio.
+
+Envía un true para disparar las funciones que cargan el archivo y muestran el nombre de archivo en pantalla

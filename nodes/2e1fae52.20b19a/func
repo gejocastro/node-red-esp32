@@ -1,0 +1,15 @@
+var string = JSON.stringify(msg.payload);
+var objectValue = JSON.parse(string);
+var temperature= objectValue['esp32/temperature'];
+var humidity=objectValue['esp32/humidity'];
+if (temperature>30)
+    {msg.payload="on";}
+else if (humidity>95)   
+    {msg.payload="on";}
+else if (temperature*humidity>2500)
+{msg.payload="on";}
+else 
+{msg.payload="off";}
+
+//msg.payload= url;
+return msg;

@@ -1,0 +1,2 @@
+Recibe los datos de las variables publicados por el esp mediante MQTT, y los formatea para ser enviados a google script que escribe en google sheet. 
+Levanta los datos de google sheets y los publica en tabla en el dashboard

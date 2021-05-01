@@ -1,0 +1,3 @@
+//msg.payload = {Time: new Date(), Temperature:msg.payload, Humidity: msg.payload, Led:msg.payload}
+msg.payload = {Time: new Date(), Temperature:msg.payload, Humidity: msg.payload, Led:msg.payload}
+return msg;

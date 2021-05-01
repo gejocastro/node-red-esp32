@@ -1,0 +1,1 @@
+Slider que establece el valor analogico a pasar al esp32 por esp32/led_control. EL valor es escalado en el esp multiplicando por 2.55 (poría escalarse acá y pasar ya el valor 8 bits)

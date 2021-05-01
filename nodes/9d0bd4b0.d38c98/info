@@ -1,0 +1,5 @@
+
+
+Genera el dataset a partir del archivo csv seleccionado en path.
+Guarda los resultados en la carpeta ~/ai, subcrpeta test, y divide automáticamente en un set de testing y uno de training. En training partition se coloca el porcentaje de la data que se destinan a entrenamiento. Hay una opción de barajar los datos, pero no entiendo para qué sería (supongo que si los datos están ordenados se puede hallar una relación con el indexado, pero no está muy documentadio nada).
+En el campo input se seleccionan cuáles son las columnas de entrada del csv (separadas por coma), y en output cuál es la salida. 

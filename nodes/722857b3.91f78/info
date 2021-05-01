@@ -1,0 +1,4 @@
+Conexión a la API de ewelink para accionar y monitorear los dispositivos de la cuenta. 
+La cuenta principal de los dispositivos es otra, y comparte los mismos con ésta. De esa forma se evita el problema de que ewelink no permite 2 sesiones activas. 
+
+La conexión es inestable. A veces se desloguea sin razón. Además, la respuesta es lenta, demora casi un segundo en enviar la orden de cambio de estado, y el mismo tiempo en recibir feedback

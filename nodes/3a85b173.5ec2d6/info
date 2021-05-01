@@ -1,0 +1,3 @@
+Ejecuta un ls en el shell, para listar los archivos históricos de logs, que rotan diariamente (linux logrotate) en la carpeta /log/old/
+
+La salida es un string separado por saltos de linea con un archivo en cada línea

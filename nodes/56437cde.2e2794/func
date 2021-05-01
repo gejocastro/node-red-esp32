@@ -1,0 +1,8 @@
+str=msg.filename;
+//msg.filename=str.substring(0, str.lastIndexOf("/"));
+
+  x = str.lastIndexOf('/');
+  if (x >= 0) // Unix-based path
+    msg.filename=str.substr(x+1);
+return msg;
+

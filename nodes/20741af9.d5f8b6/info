@@ -1,0 +1,2 @@
+Filta el objeto recibido de Power State Read, extrayento el elemento
+.state, que es un string con el texto on u off. Ese mismo texto se usa como feeedaback para marcar el estado del switch de comando

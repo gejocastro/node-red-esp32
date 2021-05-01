@@ -1,0 +1,2 @@
+Este nodo escucha eventos en las devices seleccionadas, y los informa en msg.payload, en formato de objeto. En este caso, el elemento deviceid identifica el dispositivo, y  params.switch indica el estado del mismo.
+En este caso, usamos el nodo para detectar que hubo un evento, y el nodo PowerStateRead se encarga de leer el estado del sensor, pero podría filtrarse la salida con una función y derivar el mensaje a la salida correspondiente directamente, sin pasar por el Power State Read.

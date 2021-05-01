@@ -1,0 +1,3 @@
+Muestra el listado de archivos en una tabla de una sola columna, la propiedad "File",  con el título "Histórico".
+
+CUando es seleccionada una fila mediante click, envía el texto de la misma (nombre de archivo) en un objeto de msg.payload llamado File.

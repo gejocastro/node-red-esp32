@@ -1,0 +1,10 @@
+switch (msg.payload ) {
+case 1: msg.payload=msg.payload+" Ready to start"; break;
+case 2: msg.payload=msg.payload+" Starting";break ;
+case 3: msg.payload=msg.payload+" Service";break ;
+case 4: msg.payload=msg.payload+" Normal stop";break ;
+case 5: msg.payload=msg.payload+" Emergency stop";break ;
+case 6: msg.payload=msg.payload+" Not ready";break ;
+default: msg.payload="General Failure";break;
+}
+return msg;

@@ -1,0 +1,2 @@
+msg.payload=0
+return msg;

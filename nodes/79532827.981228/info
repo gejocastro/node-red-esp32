@@ -1,0 +1,6 @@
+Al recibir un mensaje en la entrada, lee el estado del sensor segúnn id. Se usa para dar feedback al interruptor sobre el estado real del dispositivo.
+msg.payload es un objeto con 3 elementos: 
+status: (ok, ...)
+state: ("on", "off")
+channel: ... //se usa con dispositivos de más de una acción
+
