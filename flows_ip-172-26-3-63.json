@@ -85,7 +85,9 @@
             "f15d50d6.84c2d"
         ],
         "x": -6,
-        "y": 99
+        "y": 99,
+        "w": 352,
+        "h": 302
     },
     {
         "id": "cfd71c3b.62ad5",
@@ -103,7 +105,9 @@
             "734b9d37.2af744"
         ],
         "x": 14,
-        "y": 799
+        "y": 799,
+        "w": 372,
+        "h": 322
     },
     {
         "id": "e9a3077.08c0378",
@@ -139,7 +143,9 @@
             "5eabfdc6.be7e14"
         ],
         "x": 454,
-        "y": 279
+        "y": 279,
+        "w": 952,
+        "h": 682
     },
     {
         "id": "7e88e231.3018cc",
@@ -216,7 +222,9 @@
             "f947f450.ea2ec8"
         ],
         "x": -6,
-        "y": 479
+        "y": 479,
+        "w": 392,
+        "h": 322
     },
     {
         "id": "e808bf9.aaaecc",
@@ -4241,8 +4249,7 @@
         "y": 340,
         "wires": [
             [
-                "5cfbd44e.45dbbc",
-                "9ccabd70.219aa"
+                "5cfbd44e.45dbbc"
             ]
         ]
     },
@@ -4272,22 +4279,6 @@
             [
                 "911b3c76.045d9"
             ]
-        ]
-    },
-    {
-        "id": "9ccabd70.219aa",
-        "type": "file",
-        "z": "e924d20f.9ce478",
-        "name": "write gsheet.csv",
-        "filename": "log/gsheet.csv",
-        "appendNewline": false,
-        "createDir": false,
-        "overwriteFile": "true",
-        "encoding": "none",
-        "x": 1040,
-        "y": 720,
-        "wires": [
-            []
         ]
     },
     {
@@ -4510,7 +4501,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 170,
+        "x": 130,
         "y": 420,
         "wires": [
             [
@@ -4538,7 +4529,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 170,
+        "x": 110,
         "y": 160,
         "wires": [
             [
@@ -4559,7 +4550,7 @@
         "label": "Classify result",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "x": 1120,
+        "x": 1300,
         "y": 160,
         "wires": []
     },
@@ -4592,8 +4583,8 @@
         "label": "Evaluation result",
         "format": "{{msg.payload|number:4}}",
         "layout": "row-spread",
-        "x": 1130,
-        "y": 420,
+        "x": 1310,
+        "y": 400,
         "wires": []
     },
     {
@@ -4608,7 +4599,7 @@
         "label": "Prediction result",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "x": 1120,
+        "x": 1300,
         "y": 300,
         "wires": []
     },
@@ -4788,26 +4779,6 @@
         "x": 220,
         "y": 80,
         "wires": []
-    },
-    {
-        "id": "e1f2c821.e8c328",
-        "type": "mqtt in",
-        "z": "e924d20f.9ce478",
-        "name": "",
-        "topic": "update",
-        "qos": "2",
-        "datatype": "auto",
-        "broker": "cd6b5625.5238f8",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "x": 160,
-        "y": 580,
-        "wires": [
-            [
-                "b02391bd.5c47d"
-            ]
-        ]
     },
     {
         "id": "ed55918a.04b688",
@@ -5174,7 +5145,7 @@
         "y": 40,
         "wires": [
             [
-                "ddaa4a8f.2d5b98"
+                "fedc6d1a.6d49a8"
             ]
         ],
         "info": "\n\nGenera el dataset a partir del archivo csv seleccionado en path.\nGuarda los resultados en la carpeta ~/ai, subcrpeta test, y divide automáticamente en un set de testing y uno de training. En training partition se coloca el porcentaje de la data que se destinan a entrenamiento. Hay una opción de barajar los datos, pero no entiendo para qué sería (supongo que si los datos están ordenados se puede hallar una relación con el indexado, pero no está muy documentadio nada).\nEn el campo input se seleccionan cuáles son las columnas de entrada del csv (separadas por coma), y en output cuál es la salida. "
@@ -5189,12 +5160,12 @@
         "partition": "train.csv",
         "input": true,
         "output": true,
-        "x": 370,
+        "x": 330,
         "y": 160,
         "wires": [
             [
-                "b0f2ccbc.152868",
-                "6257273c.502b1"
+                "6257273c.502b1",
+                "20e8b8af.441fd"
             ],
             []
         ],
@@ -5214,7 +5185,7 @@
         "y": 440,
         "wires": [
             [
-                "121b537b.6a540d"
+                "76a6c129.9b00e"
             ],
             []
         ]
@@ -5229,11 +5200,11 @@
         "partition": "test.csv",
         "input": true,
         "output": false,
-        "x": 390,
-        "y": 520,
+        "x": 250,
+        "y": 660,
         "wires": [
             [
-                "26e8c19b.f12546"
+                "9dbc742.8b6ef88"
             ],
             []
         ]
@@ -5249,7 +5220,8 @@
         "y": 300,
         "wires": [
             [
-                "64cca0e9.74067"
+                "6fd0cf4f.1daa3",
+                "217c5f77.92d998"
             ],
             []
         ]
@@ -5262,10 +5234,10 @@
         "modelPath": "ai/dt",
         "modelName": "model",
         "x": 650,
-        "y": 520,
+        "y": 640,
         "wires": [
             [
-                "121b537b.6a540d"
+                "e12aeae4.0dfe88"
             ],
             []
         ]
@@ -5276,11 +5248,11 @@
         "z": "22e2030e.b824d4",
         "name": "",
         "score": "accuracy_score",
-        "x": 890,
+        "x": 830,
         "y": 420,
         "wires": [
             [
-                "f9090332.155098"
+                "4f2e38e6.10b448"
             ],
             []
         ]
@@ -5295,11 +5267,11 @@
         "maxDepth": "",
         "criterion": "gini",
         "splitter": "best",
-        "x": 630,
+        "x": 710,
         "y": 160,
         "wires": [
             [
-                "12ae7649.f7aa12"
+                "11682266.402fc6"
             ],
             []
         ],
@@ -5371,6 +5343,272 @@
         "statusType": "auto",
         "x": 890,
         "y": 540,
+        "wires": []
+    },
+    {
+        "id": "76a6c129.9b00e",
+        "type": "function",
+        "z": "22e2030e.b824d4",
+        "name": "Filtro de saltos de linea",
+        "func": "if (msg.payload.length > 1)\n{return msg}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 420,
+        "wires": [
+            [
+                "121b537b.6a540d"
+            ]
+        ]
+    },
+    {
+        "id": "9dbc742.8b6ef88",
+        "type": "function",
+        "z": "22e2030e.b824d4",
+        "name": "Filtro de saltos de linea",
+        "func": "if (msg.payload.length > 1)\n{return msg}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 560,
+        "wires": [
+            [
+                "26e8c19b.f12546"
+            ]
+        ]
+    },
+    {
+        "id": "e12aeae4.0dfe88",
+        "type": "function",
+        "z": "22e2030e.b824d4",
+        "name": "Filtro de saltos de linea",
+        "func": "if (msg.payload.length > 1)\n{return msg}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 520,
+        "wires": [
+            [
+                "121b537b.6a540d"
+            ]
+        ]
+    },
+    {
+        "id": "4f2e38e6.10b448",
+        "type": "function",
+        "z": "22e2030e.b824d4",
+        "name": "Filtro de saltos de linea",
+        "func": "if (msg.payload.type !=\"string\")\n{return msg}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 400,
+        "wires": [
+            [
+                "f9090332.155098"
+            ]
+        ]
+    },
+    {
+        "id": "11682266.402fc6",
+        "type": "function",
+        "z": "22e2030e.b824d4",
+        "name": "Filtro de saltos de linea",
+        "func": "if (msg.payload.length > 1)\n{return msg}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 160,
+        "wires": [
+            [
+                "12ae7649.f7aa12"
+            ]
+        ]
+    },
+    {
+        "id": "20e8b8af.441fd",
+        "type": "function",
+        "z": "22e2030e.b824d4",
+        "name": "Filtro de saltos de linea",
+        "func": "if (msg.payload.length > 1)\n{return msg}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 220,
+        "wires": [
+            [
+                "b0f2ccbc.152868"
+            ]
+        ]
+    },
+    {
+        "id": "fedc6d1a.6d49a8",
+        "type": "function",
+        "z": "22e2030e.b824d4",
+        "name": "Filtro de saltos de linea",
+        "func": "if (msg.payload.length > 1)\n{return msg}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 40,
+        "wires": [
+            [
+                "ddaa4a8f.2d5b98"
+            ]
+        ]
+    },
+    {
+        "id": "b62ac602.707678",
+        "type": "mqtt in",
+        "z": "22e2030e.b824d4",
+        "name": "",
+        "topic": "update",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "cd6b5625.5238f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 130,
+        "y": 740,
+        "wires": [
+            [
+                "9629da92.563ca"
+            ]
+        ]
+    },
+    {
+        "id": "9629da92.563ca",
+        "type": "GSheet",
+        "z": "22e2030e.b824d4",
+        "creds": "9c643f4a.77ad3",
+        "method": "get",
+        "action": "",
+        "sheet": "1t87zKsf-IVLHc_1948lBuJFM0jjjdprb6qn3pAlpqkc",
+        "cells": "Sheet1!A10000:E12000",
+        "flatten": false,
+        "name": "Get gsheet",
+        "x": 270,
+        "y": 740,
+        "wires": [
+            [
+                "f219ab94.2f8e3"
+            ]
+        ],
+        "info": "AL recibir mensaje del botón, levanta el rango A1:E5000 (ignora vacíos) de la gsheet de log DB ESP32. La publica como nested array "
+    },
+    {
+        "id": "f219ab94.2f8e3",
+        "type": "csv",
+        "z": "22e2030e.b824d4",
+        "name": "Obj Array to csv string",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "Time, Temperature, Humidity, Analog, Led",
+        "skip": "0",
+        "strings": false,
+        "include_empty_strings": false,
+        "include_null_values": "",
+        "x": 500,
+        "y": 740,
+        "wires": [
+            [
+                "cf2ceaca.4002b"
+            ]
+        ]
+    },
+    {
+        "id": "cf2ceaca.4002b",
+        "type": "file",
+        "z": "22e2030e.b824d4",
+        "name": "write gsheet.csv",
+        "filename": "log/gsheet.csv",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 760,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6fd0cf4f.1daa3",
+        "type": "function",
+        "z": "22e2030e.b824d4",
+        "name": "Filtro de saltos de linea",
+        "func": "if (msg.payload == \"on\" || msg.payload==\"off\")\n    {return msg}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1070,
+        "y": 300,
+        "wires": [
+            [
+                "64cca0e9.74067",
+                "e9d4307a.e3fa58"
+            ]
+        ]
+    },
+    {
+        "id": "217c5f77.92d998",
+        "type": "debug",
+        "z": "22e2030e.b824d4",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "e9d4307a.e3fa58",
+        "type": "debug",
+        "z": "22e2030e.b824d4",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1190,
+        "y": 600,
         "wires": []
     }
 ]
