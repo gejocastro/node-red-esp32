@@ -158,9 +158,7 @@
             "b39ad2b6.826198"
         ],
         "x": 94,
-        "y": 379,
-        "w": 1052,
-        "h": 262
+        "y": 379
     },
     {
         "id": "c67599e8.f83b88",
@@ -175,9 +173,7 @@
             "3332e8ea.edd9e8"
         ],
         "x": 74,
-        "y": 919,
-        "w": 512,
-        "h": 82
+        "y": 919
     },
     {
         "id": "a495c9ab.3fd74",
@@ -196,9 +192,7 @@
             "182b238.026b35d"
         ],
         "x": 74,
-        "y": 39,
-        "w": 772,
-        "h": 222
+        "y": 39
     },
     {
         "id": "fd8a84dc.33c088",
@@ -234,9 +228,7 @@
             "64d8ffc2.e0f2a"
         ],
         "x": 64,
-        "y": 1019,
-        "w": 642,
-        "h": 182
+        "y": 1019
     },
     {
         "id": "dd07bb49.117478",
@@ -256,9 +248,7 @@
             "b02391bd.5c47d"
         ],
         "x": 14,
-        "y": 299,
-        "w": 1412,
-        "h": 82
+        "y": 299
     },
     {
         "id": "1c64706a.59b6c8",
@@ -273,9 +263,7 @@
             "5d6e3ef.60bd6c"
         ],
         "x": 574,
-        "y": 499,
-        "w": 592,
-        "h": 82
+        "y": 499
     },
     {
         "id": "cd6b5625.5238f8",
@@ -323,10 +311,10 @@
                 "reset": false
             },
             "customTheme": {
-                "name": "Untitled Theme 1",
+                "name": "Tema azules",
                 "default": "#4B7930",
-                "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "baseColor": "#0080c0",
+                "baseFont": "Copperplate,Copperplate Gothic Light,fantasy",
                 "reset": false
             },
             "themeState": {
@@ -337,7 +325,7 @@
                 },
                 "page-titlebar-backgroundColor": {
                     "value": "#097479",
-                    "edited": false
+                    "edited": true
                 },
                 "page-backgroundColor": {
                     "value": "#111111",
@@ -2121,7 +2109,8 @@
         "y": 60,
         "wires": [
             [
-                "969feee0.81e0d8"
+                "969feee0.81e0d8",
+                "a052221b.054ae8"
             ]
         ]
     },
@@ -5463,7 +5452,7 @@
         "method": "get",
         "action": "",
         "sheet": "1t87zKsf-IVLHc_1948lBuJFM0jjjdprb6qn3pAlpqkc",
-        "cells": "Sheet1!A10000:E12000",
+        "cells": "Sheet1!A1:E1500",
         "flatten": false,
         "name": "Get gsheet",
         "x": 270,
@@ -5651,6 +5640,23 @@
         "statusType": "auto",
         "x": 1230,
         "y": 440,
+        "wires": []
+    },
+    {
+        "id": "a052221b.054ae8",
+        "type": "debug",
+        "z": "e924d20f.9ce478",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 470,
+        "y": 40,
         "wires": []
     }
 ]
