@@ -6215,6 +6215,18 @@
         "type": "inject",
         "z": "c774982a.dc6c1",
         "name": "Close breaker",
+        "props": [
+            {
+                "p": "payload",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "p": "topic",
+                "v": "",
+                "vt": "string"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": false,
