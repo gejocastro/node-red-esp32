@@ -6511,5 +6511,25 @@
         "x": 910,
         "y": 140,
         "wires": []
+    },
+    {
+        "id": "b7f063ac.c4ce1",
+        "type": "mqtt in",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "topic": "esp32/temperature",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "cd6b5625.5238f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 390,
+        "y": 400,
+        "wires": [
+            [
+                "edf08104.4351e"
+            ]
+        ]
     }
 ]
