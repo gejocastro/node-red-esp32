@@ -6274,7 +6274,7 @@
         "type": "function",
         "z": "c774982a.dc6c1",
         "name": "",
-        "func": "msg.color=\"#6e6e6e\";\nswitch (global.count){\ncase 0:\n    msg.rotate=\"45deg\";\n    break;\ncase 1:\n    msg.rotate=\"90deg\"\n    break;\ncase 2:\n    msg.rotate=\"135deg\"\n    break;\ncase 3:\n    msg.rotate=\"0deg\";\n    break;\n    \n}\n    \n  global.count=1  \n\n\n\nreturn msg;",
+        "func": "msg.color=\"#6e6e6e\";\nswitch (global.count){\ncase 0:\n    msg.rotate=\"45deg\";\n    break;\ncase 1:\n    msg.rotate=\"90deg\"\n    break;\ncase 2:\n    msg.rotate=\"135deg\"\n    break;\ncase 3:\n    msg.rotate=\"0deg\";\n    break;\n    \n}\n    \n  global.count=global.count+1  ;\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
