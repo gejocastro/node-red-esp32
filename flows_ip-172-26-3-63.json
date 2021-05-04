@@ -6470,8 +6470,8 @@
         "topic": "",
         "payload": "count",
         "payloadType": "global",
-        "x": 650,
-        "y": 100,
+        "x": 560,
+        "y": 120,
         "wires": [
             [
                 "786dc990.91bd58"
@@ -6487,11 +6487,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 810,
+        "x": 790,
         "y": 20,
         "wires": []
     },
