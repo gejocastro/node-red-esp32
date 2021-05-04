@@ -6351,10 +6351,10 @@
         "rules": [
             {
                 "t": "set",
-                "p": "output",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
+                "p": "payload",
+                "pt": "msg",
+                "to": "output",
+                "tot": "global"
             }
         ],
         "action": "",
@@ -6362,7 +6362,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 970,
+        "x": 960,
         "y": 160,
         "wires": [
             [
@@ -6378,10 +6378,10 @@
         "rules": [
             {
                 "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "output",
-                "tot": "global"
+                "p": "output",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
             }
         ],
         "action": "",
@@ -6389,7 +6389,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 100,
+        "x": 110,
         "y": 60,
         "wires": [
             [
