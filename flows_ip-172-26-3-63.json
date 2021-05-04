@@ -6435,7 +6435,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 290,
+        "x": 270,
         "y": 80,
         "wires": [
             [
@@ -6445,5 +6445,22 @@
                 "376ffcc9.cab5e4"
             ]
         ]
+    },
+    {
+        "id": "f016f1e2.0739",
+        "type": "debug",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 920,
+        "y": 100,
+        "wires": []
     }
 ]
