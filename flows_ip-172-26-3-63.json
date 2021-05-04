@@ -6286,7 +6286,8 @@
             [
                 "31ade0c9.b1fb9",
                 "5249259c.8f706c",
-                "1b54bbfd.409b64"
+                "1b54bbfd.409b64",
+                "8e2a9fc7.d6a17"
             ]
         ]
     },
@@ -6492,6 +6493,23 @@
         "statusType": "auto",
         "x": 810,
         "y": 20,
+        "wires": []
+    },
+    {
+        "id": "8e2a9fc7.d6a17",
+        "type": "debug",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "rotate",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 910,
+        "y": 140,
         "wires": []
     }
 ]
