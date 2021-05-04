@@ -6289,7 +6289,7 @@
         "y": 240,
         "wires": [
             [
-                "31ade0c9.b1fb9"
+                "376ffcc9.cab5e4"
             ]
         ]
     },
@@ -6335,6 +6335,25 @@
         "libs": [],
         "x": 470,
         "y": 180,
+        "wires": [
+            [
+                "31ade0c9.b1fb9"
+            ]
+        ]
+    },
+    {
+        "id": "376ffcc9.cab5e4",
+        "type": "function",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "func": "msg.color=\"#6e6e6e\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 260,
         "wires": [
             [
                 "31ade0c9.b1fb9"
