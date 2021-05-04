@@ -6387,9 +6387,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "output",
-        "payloadType": "global",
-        "x": 120,
+        "payload": "on",
+        "payloadType": "str",
+        "x": 90,
         "y": 180,
         "wires": [
             [
