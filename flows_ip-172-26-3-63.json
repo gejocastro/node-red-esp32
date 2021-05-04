@@ -7,6 +7,13 @@
         "info": ""
     },
     {
+        "id": "c774982a.dc6c1",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "740b988e.6d58e",
         "type": "tab",
         "label": "Archivos y logs",
@@ -66,13 +73,6 @@
         "id": "22e2030e.b824d4",
         "type": "tab",
         "label": "Machine Learning",
-        "disabled": false,
-        "info": ""
-    },
-    {
-        "id": "c774982a.dc6c1",
-        "type": "tab",
-        "label": "Flow 1",
         "disabled": false,
         "info": ""
     },
@@ -6383,7 +6383,9 @@
         "x": 970,
         "y": 160,
         "wires": [
-            []
+            [
+                "92887493.14e218"
+            ]
         ]
     },
     {
@@ -6498,6 +6500,23 @@
         "statusType": "auto",
         "x": 330,
         "y": 20,
+        "wires": []
+    },
+    {
+        "id": "92887493.14e218",
+        "type": "debug",
+        "z": "ea943a79.b3e358",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1210,
+        "y": 260,
         "wires": []
     }
 ]
