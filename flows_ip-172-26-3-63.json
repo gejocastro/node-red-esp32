@@ -6353,8 +6353,8 @@
                 "t": "set",
                 "p": "output",
                 "pt": "global",
-                "to": "on",
-                "tot": "str"
+                "to": "payload",
+                "tot": "msg"
             }
         ],
         "action": "",
