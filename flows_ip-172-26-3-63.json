@@ -6263,7 +6263,8 @@
         "wires": [
             [
                 "31ade0c9.b1fb9",
-                "5249259c.8f706c"
+                "5249259c.8f706c",
+                "1b54bbfd.409b64"
             ]
         ]
     },
@@ -6283,7 +6284,8 @@
         "wires": [
             [
                 "31ade0c9.b1fb9",
-                "5249259c.8f706c"
+                "5249259c.8f706c",
+                "1b54bbfd.409b64"
             ]
         ]
     },
@@ -6409,6 +6411,23 @@
         "statusType": "auto",
         "x": 390,
         "y": 60,
+        "wires": []
+    },
+    {
+        "id": "1b54bbfd.409b64",
+        "type": "debug",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "color",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 180,
         "wires": []
     }
 ]
