@@ -6279,13 +6279,14 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 700,
-        "y": 320,
+        "x": 660,
+        "y": 300,
         "wires": [
             [
                 "31ade0c9.b1fb9",
                 "5249259c.8f706c",
-                "1b54bbfd.409b64"
+                "1b54bbfd.409b64",
+                "edc32c19.5676e8"
             ]
         ]
     },
@@ -6428,6 +6429,23 @@
         "statusType": "auto",
         "x": 1080,
         "y": 180,
+        "wires": []
+    },
+    {
+        "id": "edc32c19.5676e8",
+        "type": "debug",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 930,
+        "y": 80,
         "wires": []
     }
 ]
