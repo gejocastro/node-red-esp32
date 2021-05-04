@@ -6252,7 +6252,7 @@
         "type": "function",
         "z": "c774982a.dc6c1",
         "name": "",
-        "func": "if (global.count>2) {\n    global.count=0;\n    }\nmsg.color=\"#00DD00\";\nswitch (global.count){\ncase 0:\n    msg.rotate=\"45deg\";\n    break;\ncase 1:\n    msg.rotate=\"90deg\"\n    break;\ncase 2:\n    msg.rotate=\"135deg\"\n    break;\ncase 3:\n    msg.rotate=\"180deg\";\n    break;\n}\n    \nglobal.count=global.count+1 ;\nreturn msg;",
+        "func": "if (global.count>2) {\n    global.count=0;\n    }\nmsg.color=\"#00DD00\";\nswitch (global.count){\ncase 0:\n    msg.rotate=\"45deg\";\n    break;\ncase 1:\n    msg.rotate=\"90deg\"\n    break;\ncase 2:\n    msg.rotate=\"135deg\"\n    break;\ncase 3:\n    msg.rotate=\"180deg\";\n    break;\n};\n    \nglobal.count=global.count+1 ;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is started.\nglobal.count=0;\n",
