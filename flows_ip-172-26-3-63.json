@@ -6323,8 +6323,8 @@
         "type": "switch",
         "z": "c774982a.dc6c1",
         "name": "",
-        "property": "payload",
-        "propertyType": "msg",
+        "property": "output",
+        "propertyType": "global",
         "rules": [
             {
                 "t": "eq",
@@ -6387,7 +6387,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "on",
+        "payload": "NaN",
         "payloadType": "str",
         "x": 90,
         "y": 180,
