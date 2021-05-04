@@ -3338,7 +3338,8 @@
             [
                 "3a1acf2b.d6171",
                 "de9cb795.975788",
-                "141ec717.03c6f9"
+                "141ec717.03c6f9",
+                "308348d2.804b9"
             ]
         ]
     },
@@ -6258,7 +6259,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 270,
+        "x": 210,
         "y": 180,
         "wires": [
             [
@@ -6285,7 +6286,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 320,
+        "x": 190,
         "y": 240,
         "wires": [
             [
@@ -6333,7 +6334,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 470,
+        "x": 460,
         "y": 180,
         "wires": [
             [
@@ -6352,11 +6353,96 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 480,
+        "x": 440,
         "y": 260,
         "wires": [
             [
                 "31ade0c9.b1fb9"
+            ]
+        ]
+    },
+    {
+        "id": "308348d2.804b9",
+        "type": "change",
+        "z": "ea943a79.b3e358",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "output",
+                "pt": "global",
+                "to": "on",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 970,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "978d3050.9414d8",
+        "type": "change",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "output",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 100,
+        "y": 60,
+        "wires": [
+            [
+                "5069ccd6.59f684"
+            ]
+        ]
+    },
+    {
+        "id": "5069ccd6.59f684",
+        "type": "switch",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 290,
+        "y": 80,
+        "wires": [
+            [
+                "176b1d8f.8a4202"
+            ],
+            [
+                "376ffcc9.cab5e4"
             ]
         ]
     }
