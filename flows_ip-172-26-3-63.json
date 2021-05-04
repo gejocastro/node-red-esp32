@@ -6520,9 +6520,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "3",
-        "payloadType": "msg",
-        "x": 150,
+        "payload": "output",
+        "payloadType": "global",
+        "x": 180,
         "y": 200,
         "wires": [
             [
