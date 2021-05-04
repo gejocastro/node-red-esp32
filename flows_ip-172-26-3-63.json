@@ -6500,5 +6500,34 @@
         "x": 1210,
         "y": 260,
         "wires": []
+    },
+    {
+        "id": "3daebb35.b4af34",
+        "type": "inject",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "output",
+        "payloadType": "global",
+        "x": 90,
+        "y": 140,
+        "wires": [
+            [
+                "5069ccd6.59f684"
+            ]
+        ]
     }
 ]
