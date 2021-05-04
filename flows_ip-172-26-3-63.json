@@ -3338,7 +3338,6 @@
             [
                 "3a1acf2b.d6171",
                 "de9cb795.975788",
-                "141ec717.03c6f9",
                 "308348d2.804b9"
             ]
         ]
@@ -3997,23 +3996,6 @@
         "statusType": "auto",
         "x": 1190,
         "y": 160,
-        "wires": []
-    },
-    {
-        "id": "141ec717.03c6f9",
-        "type": "debug",
-        "z": "ea943a79.b3e358",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 930,
-        "y": 300,
         "wires": []
     },
     {
