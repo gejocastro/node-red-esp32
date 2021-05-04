@@ -6264,7 +6264,8 @@
             [
                 "31ade0c9.b1fb9",
                 "5249259c.8f706c",
-                "1b54bbfd.409b64"
+                "1b54bbfd.409b64",
+                "edc32c19.5676e8"
             ]
         ]
     },
@@ -6273,7 +6274,7 @@
         "type": "function",
         "z": "c774982a.dc6c1",
         "name": "",
-        "func": "msg.color=\"#6e6e6e\";\nreturn msg;",
+        "func": "msg.color=\"#6e6e6e\";\nswitch (global.count){\ncase 0:\n    msg.rotate=\"45deg\";\n    break;\ncase 1:\n    msg.rotate=\"90deg\"\n    break;\ncase 2:\n    msg.rotate=\"135deg\"\n    break;\ncase 3:\n    msg.rotate=\"0deg\";\n    break;\n    \n}\n    \n  global.count=1  \n\n\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -6285,8 +6286,7 @@
             [
                 "31ade0c9.b1fb9",
                 "5249259c.8f706c",
-                "1b54bbfd.409b64",
-                "edc32c19.5676e8"
+                "1b54bbfd.409b64"
             ]
         ]
     },
