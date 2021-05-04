@@ -5988,7 +5988,7 @@
         "order": 2,
         "width": "6",
         "height": "4",
-        "format": "<style>\n   .container\n   {\n   overflow-y: hidden;\n   overflow-x: hidden;\n   }\n   .heading\n   {\n   height:100px;\n   text-align:center;\n   }\n   .center\n   {\n   text-align:center;\n   padding-bottom: 10px;\n   }\n\n</style>\n<div class=\"container\">\n    <div class=\"heading\">\n    Bowthrusters\n    </div>\n    <div class=\"center\">\n    AFT No.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FWD No.1\n    </div>   \n    <div class=\"center\">\n    <i class=\"material-icons\" style=\"font-size: 60px\">toys</i>\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n    <i class=\"material-icons\" style=\"font-size: 60px\">toys</i>\n    </div>   \n</div>\n</body>\n</html>",
+        "format": "<style>\n   .container\n   {\n   overflow-y: hidden;\n   overflow-x: hidden;\n   }\n   .heading\n   {\n   height:100px;\n   text-align:center;\n   }\n   .center\n   {\n   text-align:center;\n   padding-bottom: 10px;\n   }\n\n</style>\n<div class=\"container\">\n    <div class=\"heading\">\n    Bowthrusters\n    </div>\n    <div class=\"center\">\n    AFT No.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FWD No.1\n    </div>   \n    <div class=\"center\">\n    <i class=\"material-icons\" style=\"stroke:{{msg.color}};font-size: 60px\">toys</i>\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n    <i class=\"material-icons\" style=\"font-size: 60px\">toys</i>\n    </div>   \n</div>\n</body>\n</html>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "resendOnRefresh": false,
@@ -6262,7 +6262,8 @@
         "y": 240,
         "wires": [
             [
-                "31ade0c9.b1fb9"
+                "31ade0c9.b1fb9",
+                "5249259c.8f706c"
             ]
         ]
     },
@@ -6281,7 +6282,8 @@
         "y": 320,
         "wires": [
             [
-                "31ade0c9.b1fb9"
+                "31ade0c9.b1fb9",
+                "5249259c.8f706c"
             ]
         ]
     },
