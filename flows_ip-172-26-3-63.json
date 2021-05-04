@@ -6440,7 +6440,7 @@
         "tosidebar": true,
         "console": false,
         "tostatus": true,
-        "complete": "payload",
+        "complete": "rotate",
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
