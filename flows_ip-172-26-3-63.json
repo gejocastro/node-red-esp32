@@ -6526,8 +6526,26 @@
         "y": 200,
         "wires": [
             [
-                "978d3050.9414d8"
+                "978d3050.9414d8",
+                "2d41f8d.605bd88"
             ]
         ]
+    },
+    {
+        "id": "2d41f8d.605bd88",
+        "type": "debug",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 390,
+        "y": 60,
+        "wires": []
     }
 ]
