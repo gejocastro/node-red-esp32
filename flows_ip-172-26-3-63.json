@@ -6463,14 +6463,14 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "1",
         "crontab": "",
-        "once": false,
+        "once": true,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "count",
         "payloadType": "global",
-        "x": 640,
+        "x": 650,
         "y": 100,
         "wires": [
             [
