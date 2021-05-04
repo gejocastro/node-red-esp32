@@ -6378,10 +6378,10 @@
         "rules": [
             {
                 "t": "set",
-                "p": "output",
-                "pt": "global",
-                "to": "payload",
-                "tot": "msg"
+                "p": "payload",
+                "pt": "msg",
+                "to": "output",
+                "tot": "global"
             }
         ],
         "action": "",
@@ -6389,7 +6389,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 110,
+        "x": 100,
         "y": 60,
         "wires": [
             [
