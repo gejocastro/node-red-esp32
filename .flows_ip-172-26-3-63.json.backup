@@ -289,7 +289,7 @@
         "willPayload": "",
         "willMsg": {},
         "sessionExpiry": "",
-        "info": "El servidor Mosquito está configurado con usuario user y password password. "
+        "info": "El servidor Mosquito está configurado con user y password."
     },
     {
         "id": "356fecc8.cc0a9c",
@@ -5234,7 +5234,9 @@
             [
                 "4f2e38e6.10b448"
             ],
-            []
+            [
+                "217c5f77.92d998"
+            ]
         ]
     },
     {
@@ -5452,7 +5454,7 @@
         "method": "get",
         "action": "",
         "sheet": "1t87zKsf-IVLHc_1948lBuJFM0jjjdprb6qn3pAlpqkc",
-        "cells": "Sheet1!A1:E1500",
+        "cells": "Sheet1!A1:E2000",
         "flatten": false,
         "name": "Get gsheet",
         "x": 270,
@@ -5600,6 +5602,7 @@
         "id": "b6e1f755.cb231",
         "type": "inject",
         "z": "740b988e.6d58e",
+        "d": true,
         "name": "",
         "props": [
             {

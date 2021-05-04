@@ -70,6 +70,13 @@
         "info": ""
     },
     {
+        "id": "c774982a.dc6c1",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "3a8c6532.d84b42",
         "type": "group",
         "z": "d749cdc9.d28c6",
@@ -158,7 +165,9 @@
             "b39ad2b6.826198"
         ],
         "x": 94,
-        "y": 379
+        "y": 379,
+        "w": 1052,
+        "h": 262
     },
     {
         "id": "c67599e8.f83b88",
@@ -173,7 +182,9 @@
             "3332e8ea.edd9e8"
         ],
         "x": 74,
-        "y": 919
+        "y": 919,
+        "w": 512,
+        "h": 82
     },
     {
         "id": "a495c9ab.3fd74",
@@ -192,7 +203,9 @@
             "182b238.026b35d"
         ],
         "x": 74,
-        "y": 39
+        "y": 39,
+        "w": 772,
+        "h": 222
     },
     {
         "id": "fd8a84dc.33c088",
@@ -228,7 +241,9 @@
             "64d8ffc2.e0f2a"
         ],
         "x": 64,
-        "y": 1019
+        "y": 1019,
+        "w": 642,
+        "h": 182
     },
     {
         "id": "dd07bb49.117478",
@@ -859,6 +874,105 @@
         "id": "722857b3.91f78",
         "type": "ewelink-credentials",
         "info": "Conexión a la API de ewelink para accionar y monitorear los dispositivos de la cuenta. \nLa cuenta principal de los dispositivos es otra, y comparte los mismos con ésta. De esa forma se evita el problema de que ewelink no permite 2 sesiones activas. \n\nLa conexión es inestable. A veces se desloguea sin razón. Además, la respuesta es lenta, demora casi un segundo en enviar la orden de cambio de estado, y el mismo tiempo en recibir feedback"
+    },
+    {
+        "id": "90836bed.157498",
+        "type": "ui_group",
+        "name": "SG4",
+        "tab": "d0e5d7d6.5b1ae8",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "1d865536.eb801b",
+        "type": "ui_group",
+        "name": "SG3",
+        "tab": "d0e5d7d6.5b1ae8",
+        "order": 2,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b5d39406.6debf8",
+        "type": "ui_group",
+        "name": "DG2",
+        "tab": "d0e5d7d6.5b1ae8",
+        "order": 7,
+        "disp": false,
+        "width": "9",
+        "collapse": false
+    },
+    {
+        "id": "e9ed4336.19b7f",
+        "type": "ui_group",
+        "name": "MSB",
+        "tab": "d0e5d7d6.5b1ae8",
+        "order": 8,
+        "disp": false,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "ea4f996c.f87158",
+        "type": "ui_group",
+        "name": "DG1",
+        "tab": "d0e5d7d6.5b1ae8",
+        "order": 9,
+        "disp": false,
+        "width": "9",
+        "collapse": false
+    },
+    {
+        "id": "c9a2551b.5b9168",
+        "type": "ui_group",
+        "name": "lines",
+        "tab": "d0e5d7d6.5b1ae8",
+        "order": 6,
+        "disp": false,
+        "width": "30",
+        "collapse": false
+    },
+    {
+        "id": "65f6f27e.a1f1ec",
+        "type": "ui_group",
+        "name": "Bow thruster",
+        "tab": "d0e5d7d6.5b1ae8",
+        "order": 3,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "fa92953a.7a1b58",
+        "type": "ui_group",
+        "name": "SG1",
+        "tab": "d0e5d7d6.5b1ae8",
+        "order": 5,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b238e66b.53c658",
+        "type": "ui_group",
+        "name": "SG2",
+        "tab": "d0e5d7d6.5b1ae8",
+        "order": 4,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "d0e5d7d6.5b1ae8",
+        "type": "ui_tab",
+        "name": "nauticAi Elec",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
     },
     {
         "id": "131bbded.d8d8da",
@@ -5665,5 +5779,475 @@
         "x": 470,
         "y": 40,
         "wires": []
+    },
+    {
+        "id": "edf08104.4351e",
+        "type": "ui_gauge",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "group": "90836bed.157498",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "gtype": "gage",
+        "title": "SG 4 (640kW)",
+        "label": "kW",
+        "format": "{{payload[\"27\"]}}",
+        "min": 0,
+        "max": "640",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "450",
+        "seg2": "550",
+        "x": 400,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "96e69974.590068",
+        "type": "ui_gauge",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "group": "1d865536.eb801b",
+        "order": 2,
+        "width": "6",
+        "height": "4",
+        "gtype": "gage",
+        "title": "SG 3 (1400kW)",
+        "label": "kW",
+        "format": "{{payload[\"26\"]}}",
+        "min": 0,
+        "max": "1400",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "700",
+        "seg2": "1100",
+        "x": 580,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "1ffdd31e.5a990d",
+        "type": "ui_gauge",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "group": "b5d39406.6debf8",
+        "order": 2,
+        "width": "6",
+        "height": "4",
+        "gtype": "gage",
+        "title": "DG 2 (875kW)",
+        "label": "kW",
+        "format": "{{payload[\"23\"]}}",
+        "min": 0,
+        "max": "875",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "550",
+        "seg2": "700",
+        "x": 400,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "67219259.c8fcdc",
+        "type": "ui_gauge",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "group": "e9ed4336.19b7f",
+        "order": 2,
+        "width": "6",
+        "height": "4",
+        "gtype": "gage",
+        "title": "MSB Produced Power",
+        "label": "kW",
+        "format": "{{payload[\"28\"]}}",
+        "min": 0,
+        "max": "1750",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "600",
+        "seg2": "1200",
+        "x": 680,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "3aedbc92.8f2d34",
+        "type": "ui_gauge",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "group": "e9ed4336.19b7f",
+        "order": 5,
+        "width": "6",
+        "height": "4",
+        "gtype": "gage",
+        "title": "DG FO. Flowmeter",
+        "label": "kg/h",
+        "format": "{{payload[\"3\"]}}",
+        "min": 0,
+        "max": "300",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "120",
+        "seg2": "160",
+        "x": 690,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "ae5f7de7.789c",
+        "type": "ui_template",
+        "z": "c774982a.dc6c1",
+        "group": "b5d39406.6debf8",
+        "name": "Port side",
+        "order": 3,
+        "width": "9",
+        "height": "5",
+        "format": "<style>\n   table {\n   color: #d1d1d1;\n   width: 100%;\n   border-collapse: collapse;\n   border-spacing: 0;\n   font-size: 11px;\n   }\n   td, th {\n   border: 1px solid transparent;\n   /* No more visible border */\n   height: 30px;\n   transition: all 0.3s;\n   /* Simple transition for hover effect */\n   text-align: left;\n   }\n   th {\n   background: #6e6e6e;\n   font-weight: bold;\n   }\n   td {\n   background: #6e6e6e;\n   padding-left: 5px;\n   }\n   /* Cells in even rows (2,4,6...) are one color */\n   tr:nth-child(even) td {\n   background: #4b4b4b;\n   height: 23px;\n   }\n   /* Cells in odd rows (1,3,5...) are another (excludes header cells)  */\n   tr:nth-child(odd) td {\n   background: #3f3f3f;\n   height: 23px;\n   }\n   tr td:hover {\n   background: #8c8c8c;\n   color: #d1d1d1;\n   }\n   .container\n   {\n   /*overflow-y: scroll;*/\n   overflow-x: hidden;\n   }\n   .nr-dashboard-theme .nr-dashboard-template ::-webkit-scrollbar-track {\n   background-color: #1a1a1a;\n   }\n   .value\n   {\n   width: 100px;\n   color: #e6e6e6;\n   font-size: 13px;\n   font-weight:600;\n   text-align: center;\n   }\n   .port\n   {\n   text-align: right;\n   }\n   .unit\n   {\n   text-align: center;\n   }\n</style>\n<div>\n   <div class=\"container\">\n      <table>\n         <tbody>\n            <tr>\n               <td class=\"port\">CHG. Air Temp</td>\n               <td class=\"unit\">°C</td>\n               <td class=\"value\"><span ng-bind=\"msg.payload[108]\"></span></td>\n            </tr>\n            <tr>\n               <td class=\"port\">EXHAUST Temp</td>\n               <td class=\"unit\">°C</td>\n               <td class=\"value\"><span ng-bind=\"msg.payload[107]\"></span></td>\n            </tr>\n            <tr>\n               <td class=\"port\">LO Press</td>\n               <td class=\"unit\">Bar</td>\n               <td class=\"value\"><span ng-bind=\"msg.payload[101]\"></span></td>\n            </tr>            \n            <tr>\n               <td class=\"port\">LT Press</td>\n               <td class=\"unit\">Bar</td>\n               <td class=\"value\"><span ng-bind=\"msg.payload[106]\"></span></td>\n            </tr>      \n            <tr>\n               <td class=\"port\">HT Press</td>\n               <td class=\"unit\">Bar</td>\n               <td class=\"value\"><span ng-bind=\"msg.payload[102]\"></span></td>\n            </tr>   \n            <tr>\n               <td class=\"port\">FO Press</td>\n               <td class=\"unit\">Bar</td>\n               <td class=\"value\"><span ng-bind=\"msg.payload[100]\"></span></td>\n            </tr>   \n            <tr>\n               <td class=\"port\">LO Temp</td>\n               <td class=\"unit\">°C</td>\n               <td class=\"value\"><span ng-bind=\"msg.payload[104]\"></span></td>\n            </tr>\n            <tr>\n               <td class=\"port\">HT Temp</td>\n               <td class=\"unit\">°C</td>\n               <td class=\"value\"><span ng-bind=\"msg.payload[105]\"></span></td>\n            </tr>\n         </tbody>\n      </table>\n   </div>\n</div>\n<div></div>\n</body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 420,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "124ad50e.de713b",
+        "type": "ui_template",
+        "z": "c774982a.dc6c1",
+        "group": "ea4f996c.f87158",
+        "name": "Starboard side",
+        "order": 2,
+        "width": "9",
+        "height": "5",
+        "format": "<style>\n   table {\n   color: #d1d1d1;\n   width: 100%;\n   border-collapse: collapse;\n   border-spacing: 0;\n   font-size: 11px;\n   }\n   td, th {\n   border: 1px solid transparent;\n   /* No more visible border */\n   height: 30px;\n   transition: all 0.3s;\n   /* Simple transition for hover effect */\n   text-align: left;\n   }\n   th {\n   background: #6e6e6e;\n   font-weight: bold;\n   }\n   td {\n   background: #6e6e6e;\n   padding-left: 5px;\n   }\n   /* Cells in even rows (2,4,6...) are one color */\n   tr:nth-child(even) td {\n   background: #4b4b4b;\n   height: 23px;\n   }\n   /* Cells in odd rows (1,3,5...) are another (excludes header cells)  */\n   tr:nth-child(odd) td {\n   background: #3f3f3f;\n   height: 23px;\n   }\n   tr td:hover {\n   background: #8c8c8c;\n   color: #d1d1d1;\n   }\n   .container\n   {\n   /*overflow-y: scroll;*/\n   overflow-x: hidden;\n   }\n   .nr-dashboard-theme .nr-dashboard-template ::-webkit-scrollbar-track {\n   background-color: #1a1a1a;\n   }\n   .value\n   {\n   width: 100px;\n   color: #e6e6e6;\n   font-size: 13px;\n   font-weight:600;\n   text-align: center;\n   }\n   .port\n   {\n   text-align: right;\n   }\n   .unit\n   {\n   text-align: center;\n   }\n</style>\n<div>\n   <div class=\"container\">\n      <table>\n         <tbody>\n            <tr>\n               <td class=\"value\"><span ng-bind=\"msg.payload[98]\"></span></td>\n               <td class=\"unit\">°C</td>\n               <td>CHG. Air Temp</td>\n            </tr>\n            <tr>\n               <td class=\"value\"><span ng-bind=\"msg.payload[97]\"></span></td>\n               <td class=\"unit\">°C</td>\n               <td>EXHAUST Temp</td>\n            </tr>            \n            <tr>\n               <td class=\"value\"><span ng-bind=\"msg.payload[91]\"></span></td>\n               <td class=\"unit\">Bar</td>\n               <td>LO Press</td>\n            </tr>\n            <tr>\n               <td class=\"value\"><span ng-bind=\"msg.payload[96]\"></span></td>\n               <td class=\"unit\">Bar</td>\n               <td>LT Press</td>\n            </tr>\n            <tr>\n               <td class=\"value\"><span ng-bind=\"msg.payload[92]\"></span></td>\n               <td class=\"unit\">Bar</td>\n               <td>HT Press</td>\n            </tr>\n            <tr>\n               <td class=\"value\"><span ng-bind=\"msg.payload[90]\"></span></td>\n               <td class=\"unit\">Bar</td>\n               <td>FO Press</td>\n            </tr>\n            <tr>\n               <td class=\"value\"><span ng-bind=\"msg.payload[94]\"></span></td>\n               <td class=\"unit\">°C</td>\n               <td>LO Temp</td>\n            </tr>\n            <tr>\n               <td class=\"value\"><span ng-bind=\"msg.payload[95]\"></span></td>\n               <td class=\"unit\">°C</td>\n               <td>HT Temp</td>\n            </tr>\n            </tbody>\n      </table>\n   </div>\n</div>\n<div></div>\n</body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 940,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8c6f799a.bf7128",
+        "type": "ui_gauge",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "group": "ea4f996c.f87158",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "gtype": "gage",
+        "title": "DG 1 (875kW)",
+        "label": "kW",
+        "format": "{{payload[\"22\"]}}",
+        "min": 0,
+        "max": "875",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "550",
+        "seg2": "700",
+        "x": 940,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "31ade0c9.b1fb9",
+        "type": "ui_template",
+        "z": "c774982a.dc6c1",
+        "group": "c9a2551b.5b9168",
+        "name": "Lines",
+        "order": 2,
+        "width": "30",
+        "height": "2",
+        "format": "<style>\n   .container\n   {\n   overflow-y: hidden;\n   overflow-x: hidden;\n   }\n</style>\n<div class=\"container\">\n    <svg height=\"100\" width=\"1600\">\n      <!-- to SG4 -->\n      <line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"70\" style=\"stroke:#6e6e6e;stroke-width:4\" />\n      <!-- vertical PS -->\n      <line x1=\"148\" y1=\"70\" x2=\"702\" y2=\"70\" style=\"stroke:#6e6e6e;stroke-width:4\" />\n      <!-- to DG2 -->\n      <line x1=\"312\" y1=\"70\" x2=\"312\" y2=\"100\" style=\"stroke:#6e6e6e;stroke-width:4\" />\n      <!-- to SG3 -->\n      <line x1=\"475\" y1=\"0\" x2=\"475\" y2=\"30\" style=\"stroke:#6e6e6e;stroke-width:4\" />\n      <!-- SG3 breaker -->\n      <path d=\"M 475 70 v -15 l {{msg.payload}} -25\" stroke-linejoin=\"round\" style=\"fill:transparent;stroke:#6e6e6e;stroke-width:4\" />\n      <!-- vertical PS BT -->\n      <line x1=\"475\" y1=\"15\" x2=\"752\" y2=\"15\" style=\"stroke:#6e6e6e;stroke-width:4\" />\n      <!-- to PS BT -->\n      <line x1=\"750\" y1=\"0\" x2=\"750\" y2=\"15\" style=\"stroke:#6e6e6e;stroke-width:4\" />\n\n      <!-- to MSB -->\n      <line x1=\"700\" y1=\"70\" x2=\"700\" y2=\"100\" style=\"stroke:#6e6e6e;stroke-width:4\" />\n      <!-- to MSB -->\n      <line x1=\"900\" y1=\"70\" x2=\"900\" y2=\"100\" style=\"stroke:#6e6e6e;stroke-width:4\" />\n      <!-- vertical SB -->\n      <line x1=\"898\" y1=\"70\" x2=\"1452\" y2=\"70\" style=\"stroke:#6e6e6e;stroke-width:4\" />\n      <!-- vertical SB BT -->\n      <line x1=\"848\" y1=\"15\" x2=\"1125\" y2=\"15\" style=\"stroke:#6e6e6e;stroke-width:4\" />\n      <!-- to SB BT -->\n      <line x1=\"850\" y1=\"0\" x2=\"850\" y2=\"15\" style=\"stroke:#6e6e6e;stroke-width:4\" />\n      <!-- to SG2 -->\n      <line x1=\"1125\" y1=\"0\" x2=\"1125\" y2=\"30\" style=\"stroke:#6e6e6e;stroke-width:4\" />\n      <!-- SG2 breaker -->\n      <path d=\"M 1125 70 v -15 l {{msg.payload}} -25\" stroke-linejoin=\"round\" style=\"fill:transparent;stroke:#6e6e6e;stroke-width:4\" />\n      <!-- to DG1 -->\n      <line x1=\"1288\" y1=\"70\" x2=\"1288\" y2=\"100\" style=\"stroke:#6e6e6e;stroke-width:4\" />\n      <!-- to SG1 -->\n      <line x1=\"1450\" y1=\"0\" x2=\"1450\" y2=\"70\" style=\"stroke:#6e6e6e;stroke-width:4\" />\n    </svg>\n</div>\n</body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 670,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5249259c.8f706c",
+        "type": "ui_template",
+        "z": "c774982a.dc6c1",
+        "group": "65f6f27e.a1f1ec",
+        "name": "Bowthruster",
+        "order": 2,
+        "width": "6",
+        "height": "4",
+        "format": "<style>\n   .container\n   {\n   overflow-y: hidden;\n   overflow-x: hidden;\n   }\n   .heading\n   {\n   height:100px;\n   text-align:center;\n   }\n   .center\n   {\n   text-align:center;\n   padding-bottom: 10px;\n   }\n\n</style>\n<div class=\"container\">\n    <div class=\"heading\">\n    Bowthrusters\n    </div>\n    <div class=\"center\">\n    AFT No.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FWD No.1\n    </div>   \n    <div class=\"center\">\n    <i class=\"material-icons\" style=\"font-size: 60px\">toys</i>\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n    <i class=\"material-icons\" style=\"font-size: 60px\">toys</i>\n    </div>   \n</div>\n</body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 690,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5528b9b1.bbdfb8",
+        "type": "ui_gauge",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "group": "fa92953a.7a1b58",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "gtype": "gage",
+        "title": "SG 1 (640kW)",
+        "label": "kW",
+        "format": "{{payload[\"24\"]}}",
+        "min": 0,
+        "max": "640",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "450",
+        "seg2": "550",
+        "x": 940,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "93701fab.567f",
+        "type": "ui_gauge",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "group": "b238e66b.53c658",
+        "order": 2,
+        "width": "6",
+        "height": "4",
+        "gtype": "gage",
+        "title": "SG 2 (1400kW)",
+        "label": "kW",
+        "format": "{{payload[\"25\"]}}",
+        "min": 0,
+        "max": "1400",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "700",
+        "seg2": "1100",
+        "x": 760,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "2b4d5c75.692d14",
+        "type": "ui_template",
+        "z": "c774982a.dc6c1",
+        "group": "e9ed4336.19b7f",
+        "name": "Description",
+        "order": 7,
+        "width": "12",
+        "height": "1",
+        "format": "<style>\n   .center\n   {\n   text-align: center;\n   font-size: 13px;\n   }\n</style>\n<div>\n   <div class=\"center\">\n    DG SFOC = AUX Fuel / DG1+2 Power &nbsp;&nbsp;&nbsp;&nbsp; ME SFOC = ME Fuel / Propulsion power\n   </div>\n</div>\n<div></div>\n</body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 750,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "50c86ca5.8de244",
+        "type": "smooth",
+        "z": "c774982a.dc6c1",
+        "name": "Smooth",
+        "property": "payload.sfocAux",
+        "action": "mean",
+        "count": "5",
+        "round": "0",
+        "mult": "single",
+        "reduce": false,
+        "x": 560,
+        "y": 540,
+        "wires": [
+            [
+                "ea6573a6.199f9"
+            ]
+        ]
+    },
+    {
+        "id": "d7869207.2b2a2",
+        "type": "smooth",
+        "z": "c774982a.dc6c1",
+        "name": "Smooth",
+        "property": "payload.sfoc",
+        "action": "mean",
+        "count": "5",
+        "round": "0",
+        "mult": "single",
+        "reduce": false,
+        "x": 820,
+        "y": 540,
+        "wires": [
+            [
+                "e6c691ea.9f50f"
+            ]
+        ]
+    },
+    {
+        "id": "ea6573a6.199f9",
+        "type": "ui_level",
+        "z": "c774982a.dc6c1",
+        "group": "e9ed4336.19b7f",
+        "order": 4,
+        "width": "3",
+        "height": "4",
+        "name": "DG SFOC",
+        "label": "DG SFOC",
+        "colorHi": "#e60000",
+        "colorWarn": "#ff9900",
+        "colorNormal": "#00b33c",
+        "colorOff": "#595959",
+        "min": "100",
+        "max": "300",
+        "segWarn": "225",
+        "segHigh": "270",
+        "unit": "g/kWh",
+        "layout": "sv",
+        "channelA": "",
+        "channelB": "",
+        "decimals": 0,
+        "animations": "off",
+        "shape": "1",
+        "colorschema": "fixed",
+        "textoptions": "default",
+        "colorText": "#eeeeee",
+        "fontLabel": "",
+        "fontValue": "",
+        "fontSmall": "",
+        "colorFromTheme": true,
+        "textAnimations": false,
+        "hideValue": false,
+        "tickmode": "segments",
+        "peakmode": false,
+        "property": "payload.sfocAux",
+        "peaktime": 3000,
+        "x": 630,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "e6c691ea.9f50f",
+        "type": "ui_level",
+        "z": "c774982a.dc6c1",
+        "group": "e9ed4336.19b7f",
+        "order": 6,
+        "width": "3",
+        "height": "4",
+        "name": "ME SFOC",
+        "label": "ME SFOC",
+        "colorHi": "#e60000",
+        "colorWarn": "#ff9900",
+        "colorNormal": "#00b33c",
+        "colorOff": "#595959",
+        "min": "100",
+        "max": "300",
+        "segWarn": "225",
+        "segHigh": "270",
+        "unit": "g/kWh",
+        "layout": "sv",
+        "channelA": "",
+        "channelB": "",
+        "decimals": 0,
+        "animations": "off",
+        "shape": "1",
+        "colorschema": "fixed",
+        "textoptions": "default",
+        "colorText": "#eeeeee",
+        "fontLabel": "",
+        "fontValue": "",
+        "fontSmall": "",
+        "colorFromTheme": true,
+        "textAnimations": false,
+        "hideValue": false,
+        "tickmode": "segments",
+        "peakmode": false,
+        "property": "payload.sfoc",
+        "peaktime": 3000,
+        "x": 870,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "9d0aff26.b57db",
+        "type": "inject",
+        "z": "c774982a.dc6c1",
+        "name": "Close breaker",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 490,
+        "y": 240,
+        "wires": [
+            [
+                "31ade0c9.b1fb9"
+            ]
+        ]
+    },
+    {
+        "id": "412fc689.a556a8",
+        "type": "inject",
+        "z": "c774982a.dc6c1",
+        "name": "Open breaker",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "15",
+        "payloadType": "num",
+        "x": 500,
+        "y": 280,
+        "wires": [
+            [
+                "31ade0c9.b1fb9"
+            ]
+        ]
     }
 ]
