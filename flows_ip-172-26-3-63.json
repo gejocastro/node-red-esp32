@@ -6409,7 +6409,8 @@
         "y": 60,
         "wires": [
             [
-                "5069ccd6.59f684"
+                "5069ccd6.59f684",
+                "d7352128.73622"
             ]
         ]
     },
@@ -6480,6 +6481,23 @@
         "statusType": "auto",
         "x": 890,
         "y": 160,
+        "wires": []
+    },
+    {
+        "id": "d7352128.73622",
+        "type": "debug",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 330,
+        "y": 20,
         "wires": []
     }
 ]
