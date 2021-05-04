@@ -5785,8 +5785,8 @@
         ],
         "seg1": "450",
         "seg2": "550",
-        "x": 660,
-        "y": 380,
+        "x": 580,
+        "y": 440,
         "wires": []
     },
     {
@@ -5811,8 +5811,8 @@
         ],
         "seg1": "700",
         "seg2": "1100",
-        "x": 840,
-        "y": 380,
+        "x": 760,
+        "y": 440,
         "wires": []
     },
     {
@@ -5837,8 +5837,8 @@
         ],
         "seg1": "550",
         "seg2": "700",
-        "x": 660,
-        "y": 480,
+        "x": 580,
+        "y": 540,
         "wires": []
     },
     {
@@ -5863,8 +5863,8 @@
         ],
         "seg1": "600",
         "seg2": "1200",
-        "x": 940,
-        "y": 480,
+        "x": 860,
+        "y": 540,
         "wires": []
     },
     {
@@ -5889,8 +5889,8 @@
         ],
         "seg1": "120",
         "seg2": "160",
-        "x": 950,
-        "y": 540,
+        "x": 870,
+        "y": 600,
         "wires": []
     },
     {
@@ -5907,8 +5907,8 @@
         "fwdInMessages": true,
         "resendOnRefresh": false,
         "templateScope": "local",
-        "x": 680,
-        "y": 540,
+        "x": 600,
+        "y": 600,
         "wires": [
             []
         ]
@@ -5927,8 +5927,8 @@
         "fwdInMessages": true,
         "resendOnRefresh": false,
         "templateScope": "local",
-        "x": 1200,
-        "y": 540,
+        "x": 1120,
+        "y": 600,
         "wires": [
             []
         ]
@@ -5955,8 +5955,8 @@
         ],
         "seg1": "550",
         "seg2": "700",
-        "x": 1200,
-        "y": 480,
+        "x": 1120,
+        "y": 540,
         "wires": []
     },
     {
@@ -5993,8 +5993,8 @@
         "fwdInMessages": true,
         "resendOnRefresh": false,
         "templateScope": "local",
-        "x": 910,
-        "y": 440,
+        "x": 830,
+        "y": 500,
         "wires": [
             []
         ]
@@ -6021,8 +6021,8 @@
         ],
         "seg1": "450",
         "seg2": "550",
-        "x": 1200,
-        "y": 380,
+        "x": 1120,
+        "y": 440,
         "wires": []
     },
     {
@@ -6047,8 +6047,8 @@
         ],
         "seg1": "700",
         "seg2": "1100",
-        "x": 1020,
-        "y": 380,
+        "x": 940,
+        "y": 440,
         "wires": []
     },
     {
@@ -6065,8 +6065,8 @@
         "fwdInMessages": true,
         "resendOnRefresh": false,
         "templateScope": "local",
-        "x": 1010,
-        "y": 700,
+        "x": 930,
+        "y": 760,
         "wires": [
             []
         ]
@@ -6082,8 +6082,8 @@
         "round": "0",
         "mult": "single",
         "reduce": false,
-        "x": 820,
-        "y": 600,
+        "x": 740,
+        "y": 660,
         "wires": [
             [
                 "ea6573a6.199f9"
@@ -6101,8 +6101,8 @@
         "round": "0",
         "mult": "single",
         "reduce": false,
-        "x": 1080,
-        "y": 600,
+        "x": 1000,
+        "y": 660,
         "wires": [
             [
                 "e6c691ea.9f50f"
@@ -6147,8 +6147,8 @@
         "peakmode": false,
         "property": "payload.sfocAux",
         "peaktime": 3000,
-        "x": 890,
-        "y": 640,
+        "x": 810,
+        "y": 700,
         "wires": []
     },
     {
@@ -6189,70 +6189,16 @@
         "peakmode": false,
         "property": "payload.sfoc",
         "peaktime": 3000,
-        "x": 1130,
-        "y": 640,
+        "x": 1050,
+        "y": 700,
         "wires": []
-    },
-    {
-        "id": "ab0d82fa.6efc4",
-        "type": "ui_button",
-        "z": "c774982a.dc6c1",
-        "name": "",
-        "group": "1d865536.eb801b",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "label": "close",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "icon": "",
-        "payload": "0",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 490,
-        "y": 200,
-        "wires": [
-            [
-                "176b1d8f.8a4202"
-            ]
-        ]
-    },
-    {
-        "id": "bb91e695.4c68a8",
-        "type": "ui_button",
-        "z": "c774982a.dc6c1",
-        "name": "",
-        "group": "90836bed.157498",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "label": "open",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "icon": "",
-        "payload": "15",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 490,
-        "y": 260,
-        "wires": [
-            [
-                "376ffcc9.cab5e4"
-            ]
-        ]
     },
     {
         "id": "176b1d8f.8a4202",
         "type": "function",
         "z": "c774982a.dc6c1",
         "name": "",
-        "func": "msg.color=\"#00DD00\";\ncuenta= global.get (\"count\");\nif (cuenta > 3) {\n    cuenta =0;\n    }\nswitch (cuenta){\ncase 0:\n    msg.rotate=\"45deg\";\n    break;\ncase 1:\n    msg.rotate=\"90deg\"\n    break;\ncase 2:\n    msg.rotate=\"135deg\"\n    break;\ncase 3:\n    msg.rotate=\"180deg\"\n    break;\n}\ncuenta = cuenta +1;    \nglobal.set (\"count\", cuenta) ;\nreturn msg;",
+        "func": "if (global.get(\"output\")==\"on\") msg.payload=0\nelse msg.payload=15;\n\nmsg.color=\"#00DD00\";\n\ncuenta= global.get (\"count\");\nif (cuenta > 3) {\n    cuenta =0;\n    }\nswitch (cuenta){\ncase 0:\n    msg.rotate=\"45deg\";\n    break;\ncase 1:\n    msg.rotate=\"90deg\"\n    break;\ncase 2:\n    msg.rotate=\"135deg\"\n    break;\ncase 3:\n    msg.rotate=\"180deg\"\n    break;\n}\ncuenta = cuenta +1;    \nglobal.set (\"count\", cuenta) ;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is started.\nglobal.set(\"count\" , 0);\n",
@@ -6344,10 +6290,10 @@
         "y": 200,
         "wires": [
             [
-                "ab0d82fa.6efc4"
+                "176b1d8f.8a4202"
             ],
             [
-                "bb91e695.4c68a8"
+                "376ffcc9.cab5e4"
             ]
         ]
     },
@@ -6524,8 +6470,8 @@
         "nl": false,
         "rap": true,
         "rh": 0,
-        "x": 390,
-        "y": 400,
+        "x": 310,
+        "y": 460,
         "wires": [
             [
                 "edf08104.4351e"
