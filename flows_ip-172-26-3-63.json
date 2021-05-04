@@ -6127,35 +6127,6 @@
         ]
     },
     {
-        "id": "9d0aff26.b57db",
-        "type": "inject",
-        "z": "c774982a.dc6c1",
-        "name": "Close breaker",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "5",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "0",
-        "payloadType": "num",
-        "x": 500,
-        "y": 240,
-        "wires": [
-            [
-                "31ade0c9.b1fb9"
-            ]
-        ]
-    },
-    {
         "id": "412fc689.a556a8",
         "type": "inject",
         "z": "c774982a.dc6c1",
@@ -6169,15 +6140,15 @@
                 "vt": "str"
             }
         ],
-        "repeat": "5",
+        "repeat": "",
         "crontab": "",
         "once": true,
         "onceDelay": "5",
         "topic": "",
         "payload": "15",
         "payloadType": "num",
-        "x": 500,
-        "y": 280,
+        "x": 560,
+        "y": 100,
         "wires": [
             [
                 "31ade0c9.b1fb9"
@@ -6267,5 +6238,88 @@
         "x": 870,
         "y": 580,
         "wires": []
+    },
+    {
+        "id": "ab0d82fa.6efc4",
+        "type": "ui_button",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "group": "90836bed.157498",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "close",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "0",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 270,
+        "y": 180,
+        "wires": [
+            [
+                "31ade0c9.b1fb9"
+            ]
+        ]
+    },
+    {
+        "id": "bb91e695.4c68a8",
+        "type": "ui_button",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "group": "c9a2551b.5b9168",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "open",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "15",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 320,
+        "y": 240,
+        "wires": [
+            [
+                "31ade0c9.b1fb9"
+            ]
+        ]
+    },
+    {
+        "id": "9d0aff26.b57db",
+        "type": "inject",
+        "z": "c774982a.dc6c1",
+        "name": "Close breaker",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "num",
+        "x": 580,
+        "y": 60,
+        "wires": [
+            [
+                "31ade0c9.b1fb9"
+            ]
+        ]
     }
 ]
