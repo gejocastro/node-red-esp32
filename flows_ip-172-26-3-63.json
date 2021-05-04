@@ -6307,14 +6307,14 @@
                 "vt": "str"
             }
         ],
-        "repeat": "5",
+        "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "0",
         "payloadType": "num",
-        "x": 580,
+        "x": 570,
         "y": 60,
         "wires": [
             [
