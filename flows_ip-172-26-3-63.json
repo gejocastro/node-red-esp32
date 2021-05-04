@@ -6241,8 +6241,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 470,
-        "y": 240,
+        "x": 490,
+        "y": 200,
         "wires": [
             [
                 "176b1d8f.8a4202"
@@ -6268,8 +6268,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 450,
-        "y": 300,
+        "x": 490,
+        "y": 260,
         "wires": [
             [
                 "376ffcc9.cab5e4"
@@ -6392,16 +6392,16 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 530,
-        "y": 140,
+        "x": 290,
+        "y": 200,
         "wires": [
             [
-                "176b1d8f.8a4202",
                 "1d24c1ab.8da40e",
-                "f016f1e2.0739"
+                "f016f1e2.0739",
+                "ab0d82fa.6efc4"
             ],
             [
-                "376ffcc9.cab5e4"
+                "bb91e695.4c68a8"
             ]
         ]
     },
@@ -6477,7 +6477,7 @@
         "topic": "",
         "payload": "output",
         "payloadType": "global",
-        "x": 180,
+        "x": 80,
         "y": 200,
         "wires": [
             [
