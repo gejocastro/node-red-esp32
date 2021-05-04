@@ -6448,5 +6448,32 @@
         "x": 930,
         "y": 80,
         "wires": []
+    },
+    {
+        "id": "ae3d6259.2afdb",
+        "type": "inject",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "count",
+        "payloadType": "global",
+        "x": 640,
+        "y": 100,
+        "wires": [
+            []
+        ]
     }
 ]
