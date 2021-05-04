@@ -6371,34 +6371,6 @@
         ]
     },
     {
-        "id": "978d3050.9414d8",
-        "type": "change",
-        "z": "c774982a.dc6c1",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "output",
-                "tot": "global"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 360,
-        "y": 120,
-        "wires": [
-            [
-                "5069ccd6.59f684",
-                "d7352128.73622"
-            ]
-        ]
-    },
-    {
         "id": "5069ccd6.59f684",
         "type": "switch",
         "z": "c774982a.dc6c1",
@@ -6468,23 +6440,6 @@
         "wires": []
     },
     {
-        "id": "d7352128.73622",
-        "type": "debug",
-        "z": "c774982a.dc6c1",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 590,
-        "y": 80,
-        "wires": []
-    },
-    {
         "id": "92887493.14e218",
         "type": "debug",
         "z": "ea943a79.b3e358",
@@ -6526,8 +6481,8 @@
         "y": 200,
         "wires": [
             [
-                "978d3050.9414d8",
-                "2d41f8d.605bd88"
+                "2d41f8d.605bd88",
+                "5069ccd6.59f684"
             ]
         ]
     },
