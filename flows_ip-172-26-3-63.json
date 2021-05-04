@@ -6252,7 +6252,7 @@
         "type": "function",
         "z": "c774982a.dc6c1",
         "name": "",
-        "func": "msg.color=\"#00DD00\";\nreturn msg;",
+        "func": "msg.color=\"#00DD00\";\nmsg.rotate=\"45deg\"\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
