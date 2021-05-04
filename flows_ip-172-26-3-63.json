@@ -6351,10 +6351,10 @@
         "rules": [
             {
                 "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "output",
-                "tot": "global"
+                "p": "output",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
             }
         ],
         "action": "",
@@ -6362,7 +6362,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 960,
+        "x": 970,
         "y": 160,
         "wires": [
             [
