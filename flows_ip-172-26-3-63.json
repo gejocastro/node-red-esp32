@@ -6235,7 +6235,7 @@
         "color": "",
         "bgcolor": "",
         "icon": "",
-        "payload": "90",
+        "payload": "15",
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
