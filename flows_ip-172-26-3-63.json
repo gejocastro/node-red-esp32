@@ -6473,7 +6473,26 @@
         "x": 640,
         "y": 100,
         "wires": [
-            []
+            [
+                "786dc990.91bd58"
+            ]
         ]
+    },
+    {
+        "id": "786dc990.91bd58",
+        "type": "debug",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 810,
+        "y": 20,
+        "wires": []
     }
 ]
