@@ -6323,8 +6323,8 @@
         "type": "switch",
         "z": "c774982a.dc6c1",
         "name": "",
-        "property": "output",
-        "propertyType": "global",
+        "property": "payload",
+        "propertyType": "msg",
         "rules": [
             {
                 "t": "eq",
