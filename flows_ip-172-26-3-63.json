@@ -6384,10 +6384,11 @@
         "payload": "output",
         "payloadType": "global",
         "x": 120,
-        "y": 200,
+        "y": 180,
         "wires": [
             [
-                "2d41f8d.605bd88"
+                "2d41f8d.605bd88",
+                "5069ccd6.59f684"
             ]
         ]
     },
