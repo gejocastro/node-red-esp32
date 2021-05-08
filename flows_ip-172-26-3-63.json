@@ -651,7 +651,7 @@
         "id": "9c98081c.cecc6",
         "type": "ui_group",
         "name": "",
-        "tab": "",
+        "tab": "7d87d2b0.33b7cc",
         "order": 1,
         "disp": true,
         "width": "6",
@@ -974,6 +974,14 @@
         "name": "nauticAi Elec",
         "icon": "dashboard",
         "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7d87d2b0.33b7cc",
+        "type": "ui_tab",
+        "name": "NEw",
+        "icon": "dashboard",
         "disabled": false,
         "hidden": false
     },
@@ -6488,10 +6496,12 @@
         "name": "",
         "width": 500,
         "height": 300,
-        "x": 660,
+        "x": 690,
         "y": 120,
         "wires": [
-            []
+            [
+                "3f81e10a.1db5ae"
+            ]
         ]
     },
     {
@@ -6572,6 +6582,26 @@
             [
                 "1a0e0137.70ba87"
             ]
+        ]
+    },
+    {
+        "id": "3f81e10a.1db5ae",
+        "type": "ui_template",
+        "z": "7b2aff8.599088",
+        "group": "9c98081c.cecc6",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 970,
+        "y": 120,
+        "wires": [
+            []
         ]
     }
 ]
