@@ -965,7 +965,7 @@
         "id": "d0e5d7d6.5b1ae8",
         "type": "ui_tab",
         "name": "nauticAi Elec",
-        "icon": "dashboard",
+        "icon": "fa-ship",
         "order": 7,
         "disabled": false,
         "hidden": false
