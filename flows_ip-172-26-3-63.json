@@ -77,13 +77,6 @@
         "info": ""
     },
     {
-        "id": "7b2aff8.599088",
-        "type": "tab",
-        "label": "Flow 4",
-        "disabled": false,
-        "info": ""
-    },
-    {
         "id": "3a8c6532.d84b42",
         "type": "group",
         "z": "d749cdc9.d28c6",
@@ -6486,81 +6479,6 @@
         "wires": [
             [
                 "edf08104.4351e"
-            ]
-        ]
-    },
-    {
-        "id": "1a0e0137.70ba87",
-        "type": "chart-image",
-        "z": "7b2aff8.599088",
-        "name": "",
-        "width": 500,
-        "height": 300,
-        "x": 690,
-        "y": 120,
-        "wires": [
-            [
-                "3f81e10a.1db5ae",
-                "47892a23.180964"
-            ]
-        ]
-    },
-    {
-        "id": "3f81e10a.1db5ae",
-        "type": "ui_template",
-        "z": "7b2aff8.599088",
-        "group": "9c98081c.cecc6",
-        "name": "",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "format": "<div ng-bind-html=\"msg.payload\"></div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "x": 970,
-        "y": 120,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "47892a23.180964",
-        "type": "debug",
-        "z": "7b2aff8.599088",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 940,
-        "y": 280,
-        "wires": []
-    },
-    {
-        "id": "10fc9061.8cb5f",
-        "type": "ui_template",
-        "z": "7b2aff8.599088",
-        "group": "9c98081c.cecc6",
-        "name": "",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "format": "canvas id=\"myChart\" width=\"400\" height=\"400\"></canvas>\n<script>\nvar ctx = document.getElementById('myChart').getContext('2d');\nvar myChart = new Chart(ctx, {\n    type: 'bar',\n    data: {\n        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],\n        datasets: [{\n            label: '# of Votes',\n            data: [12, 19, 3, 5, 2, 3],\n            backgroundColor: [\n                'rgba(255, 99, 132, 0.2)',\n                'rgba(54, 162, 235, 0.2)',\n                'rgba(255, 206, 86, 0.2)',\n                'rgba(75, 192, 192, 0.2)',\n                'rgba(153, 102, 255, 0.2)',\n                'rgba(255, 159, 64, 0.2)'\n            ],\n            borderColor: [\n                'rgba(255, 99, 132, 1)',\n                'rgba(54, 162, 235, 1)',\n                'rgba(255, 206, 86, 1)',\n                'rgba(75, 192, 192, 1)',\n                'rgba(153, 102, 255, 1)',\n                'rgba(255, 159, 64, 1)'\n            ],\n            borderWidth: 1\n        }]\n    },\n    options: {\n        scales: {\n            y: {\n                beginAtZero: true\n            }\n        }\n    }\n});\n</script>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "x": 320,
-        "y": 120,
-        "wires": [
-            [
-                "1a0e0137.70ba87"
             ]
         ]
     }
