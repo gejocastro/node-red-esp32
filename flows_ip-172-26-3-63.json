@@ -6517,68 +6517,8 @@
         "nl": false,
         "rap": true,
         "rh": 0,
-        "x": 200,
-        "y": 80,
-        "wires": [
-            [
-                "1a0e0137.70ba87"
-            ]
-        ]
-    },
-    {
-        "id": "735c5a2c.87c37c",
-        "type": "mqtt in",
-        "z": "7b2aff8.599088",
-        "name": "",
-        "topic": "esp32/humidity",
-        "qos": "2",
-        "datatype": "auto",
-        "broker": "cd6b5625.5238f8",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "x": 200,
-        "y": 120,
-        "wires": [
-            [
-                "1a0e0137.70ba87"
-            ]
-        ]
-    },
-    {
-        "id": "52436f03.0f1ab",
-        "type": "mqtt in",
-        "z": "7b2aff8.599088",
-        "name": "",
-        "topic": "esp32/analog",
-        "qos": "2",
-        "datatype": "auto",
-        "broker": "cd6b5625.5238f8",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "x": 190,
-        "y": 180,
-        "wires": [
-            [
-                "1a0e0137.70ba87"
-            ]
-        ]
-    },
-    {
-        "id": "f5e202b2.656098",
-        "type": "mqtt in",
-        "z": "7b2aff8.599088",
-        "name": "",
-        "topic": "esp32/led_control",
-        "qos": "2",
-        "datatype": "auto",
-        "broker": "cd6b5625.5238f8",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
         "x": 210,
-        "y": 240,
+        "y": 40,
         "wires": [
             [
                 "1a0e0137.70ba87"
