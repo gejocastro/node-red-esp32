@@ -84,6 +84,13 @@
         "info": ""
     },
     {
+        "id": "ca755ec5.69b1f",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "3a8c6532.d84b42",
         "type": "group",
         "z": "d749cdc9.d28c6",
@@ -270,9 +277,7 @@
             "b02391bd.5c47d"
         ],
         "x": 14,
-        "y": 299,
-        "w": 1412,
-        "h": 82
+        "y": 299
     },
     {
         "id": "1c64706a.59b6c8",
@@ -287,9 +292,7 @@
             "5d6e3ef.60bd6c"
         ],
         "x": 574,
-        "y": 499,
-        "w": 592,
-        "h": 82
+        "y": 499
     },
     {
         "id": "cd6b5625.5238f8",
@@ -6482,6 +6485,145 @@
         "wires": [
             [
                 "edf08104.4351e"
+            ]
+        ]
+    },
+    {
+        "id": "c9e4156e.447b28",
+        "type": "smxstate",
+        "z": "ca755ec5.69b1f",
+        "name": "",
+        "xstateDefinition": "/// Import shorthands from xstate object\nconst { assign } = xstate; \n\n// First define names guards, actions, ...\n\n/**\n * Guards\n */\nconst bellyFull = (context, event) => {\n  return context.belly >= 100;\n};\n\nconst bellyEmpty = (context, event) => {\n    return context.belly <= 0;\n}\n\nconst bellyNotEmpty = (context, event) => {\n    return context.belly > 0;\n}\n\n/**\n * Actions\n */\nconst updateBelly = assign({\n    belly: (context, ev) => Math.max(\n        Math.min(\n            context.belly+ev.value,100\n        ), 0)\n});\n\n/**\n * Activities\n */\nconst meow = () => {\n  const interval = setInterval(() => node.send({payload: \"MEOW!\"}), 2000);\n  return () => clearInterval(interval);\n};\n\n/**\n * Services\n * see https://xstate.js.org/docs/guides/communication.html#invoking-callbacks\n */\nconst eat = (ctx, ev) => (cb) => {\n    const id = setInterval(() => cb({\n      type: 'eaten',\n      value: 5\n    }),500);\n    return () => clearInterval(id);\n};\n\nconst digest = (ctx, ev) => (cb) => {\n    const id = setInterval(() => cb({\n      type: 'digested',\n      value: -5\n    }),500);\n    return () => clearInterval(id);\n}\n\n/***************************\n * Main machine definition * \n ***************************/\n return {\n  machine: {\n    context: {\n        belly: 0    // Belly state, 100 means full, 0 means empty\n    },\n    initial: 'sleep',\n    states: {\n      sleep: {\n          on: {\n              'wake up': 'meow',\n          }\n      },\n      meow: {\n          invoke: { src: 'digest' },\n          on: {\n              'given toy': { target: 'play', cond: 'belly not empty' },\n              'given food': 'eat',\n              'digested': { actions: 'updateBelly' }\n          },\n          activities: ['meow']\n      },\n      play: {\n          invoke: { src: 'digest' },\n          on: {\n              tired: 'sleep',\n              bored: 'sleep',\n              'digested': { actions: 'updateBelly' },\n              '': { target: 'meow', cond: 'belly empty' }\n          },\n          after: {\n              5000: 'sleep',\n          }\n      },\n      eat: {\n          invoke: { src: 'eat' },\n          on: {\n              '': { target: 'sleep', cond: 'belly full' },\n              'no more food': { target: 'meow' },\n              'eaten': { actions: 'updateBelly' }\n          }\n      }\n    }\n  },\n  // Configuration containing guards, actions, activities, ...\n  // see above\n  config: {\n      guards: { \"belly full\": bellyFull, \"belly not empty\": bellyNotEmpty, \"belly empty\": bellyEmpty },\n      activities: { meow },\n      actions: { updateBelly },\n      services: { eat, digest }\n  }\n}",
+        "noerr": 0,
+        "x": 510,
+        "y": 380,
+        "wires": [
+            [
+                "1c3871d9.e88f06"
+            ],
+            [
+                "3866d4bc.864f6c"
+            ]
+        ]
+    },
+    {
+        "id": "1c3871d9.e88f06",
+        "type": "debug",
+        "z": "ca755ec5.69b1f",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 880,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "3866d4bc.864f6c",
+        "type": "debug",
+        "z": "ca755ec5.69b1f",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 890,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "31d49603.6bf8da",
+        "type": "inject",
+        "z": "ca755ec5.69b1f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 220,
+        "wires": [
+            [
+                "c9e4156e.447b28"
+            ]
+        ]
+    },
+    {
+        "id": "d88e18ec.51991",
+        "type": "inject",
+        "z": "ca755ec5.69b1f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 320,
+        "wires": [
+            [
+                "c9e4156e.447b28"
+            ]
+        ]
+    },
+    {
+        "id": "d9facc4b.da6f38",
+        "type": "inject",
+        "z": "ca755ec5.69b1f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 250,
+        "y": 400,
+        "wires": [
+            [
+                "c9e4156e.447b28"
             ]
         ]
     }
