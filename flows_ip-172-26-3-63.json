@@ -644,7 +644,7 @@
         "id": "9c98081c.cecc6",
         "type": "ui_group",
         "name": "",
-        "tab": "7d87d2b0.33b7cc",
+        "tab": "",
         "order": 1,
         "disp": true,
         "width": "26",
@@ -781,7 +781,7 @@
         "type": "ui_tab",
         "name": "Machine Learning",
         "icon": "fa-rocket ",
-        "order": 10,
+        "order": 6,
         "disabled": false,
         "hidden": false
     },
@@ -966,15 +966,7 @@
         "type": "ui_tab",
         "name": "nauticAi Elec",
         "icon": "dashboard",
-        "order": 3,
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "7d87d2b0.33b7cc",
-        "type": "ui_tab",
-        "name": "NEw",
-        "icon": "dashboard",
+        "order": 7,
         "disabled": false,
         "hidden": false
     },
