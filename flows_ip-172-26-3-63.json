@@ -6500,7 +6500,8 @@
         "y": 120,
         "wires": [
             [
-                "3f81e10a.1db5ae"
+                "3f81e10a.1db5ae",
+                "47892a23.180964"
             ]
         ]
     },
@@ -6603,5 +6604,22 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "47892a23.180964",
+        "type": "debug",
+        "z": "7b2aff8.599088",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 940,
+        "y": 280,
+        "wires": []
     }
 ]
