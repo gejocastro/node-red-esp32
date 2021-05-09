@@ -5085,7 +5085,7 @@
         "name": "Shows file list",
         "order": 2,
         "width": "4",
-        "height": "10",
+        "height": "8",
         "columns": [
             {
                 "field": "File",
