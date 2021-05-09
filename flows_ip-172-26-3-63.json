@@ -6397,7 +6397,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "0.5",
+        "repeat": "0.2",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
