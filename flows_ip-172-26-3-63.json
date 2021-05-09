@@ -752,6 +752,7 @@
     {
         "id": "d064d5d0.b32de",
         "type": "ui_spacer",
+        "d": true,
         "name": "spacer",
         "group": "e5619d8f.db854",
         "order": 3,
@@ -5085,7 +5086,7 @@
         "name": "Shows file list",
         "order": 2,
         "width": "4",
-        "height": "8",
+        "height": "13",
         "columns": [
             {
                 "field": "File",
