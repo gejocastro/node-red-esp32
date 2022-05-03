@@ -4689,8 +4689,8 @@
         "label": "Load result",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "x": 1130,
-        "y": 40,
+        "x": 1150,
+        "y": 60,
         "wires": [],
         "info": "Muestra en pantalla el resultado de la función que genera el dataset"
     },
