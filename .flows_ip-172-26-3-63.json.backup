@@ -4881,7 +4881,7 @@
         "height": "3",
         "name": "Explanation",
         "label": "",
-        "format": "<b>Load Dataset</b> carga la base de datos y la separa en conjuntos de entreneamiento y testing (80,20). </p> <b>Classify Dataset</b> aprende del set de entrenamiento</p><b> Evaluate Dataset</b> compara la salida del set de testeo con el resultado de aplicar la prediccion a las entradas </p>Al ingresar un par<b>Temp, humidity </b> y presionar <b> Predict</b>. Predice el estado de salida de acuerdo al analisis</b>",
+        "format": "<b>Load Dataset</b> carga la base de datos y la separa en conjuntos de entreneamiento y testing (80,20).</p> <b>Classify Dataset</b> aprende del set de entrenamiento.</p><b> Evaluate Dataset</b> compara la salida del set de testeo con el resultado de aplicar la prediccion a las entradas. </p>Al ingresar un par<b> Temp, Humidity </b> y presionar <b> Predict</b>, predice el estado de salida de acuerdo al analisis.</b>",
         "layout": "row-left",
         "x": 1110,
         "y": 520,
