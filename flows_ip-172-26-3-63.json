@@ -89,7 +89,8 @@
             "d4a06274.649078",
             "8eea35e2.16dba8",
             "b870740b.44b998",
-            "f15d50d6.84c2d"
+            "f15d50d6.84c2d",
+            "38df8497.a67acc"
         ],
         "x": -6,
         "y": 99
@@ -107,10 +108,11 @@
             "84f1a4f6.9d613",
             "9a267f89.3ae5b8",
             "71392fe7.706f28",
-            "734b9d37.2af744"
+            "734b9d37.2af744",
+            "8e6b287b.67974"
         ],
         "x": 14,
-        "y": 799
+        "y": 939
     },
     {
         "id": "e9a3077.08c0378",
@@ -143,7 +145,8 @@
             "a1aa12d6.e76ff8",
             "9580e924.c5c528",
             "587f60cc.ab0a18",
-            "5eabfdc6.be7e14"
+            "5eabfdc6.be7e14",
+            "9673313b.249898"
         ],
         "x": 454,
         "y": 279
@@ -164,8 +167,10 @@
             "85579d63.ba70f",
             "b39ad2b6.826198"
         ],
-        "x": 94,
-        "y": 379
+        "x": 114,
+        "y": 399,
+        "w": 1052,
+        "h": 262
     },
     {
         "id": "c67599e8.f83b88",
@@ -180,7 +185,9 @@
             "3332e8ea.edd9e8"
         ],
         "x": 74,
-        "y": 919
+        "y": 919,
+        "w": 512,
+        "h": 82
     },
     {
         "id": "a495c9ab.3fd74",
@@ -199,7 +206,9 @@
             "182b238.026b35d"
         ],
         "x": 74,
-        "y": 39
+        "y": 19,
+        "w": 772,
+        "h": 222
     },
     {
         "id": "fd8a84dc.33c088",
@@ -214,7 +223,8 @@
             "7848bb7a.4e1374",
             "d0fde4e3.bcb1b",
             "b8c864cb.d34068",
-            "f947f450.ea2ec8"
+            "f947f450.ea2ec8",
+            "b636d8fa.145348"
         ],
         "x": -6,
         "y": 479
@@ -235,7 +245,9 @@
             "64d8ffc2.e0f2a"
         ],
         "x": 64,
-        "y": 1019
+        "y": 1019,
+        "w": 642,
+        "h": 182
     },
     {
         "id": "dd07bb49.117478",
@@ -255,7 +267,9 @@
             "b02391bd.5c47d"
         ],
         "x": 14,
-        "y": 299
+        "y": 299,
+        "w": 1412,
+        "h": 82
     },
     {
         "id": "1c64706a.59b6c8",
@@ -270,13 +284,15 @@
             "5d6e3ef.60bd6c"
         ],
         "x": 574,
-        "y": 499
+        "y": 499,
+        "w": 592,
+        "h": 82
     },
     {
         "id": "cd6b5625.5238f8",
         "type": "mqtt-broker",
         "name": "",
-        "broker": "34.230.246.56",
+        "broker": "3.225.83.240",
         "port": "1883",
         "clientid": "",
         "usetls": false,
@@ -964,6 +980,44 @@
         "hidden": false
     },
     {
+        "id": "8df828eb.b80fe",
+        "type": "ui_group",
+        "name": "Navigation",
+        "tab": "73fa3d32.30e364",
+        "order": 4,
+        "disp": true,
+        "width": "32",
+        "collapse": false
+    },
+    {
+        "id": "ed96cb31.ba131",
+        "type": "ui_group",
+        "name": "Navigation",
+        "tab": "d0e5d7d6.5b1ae8",
+        "order": 10,
+        "disp": false,
+        "width": "30",
+        "collapse": false
+    },
+    {
+        "id": "a1755b69.8cae1",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ed96cb31.ba131",
+        "order": 2,
+        "width": "12",
+        "height": 1
+    },
+    {
+        "id": "9f3de9b9.fa0a8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ed96cb31.ba131",
+        "order": 4,
+        "width": "12",
+        "height": 1
+    },
+    {
         "id": "131bbded.d8d8da",
         "type": "mqtt in",
         "z": "ea943a79.b3e358",
@@ -976,8 +1030,8 @@
         "nl": false,
         "rap": true,
         "rh": 0,
-        "x": 210,
-        "y": 460,
+        "x": 230,
+        "y": 480,
         "wires": [
             [
                 "7e2c1896.5a4ae",
@@ -1024,8 +1078,8 @@
         ],
         "outputs": 1,
         "useDifferentColor": false,
-        "x": 990,
-        "y": 420,
+        "x": 1010,
+        "y": 440,
         "wires": [
             []
         ]
@@ -1043,8 +1097,8 @@
         "nl": false,
         "rap": true,
         "rh": 0,
-        "x": 200,
-        "y": 560,
+        "x": 220,
+        "y": 580,
         "wires": [
             [
                 "7e2c1896.5a4ae",
@@ -1094,8 +1148,8 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 980,
-        "y": 540,
+        "x": 1000,
+        "y": 560,
         "wires": []
     },
     {
@@ -1118,8 +1172,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 450,
-        "y": 720,
+        "x": 510,
+        "y": 760,
         "wires": [
             [
                 "fce3dd8c.c6d94",
@@ -1996,8 +2050,8 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 1000,
-        "y": 480,
+        "x": 1020,
+        "y": 500,
         "wires": []
     },
     {
@@ -2038,8 +2092,8 @@
         ],
         "outputs": 1,
         "useDifferentColor": false,
-        "x": 980,
-        "y": 600,
+        "x": 1000,
+        "y": 620,
         "wires": [
             []
         ]
@@ -2133,6 +2187,7 @@
         "id": "e50af479.83b02",
         "type": "inject",
         "z": "d749cdc9.d28c6",
+        "d": true,
         "name": "",
         "props": [
             {
@@ -2705,7 +2760,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 210,
-        "y": 900,
+        "y": 1040,
         "wires": [
             [
                 "654a8bf0.411a6c",
@@ -2922,7 +2977,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 240,
-        "y": 840,
+        "y": 980,
         "wires": [
             [
                 "654a8bf0.411a6c",
@@ -3011,7 +3066,7 @@
         "z": "7fb1182.bf64368",
         "d": true,
         "name": "Editor audio out",
-        "voice": "0",
+        "voice": "1",
         "x": 630,
         "y": 240,
         "wires": []
@@ -3096,7 +3151,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 180,
-        "y": 960,
+        "y": 1100,
         "wires": [
             [
                 "654a8bf0.411a6c",
@@ -3196,7 +3251,7 @@
         "expiry": "",
         "broker": "cd6b5625.5238f8",
         "x": 750,
-        "y": 220,
+        "y": 200,
         "wires": []
     },
     {
@@ -3223,7 +3278,7 @@
         "payload": "on",
         "payloadType": "str",
         "x": 290,
-        "y": 80,
+        "y": 60,
         "wires": [
             [
                 "49acb94c.e04f9"
@@ -3254,7 +3309,7 @@
         "payload": "off",
         "payloadType": "str",
         "x": 290,
-        "y": 120,
+        "y": 100,
         "wires": [
             [
                 "49acb94c.e04f9"
@@ -3282,7 +3337,7 @@
         "topic": "esp32/output",
         "topicType": "msg",
         "x": 160,
-        "y": 180,
+        "y": 160,
         "wires": [
             [
                 "49acb94c.e04f9"
@@ -3322,7 +3377,7 @@
         "offcolor": "",
         "animate": false,
         "x": 510,
-        "y": 220,
+        "y": 200,
         "wires": [
             [
                 "3a1acf2b.d6171",
@@ -3352,7 +3407,7 @@
         "topic": "esp32/output",
         "topicType": "msg",
         "x": 160,
-        "y": 220,
+        "y": 200,
         "wires": [
             [
                 "49acb94c.e04f9"
@@ -3496,7 +3551,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 230,
-        "y": 1020,
+        "y": 1160,
         "wires": [
             [
                 "9580e924.c5c528"
@@ -3629,7 +3684,7 @@
         "passthru": false,
         "topic": "topic",
         "topicType": "msg",
-        "x": 450,
+        "x": 690,
         "y": 120,
         "wires": [
             []
@@ -3639,6 +3694,7 @@
         "id": "6c3cdf08.81d43",
         "type": "inject",
         "z": "d749cdc9.d28c6",
+        "d": true,
         "name": "",
         "props": [
             {
@@ -3656,7 +3712,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 110,
+        "x": 450,
         "y": 120,
         "wires": [
             [
@@ -4808,7 +4864,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 250,
-        "y": 1080,
+        "y": 1220,
         "wires": [
             [
                 "9580e924.c5c528"
@@ -4825,7 +4881,7 @@
         "height": "3",
         "name": "Explanation",
         "label": "",
-        "format": "<b>Load Dataset</b> dfdf",
+        "format": "<b>Load Dataset</b> carga la base de datos y la separa en conjuntos de entreneamiento y testing (80,20).</p> <b>Classify Dataset</b> aprende del set de entrenamiento.</p><b> Evaluate Dataset</b> compara la salida del set de testeo con el resultado de aplicar la prediccion a las entradas. </p>Al ingresar un par<b> Temp, Humidity </b> y presionar <b> Predict</b>, predice el estado de salida de acuerdo al analisis.</b>",
         "layout": "row-left",
         "x": 1110,
         "y": 520,
@@ -5413,8 +5469,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
-        "y": 560,
+        "x": 390,
+        "y": 540,
         "wires": [
             [
                 "26e8c19b.f12546"
@@ -5740,7 +5796,7 @@
         "type": "debug",
         "z": "e924d20f.9ce478",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": true,
@@ -5812,7 +5868,7 @@
         "group": "b5d39406.6debf8",
         "order": 2,
         "width": "6",
-        "height": "4",
+        "height": "5",
         "gtype": "gage",
         "title": "DG 2 (875kW)",
         "label": "kW",
@@ -5890,7 +5946,7 @@
         "name": "Port side",
         "order": 3,
         "width": "9",
-        "height": "5",
+        "height": "4",
         "format": "<style>\n   table {\n   color: #d1d1d1;\n   width: 100%;\n   border-collapse: collapse;\n   border-spacing: 0;\n   font-size: 11px;\n   }\n   td, th {\n   border: 1px solid transparent;\n   /* No more visible border */\n   height: 30px;\n   transition: all 0.3s;\n   /* Simple transition for hover effect */\n   text-align: left;\n   }\n   th {\n   background: #6e6e6e;\n   font-weight: bold;\n   }\n   td {\n   background: #6e6e6e;\n   padding-left: 5px;\n   }\n   /* Cells in even rows (2,4,6...) are one color */\n   tr:nth-child(even) td {\n   background: #4b4b4b;\n   height: 23px;\n   }\n   /* Cells in odd rows (1,3,5...) are another (excludes header cells)  */\n   tr:nth-child(odd) td {\n   background: #3f3f3f;\n   height: 23px;\n   }\n   tr td:hover {\n   background: #8c8c8c;\n   color: #d1d1d1;\n   }\n   .container\n   {\n   /*overflow-y: scroll;*/\n   overflow-x: hidden;\n   }\n   .nr-dashboard-theme .nr-dashboard-template ::-webkit-scrollbar-track {\n   background-color: #1a1a1a;\n   }\n   .value\n   {\n   width: 100px;\n   color: #e6e6e6;\n   font-size: 13px;\n   font-weight:600;\n   text-align: center;\n   }\n   .port\n   {\n   text-align: right;\n   }\n   .unit\n   {\n   text-align: center;\n   }\n</style>\n<div>\n   <div class=\"container\">\n      <table>\n         <tbody>\n            <tr>\n               <td class=\"port\">CHG. Air Temp</td>\n               <td class=\"unit\">°C</td>\n               <td class=\"value\"><span ng-bind=\"msg.payload[108]\"></span></td>\n            </tr>\n            <tr>\n               <td class=\"port\">EXHAUST Temp</td>\n               <td class=\"unit\">°C</td>\n               <td class=\"value\"><span ng-bind=\"msg.payload[107]\"></span></td>\n            </tr>\n            <tr>\n               <td class=\"port\">LO Press</td>\n               <td class=\"unit\">Bar</td>\n               <td class=\"value\"><span ng-bind=\"msg.payload[101]\"></span></td>\n            </tr>            \n            <tr>\n               <td class=\"port\">LT Press</td>\n               <td class=\"unit\">Bar</td>\n               <td class=\"value\"><span ng-bind=\"msg.payload[106]\"></span></td>\n            </tr>      \n            <tr>\n               <td class=\"port\">HT Press</td>\n               <td class=\"unit\">Bar</td>\n               <td class=\"value\"><span ng-bind=\"msg.payload[102]\"></span></td>\n            </tr>   \n            <tr>\n               <td class=\"port\">FO Press</td>\n               <td class=\"unit\">Bar</td>\n               <td class=\"value\"><span ng-bind=\"msg.payload[100]\"></span></td>\n            </tr>   \n            <tr>\n               <td class=\"port\">LO Temp</td>\n               <td class=\"unit\">°C</td>\n               <td class=\"value\"><span ng-bind=\"msg.payload[104]\"></span></td>\n            </tr>\n            <tr>\n               <td class=\"port\">HT Temp</td>\n               <td class=\"unit\">°C</td>\n               <td class=\"value\"><span ng-bind=\"msg.payload[105]\"></span></td>\n            </tr>\n         </tbody>\n      </table>\n   </div>\n</div>\n<div></div>\n</body>\n</html>",
         "storeOutMessages": true,
         "fwdInMessages": true,
@@ -6418,7 +6474,7 @@
         "type": "debug",
         "z": "c774982a.dc6c1",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": true,
@@ -6464,6 +6520,118 @@
         "wires": [
             [
                 "edf08104.4351e"
+            ]
+        ]
+    },
+    {
+        "id": "8e6b287b.67974",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "cfd71c3b.62ad5",
+        "name": "Previous en Nautic",
+        "group": "ed96cb31.ba131",
+        "order": 1,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Previous",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-arrow-left",
+        "payload": "+1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 230,
+        "y": 1260,
+        "wires": [
+            [
+                "9580e924.c5c528"
+            ]
+        ]
+    },
+    {
+        "id": "b636d8fa.145348",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "fd8a84dc.33c088",
+        "name": "Next en Nautic",
+        "group": "ed96cb31.ba131",
+        "order": 5,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Next",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-arrow-right",
+        "payload": "+1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 100,
+        "y": 800,
+        "wires": [
+            [
+                "587f60cc.ab0a18"
+            ]
+        ]
+    },
+    {
+        "id": "9673313b.249898",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "e9a3077.08c0378",
+        "name": "",
+        "group": "bce7c592.91fef8",
+        "order": 3,
+        "width": 6,
+        "height": 6,
+        "passthru": false,
+        "label": "Nautic",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-ship fa-4x",
+        "payload": "nauticAi Elec",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 650,
+        "y": 700,
+        "wires": [
+            [
+                "efcee0a1.35f83"
+            ]
+        ]
+    },
+    {
+        "id": "38df8497.a67acc",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "3a8c6532.d84b42",
+        "name": "Principal en Nautic",
+        "group": "ed96cb31.ba131",
+        "order": 3,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Home",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "home",
+        "payload": "0",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 420,
+        "wires": [
+            [
+                "a1aa12d6.e76ff8"
             ]
         ]
     }
