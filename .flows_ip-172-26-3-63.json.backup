@@ -7,6 +7,13 @@
         "info": ""
     },
     {
+        "id": "c774982a.dc6c1",
+        "type": "tab",
+        "label": "Nautic",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "740b988e.6d58e",
         "type": "tab",
         "label": "Archivos y logs",
@@ -82,7 +89,8 @@
             "d4a06274.649078",
             "8eea35e2.16dba8",
             "b870740b.44b998",
-            "f15d50d6.84c2d"
+            "f15d50d6.84c2d",
+            "38df8497.a67acc"
         ],
         "x": -6,
         "y": 99
@@ -100,10 +108,11 @@
             "84f1a4f6.9d613",
             "9a267f89.3ae5b8",
             "71392fe7.706f28",
-            "734b9d37.2af744"
+            "734b9d37.2af744",
+            "8e6b287b.67974"
         ],
         "x": 14,
-        "y": 799
+        "y": 939
     },
     {
         "id": "e9a3077.08c0378",
@@ -136,7 +145,8 @@
             "a1aa12d6.e76ff8",
             "9580e924.c5c528",
             "587f60cc.ab0a18",
-            "5eabfdc6.be7e14"
+            "5eabfdc6.be7e14",
+            "9673313b.249898"
         ],
         "x": 454,
         "y": 279
@@ -157,8 +167,8 @@
             "85579d63.ba70f",
             "b39ad2b6.826198"
         ],
-        "x": 94,
-        "y": 379,
+        "x": 114,
+        "y": 399,
         "w": 1052,
         "h": 262
     },
@@ -196,7 +206,7 @@
             "182b238.026b35d"
         ],
         "x": 74,
-        "y": 39,
+        "y": 19,
         "w": 772,
         "h": 222
     },
@@ -213,7 +223,8 @@
             "7848bb7a.4e1374",
             "d0fde4e3.bcb1b",
             "b8c864cb.d34068",
-            "f947f450.ea2ec8"
+            "f947f450.ea2ec8",
+            "b636d8fa.145348"
         ],
         "x": -6,
         "y": 479
@@ -281,7 +292,7 @@
         "id": "cd6b5625.5238f8",
         "type": "mqtt-broker",
         "name": "",
-        "broker": "34.230.246.56",
+        "broker": "3.225.83.240",
         "port": "1883",
         "clientid": "",
         "usetls": false,
@@ -301,7 +312,7 @@
         "willPayload": "",
         "willMsg": {},
         "sessionExpiry": "",
-        "info": "El servidor Mosquito está configurado con usuario user y password password. "
+        "info": "El servidor Mosquito está configurado con user y password."
     },
     {
         "id": "356fecc8.cc0a9c",
@@ -323,10 +334,10 @@
                 "reset": false
             },
             "customTheme": {
-                "name": "Untitled Theme 1",
+                "name": "Tema azules",
                 "default": "#4B7930",
-                "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "baseColor": "#0080c0",
+                "baseFont": "Copperplate,Copperplate Gothic Light,fantasy",
                 "reset": false
             },
             "themeState": {
@@ -337,7 +348,7 @@
                 },
                 "page-titlebar-backgroundColor": {
                     "value": "#097479",
-                    "edited": false
+                    "edited": true
                 },
                 "page-backgroundColor": {
                     "value": "#111111",
@@ -644,7 +655,7 @@
         "tab": "",
         "order": 1,
         "disp": true,
-        "width": "6",
+        "width": "26",
         "collapse": false
     },
     {
@@ -741,7 +752,7 @@
         "tab": "636f40c1.dacda",
         "order": 2,
         "disp": false,
-        "width": "3",
+        "width": "4",
         "collapse": false
     },
     {
@@ -757,6 +768,7 @@
     {
         "id": "d064d5d0.b32de",
         "type": "ui_spacer",
+        "d": true,
         "name": "spacer",
         "group": "e5619d8f.db854",
         "order": 3,
@@ -778,7 +790,7 @@
         "type": "ui_tab",
         "name": "Machine Learning",
         "icon": "fa-rocket ",
-        "order": 10,
+        "order": 6,
         "disabled": false,
         "hidden": false
     },
@@ -869,6 +881,143 @@
         "info": "Conexión a la API de ewelink para accionar y monitorear los dispositivos de la cuenta. \nLa cuenta principal de los dispositivos es otra, y comparte los mismos con ésta. De esa forma se evita el problema de que ewelink no permite 2 sesiones activas. \n\nLa conexión es inestable. A veces se desloguea sin razón. Además, la respuesta es lenta, demora casi un segundo en enviar la orden de cambio de estado, y el mismo tiempo en recibir feedback"
     },
     {
+        "id": "90836bed.157498",
+        "type": "ui_group",
+        "name": "SG4",
+        "tab": "d0e5d7d6.5b1ae8",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "1d865536.eb801b",
+        "type": "ui_group",
+        "name": "SG3",
+        "tab": "d0e5d7d6.5b1ae8",
+        "order": 2,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b5d39406.6debf8",
+        "type": "ui_group",
+        "name": "DG2",
+        "tab": "d0e5d7d6.5b1ae8",
+        "order": 7,
+        "disp": false,
+        "width": "9",
+        "collapse": false
+    },
+    {
+        "id": "e9ed4336.19b7f",
+        "type": "ui_group",
+        "name": "MSB",
+        "tab": "d0e5d7d6.5b1ae8",
+        "order": 8,
+        "disp": false,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "ea4f996c.f87158",
+        "type": "ui_group",
+        "name": "DG1",
+        "tab": "d0e5d7d6.5b1ae8",
+        "order": 9,
+        "disp": false,
+        "width": "9",
+        "collapse": false
+    },
+    {
+        "id": "c9a2551b.5b9168",
+        "type": "ui_group",
+        "name": "lines",
+        "tab": "d0e5d7d6.5b1ae8",
+        "order": 6,
+        "disp": false,
+        "width": "30",
+        "collapse": false
+    },
+    {
+        "id": "65f6f27e.a1f1ec",
+        "type": "ui_group",
+        "name": "Bow thruster",
+        "tab": "d0e5d7d6.5b1ae8",
+        "order": 3,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "fa92953a.7a1b58",
+        "type": "ui_group",
+        "name": "SG1",
+        "tab": "d0e5d7d6.5b1ae8",
+        "order": 5,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b238e66b.53c658",
+        "type": "ui_group",
+        "name": "SG2",
+        "tab": "d0e5d7d6.5b1ae8",
+        "order": 4,
+        "disp": false,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "d0e5d7d6.5b1ae8",
+        "type": "ui_tab",
+        "name": "nauticAi Elec",
+        "icon": "fa-ship",
+        "order": 7,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8df828eb.b80fe",
+        "type": "ui_group",
+        "name": "Navigation",
+        "tab": "73fa3d32.30e364",
+        "order": 4,
+        "disp": true,
+        "width": "32",
+        "collapse": false
+    },
+    {
+        "id": "ed96cb31.ba131",
+        "type": "ui_group",
+        "name": "Navigation",
+        "tab": "d0e5d7d6.5b1ae8",
+        "order": 10,
+        "disp": false,
+        "width": "30",
+        "collapse": false
+    },
+    {
+        "id": "a1755b69.8cae1",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ed96cb31.ba131",
+        "order": 2,
+        "width": "12",
+        "height": 1
+    },
+    {
+        "id": "9f3de9b9.fa0a8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "ed96cb31.ba131",
+        "order": 4,
+        "width": "12",
+        "height": 1
+    },
+    {
         "id": "131bbded.d8d8da",
         "type": "mqtt in",
         "z": "ea943a79.b3e358",
@@ -881,8 +1030,8 @@
         "nl": false,
         "rap": true,
         "rh": 0,
-        "x": 210,
-        "y": 460,
+        "x": 230,
+        "y": 480,
         "wires": [
             [
                 "7e2c1896.5a4ae",
@@ -929,8 +1078,8 @@
         ],
         "outputs": 1,
         "useDifferentColor": false,
-        "x": 990,
-        "y": 420,
+        "x": 1010,
+        "y": 440,
         "wires": [
             []
         ]
@@ -948,8 +1097,8 @@
         "nl": false,
         "rap": true,
         "rh": 0,
-        "x": 200,
-        "y": 560,
+        "x": 220,
+        "y": 580,
         "wires": [
             [
                 "7e2c1896.5a4ae",
@@ -999,8 +1148,8 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 980,
-        "y": 540,
+        "x": 1000,
+        "y": 560,
         "wires": []
     },
     {
@@ -1023,8 +1172,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 450,
-        "y": 720,
+        "x": 510,
+        "y": 760,
         "wires": [
             [
                 "fce3dd8c.c6d94",
@@ -1901,8 +2050,8 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 1000,
-        "y": 480,
+        "x": 1020,
+        "y": 500,
         "wires": []
     },
     {
@@ -1943,8 +2092,8 @@
         ],
         "outputs": 1,
         "useDifferentColor": false,
-        "x": 980,
-        "y": 600,
+        "x": 1000,
+        "y": 620,
         "wires": [
             []
         ]
@@ -2038,6 +2187,7 @@
         "id": "e50af479.83b02",
         "type": "inject",
         "z": "d749cdc9.d28c6",
+        "d": true,
         "name": "",
         "props": [
             {
@@ -2121,7 +2271,8 @@
         "y": 60,
         "wires": [
             [
-                "969feee0.81e0d8"
+                "969feee0.81e0d8",
+                "a052221b.054ae8"
             ]
         ]
     },
@@ -2609,7 +2760,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 210,
-        "y": 900,
+        "y": 1040,
         "wires": [
             [
                 "654a8bf0.411a6c",
@@ -2826,7 +2977,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 240,
-        "y": 840,
+        "y": 980,
         "wires": [
             [
                 "654a8bf0.411a6c",
@@ -2915,7 +3066,7 @@
         "z": "7fb1182.bf64368",
         "d": true,
         "name": "Editor audio out",
-        "voice": "0",
+        "voice": "1",
         "x": 630,
         "y": 240,
         "wires": []
@@ -3000,7 +3151,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 180,
-        "y": 960,
+        "y": 1100,
         "wires": [
             [
                 "654a8bf0.411a6c",
@@ -3100,7 +3251,7 @@
         "expiry": "",
         "broker": "cd6b5625.5238f8",
         "x": 750,
-        "y": 220,
+        "y": 200,
         "wires": []
     },
     {
@@ -3127,7 +3278,7 @@
         "payload": "on",
         "payloadType": "str",
         "x": 290,
-        "y": 80,
+        "y": 60,
         "wires": [
             [
                 "49acb94c.e04f9"
@@ -3158,7 +3309,7 @@
         "payload": "off",
         "payloadType": "str",
         "x": 290,
-        "y": 120,
+        "y": 100,
         "wires": [
             [
                 "49acb94c.e04f9"
@@ -3186,7 +3337,7 @@
         "topic": "esp32/output",
         "topicType": "msg",
         "x": 160,
-        "y": 180,
+        "y": 160,
         "wires": [
             [
                 "49acb94c.e04f9"
@@ -3226,12 +3377,12 @@
         "offcolor": "",
         "animate": false,
         "x": 510,
-        "y": 220,
+        "y": 200,
         "wires": [
             [
                 "3a1acf2b.d6171",
                 "de9cb795.975788",
-                "141ec717.03c6f9"
+                "308348d2.804b9"
             ]
         ]
     },
@@ -3256,7 +3407,7 @@
         "topic": "esp32/output",
         "topicType": "msg",
         "x": 160,
-        "y": 220,
+        "y": 200,
         "wires": [
             [
                 "49acb94c.e04f9"
@@ -3400,7 +3551,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 230,
-        "y": 1020,
+        "y": 1160,
         "wires": [
             [
                 "9580e924.c5c528"
@@ -3533,7 +3684,7 @@
         "passthru": false,
         "topic": "topic",
         "topicType": "msg",
-        "x": 450,
+        "x": 690,
         "y": 120,
         "wires": [
             []
@@ -3543,6 +3694,7 @@
         "id": "6c3cdf08.81d43",
         "type": "inject",
         "z": "d749cdc9.d28c6",
+        "d": true,
         "name": "",
         "props": [
             {
@@ -3560,7 +3712,7 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 110,
+        "x": 450,
         "y": 120,
         "wires": [
             [
@@ -3889,23 +4041,6 @@
         "statusType": "auto",
         "x": 1190,
         "y": 160,
-        "wires": []
-    },
-    {
-        "id": "141ec717.03c6f9",
-        "type": "debug",
-        "z": "ea943a79.b3e358",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 930,
-        "y": 300,
         "wires": []
     },
     {
@@ -4444,7 +4579,7 @@
         "func": "var string = JSON.stringify(msg.payload);\nvar objectValue = JSON.parse(string);\nvar temperature= objectValue['esp32/temperature'];\nvar humidity=objectValue['esp32/humidity'];\nif (temperature>30)\n    {msg.payload=\"on\";}\nelse if (humidity>95)   \n    {msg.payload=\"on\";}\nelse if (temperature*humidity>2500)\n{msg.payload=\"on\";}\nelse \n{msg.payload=\"off\";}\n\n//msg.payload= url;\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
-        "initialize": "",
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n//global.output=off;",
         "finalize": "",
         "libs": [],
         "x": 160,
@@ -4557,7 +4692,7 @@
         "label": "Load result",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "x": 1110,
+        "x": 1130,
         "y": 40,
         "wires": [],
         "info": "Muestra en pantalla el resultado de la función que genera el dataset"
@@ -4729,7 +4864,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 250,
-        "y": 1080,
+        "y": 1220,
         "wires": [
             [
                 "9580e924.c5c528"
@@ -4746,7 +4881,7 @@
         "height": "3",
         "name": "Explanation",
         "label": "",
-        "format": "<b>Load Dataset</b> dfdf",
+        "format": "<b>Load Dataset</b> carga la base de datos y la separa en conjuntos de entreneamiento y testing (80,20).</p> <b>Classify Dataset</b> aprende del set de entrenamiento.</p><b> Evaluate Dataset</b> compara la salida del set de testeo con el resultado de aplicar la prediccion a las entradas. </p>Al ingresar un par<b> Temp, Humidity </b> y presionar <b> Predict</b>, predice el estado de salida de acuerdo al analisis.</b>",
         "layout": "row-left",
         "x": 1110,
         "y": 520,
@@ -4780,7 +4915,7 @@
         "method": "get",
         "action": "",
         "sheet": "1t87zKsf-IVLHc_1948lBuJFM0jjjdprb6qn3pAlpqkc",
-        "cells": "Sheet1!A1:E25000",
+        "cells": "Sheet1!A1:E100000",
         "flatten": false,
         "name": "Get gsheet",
         "x": 290,
@@ -5006,8 +5141,8 @@
         "group": "e5619d8f.db854",
         "name": "Shows file list",
         "order": 2,
-        "width": "3",
-        "height": "8",
+        "width": "4",
+        "height": "13",
         "columns": [
             {
                 "field": "File",
@@ -5245,7 +5380,9 @@
             [
                 "4f2e38e6.10b448"
             ],
-            []
+            [
+                "217c5f77.92d998"
+            ]
         ]
     },
     {
@@ -5332,8 +5469,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
-        "y": 560,
+        "x": 390,
+        "y": 540,
         "wires": [
             [
                 "26e8c19b.f12546"
@@ -5463,7 +5600,7 @@
         "method": "get",
         "action": "",
         "sheet": "1t87zKsf-IVLHc_1948lBuJFM0jjjdprb6qn3pAlpqkc",
-        "cells": "Sheet1!A10000:E12000",
+        "cells": "Sheet1!A1:E2000",
         "flatten": false,
         "name": "Get gsheet",
         "x": 270,
@@ -5611,6 +5748,7 @@
         "id": "b6e1f755.cb231",
         "type": "inject",
         "z": "740b988e.6d58e",
+        "d": true,
         "name": "",
         "props": [
             {
@@ -5652,5 +5790,849 @@
         "x": 1230,
         "y": 440,
         "wires": []
+    },
+    {
+        "id": "a052221b.054ae8",
+        "type": "debug",
+        "z": "e924d20f.9ce478",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 470,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "edf08104.4351e",
+        "type": "ui_gauge",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "group": "90836bed.157498",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "gtype": "gage",
+        "title": "SG 4 (640kW)",
+        "label": "kW",
+        "format": "{{payload[\"27\"]}}",
+        "min": 0,
+        "max": "640",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "450",
+        "seg2": "550",
+        "x": 540,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "96e69974.590068",
+        "type": "ui_gauge",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "group": "1d865536.eb801b",
+        "order": 2,
+        "width": "6",
+        "height": "4",
+        "gtype": "gage",
+        "title": "SG 3 (1400kW)",
+        "label": "kW",
+        "format": "{{payload[\"26\"]}}",
+        "min": 0,
+        "max": "1400",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "700",
+        "seg2": "1100",
+        "x": 760,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "1ffdd31e.5a990d",
+        "type": "ui_gauge",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "group": "b5d39406.6debf8",
+        "order": 2,
+        "width": "6",
+        "height": "5",
+        "gtype": "gage",
+        "title": "DG 2 (875kW)",
+        "label": "kW",
+        "format": "{{payload[\"23\"]}}",
+        "min": 0,
+        "max": "875",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "550",
+        "seg2": "700",
+        "x": 580,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "67219259.c8fcdc",
+        "type": "ui_gauge",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "group": "e9ed4336.19b7f",
+        "order": 2,
+        "width": "6",
+        "height": "4",
+        "gtype": "gage",
+        "title": "MSB Produced Power",
+        "label": "kW",
+        "format": "{{payload[\"28\"]}}",
+        "min": 0,
+        "max": "1750",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "600",
+        "seg2": "1200",
+        "x": 860,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "3aedbc92.8f2d34",
+        "type": "ui_gauge",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "group": "e9ed4336.19b7f",
+        "order": 5,
+        "width": "6",
+        "height": "4",
+        "gtype": "gage",
+        "title": "DG FO. Flowmeter",
+        "label": "kg/h",
+        "format": "{{payload[\"3\"]}}",
+        "min": 0,
+        "max": "300",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "120",
+        "seg2": "160",
+        "x": 870,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "ae5f7de7.789c",
+        "type": "ui_template",
+        "z": "c774982a.dc6c1",
+        "group": "b5d39406.6debf8",
+        "name": "Port side",
+        "order": 3,
+        "width": "9",
+        "height": "4",
+        "format": "<style>\n   table {\n   color: #d1d1d1;\n   width: 100%;\n   border-collapse: collapse;\n   border-spacing: 0;\n   font-size: 11px;\n   }\n   td, th {\n   border: 1px solid transparent;\n   /* No more visible border */\n   height: 30px;\n   transition: all 0.3s;\n   /* Simple transition for hover effect */\n   text-align: left;\n   }\n   th {\n   background: #6e6e6e;\n   font-weight: bold;\n   }\n   td {\n   background: #6e6e6e;\n   padding-left: 5px;\n   }\n   /* Cells in even rows (2,4,6...) are one color */\n   tr:nth-child(even) td {\n   background: #4b4b4b;\n   height: 23px;\n   }\n   /* Cells in odd rows (1,3,5...) are another (excludes header cells)  */\n   tr:nth-child(odd) td {\n   background: #3f3f3f;\n   height: 23px;\n   }\n   tr td:hover {\n   background: #8c8c8c;\n   color: #d1d1d1;\n   }\n   .container\n   {\n   /*overflow-y: scroll;*/\n   overflow-x: hidden;\n   }\n   .nr-dashboard-theme .nr-dashboard-template ::-webkit-scrollbar-track {\n   background-color: #1a1a1a;\n   }\n   .value\n   {\n   width: 100px;\n   color: #e6e6e6;\n   font-size: 13px;\n   font-weight:600;\n   text-align: center;\n   }\n   .port\n   {\n   text-align: right;\n   }\n   .unit\n   {\n   text-align: center;\n   }\n</style>\n<div>\n   <div class=\"container\">\n      <table>\n         <tbody>\n            <tr>\n               <td class=\"port\">CHG. Air Temp</td>\n               <td class=\"unit\">°C</td>\n               <td class=\"value\"><span ng-bind=\"msg.payload[108]\"></span></td>\n            </tr>\n            <tr>\n               <td class=\"port\">EXHAUST Temp</td>\n               <td class=\"unit\">°C</td>\n               <td class=\"value\"><span ng-bind=\"msg.payload[107]\"></span></td>\n            </tr>\n            <tr>\n               <td class=\"port\">LO Press</td>\n               <td class=\"unit\">Bar</td>\n               <td class=\"value\"><span ng-bind=\"msg.payload[101]\"></span></td>\n            </tr>            \n            <tr>\n               <td class=\"port\">LT Press</td>\n               <td class=\"unit\">Bar</td>\n               <td class=\"value\"><span ng-bind=\"msg.payload[106]\"></span></td>\n            </tr>      \n            <tr>\n               <td class=\"port\">HT Press</td>\n               <td class=\"unit\">Bar</td>\n               <td class=\"value\"><span ng-bind=\"msg.payload[102]\"></span></td>\n            </tr>   \n            <tr>\n               <td class=\"port\">FO Press</td>\n               <td class=\"unit\">Bar</td>\n               <td class=\"value\"><span ng-bind=\"msg.payload[100]\"></span></td>\n            </tr>   \n            <tr>\n               <td class=\"port\">LO Temp</td>\n               <td class=\"unit\">°C</td>\n               <td class=\"value\"><span ng-bind=\"msg.payload[104]\"></span></td>\n            </tr>\n            <tr>\n               <td class=\"port\">HT Temp</td>\n               <td class=\"unit\">°C</td>\n               <td class=\"value\"><span ng-bind=\"msg.payload[105]\"></span></td>\n            </tr>\n         </tbody>\n      </table>\n   </div>\n</div>\n<div></div>\n</body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 600,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "124ad50e.de713b",
+        "type": "ui_template",
+        "z": "c774982a.dc6c1",
+        "group": "ea4f996c.f87158",
+        "name": "Starboard side",
+        "order": 2,
+        "width": "9",
+        "height": "5",
+        "format": "<style>\n   table {\n   color: #d1d1d1;\n   width: 100%;\n   border-collapse: collapse;\n   border-spacing: 0;\n   font-size: 11px;\n   }\n   td, th {\n   border: 1px solid transparent;\n   /* No more visible border */\n   height: 30px;\n   transition: all 0.3s;\n   /* Simple transition for hover effect */\n   text-align: left;\n   }\n   th {\n   background: #6e6e6e;\n   font-weight: bold;\n   }\n   td {\n   background: #6e6e6e;\n   padding-left: 5px;\n   }\n   /* Cells in even rows (2,4,6...) are one color */\n   tr:nth-child(even) td {\n   background: #4b4b4b;\n   height: 23px;\n   }\n   /* Cells in odd rows (1,3,5...) are another (excludes header cells)  */\n   tr:nth-child(odd) td {\n   background: #3f3f3f;\n   height: 23px;\n   }\n   tr td:hover {\n   background: #8c8c8c;\n   color: #d1d1d1;\n   }\n   .container\n   {\n   /*overflow-y: scroll;*/\n   overflow-x: hidden;\n   }\n   .nr-dashboard-theme .nr-dashboard-template ::-webkit-scrollbar-track {\n   background-color: #1a1a1a;\n   }\n   .value\n   {\n   width: 100px;\n   color: #e6e6e6;\n   font-size: 13px;\n   font-weight:600;\n   text-align: center;\n   }\n   .port\n   {\n   text-align: right;\n   }\n   .unit\n   {\n   text-align: center;\n   }\n</style>\n<div>\n   <div class=\"container\">\n      <table>\n         <tbody>\n            <tr>\n               <td class=\"value\"><span ng-bind=\"msg.payload[98]\"></span></td>\n               <td class=\"unit\">°C</td>\n               <td>CHG. Air Temp</td>\n            </tr>\n            <tr>\n               <td class=\"value\"><span ng-bind=\"msg.payload[97]\"></span></td>\n               <td class=\"unit\">°C</td>\n               <td>EXHAUST Temp</td>\n            </tr>            \n            <tr>\n               <td class=\"value\"><span ng-bind=\"msg.payload[91]\"></span></td>\n               <td class=\"unit\">Bar</td>\n               <td>LO Press</td>\n            </tr>\n            <tr>\n               <td class=\"value\"><span ng-bind=\"msg.payload[96]\"></span></td>\n               <td class=\"unit\">Bar</td>\n               <td>LT Press</td>\n            </tr>\n            <tr>\n               <td class=\"value\"><span ng-bind=\"msg.payload[92]\"></span></td>\n               <td class=\"unit\">Bar</td>\n               <td>HT Press</td>\n            </tr>\n            <tr>\n               <td class=\"value\"><span ng-bind=\"msg.payload[90]\"></span></td>\n               <td class=\"unit\">Bar</td>\n               <td>FO Press</td>\n            </tr>\n            <tr>\n               <td class=\"value\"><span ng-bind=\"msg.payload[94]\"></span></td>\n               <td class=\"unit\">°C</td>\n               <td>LO Temp</td>\n            </tr>\n            <tr>\n               <td class=\"value\"><span ng-bind=\"msg.payload[95]\"></span></td>\n               <td class=\"unit\">°C</td>\n               <td>HT Temp</td>\n            </tr>\n            </tbody>\n      </table>\n   </div>\n</div>\n<div></div>\n</body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 1120,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8c6f799a.bf7128",
+        "type": "ui_gauge",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "group": "ea4f996c.f87158",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "gtype": "gage",
+        "title": "DG 1 (875kW)",
+        "label": "kW",
+        "format": "{{payload[\"22\"]}}",
+        "min": 0,
+        "max": "875",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "550",
+        "seg2": "700",
+        "x": 1120,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "31ade0c9.b1fb9",
+        "type": "ui_template",
+        "z": "c774982a.dc6c1",
+        "group": "c9a2551b.5b9168",
+        "name": "Lines",
+        "order": 2,
+        "width": "30",
+        "height": "2",
+        "format": "<style>\n   .container\n   {\n   overflow-y: hidden;\n   overflow-x: hidden;\n   }\n</style>\n<div class=\"container\">\n    <svg height=\"100\" width=\"1600\">\n      <!-- to SG4 -->\n      <line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"70\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n      <!-- vertical PS -->\n      <line x1=\"148\" y1=\"70\" x2=\"702\" y2=\"70\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n      <!-- to DG2 -->\n      <line x1=\"312\" y1=\"70\" x2=\"312\" y2=\"100\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n      <!-- to SG3 -->\n      <line x1=\"475\" y1=\"0\" x2=\"475\" y2=\"30\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n      <!-- SG3 breaker -->\n      <path d=\"M 475 70 v -15 l {{msg.payload}} -25\" stroke-linejoin=\"round\" style=\"fill:transparent;stroke:{{msg.color}};stroke-width:4\" />\n      <!-- vertical PS BT -->\n      <line x1=\"475\" y1=\"15\" x2=\"752\" y2=\"15\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n      <!-- to PS BT -->\n      <line x1=\"750\" y1=\"0\" x2=\"750\" y2=\"15\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n\n      <!-- to MSB -->\n      <line x1=\"700\" y1=\"70\" x2=\"700\" y2=\"100\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n      <!-- to MSB -->\n      <line x1=\"900\" y1=\"70\" x2=\"900\" y2=\"100\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n      <!-- vertical SB -->\n      <line x1=\"898\" y1=\"70\" x2=\"1452\" y2=\"70\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n      <!-- vertical SB BT -->\n      <line x1=\"848\" y1=\"15\" x2=\"1125\" y2=\"15\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n      <!-- to SB BT -->\n      <line x1=\"850\" y1=\"0\" x2=\"850\" y2=\"15\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n      <!-- to SG2 -->\n      <line x1=\"1125\" y1=\"0\" x2=\"1125\" y2=\"30\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n      <!-- SG2 breaker -->\n      <path d=\"M 1125 70 v -15 l {{msg.payload}} -25\" stroke-linejoin=\"round\" style=\"fill:transparent;stroke:{{msg.color}};stroke-width:4\" />\n      <!-- to DG1 -->\n      <line x1=\"1288\" y1=\"70\" x2=\"1288\" y2=\"100\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n      <!-- to SG1 -->\n      <line x1=\"1450\" y1=\"0\" x2=\"1450\" y2=\"70\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n    </svg>\n</div>\n</body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 950,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5249259c.8f706c",
+        "type": "ui_template",
+        "z": "c774982a.dc6c1",
+        "group": "65f6f27e.a1f1ec",
+        "name": "Bowthruster",
+        "order": 2,
+        "width": "6",
+        "height": "4",
+        "format": "<style>\n   .container\n   {\n   overflow-y: hidden;\n   overflow-x: hidden;\n   }\n   .heading\n   {\n   height:100px;\n   text-align:center;\n   }\n   .center\n   {\n   text-align:center;\n   padding-bottom: 10px;\n   }\n\n</style>\n<div class=\"container\">\n    <div class=\"heading\">\n    Bowthrusters\n    </div>\n    <div class=\"center\">\n    AFT No.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FWD No.1\n    </div>   \n    <div class=\"center\">\n    <i class=\"material-icons\"   style=\"color:{{msg.color}};font-size: 60px; transform:rotate({{msg.rotate}})\">toys</i>\n    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n    <i class=\"material-icons\" style=\"color:{{msg.color}};font-size: 60px; transform:rotate({{msg.rotate}}\">toys</i>\n    </div>   \n</div>\n</body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 830,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5528b9b1.bbdfb8",
+        "type": "ui_gauge",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "group": "fa92953a.7a1b58",
+        "order": 1,
+        "width": "6",
+        "height": "4",
+        "gtype": "gage",
+        "title": "SG 1 (640kW)",
+        "label": "kW",
+        "format": "{{payload[\"24\"]}}",
+        "min": 0,
+        "max": "640",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "450",
+        "seg2": "550",
+        "x": 1120,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "93701fab.567f",
+        "type": "ui_gauge",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "group": "b238e66b.53c658",
+        "order": 2,
+        "width": "6",
+        "height": "4",
+        "gtype": "gage",
+        "title": "SG 2 (1400kW)",
+        "label": "kW",
+        "format": "{{payload[\"25\"]}}",
+        "min": 0,
+        "max": "1400",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "700",
+        "seg2": "1100",
+        "x": 940,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "2b4d5c75.692d14",
+        "type": "ui_template",
+        "z": "c774982a.dc6c1",
+        "group": "e9ed4336.19b7f",
+        "name": "Description",
+        "order": 7,
+        "width": "12",
+        "height": "1",
+        "format": "<style>\n   .center\n   {\n   text-align: center;\n   font-size: 13px;\n   }\n</style>\n<div>\n   <div class=\"center\">\n    DG SFOC = AUX Fuel / DG1+2 Power &nbsp;&nbsp;&nbsp;&nbsp; ME SFOC = ME Fuel / Propulsion power\n   </div>\n</div>\n<div></div>\n</body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 930,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "50c86ca5.8de244",
+        "type": "smooth",
+        "z": "c774982a.dc6c1",
+        "name": "Smooth",
+        "property": "payload.sfocAux",
+        "action": "mean",
+        "count": "5",
+        "round": "0",
+        "mult": "single",
+        "reduce": false,
+        "x": 740,
+        "y": 660,
+        "wires": [
+            [
+                "ea6573a6.199f9"
+            ]
+        ]
+    },
+    {
+        "id": "d7869207.2b2a2",
+        "type": "smooth",
+        "z": "c774982a.dc6c1",
+        "name": "Smooth",
+        "property": "payload.sfoc",
+        "action": "mean",
+        "count": "5",
+        "round": "0",
+        "mult": "single",
+        "reduce": false,
+        "x": 1000,
+        "y": 660,
+        "wires": [
+            [
+                "e6c691ea.9f50f"
+            ]
+        ]
+    },
+    {
+        "id": "ea6573a6.199f9",
+        "type": "ui_level",
+        "z": "c774982a.dc6c1",
+        "group": "e9ed4336.19b7f",
+        "order": 4,
+        "width": "3",
+        "height": "4",
+        "name": "DG SFOC",
+        "label": "DG SFOC",
+        "colorHi": "#e60000",
+        "colorWarn": "#ff9900",
+        "colorNormal": "#00b33c",
+        "colorOff": "#595959",
+        "min": "100",
+        "max": "300",
+        "segWarn": "225",
+        "segHigh": "270",
+        "unit": "g/kWh",
+        "layout": "sv",
+        "channelA": "",
+        "channelB": "",
+        "decimals": 0,
+        "animations": "off",
+        "shape": "1",
+        "colorschema": "fixed",
+        "textoptions": "default",
+        "colorText": "#eeeeee",
+        "fontLabel": "",
+        "fontValue": "",
+        "fontSmall": "",
+        "colorFromTheme": true,
+        "textAnimations": false,
+        "hideValue": false,
+        "tickmode": "segments",
+        "peakmode": false,
+        "property": "payload.sfocAux",
+        "peaktime": 3000,
+        "x": 810,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "e6c691ea.9f50f",
+        "type": "ui_level",
+        "z": "c774982a.dc6c1",
+        "group": "e9ed4336.19b7f",
+        "order": 6,
+        "width": "3",
+        "height": "4",
+        "name": "ME SFOC",
+        "label": "ME SFOC",
+        "colorHi": "#e60000",
+        "colorWarn": "#ff9900",
+        "colorNormal": "#00b33c",
+        "colorOff": "#595959",
+        "min": "100",
+        "max": "300",
+        "segWarn": "225",
+        "segHigh": "270",
+        "unit": "g/kWh",
+        "layout": "sv",
+        "channelA": "",
+        "channelB": "",
+        "decimals": 0,
+        "animations": "off",
+        "shape": "1",
+        "colorschema": "fixed",
+        "textoptions": "default",
+        "colorText": "#eeeeee",
+        "fontLabel": "",
+        "fontValue": "",
+        "fontSmall": "",
+        "colorFromTheme": true,
+        "textAnimations": false,
+        "hideValue": false,
+        "tickmode": "segments",
+        "peakmode": false,
+        "property": "payload.sfoc",
+        "peaktime": 3000,
+        "x": 1050,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "176b1d8f.8a4202",
+        "type": "function",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "func": "msg.payload=0;\nmsg.color=\"#00DD00\";\n\ncuenta= global.get (\"count\");\nif (cuenta > 4) {\n    cuenta =0;\n    }\nswitch (cuenta){\ncase 0:\n    msg.rotate=\"36deg\";\n    break;\ncase 1:\n    msg.rotate=\"72deg\"\n    break;\ncase 2:\n    msg.rotate=\"108deg\"\n    break;\ncase 3:\n    msg.rotate=\"144deg\"\n    break;\ncase 4:\n    msg.rotate=\"180deg\"\n    break;\n}\ncuenta = cuenta +1;    \nglobal.set (\"count\", cuenta) ;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nglobal.set(\"count\" , 0);\n",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 200,
+        "wires": [
+            [
+                "31ade0c9.b1fb9",
+                "5249259c.8f706c",
+                "1b54bbfd.409b64",
+                "edc32c19.5676e8"
+            ]
+        ]
+    },
+    {
+        "id": "376ffcc9.cab5e4",
+        "type": "function",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "func": "msg.payload=15;\nmsg.color=\"#6e6e6e\";\n/*cuenta= global.get (\"count\");\nif (cuenta > 3) {\n    cuenta =0;\n    }\nswitch (cuenta){\ncase 0:\n    msg.rotate=\"36deg\";\n    break;\ncase 1:\n    msg.rotate=\"72deg\"\n    break;\ncase 2:\n    msg.rotate=\"108deg\"\n    break;\ncase 3:\n    msg.rotate=\"144deg\"\n    break;\n}\ncuenta = cuenta +1;    \nglobal.set (\"count\", cuenta) ;*/\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 300,
+        "wires": [
+            [
+                "31ade0c9.b1fb9",
+                "5249259c.8f706c",
+                "1b54bbfd.409b64",
+                "8e2a9fc7.d6a17"
+            ]
+        ]
+    },
+    {
+        "id": "308348d2.804b9",
+        "type": "change",
+        "z": "ea943a79.b3e358",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "output",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 970,
+        "y": 160,
+        "wires": [
+            [
+                "92887493.14e218"
+            ]
+        ]
+    },
+    {
+        "id": "5069ccd6.59f684",
+        "type": "switch",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "property": "output",
+        "propertyType": "global",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 290,
+        "y": 200,
+        "wires": [
+            [
+                "176b1d8f.8a4202"
+            ],
+            [
+                "376ffcc9.cab5e4"
+            ]
+        ]
+    },
+    {
+        "id": "92887493.14e218",
+        "type": "debug",
+        "z": "ea943a79.b3e358",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1210,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "3daebb35.b4af34",
+        "type": "inject",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "NaN",
+        "payloadType": "str",
+        "x": 90,
+        "y": 180,
+        "wires": [
+            [
+                "2d41f8d.605bd88",
+                "5069ccd6.59f684"
+            ]
+        ]
+    },
+    {
+        "id": "2d41f8d.605bd88",
+        "type": "debug",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 390,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "1b54bbfd.409b64",
+        "type": "debug",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "color",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "edc32c19.5676e8",
+        "type": "debug",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "rotate",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 930,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "ae3d6259.2afdb",
+        "type": "inject",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "test",
+        "payload": "count",
+        "payloadType": "global",
+        "x": 560,
+        "y": 120,
+        "wires": [
+            [
+                "786dc990.91bd58"
+            ]
+        ]
+    },
+    {
+        "id": "786dc990.91bd58",
+        "type": "debug",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 790,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "8e2a9fc7.d6a17",
+        "type": "debug",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "rotate",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 910,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "b7f063ac.c4ce1",
+        "type": "mqtt in",
+        "z": "c774982a.dc6c1",
+        "name": "",
+        "topic": "esp32/led_control",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "cd6b5625.5238f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 210,
+        "y": 440,
+        "wires": [
+            [
+                "edf08104.4351e"
+            ]
+        ]
+    },
+    {
+        "id": "8e6b287b.67974",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "cfd71c3b.62ad5",
+        "name": "Previous en Nautic",
+        "group": "ed96cb31.ba131",
+        "order": 1,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Previous",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-arrow-left",
+        "payload": "+1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 230,
+        "y": 1260,
+        "wires": [
+            [
+                "9580e924.c5c528"
+            ]
+        ]
+    },
+    {
+        "id": "b636d8fa.145348",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "fd8a84dc.33c088",
+        "name": "Next en Nautic",
+        "group": "ed96cb31.ba131",
+        "order": 5,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Next",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-arrow-right",
+        "payload": "+1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 100,
+        "y": 800,
+        "wires": [
+            [
+                "587f60cc.ab0a18"
+            ]
+        ]
+    },
+    {
+        "id": "9673313b.249898",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "e9a3077.08c0378",
+        "name": "",
+        "group": "bce7c592.91fef8",
+        "order": 3,
+        "width": 6,
+        "height": 6,
+        "passthru": false,
+        "label": "Nautic",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-ship fa-4x",
+        "payload": "nauticAi Elec",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 650,
+        "y": 700,
+        "wires": [
+            [
+                "efcee0a1.35f83"
+            ]
+        ]
+    },
+    {
+        "id": "38df8497.a67acc",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "3a8c6532.d84b42",
+        "name": "Principal en Nautic",
+        "group": "ed96cb31.ba131",
+        "order": 3,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Home",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "home",
+        "payload": "0",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 420,
+        "wires": [
+            [
+                "a1aa12d6.e76ff8"
+            ]
+        ]
     }
 ]
