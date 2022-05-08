@@ -109,10 +109,11 @@
             "9a267f89.3ae5b8",
             "71392fe7.706f28",
             "734b9d37.2af744",
-            "8e6b287b.67974"
+            "8e6b287b.67974",
+            "1cdf13dd.58452c"
         ],
-        "x": 14,
-        "y": 939
+        "x": 54,
+        "y": 979
     },
     {
         "id": "e9a3077.08c0378",
@@ -168,7 +169,9 @@
             "b39ad2b6.826198"
         ],
         "x": 114,
-        "y": 399
+        "y": 399,
+        "w": 1052,
+        "h": 262
     },
     {
         "id": "c67599e8.f83b88",
@@ -183,7 +186,9 @@
             "3332e8ea.edd9e8"
         ],
         "x": 74,
-        "y": 919
+        "y": 919,
+        "w": 512,
+        "h": 82
     },
     {
         "id": "a495c9ab.3fd74",
@@ -202,7 +207,9 @@
             "182b238.026b35d"
         ],
         "x": 74,
-        "y": 19
+        "y": 19,
+        "w": 772,
+        "h": 222
     },
     {
         "id": "fd8a84dc.33c088",
@@ -218,7 +225,8 @@
             "d0fde4e3.bcb1b",
             "b8c864cb.d34068",
             "f947f450.ea2ec8",
-            "b636d8fa.145348"
+            "b636d8fa.145348",
+            "e8975340.59b4c"
         ],
         "x": -6,
         "y": 479
@@ -239,7 +247,9 @@
             "64d8ffc2.e0f2a"
         ],
         "x": 64,
-        "y": 1019
+        "y": 1019,
+        "w": 642,
+        "h": 182
     },
     {
         "id": "dd07bb49.117478",
@@ -259,7 +269,9 @@
             "b02391bd.5c47d"
         ],
         "x": 14,
-        "y": 299
+        "y": 299,
+        "w": 1412,
+        "h": 82
     },
     {
         "id": "1c64706a.59b6c8",
@@ -274,7 +286,9 @@
             "5d6e3ef.60bd6c"
         ],
         "x": 574,
-        "y": 499
+        "y": 499,
+        "w": 592,
+        "h": 82
     },
     {
         "id": "cd6b5625.5238f8",
@@ -405,7 +419,7 @@
         "type": "ui_group",
         "name": "Humedad relativa",
         "tab": "b27a6bc6.fbb248",
-        "order": 4,
+        "order": 3,
         "disp": true,
         "width": "6",
         "collapse": true
@@ -433,7 +447,7 @@
         "type": "ui_group",
         "name": "Comandos",
         "tab": "b27a6bc6.fbb248",
-        "order": 2,
+        "order": 1,
         "disp": true,
         "width": "6",
         "collapse": false
@@ -443,7 +457,7 @@
         "type": "ui_group",
         "name": "Navigation",
         "tab": "b27a6bc6.fbb248",
-        "order": 1,
+        "order": 4,
         "disp": false,
         "width": "33",
         "collapse": false
@@ -651,7 +665,7 @@
         "type": "ui_group",
         "name": "Temperatura",
         "tab": "b27a6bc6.fbb248",
-        "order": 3,
+        "order": 2,
         "disp": true,
         "width": "6",
         "collapse": false
@@ -661,9 +675,9 @@
         "type": "ui_spacer",
         "name": "spacer",
         "group": "5233a975.68bcd",
-        "order": 5,
-        "width": "5",
-        "height": "2"
+        "order": 8,
+        "width": "6",
+        "height": "4"
     },
     {
         "id": "8ff5bd02.5b1d1",
@@ -973,7 +987,7 @@
         "name": "Navigation",
         "tab": "73fa3d32.30e364",
         "order": 4,
-        "disp": true,
+        "disp": false,
         "width": "32",
         "collapse": false
     },
@@ -1015,6 +1029,52 @@
         "width": 6
     },
     {
+        "id": "20e57977.04f336",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "8df828eb.b80fe",
+        "order": 2,
+        "width": "28",
+        "height": 1
+    },
+    {
+        "id": "94b4d1c5.ca0c58",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "54eb79f4.6de7",
+        "order": 2,
+        "width": "13",
+        "height": 1
+    },
+    {
+        "id": "ff92d79e.6be32",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "54eb79f4.6de7",
+        "order": 4,
+        "width": "14",
+        "height": 1
+    },
+    {
+        "id": "7616a957.66ee08",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "5233a975.68bcd",
+        "order": 3,
+        "width": "6",
+        "height": 1
+    },
+    {
+        "id": "d64d0f44.4e899",
+        "type": "ui_group",
+        "name": "Chart",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "15",
+        "collapse": false
+    },
+    {
         "id": "131bbded.d8d8da",
         "type": "mqtt in",
         "z": "ea943a79.b3e358",
@@ -1049,7 +1109,7 @@
         "height": 0,
         "label": "chart",
         "chartType": "line",
-        "legend": "false",
+        "legend": "true",
         "xformat": "HH:mm:ss",
         "interpolate": "linear",
         "nodata": "",
@@ -1068,7 +1128,7 @@
             "#ff7f0e",
             "#2ca02c",
             "#98df8a",
-            "#d62728",
+            "#ff0000",
             "#ff9896",
             "#9467bd",
             "#c5b0d5"
@@ -1131,7 +1191,7 @@
         "group": "ba50b77f.0e2ef8",
         "order": 1,
         "width": "6",
-        "height": 5,
+        "height": "6",
         "gtype": "gage",
         "title": "esp32/humidity gauge",
         "label": "%RH",
@@ -1382,7 +1442,7 @@
         "type": "function",
         "z": "1e1daf04.126739",
         "name": "Redondeo decimal",
-        "func": "msg.payload = msg.payload.toFixed(2);\nmsg.topic = 'Voltage';\nreturn msg;",
+        "func": "msg.payload = msg.payload.toFixed(2);\nmsg.topic = 'Voltage';\n//msg.label = 'Voltage'\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1396,7 +1456,8 @@
                 "fc9fa264.7c87",
                 "9cbfe281.96842",
                 "d6dbf51e.40f6c8",
-                "81a9261c.6abe08"
+                "81a9261c.6abe08",
+                "55b0ecee.fc13c4"
             ]
         ]
     },
@@ -1432,14 +1493,15 @@
         "finalize": "",
         "libs": [],
         "x": 510,
-        "y": 580,
+        "y": 560,
         "wires": [
             [
                 "a610d266.43fcc",
                 "9a77df8f.e4939",
-                "d6dbf51e.40f6c8",
                 "50970e08.0676b",
-                "81a9261c.6abe08"
+                "81a9261c.6abe08",
+                "d6dbf51e.40f6c8",
+                "55b0ecee.fc13c4"
             ]
         ]
     },
@@ -1484,7 +1546,7 @@
         "width": 0,
         "height": 0,
         "gtype": "gage",
-        "title": "Factor de potencia",
+        "title": "Factor de potencia (%)",
         "label": "",
         "format": "{{value}}",
         "min": "0",
@@ -1496,7 +1558,7 @@
         ],
         "seg1": ".84",
         "seg2": ".92",
-        "x": 1010,
+        "x": 1030,
         "y": 460,
         "wires": []
     },
@@ -1564,7 +1626,8 @@
                 "5a1d153b.e88474",
                 "fcd2df75.8a6038",
                 "d6dbf51e.40f6c8",
-                "81a9261c.6abe08"
+                "81a9261c.6abe08",
+                "55b0ecee.fc13c4"
             ]
         ]
     },
@@ -2033,7 +2096,7 @@
         "group": "a7eeab9.88e15d8",
         "order": 1,
         "width": "6",
-        "height": "5",
+        "height": "6",
         "gtype": "gage",
         "title": "esp32/temperature gauge",
         "label": "°C",
@@ -2059,9 +2122,9 @@
         "name": "esp32/humidity chart",
         "group": "ba50b77f.0e2ef8",
         "order": 2,
-        "width": 0,
-        "height": 0,
-        "label": "chart",
+        "width": "0",
+        "height": "0",
+        "label": "Chart",
         "chartType": "line",
         "legend": "true",
         "xformat": "HH:mm:ss",
@@ -2109,7 +2172,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "2",
+        "repeat": "3",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
@@ -2756,8 +2819,8 @@
         "payloadType": "global",
         "topic": "topic",
         "topicType": "msg",
-        "x": 210,
-        "y": 1040,
+        "x": 250,
+        "y": 1080,
         "wires": [
             [
                 "654a8bf0.411a6c",
@@ -2833,7 +2896,7 @@
         "outputs": 1,
         "useDifferentColor": false,
         "x": 980,
-        "y": 80,
+        "y": 100,
         "wires": [
             []
         ]
@@ -2960,7 +3023,7 @@
         "g": "cfd71c3b.62ad5",
         "name": "Back en ESP32",
         "group": "54eb79f4.6de7",
-        "order": 3,
+        "order": 1,
         "width": "2",
         "height": "2",
         "passthru": false,
@@ -2973,8 +3036,8 @@
         "payloadType": "bool",
         "topic": "topic",
         "topicType": "msg",
-        "x": 240,
-        "y": 980,
+        "x": 280,
+        "y": 1020,
         "wires": [
             [
                 "654a8bf0.411a6c",
@@ -2990,7 +3053,7 @@
         "g": "3a8c6532.d84b42",
         "name": "Principal en ESP32",
         "group": "54eb79f4.6de7",
-        "order": 1,
+        "order": 3,
         "width": "2",
         "height": "2",
         "passthru": false,
@@ -3094,7 +3157,7 @@
         "group": "a87bb2bb.01863",
         "voice": "urn:moz-tts:sapi:Microsoft Zira Desktop - English (United States)?en-US",
         "always": true,
-        "x": 730,
+        "x": 780,
         "y": 120,
         "wires": []
     },
@@ -3147,8 +3210,8 @@
         "payloadType": "global",
         "topic": "topic",
         "topicType": "msg",
-        "x": 180,
-        "y": 1100,
+        "x": 220,
+        "y": 1140,
         "wires": [
             [
                 "654a8bf0.411a6c",
@@ -3320,7 +3383,7 @@
         "g": "a495c9ab.3fd74",
         "name": "Led ON",
         "group": "5233a975.68bcd",
-        "order": 3,
+        "order": 4,
         "width": "3",
         "height": "1",
         "passthru": false,
@@ -3357,8 +3420,8 @@
         "tooltip": "Led control",
         "group": "5233a975.68bcd",
         "order": 1,
-        "width": 0,
-        "height": 0,
+        "width": "6",
+        "height": "1",
         "passthru": true,
         "decouple": "false",
         "topic": "output",
@@ -3466,7 +3529,7 @@
         "g": "fd8a84dc.33c088",
         "name": "Next screen en ESP32",
         "group": "54eb79f4.6de7",
-        "order": 3,
+        "order": 5,
         "width": "2",
         "height": "2",
         "passthru": false,
@@ -3547,8 +3610,8 @@
         "payloadType": "global",
         "topic": "topic",
         "topicType": "msg",
-        "x": 230,
-        "y": 1160,
+        "x": 270,
+        "y": 1200,
         "wires": [
             [
                 "9580e924.c5c528"
@@ -3765,7 +3828,7 @@
         "label": "Led PWM",
         "tooltip": "",
         "group": "5233a975.68bcd",
-        "order": 6,
+        "order": 7,
         "width": "6",
         "height": "1",
         "passthru": true,
@@ -4860,8 +4923,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 250,
-        "y": 1220,
+        "x": 290,
+        "y": 1260,
         "wires": [
             [
                 "9580e924.c5c528"
@@ -4981,10 +5044,10 @@
         "id": "9015ecb6.aac73",
         "type": "ui_led",
         "z": "ea943a79.b3e358",
-        "order": 4,
+        "order": 5,
         "group": "5233a975.68bcd",
-        "width": "0",
-        "height": "0",
+        "width": "6",
+        "height": "1",
         "label": "Status",
         "labelPlacement": "left",
         "labelAlignment": "left",
@@ -5013,13 +5076,13 @@
         "type": "ui_led",
         "z": "ea943a79.b3e358",
         "g": "e808bf9.aaaecc",
-        "order": 7,
+        "order": 6,
         "group": "5233a975.68bcd",
-        "width": "1",
+        "width": "6",
         "height": "1",
-        "label": "",
+        "label": "PWM intensity",
         "labelPlacement": "left",
-        "labelAlignment": "center",
+        "labelAlignment": "left",
         "colorForValue": [
             {
                 "color": "#fffffb",
@@ -5066,10 +5129,10 @@
         "z": "d749cdc9.d28c6",
         "d": true,
         "name": "",
-        "group": "9c98081c.cecc6",
+        "group": "71690d76.e2725c",
         "order": 1,
-        "width": 6,
-        "height": 5,
+        "width": "2",
+        "height": "2",
         "x": 470,
         "y": 60,
         "wires": []
@@ -6370,7 +6433,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "1",
+        "repeat": "3",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
@@ -6540,8 +6603,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 230,
-        "y": 1260,
+        "x": 270,
+        "y": 1300,
         "wires": [
             [
                 "9580e924.c5c528"
@@ -6630,6 +6693,174 @@
             [
                 "a1aa12d6.e76ff8"
             ]
+        ]
+    },
+    {
+        "id": "1cdf13dd.58452c",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "cfd71c3b.62ad5",
+        "name": "Previous en Main",
+        "group": "8df828eb.b80fe",
+        "order": 1,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Previous",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-arrow-left",
+        "payload": "+1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 270,
+        "y": 1340,
+        "wires": [
+            [
+                "9580e924.c5c528"
+            ]
+        ]
+    },
+    {
+        "id": "e8975340.59b4c",
+        "type": "ui_button",
+        "z": "d749cdc9.d28c6",
+        "g": "fd8a84dc.33c088",
+        "name": "Next en Main",
+        "group": "8df828eb.b80fe",
+        "order": 3,
+        "width": "2",
+        "height": "2",
+        "passthru": false,
+        "label": "Next",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-arrow-right",
+        "payload": "+1",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 90,
+        "y": 840,
+        "wires": [
+            [
+                "587f60cc.ab0a18"
+            ]
+        ]
+    },
+    {
+        "id": "38489491.8d886c",
+        "type": "ui_button",
+        "z": "1e1daf04.126739",
+        "d": true,
+        "name": "Clear Chart",
+        "group": "56032ee3.3718a8",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Clear",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 510,
+        "y": 60,
+        "wires": [
+            [
+                "21adee02.5d29ca"
+            ]
+        ]
+    },
+    {
+        "id": "21adee02.5d29ca",
+        "type": "function",
+        "z": "1e1daf04.126739",
+        "name": "Clean chart",
+        "func": "msg.payload = [];\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 120,
+        "wires": [
+            [
+                "81a9261c.6abe08"
+            ]
+        ]
+    },
+    {
+        "id": "55b0ecee.fc13c4",
+        "type": "ui_template",
+        "z": "1e1daf04.126739",
+        "group": "d64d0f44.4e899",
+        "name": "Line chart no template",
+        "order": 4,
+        "width": "15",
+        "height": "10",
+        "format": "<canvas id=\"myChart\" width=600 height =300></canvas>\n<script>\nvar textcolor = getComputedStyle(document.documentElement).getPropertyValue('--nr-dashboard-widgetTextColor');\nvar gridcolor = getComputedStyle(document.documentElement).getPropertyValue('--nr-dashboard-groupBorderColor');\nvar linecolors = ['#FF0000','#00FF00']\n\nvar ctx = document.getElementById('myChart').getContext('2d');\nvar chart = new Chart(ctx, {\n    // The type of chart we want to create\n    type: 'bar',\n\n    // The data for our dataset\n    data: {\n        labels: [\"one\", \"two\", \"three\", \"four\", \"five\", \"six\", \"seven\", \"eight\", \"nine\", \"ten\"],\n        datasets: [\n            {\n                type:'line',\n                label: 'First',\n                backgroundColor: linecolors[0],\n                borderColor: linecolors[0],\n                data: Array.from({length: 10}).map(() => Math.random()),\n                yAxisID: 'left-y-axis',\n                steppedLine: false,\n                fill: false,\n                borderWidth: 1\n            },\n            {\n                type:'bar',\n                label: 'Second',\n                \n                backgroundColor: linecolors[1],\n                borderColor: linecolors[1],\n                data: Array.from({length: 10}).map(() => Math.random()),\n                yAxisID: 'right-y-axis',\n                barPercentage: 0.5,\n                barThickness: 6,\n                maxBarThickness: 8,\n                minBarLength: 2,\n            }\n        ]\n    },\n\n    // Configuration options go here\n    options: {\n        scales: {\n            yAxes: [\n                {\n                    gridLines :{display:false},\n                    id: 'left-y-axis',\n                    type: 'linear',\n                    position: 'left',\n                    ticks: {\n                        fontColor: linecolors[0]\n                    }\n                },\n                {\n                    gridLines :{zeroLineColor:gridcolor,color:gridcolor,lineWidth:0.5},\n                    id: 'right-y-axis',\n                    type: 'linear',\n                    position: 'right',\n                    ticks: {\n                        fontColor:linecolors[1]\n                    }\n                }\n            ],\n            xAxes: [\n                {\n                    gridLines :{zeroLineColor:gridcolor,color:gridcolor,lineWidth:0.5},\n                    \n                    ticks: {\n                        fontColor:textcolor\n                    }\n                }\n            ]\n        }\n    }\n});\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 960,
+        "y": 40,
+        "wires": [
+            [
+                "c80b1dfd.8114f"
+            ]
+        ]
+    },
+    {
+        "id": "c80b1dfd.8114f",
+        "type": "ui_chart",
+        "z": "1e1daf04.126739",
+        "name": "Multichart",
+        "group": "56032ee3.3718a8",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "label": "Eléctricos",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "auto",
+        "interpolate": "step",
+        "nodata": "##",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1240,
+        "y": 40,
+        "wires": [
+            []
         ]
     }
 ]
