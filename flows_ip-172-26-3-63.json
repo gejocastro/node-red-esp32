@@ -166,12 +166,18 @@
             "844e9367.e150b8",
             "a0f51bb9.6d6cf",
             "85579d63.ba70f",
-            "b39ad2b6.826198"
+            "b39ad2b6.826198",
+            "a27a5182.003998",
+            "28c4d9ba.90c63e",
+            "56f87f4a.07a91",
+            "7e2c1896.5a4ae",
+            "fce3dd8c.c6d94",
+            "b689c3a.6af304"
         ],
-        "x": 114,
+        "x": 94,
         "y": 399,
         "w": 1052,
-        "h": 262
+        "h": 382
     },
     {
         "id": "c67599e8.f83b88",
@@ -269,9 +275,7 @@
             "b02391bd.5c47d"
         ],
         "x": 14,
-        "y": 299,
-        "w": 1412,
-        "h": 82
+        "y": 299
     },
     {
         "id": "1c64706a.59b6c8",
@@ -286,9 +290,7 @@
             "5d6e3ef.60bd6c"
         ],
         "x": 574,
-        "y": 499,
-        "w": 592,
-        "h": 82
+        "y": 499
     },
     {
         "id": "cd6b5625.5238f8",
@@ -457,7 +459,7 @@
         "type": "ui_group",
         "name": "Navigation",
         "tab": "b27a6bc6.fbb248",
-        "order": 4,
+        "order": 5,
         "disp": false,
         "width": "33",
         "collapse": false
@@ -676,8 +678,8 @@
         "name": "spacer",
         "group": "5233a975.68bcd",
         "order": 8,
-        "width": "6",
-        "height": "4"
+        "width": "0",
+        "height": "0"
     },
     {
         "id": "8ff5bd02.5b1d1",
@@ -1056,15 +1058,6 @@
         "height": 1
     },
     {
-        "id": "7616a957.66ee08",
-        "type": "ui_spacer",
-        "name": "spacer",
-        "group": "5233a975.68bcd",
-        "order": 3,
-        "width": "6",
-        "height": 1
-    },
-    {
         "id": "d64d0f44.4e899",
         "type": "ui_group",
         "name": "Chart",
@@ -1073,6 +1066,25 @@
         "disp": true,
         "width": "15",
         "collapse": false
+    },
+    {
+        "id": "57c5053d.5f6d04",
+        "type": "ui_group",
+        "name": "Presión atmosférica",
+        "tab": "b27a6bc6.fbb248",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "84139348.77a8c",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "5233a975.68bcd",
+        "order": 5,
+        "width": "6",
+        "height": 1
     },
     {
         "id": "131bbded.d8d8da",
@@ -1087,7 +1099,7 @@
         "nl": false,
         "rap": true,
         "rh": 0,
-        "x": 230,
+        "x": 210,
         "y": 480,
         "wires": [
             [
@@ -1135,7 +1147,7 @@
         ],
         "outputs": 1,
         "useDifferentColor": false,
-        "x": 1010,
+        "x": 990,
         "y": 440,
         "wires": [
             []
@@ -1154,8 +1166,8 @@
         "nl": false,
         "rap": true,
         "rh": 0,
-        "x": 220,
-        "y": 580,
+        "x": 200,
+        "y": 560,
         "wires": [
             [
                 "7e2c1896.5a4ae",
@@ -1168,8 +1180,9 @@
         "id": "b689c3a.6af304",
         "type": "ui_toast",
         "z": "ea943a79.b3e358",
+        "g": "7e88e231.3018cc",
         "position": "bottom right",
-        "displayTime": "4",
+        "displayTime": "6",
         "highlight": "green",
         "sendall": false,
         "outputs": 0,
@@ -1178,8 +1191,8 @@
         "raw": true,
         "topic": "ESP32",
         "name": "notification",
-        "x": 1110,
-        "y": 720,
+        "x": 970,
+        "y": 740,
         "wires": []
     },
     {
@@ -1205,14 +1218,15 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 1000,
-        "y": 560,
+        "x": 980,
+        "y": 540,
         "wires": []
     },
     {
         "id": "7e2c1896.5a4ae",
         "type": "join",
         "z": "ea943a79.b3e358",
+        "g": "7e88e231.3018cc",
         "name": "",
         "mode": "custom",
         "build": "object",
@@ -1223,14 +1237,14 @@
         "joinerType": "str",
         "accumulate": false,
         "timeout": "0.3",
-        "count": "2",
+        "count": "3",
         "reduceRight": false,
         "reduceExp": "",
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 510,
-        "y": 760,
+        "x": 410,
+        "y": 600,
         "wires": [
             [
                 "fce3dd8c.c6d94",
@@ -1433,7 +1447,7 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 990,
+        "x": 1010,
         "y": 240,
         "wires": []
     },
@@ -1456,8 +1470,7 @@
                 "fc9fa264.7c87",
                 "9cbfe281.96842",
                 "d6dbf51e.40f6c8",
-                "81a9261c.6abe08",
-                "55b0ecee.fc13c4"
+                "81a9261c.6abe08"
             ]
         ]
     },
@@ -1500,8 +1513,7 @@
                 "9a77df8f.e4939",
                 "50970e08.0676b",
                 "81a9261c.6abe08",
-                "d6dbf51e.40f6c8",
-                "55b0ecee.fc13c4"
+                "d6dbf51e.40f6c8"
             ]
         ]
     },
@@ -1626,8 +1638,7 @@
                 "5a1d153b.e88474",
                 "fcd2df75.8a6038",
                 "d6dbf51e.40f6c8",
-                "81a9261c.6abe08",
-                "55b0ecee.fc13c4"
+                "81a9261c.6abe08"
             ]
         ]
     },
@@ -2110,8 +2121,8 @@
         ],
         "seg1": "",
         "seg2": "",
-        "x": 1020,
-        "y": 500,
+        "x": 1000,
+        "y": 480,
         "wires": []
     },
     {
@@ -2152,8 +2163,8 @@
         ],
         "outputs": 1,
         "useDifferentColor": false,
-        "x": 1000,
-        "y": 620,
+        "x": 980,
+        "y": 580,
         "wires": [
             []
         ]
@@ -2172,7 +2183,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "3",
+        "repeat": "5",
         "crontab": "",
         "once": true,
         "onceDelay": 0.1,
@@ -2463,7 +2474,9 @@
         "x": 1270,
         "y": 140,
         "wires": [
-            []
+            [
+                "6ce59707.fd7968"
+            ]
         ],
         "info": "Este nodo recibe la respuesta de google script y la publica"
     },
@@ -2878,7 +2891,7 @@
         "ymax": "",
         "removeOlder": 1,
         "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
+        "removeOlderUnit": "60",
         "cutout": 0,
         "useOneColor": false,
         "useUTC": false,
@@ -3262,15 +3275,16 @@
         "id": "fce3dd8c.c6d94",
         "type": "function",
         "z": "ea943a79.b3e358",
+        "g": "7e88e231.3018cc",
         "name": "",
-        "func": "var string = JSON.stringify(msg.payload);\nvar objectValue = JSON.parse(string);\nvar temperature= objectValue['esp32/temperature'];\nvar humidity=objectValue['esp32/humidity'];\nvar hum=parseInt(humidity).toFixed(0);\nmsg.payload = 'Temperature: '+ temperature+ \"°C <br/>\"+ 'Humidity: '+ hum+\"%RH\"; \n//msg.payload= url;\nreturn msg;\n",
+        "func": "var string = JSON.stringify(msg.payload);\nvar objectValue = JSON.parse(string);\nvar temperature= objectValue['esp32/temperature'];\nvar humidity=objectValue['esp32/humidity'];\nvar hum=parseInt(humidity).toFixed(0);\nvar pressure=objectValue['esp32/pressure'];\nvar pres=pressure;\nmsg.payload = 'Temperature: ' + temperature + \"°C <br/>\"+ \n              'Humidity: ' + hum + \"%RH<br/>\" + \n              'Pressure: ' + pres + \"hPa\"; \n//msg.payload= url;\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 760,
-        "y": 720,
+        "x": 580,
+        "y": 620,
         "wires": [
             [
                 "b689c3a.6af304",
@@ -3292,7 +3306,7 @@
         "statusVal": "payload",
         "statusType": "auto",
         "x": 1070,
-        "y": 780,
+        "y": 880,
         "wires": []
     },
     {
@@ -3383,7 +3397,7 @@
         "g": "a495c9ab.3fd74",
         "name": "Led ON",
         "group": "5233a975.68bcd",
-        "order": 4,
+        "order": 3,
         "width": "3",
         "height": "1",
         "passthru": false,
@@ -3808,7 +3822,7 @@
         "name": "",
         "topic": "esp32/led_control",
         "qos": "",
-        "retain": "",
+        "retain": "true",
         "respTopic": "",
         "contentType": "",
         "userProps": "",
@@ -4636,14 +4650,14 @@
         "type": "function",
         "z": "ea943a79.b3e358",
         "name": "",
-        "func": "var string = JSON.stringify(msg.payload);\nvar objectValue = JSON.parse(string);\nvar temperature= objectValue['esp32/temperature'];\nvar humidity=objectValue['esp32/humidity'];\nif (temperature>30)\n    {msg.payload=\"on\";}\nelse if (humidity>95)   \n    {msg.payload=\"on\";}\nelse if (temperature*humidity>2500)\n{msg.payload=\"on\";}\nelse \n{msg.payload=\"off\";}\n\n//msg.payload= url;\nreturn msg;\n",
+        "func": "var string = JSON.stringify(msg.payload);\nvar objectValue = JSON.parse(string);\nvar temperature= objectValue['esp32/temperature'];\nvar humidity=objectValue['esp32/humidity'];\nif (temperature>25)\n    {msg.payload=\"on\";}\nelse if (humidity>75)   \n    {msg.payload=\"on\";}\nelse if (temperature*humidity>1600)\n    {msg.payload=\"on\";}\nelse \n    {msg.payload=\"off\";}\n\n//msg.payload= url;\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is started.\n//global.output=off;",
         "finalize": "",
         "libs": [],
-        "x": 160,
-        "y": 340,
+        "x": 220,
+        "y": 300,
         "wires": [
             [
                 "49acb94c.e04f9",
@@ -4664,8 +4678,8 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 470,
-        "y": 320,
+        "x": 430,
+        "y": 300,
         "wires": []
     },
     {
@@ -4975,7 +4989,7 @@
         "method": "get",
         "action": "",
         "sheet": "1t87zKsf-IVLHc_1948lBuJFM0jjjdprb6qn3pAlpqkc",
-        "cells": "Sheet1!A1:E100000",
+        "cells": "Sheet1!A1:E1000000",
         "flatten": false,
         "name": "Get gsheet",
         "x": 290,
@@ -5044,7 +5058,7 @@
         "id": "9015ecb6.aac73",
         "type": "ui_led",
         "z": "ea943a79.b3e358",
-        "order": 5,
+        "order": 4,
         "group": "5233a975.68bcd",
         "width": "6",
         "height": "1",
@@ -5461,7 +5475,9 @@
             [
                 "11682266.402fc6"
             ],
-            []
+            [
+                "e9d4307a.e3fa58"
+            ]
         ],
         "info": "Genera el arbol de decisiones en base a los datos de entrenamiento. \nGenera el modelo de los datos en la carpeta y con el nombre de usuario de destino.\n\nLos otros parámetros ni idea. \nHay algo acá:\nhttps://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html"
     },
@@ -5660,7 +5676,7 @@
         "method": "get",
         "action": "",
         "sheet": "1t87zKsf-IVLHc_1948lBuJFM0jjjdprb6qn3pAlpqkc",
-        "cells": "Sheet1!A1:E2000",
+        "cells": "Sheet1!A1000:E3200",
         "flatten": false,
         "name": "Get gsheet",
         "x": 270,
@@ -5726,8 +5742,7 @@
         "y": 300,
         "wires": [
             [
-                "64cca0e9.74067",
-                "e9d4307a.e3fa58"
+                "64cca0e9.74067"
             ]
         ]
     },
@@ -6407,7 +6422,7 @@
         "type": "debug",
         "z": "ea943a79.b3e358",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": true,
@@ -6799,48 +6814,95 @@
         ]
     },
     {
-        "id": "55b0ecee.fc13c4",
-        "type": "ui_template",
-        "z": "1e1daf04.126739",
-        "group": "d64d0f44.4e899",
-        "name": "Line chart no template",
-        "order": 4,
-        "width": "15",
-        "height": "10",
-        "format": "<canvas id=\"myChart\" width=600 height =300></canvas>\n<script>\nvar textcolor = getComputedStyle(document.documentElement).getPropertyValue('--nr-dashboard-widgetTextColor');\nvar gridcolor = getComputedStyle(document.documentElement).getPropertyValue('--nr-dashboard-groupBorderColor');\nvar linecolors = ['#FF0000','#00FF00']\n\nvar ctx = document.getElementById('myChart').getContext('2d');\nvar chart = new Chart(ctx, {\n    // The type of chart we want to create\n    type: 'bar',\n\n    // The data for our dataset\n    data: {\n        labels: [\"one\", \"two\", \"three\", \"four\", \"five\", \"six\", \"seven\", \"eight\", \"nine\", \"ten\"],\n        datasets: [\n            {\n                type:'line',\n                label: 'First',\n                backgroundColor: linecolors[0],\n                borderColor: linecolors[0],\n                data: Array.from({length: 10}).map(() => Math.random()),\n                yAxisID: 'left-y-axis',\n                steppedLine: false,\n                fill: false,\n                borderWidth: 1\n            },\n            {\n                type:'bar',\n                label: 'Second',\n                \n                backgroundColor: linecolors[1],\n                borderColor: linecolors[1],\n                data: Array.from({length: 10}).map(() => Math.random()),\n                yAxisID: 'right-y-axis',\n                barPercentage: 0.5,\n                barThickness: 6,\n                maxBarThickness: 8,\n                minBarLength: 2,\n            }\n        ]\n    },\n\n    // Configuration options go here\n    options: {\n        scales: {\n            yAxes: [\n                {\n                    gridLines :{display:false},\n                    id: 'left-y-axis',\n                    type: 'linear',\n                    position: 'left',\n                    ticks: {\n                        fontColor: linecolors[0]\n                    }\n                },\n                {\n                    gridLines :{zeroLineColor:gridcolor,color:gridcolor,lineWidth:0.5},\n                    id: 'right-y-axis',\n                    type: 'linear',\n                    position: 'right',\n                    ticks: {\n                        fontColor:linecolors[1]\n                    }\n                }\n            ],\n            xAxes: [\n                {\n                    gridLines :{zeroLineColor:gridcolor,color:gridcolor,lineWidth:0.5},\n                    \n                    ticks: {\n                        fontColor:textcolor\n                    }\n                }\n            ]\n        }\n    }\n});\n</script>\n",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "x": 960,
-        "y": 40,
+        "id": "6ce59707.fd7968",
+        "type": "debug",
+        "z": "e924d20f.9ce478",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1330,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "a27a5182.003998",
+        "type": "mqtt in",
+        "z": "ea943a79.b3e358",
+        "g": "7e88e231.3018cc",
+        "name": "",
+        "topic": "esp32/pressure",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "cd6b5625.5238f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 200,
+        "y": 640,
         "wires": [
             [
-                "c80b1dfd.8114f"
+                "28c4d9ba.90c63e",
+                "56f87f4a.07a91",
+                "7e2c1896.5a4ae",
+                "f912a3b8.1eb3a8"
             ]
         ]
     },
     {
-        "id": "c80b1dfd.8114f",
-        "type": "ui_chart",
-        "z": "1e1daf04.126739",
-        "name": "Multichart",
-        "group": "56032ee3.3718a8",
+        "id": "28c4d9ba.90c63e",
+        "type": "ui_gauge",
+        "z": "ea943a79.b3e358",
+        "g": "7e88e231.3018cc",
+        "name": "",
+        "group": "57c5053d.5f6d04",
         "order": 1,
+        "width": "6",
+        "height": "6",
+        "gtype": "gage",
+        "title": "esp32/pressure gauge",
+        "label": "%RH",
+        "format": "{{value}}",
+        "min": "973",
+        "max": "1053",
+        "colors": [
+            "#8080ff",
+            "#80ff00",
+            "#ff8000"
+        ],
+        "seg1": "1010",
+        "seg2": "1016",
+        "x": 980,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "56f87f4a.07a91",
+        "type": "ui_chart",
+        "z": "ea943a79.b3e358",
+        "g": "7e88e231.3018cc",
+        "name": "esp32/pressure chart",
+        "group": "57c5053d.5f6d04",
+        "order": 2,
         "width": "0",
         "height": "0",
-        "label": "Eléctricos",
+        "label": "Chart",
         "chartType": "line",
         "legend": "true",
-        "xformat": "auto",
-        "interpolate": "step",
-        "nodata": "##",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
         "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
+        "ymin": "973",
+        "ymax": "1053",
+        "removeOlder": "30",
         "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
+        "removeOlderUnit": "60",
         "cutout": 0,
         "useOneColor": false,
         "useUTC": false,
@@ -6857,10 +6919,162 @@
         ],
         "outputs": 1,
         "useDifferentColor": false,
-        "x": 1240,
-        "y": 40,
+        "x": 980,
+        "y": 680,
         "wires": [
             []
         ]
+    },
+    {
+        "id": "f912a3b8.1eb3a8",
+        "type": "debug",
+        "z": "ea943a79.b3e358",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 760,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "62c7331c.fe502c",
+        "type": "ui_text_input",
+        "z": "ea943a79.b3e358",
+        "name": "",
+        "label": "Set uptate time",
+        "tooltip": "",
+        "group": "5233a975.68bcd",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "number",
+        "delay": "0",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 740,
+        "y": 360,
+        "wires": [
+            [
+                "6832af4d.26c64",
+                "f49f0718.feda9"
+            ]
+        ]
+    },
+    {
+        "id": "a34870c0.1b34d8",
+        "type": "mqtt out",
+        "z": "ea943a79.b3e358",
+        "name": "",
+        "topic": "esp32/refresh_time",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cd6b5625.5238f8",
+        "x": 1230,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "6832af4d.26c64",
+        "type": "function",
+        "z": "ea943a79.b3e358",
+        "name": "",
+        "func": "var error = \"Refresh time established\";\nvar msg2 = { payload: error};\nif ( msg.payload < 1)\n    {msg.payload = null;\n    error = \"Value too low\";\n    }\nif (msg.payload > 3600)   \n    {\n    msg.payload = null;\n    error = \"Value too high\";\n    }\nif (msg.payload - Math.floor(msg.payload) != 0)\n    {msg.payload = null;//Math.floor(msg.payload);\n    error = \"Decimal not accepted\";\n    }\nmsg2.payload = error;\n//msg2.error = error;\n//msg.payload= url;\nif (msg.payload == null)\n    return [null, msg2];\nelse \n    return [msg, msg2]\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n//global.output=off;\nerror = \"\"\n//msg.topic = [15, error]",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 260,
+        "wires": [
+            [
+                "a34870c0.1b34d8",
+                "62c7331c.fe502c"
+            ],
+            [
+                "2485f5ea.1cd822",
+                "decd191b.389b8",
+                "1f07cacc.483b5d"
+            ]
+        ]
+    },
+    {
+        "id": "2485f5ea.1cd822",
+        "type": "ui_text",
+        "z": "ea943a79.b3e358",
+        "group": "5233a975.68bcd",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "x": 990,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "decd191b.389b8",
+        "type": "debug",
+        "z": "ea943a79.b3e358",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1230,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "f49f0718.feda9",
+        "type": "debug",
+        "z": "ea943a79.b3e358",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1290,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "1f07cacc.483b5d",
+        "type": "debug",
+        "z": "ea943a79.b3e358",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1270,
+        "y": 600,
+        "wires": []
     }
 ]
