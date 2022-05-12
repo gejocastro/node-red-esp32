@@ -93,9 +93,7 @@
             "38df8497.a67acc"
         ],
         "x": -6,
-        "y": 99,
-        "w": 352,
-        "h": 362
+        "y": 99
     },
     {
         "id": "cfd71c3b.62ad5",
@@ -115,9 +113,7 @@
             "1cdf13dd.58452c"
         ],
         "x": 54,
-        "y": 979,
-        "w": 372,
-        "h": 402
+        "y": 979
     },
     {
         "id": "e9a3077.08c0378",
@@ -154,9 +150,7 @@
             "9673313b.249898"
         ],
         "x": 454,
-        "y": 279,
-        "w": 952,
-        "h": 682
+        "y": 279
     },
     {
         "id": "7e88e231.3018cc",
@@ -178,7 +172,9 @@
             "56f87f4a.07a91",
             "7e2c1896.5a4ae",
             "fce3dd8c.c6d94",
-            "b689c3a.6af304"
+            "b689c3a.6af304",
+            "10e8cc7a.b2efdc",
+            "f912a3b8.1eb3a8"
         ],
         "x": 14,
         "y": 439,
@@ -195,12 +191,13 @@
         },
         "nodes": [
             "3f61d062.3be37",
-            "3332e8ea.edd9e8"
+            "3332e8ea.edd9e8",
+            "f77985bc.76ec4"
         ],
         "x": 74,
         "y": 919,
         "w": 512,
-        "h": 82
+        "h": 122
     },
     {
         "id": "a495c9ab.3fd74",
@@ -241,9 +238,7 @@
             "e8975340.59b4c"
         ],
         "x": -6,
-        "y": 479,
-        "w": 392,
-        "h": 402
+        "y": 479
     },
     {
         "id": "e808bf9.aaaecc",
@@ -261,7 +256,7 @@
             "64d8ffc2.e0f2a"
         ],
         "x": 64,
-        "y": 1019,
+        "y": 1119,
         "w": 642,
         "h": 182
     },
@@ -283,9 +278,7 @@
             "b02391bd.5c47d"
         ],
         "x": 14,
-        "y": 399,
-        "w": 1412,
-        "h": 82
+        "y": 399
     },
     {
         "id": "1c64706a.59b6c8",
@@ -300,9 +293,48 @@
             "5d6e3ef.60bd6c"
         ],
         "x": 574,
-        "y": 599,
-        "w": 592,
-        "h": 82
+        "y": 599
+    },
+    {
+        "id": "6d96957b.1c8194",
+        "type": "group",
+        "z": "740b988e.6d58e",
+        "name": "unused log function",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "4ef650f.bcc9e3",
+            "7e460402.828c04",
+            "9c05f0a0.2c295",
+            "ba739038.95658"
+        ],
+        "x": 34,
+        "y": 39,
+        "w": 812,
+        "h": 142
+    },
+    {
+        "id": "8382aa03.05f218",
+        "type": "group",
+        "z": "740b988e.6d58e",
+        "name": "Local csv log - Temp, Hum, Output",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "5dabfc2e.571294",
+            "86fdda3e.144fd8",
+            "10302c50.43b71c",
+            "54353e82.0b1248",
+            "3c1d802.6a5e3",
+            "af443fdd.0dd32",
+            "6d3bec88.249c74"
+        ],
+        "x": 14,
+        "y": 319,
+        "w": 1332,
+        "h": 202
     },
     {
         "id": "cd6b5625.5238f8",
@@ -471,7 +503,7 @@
         "type": "ui_group",
         "name": "Navigation",
         "tab": "b27a6bc6.fbb248",
-        "order": 5,
+        "order": 6,
         "disp": false,
         "width": "33",
         "collapse": false
@@ -696,6 +728,7 @@
     {
         "id": "8ff5bd02.5b1d1",
         "type": "ui_group",
+        "d": true,
         "name": "Http Response",
         "tab": "636f40c1.dacda",
         "order": 1,
@@ -788,7 +821,7 @@
         "name": "spacer",
         "group": "e5619d8f.db854",
         "order": 3,
-        "width": "3",
+        "width": "4",
         "height": "5"
     },
     {
@@ -876,16 +909,6 @@
         "order": 2,
         "width": 1,
         "height": "2"
-    },
-    {
-        "id": "88b23f12.ba41f8",
-        "type": "ui_group",
-        "name": "Default",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": "22",
-        "collapse": false
     },
     {
         "id": "9c643f4a.77ad3",
@@ -1070,16 +1093,6 @@
         "height": 1
     },
     {
-        "id": "d64d0f44.4e899",
-        "type": "ui_group",
-        "name": "Chart",
-        "tab": "",
-        "order": 3,
-        "disp": true,
-        "width": "15",
-        "collapse": false
-    },
-    {
         "id": "57c5053d.5f6d04",
         "type": "ui_group",
         "name": "Presión atmosférica",
@@ -1094,9 +1107,19 @@
         "type": "ui_spacer",
         "name": "spacer",
         "group": "5233a975.68bcd",
-        "order": 5,
+        "order": 7,
         "width": "6",
         "height": 1
+    },
+    {
+        "id": "e40a2865.380ec8",
+        "type": "ui_group",
+        "name": "Messages",
+        "tab": "b27a6bc6.fbb248",
+        "order": 5,
+        "disp": true,
+        "width": "10",
+        "collapse": true
     },
     {
         "id": "131bbded.d8d8da",
@@ -1203,7 +1226,7 @@
         "raw": true,
         "topic": "ESP32",
         "name": "notification",
-        "x": 890,
+        "x": 930,
         "y": 780,
         "wires": []
     },
@@ -1288,6 +1311,7 @@
         "id": "4ef650f.bcc9e3",
         "type": "function",
         "z": "740b988e.6d58e",
+        "g": "6d96957b.1c8194",
         "name": "",
         "func": "//msg.payload = {Time: new Date(), Temperature:msg.payload, Humidity: msg.payload, Led:msg.payload}\nmsg.payload = {Time: new Date(), Temperature:msg.payload, Humidity: msg.payload, Led:msg.payload}\nreturn msg;",
         "outputs": 1,
@@ -1308,6 +1332,7 @@
         "type": "file",
         "z": "740b988e.6d58e",
         "d": true,
+        "g": "6d96957b.1c8194",
         "name": "log",
         "filename": "/home/bitnami/log/record",
         "appendNewline": true,
@@ -1325,6 +1350,7 @@
         "type": "mqtt in",
         "z": "740b988e.6d58e",
         "d": true,
+        "g": "6d96957b.1c8194",
         "name": "",
         "topic": "esp32/humidity",
         "qos": "2",
@@ -1346,6 +1372,7 @@
         "type": "mqtt in",
         "z": "740b988e.6d58e",
         "d": true,
+        "g": "6d96957b.1c8194",
         "name": "",
         "topic": "esp32/temperature",
         "qos": "2",
@@ -1937,13 +1964,13 @@
         "type": "ui_button",
         "z": "ea943a79.b3e358",
         "g": "c67599e8.f83b88",
-        "name": "Recibir valor analogico",
+        "name": "Fetch ESP32 readings",
         "group": "f2fea55f.8454c",
         "order": 3,
         "width": "0",
         "height": "0",
         "passthru": false,
-        "label": "Update Analog value",
+        "label": "Update Readings",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -1952,7 +1979,7 @@
         "payloadType": "str",
         "topic": "esp32/retrieve",
         "topicType": "msg",
-        "x": 210,
+        "x": 200,
         "y": 960,
         "wires": [
             [
@@ -2486,7 +2513,8 @@
         "y": 760,
         "wires": [
             [
-                "f2026c0a.990db"
+                "f2026c0a.990db",
+                "1e2672f8.47a75d"
             ]
         ]
     },
@@ -2533,7 +2561,7 @@
         "strings": false,
         "include_empty_strings": false,
         "include_null_values": "",
-        "x": 950,
+        "x": 970,
         "y": 760,
         "wires": [
             [
@@ -2545,6 +2573,7 @@
         "id": "5dabfc2e.571294",
         "type": "mqtt in",
         "z": "740b988e.6d58e",
+        "g": "8382aa03.05f218",
         "name": "",
         "topic": "esp32/temperature",
         "qos": "2",
@@ -2565,6 +2594,7 @@
         "id": "86fdda3e.144fd8",
         "type": "mqtt in",
         "z": "740b988e.6d58e",
+        "g": "8382aa03.05f218",
         "name": "",
         "topic": "esp32/output",
         "qos": "2",
@@ -2574,7 +2604,7 @@
         "rap": true,
         "rh": 0,
         "x": 110,
-        "y": 580,
+        "y": 480,
         "wires": [
             [
                 "54353e82.0b1248"
@@ -2585,6 +2615,7 @@
         "id": "10302c50.43b71c",
         "type": "mqtt in",
         "z": "740b988e.6d58e",
+        "g": "8382aa03.05f218",
         "name": "",
         "topic": "esp32/humidity",
         "qos": "2",
@@ -2605,6 +2636,7 @@
         "id": "54353e82.0b1248",
         "type": "join",
         "z": "740b988e.6d58e",
+        "g": "8382aa03.05f218",
         "name": "",
         "mode": "custom",
         "build": "object",
@@ -2634,6 +2666,7 @@
         "id": "3c1d802.6a5e3",
         "type": "function",
         "z": "740b988e.6d58e",
+        "g": "8382aa03.05f218",
         "name": "",
         "func": "var string = JSON.stringify(msg.payload);\nvar objectValue = JSON.parse(string);\nvar temperature= objectValue['esp32/temperature'];\nvar humidity=objectValue['esp32/humidity'];\n//var moisture=objectValue['esp32/analog'];\nvar led=objectValue['esp32/output'];\nmsg.payload = new Date()+\",\" + temperature + \",\" + humidity + \",\" + led; \n//msg.payload= url;\nreturn msg;\n\n",
         "outputs": 1,
@@ -2654,6 +2687,7 @@
         "id": "af443fdd.0dd32",
         "type": "file",
         "z": "740b988e.6d58e",
+        "g": "8382aa03.05f218",
         "name": "record.csv",
         "filename": "/home/bitnami/log/record.csv",
         "appendNewline": true,
@@ -2719,7 +2753,7 @@
         "type": "function",
         "z": "740b988e.6d58e",
         "name": "Reverse",
-        "func": "msg.payload.reverse();\nreturn msg;",
+        "func": "msg.payload.reverse();\n//for (a=0 ; a < msg.payload.length; a++ ){\n//    if (msg.payload[a].Led == \"on\")\n//        msg.payload[a].Led =true; \n//    if (msg.payload[a].Led == \"off\")\n//        msg.payload[a].Led = false; \n//}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2729,7 +2763,8 @@
         "y": 760,
         "wires": [
             [
-                "fa191708.fb4ec"
+                "fa191708.fb4ec",
+                "641c54af.0a93dc"
             ]
         ],
         "info": "Invierte el orden de los objetos (para ver primero en la tabla el último log del csv)"
@@ -3268,14 +3303,14 @@
         "type": "function",
         "z": "ea943a79.b3e358",
         "g": "7e88e231.3018cc",
-        "name": "",
+        "name": "Format notification",
         "func": "var string = JSON.stringify(msg.payload);\nvar objectValue = JSON.parse(string);\nvar temperature= objectValue['esp32/temperature'];\nvar humidity=objectValue['esp32/humidity'];\nvar hum=parseInt(humidity).toFixed(0);\nvar pressure=objectValue['esp32/pressure'];\nvar pres=pressure;\nmsg.payload = 'Temperature: ' + temperature + \"°C <br/>\"+ \n              'Humidity: ' + hum + \"%RH<br/>\" + \n              'Pressure: ' + pres + \"hPa\"; \n//msg.payload= url;\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 500,
+        "x": 510,
         "y": 660,
         "wires": [
             [
@@ -3288,6 +3323,7 @@
         "id": "10e8cc7a.b2efdc",
         "type": "debug",
         "z": "ea943a79.b3e358",
+        "g": "7e88e231.3018cc",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -3297,8 +3333,8 @@
         "targetType": "full",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 1070,
-        "y": 940,
+        "x": 610,
+        "y": 780,
         "wires": []
     },
     {
@@ -3799,7 +3835,7 @@
         "finalize": "",
         "libs": [],
         "x": 360,
-        "y": 1120,
+        "y": 1220,
         "wires": [
             [
                 "64d8ffc2.e0f2a"
@@ -3822,7 +3858,7 @@
         "expiry": "",
         "broker": "cd6b5625.5238f8",
         "x": 590,
-        "y": 1060,
+        "y": 1160,
         "wires": []
     },
     {
@@ -3834,7 +3870,7 @@
         "label": "Led PWM",
         "tooltip": "",
         "group": "5233a975.68bcd",
-        "order": 7,
+        "order": 6,
         "width": "6",
         "height": "1",
         "passthru": true,
@@ -3845,7 +3881,7 @@
         "max": "100",
         "step": 1,
         "x": 150,
-        "y": 1060,
+        "y": 1160,
         "wires": [
             [
                 "e7db3dfa.0c52",
@@ -3869,7 +3905,7 @@
         "rap": true,
         "rh": 0,
         "x": 180,
-        "y": 1160,
+        "y": 1260,
         "wires": [
             [
                 "f248ce86.f4ca6"
@@ -4076,6 +4112,7 @@
         "id": "de9cb795.975788",
         "type": "function",
         "z": "ea943a79.b3e358",
+        "d": true,
         "name": "Format email",
         "func": "msg.topic=\"subject\";\nmsg.from=\"Nodered test station\";\n\n\nreturn msg;\n\n/*Sends the msg.payload as an email, with a subject of msg.topic.\n\nThe default message recipient can be configured in the node, if it is left blank it should be set using the msg.to property of the incoming message. If left blank you can also specify any or all of: msg.cc, msg.bcc, msg.replyTo, msg.inReplyTo, msg.references, msg.headers, or msg.priority properties.\n\nYou may optionally set msg.from in the payload which will override the userid default value.\nGmail users\n\nIf you are accessing Gmail you may need to either enable an application password, or enable less secure access via your Google account settings.\nDetails\n\nThe payload can be html format. You may supply a separate plaintext version using msg.plaintext. If you don't and msg.payload contains html, it will also be used for the plaintext. msg.plaintext will be ignored if msg.payload doesn't contain html.\n\nIf the payload is a binary buffer then it will be converted to an attachment. The filename should be set using msg.filename. Optionally msg.description can be added for the body text.\n\nAlternatively you may provide msg.attachments which should contain an array of one or more attachments in nodemailer format.\n\nIf required by your recipient you may also pass in a msg.envelope object, typically containing extra from and to properties.\n\nIf you have own signed certificates, Nodemailer can complain about that and refuse sending the message. In this case you can try switching off TLS.\n\nNote: uses SMTP with SSL to port 465*/",
         "outputs": 1,
@@ -4105,7 +4142,7 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 1170,
+        "x": 1210,
         "y": 80,
         "wires": []
     },
@@ -4641,14 +4678,14 @@
         "id": "2e1fae52.20b19a",
         "type": "function",
         "z": "ea943a79.b3e358",
-        "name": "",
+        "name": "Switch controller",
         "func": "var string = JSON.stringify(msg.payload);\nvar objectValue = JSON.parse(string);\nvar temperature= objectValue['esp32/temperature'];\nvar humidity=objectValue['esp32/humidity'];\nif (temperature>26)\n    {msg.payload=\"on\";}\nelse if (humidity>75)   \n    {msg.payload=\"on\";}\nelse if (temperature*humidity>1600)\n    {msg.payload=\"on\";}\nelse \n    {msg.payload=\"off\";}\n\n//msg.payload= url;\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is started.\n//global.output=off;",
         "finalize": "",
         "libs": [],
-        "x": 220,
+        "x": 200,
         "y": 300,
         "wires": [
             [
@@ -5054,7 +5091,7 @@
         "group": "5233a975.68bcd",
         "width": "6",
         "height": "1",
-        "label": "Status",
+        "label": "Output",
         "labelPlacement": "left",
         "labelAlignment": "left",
         "colorForValue": [
@@ -5082,7 +5119,7 @@
         "type": "ui_led",
         "z": "ea943a79.b3e358",
         "g": "e808bf9.aaaecc",
-        "order": 6,
+        "order": 5,
         "group": "5233a975.68bcd",
         "width": "6",
         "height": "1",
@@ -5126,7 +5163,7 @@
         "showGlow": false,
         "name": "led amarillo",
         "x": 610,
-        "y": 1160,
+        "y": 1260,
         "wires": []
     },
     {
@@ -5845,6 +5882,7 @@
         "id": "6d3bec88.249c74",
         "type": "debug",
         "z": "740b988e.6d58e",
+        "g": "8382aa03.05f218",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -6368,13 +6406,14 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 970,
-        "y": 160,
+        "x": 990,
+        "y": 140,
         "wires": [
             [
                 "92887493.14e218"
             ]
-        ]
+        ],
+        "info": "\n\nEstablece la variable golbal output, que permite comunicar el estado de la salida a otros flows"
     },
     {
         "id": "5069ccd6.59f684",
@@ -6921,6 +6960,7 @@
         "id": "f912a3b8.1eb3a8",
         "type": "debug",
         "z": "ea943a79.b3e358",
+        "g": "7e88e231.3018cc",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -6930,8 +6970,8 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 760,
-        "y": 880,
+        "x": 350,
+        "y": 760,
         "wires": []
     },
     {
@@ -6939,12 +6979,12 @@
         "type": "ui_text_input",
         "z": "ea943a79.b3e358",
         "name": "",
-        "label": "Set uptate time",
-        "tooltip": "",
+        "label": "Set update time",
+        "tooltip": "Enter to send",
         "group": "5233a975.68bcd",
         "order": 9,
-        "width": 0,
-        "height": 0,
+        "width": "0",
+        "height": "0",
         "passthru": true,
         "mode": "number",
         "delay": "0",
@@ -6973,15 +7013,15 @@
         "expiry": "",
         "broker": "cd6b5625.5238f8",
         "x": 1190,
-        "y": 280,
+        "y": 340,
         "wires": []
     },
     {
         "id": "6832af4d.26c64",
         "type": "function",
         "z": "ea943a79.b3e358",
-        "name": "",
-        "func": "var error = \"Refresh time established\";\n\nvar msg2 = { payload: error};\nif ( msg.payload < 1)\n    {msg.payload = null;\n    error = \"Value too low\";\n    }\nif (msg.payload > 3600)   \n    {\n    msg.payload = null;\n    error = \"Value too high\";\n    }\nif (msg.payload - Math.floor(msg.payload) != 0)\n    {msg.payload = null;//Math.floor(msg.payload);\n    error = \"Decimal not accepted\";\n    }\nmsg2.payload = error;\n//msg2.error = error;\n//msg.payload= url;\nif (msg.payload == null)\n    return [null, msg2];\nelse \n    return [msg, msg2]\n",
+        "name": "Validate input",
+        "func": "var error = \"Refresh time established\";\nvar msg2 = { payload: error};\nif ( msg.payload < 1)\n    {msg.payload = null;\n    error = \"Value too low\";\n    }\nif (msg.payload > 3600)   \n    {\n    msg.payload = null;\n    error = \"Value too high\";\n    }\nif (msg.payload - Math.floor(msg.payload) != 0)\n    {msg.payload = null;//Math.floor(msg.payload);\n    error = \"Decimal not accepted\";\n    }\nmsg2.payload = error;\n\nif (msg.payload == null)\n    return [null, msg2];\nelse \n    return [msg, msg2]\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is started.\n//global.output=off;\nerror = \"\"\n//msg.topic = [15, error]",
@@ -7007,11 +7047,11 @@
         "width": 0,
         "height": 0,
         "name": "Error",
-        "label": "",
-        "format": "{{msg.payload}}",
-        "layout": "row-center",
+        "label": "{{msg.payload}}",
+        "format": "",
+        "layout": "row-left",
         "x": 1150,
-        "y": 380,
+        "y": 400,
         "wires": []
     },
     {
@@ -7026,7 +7066,7 @@
         "nl": false,
         "rap": true,
         "rh": 0,
-        "x": 90,
+        "x": 350,
         "y": 380,
         "wires": [
             [
@@ -7038,19 +7078,25 @@
         "id": "d7653b36.520aa",
         "type": "function",
         "z": "ea943a79.b3e358",
-        "name": "",
+        "name": "Pa to hPA",
         "func": "msg.payload = msg.payload / 1000\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is started.\n//global.output=off;\nerror = \"\"\n//msg.topic = [15, error]",
         "finalize": "",
         "libs": [],
-        "x": 280,
+        "x": 520,
         "y": 380,
         "wires": [
             [
                 "62c7331c.fe502c"
             ]
+        ],
+        "inputLabels": [
+            "I1"
+        ],
+        "outputLabels": [
+            "O1"
         ]
     },
     {
@@ -7129,6 +7175,115 @@
         "statusType": "auto",
         "x": 1290,
         "y": 300,
+        "wires": []
+    },
+    {
+        "id": "f77985bc.76ec4",
+        "type": "ui_button",
+        "z": "ea943a79.b3e358",
+        "g": "c67599e8.f83b88",
+        "name": "Fetch ESP32 readings",
+        "group": "5233a975.68bcd",
+        "order": 11,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "label": "Update Readings",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-arrow-circle-o-down",
+        "payload": "retrieve",
+        "payloadType": "str",
+        "topic": "esp32/retrieve",
+        "topicType": "msg",
+        "x": 200,
+        "y": 1000,
+        "wires": [
+            [
+                "3f61d062.3be37"
+            ]
+        ],
+        "inputLabels": [
+            "ni"
+        ],
+        "outputLabels": [
+            "out"
+        ]
+    },
+    {
+        "id": "5acc5884.3e8968",
+        "type": "mqtt in",
+        "z": "ea943a79.b3e358",
+        "name": "",
+        "topic": "esp32/message",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "cd6b5625.5238f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 700,
+        "y": 300,
+        "wires": [
+            [
+                "6a2fef4e.279e7"
+            ]
+        ]
+    },
+    {
+        "id": "6a2fef4e.279e7",
+        "type": "ui_template",
+        "z": "ea943a79.b3e358",
+        "group": "e40a2865.380ec8",
+        "name": "Displays messages",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 960,
+        "y": 300,
+        "wires": [
+            []
+        ],
+        "info": "\n\nEn desarrollo, widget para simular un monitor serie via MQTT"
+    },
+    {
+        "id": "641c54af.0a93dc",
+        "type": "debug",
+        "z": "740b988e.6d58e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1370,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "1e2672f8.47a75d",
+        "type": "debug",
+        "z": "740b988e.6d58e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 820,
         "wires": []
     }
 ]
