@@ -1123,6 +1123,24 @@
         "collapse": true
     },
     {
+        "id": "cb216faf.d9136",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "iot.eclipse.org",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
         "id": "131bbded.d8d8da",
         "type": "mqtt in",
         "z": "ea943a79.b3e358",
