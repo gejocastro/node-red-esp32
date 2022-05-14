@@ -34,7 +34,7 @@ UI description
 5. Logfile: 
 - Group 1, shows a list with filters of the daily data record files saved in server log folder. Clicking each, loads selected day log in table in group two.
 - Group 2, historical file data table, with order_by each column, and scroll bars. 
-- Group 3, retrieves and shows data log from google sheet in a filtered table (Timestamp, Temperature, Humidity, Analog, grren led status
+- Group 3, retrieves and shows data log from google sheet in a filtered table (Timestamp, Temperature, Humidity, Analog, green led status
 
 
 
