@@ -5626,7 +5626,7 @@
         "method": "get",
         "action": "",
         "sheet": "1t87zKsf-IVLHc_1948lBuJFM0jjjdprb6qn3pAlpqkc",
-        "cells": "Sheet1!A2:F2856",
+        "cells": "Sheet1!A2:F2100",
         "flatten": false,
         "name": "Get gsheet",
         "x": 270,
