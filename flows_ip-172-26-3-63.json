@@ -344,7 +344,9 @@
             "b02391bd.5c47d"
         ],
         "x": 14,
-        "y": 399
+        "y": 399,
+        "w": 1412,
+        "h": 82
     },
     {
         "id": "1c64706a.59b6c8",
@@ -359,7 +361,9 @@
             "5d6e3ef.60bd6c"
         ],
         "x": 574,
-        "y": 599
+        "y": 599,
+        "w": 592,
+        "h": 82
     },
     {
         "id": "8382aa03.05f218",
@@ -7710,7 +7714,7 @@
         "type": "debug",
         "z": "77503e6c.9b55e8",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": true,
@@ -7718,7 +7722,7 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 610,
+        "x": 650,
         "y": 100,
         "wires": []
     },
@@ -8116,12 +8120,12 @@
         "order": 5,
         "width": "9",
         "height": "1",
-        "name": "DC Bus Params",
+        "name": "ENCLITA",
         "label": "DC Bus Params",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 560,
+        "x": 540,
         "y": 440,
         "wires": []
     },

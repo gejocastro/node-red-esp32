@@ -167,9 +167,7 @@
             "38df8497.a67acc"
         ],
         "x": -6,
-        "y": 99,
-        "w": 352,
-        "h": 362
+        "y": 99
     },
     {
         "id": "cfd71c3b.62ad5",
@@ -189,9 +187,7 @@
             "1cdf13dd.58452c"
         ],
         "x": 54,
-        "y": 979,
-        "w": 372,
-        "h": 402
+        "y": 979
     },
     {
         "id": "e9a3077.08c0378",
@@ -228,9 +224,7 @@
             "9673313b.249898"
         ],
         "x": 454,
-        "y": 279,
-        "w": 952,
-        "h": 682
+        "y": 279
     },
     {
         "id": "7e88e231.3018cc",
@@ -257,9 +251,7 @@
             "f912a3b8.1eb3a8"
         ],
         "x": 14,
-        "y": 419,
-        "w": 1052,
-        "h": 382
+        "y": 419
     },
     {
         "id": "c67599e8.f83b88",
@@ -275,9 +267,7 @@
             "f77985bc.76ec4"
         ],
         "x": 74,
-        "y": 919,
-        "w": 512,
-        "h": 122
+        "y": 919
     },
     {
         "id": "a495c9ab.3fd74",
@@ -296,9 +286,7 @@
             "182b238.026b35d"
         ],
         "x": 74,
-        "y": 19,
-        "w": 772,
-        "h": 222
+        "y": 19
     },
     {
         "id": "fd8a84dc.33c088",
@@ -318,9 +306,7 @@
             "e8975340.59b4c"
         ],
         "x": -6,
-        "y": 479,
-        "w": 392,
-        "h": 402
+        "y": 479
     },
     {
         "id": "e808bf9.aaaecc",
@@ -338,9 +324,7 @@
             "64d8ffc2.e0f2a"
         ],
         "x": 84,
-        "y": 1139,
-        "w": 642,
-        "h": 182
+        "y": 1139
     },
     {
         "id": "dd07bb49.117478",
@@ -399,9 +383,7 @@
             "6d3bec88.249c74"
         ],
         "x": 14,
-        "y": 319,
-        "w": 1332,
-        "h": 202
+        "y": 319
     },
     {
         "id": "2bec55c6.5546ba",
@@ -418,9 +400,7 @@
             "298a7ad5.729f4e"
         ],
         "x": 54,
-        "y": 819,
-        "w": 572,
-        "h": 142
+        "y": 819
     },
     {
         "id": "f7182fde.aa5948",
@@ -1233,24 +1213,6 @@
         "disp": true,
         "width": "10",
         "collapse": true
-    },
-    {
-        "id": "cb216faf.d9136",
-        "type": "mqtt-broker",
-        "name": "",
-        "broker": "iot.eclipse.org",
-        "port": "1883",
-        "clientid": "",
-        "usetls": false,
-        "compatmode": true,
-        "keepalive": "60",
-        "cleansession": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthPayload": "",
-        "willTopic": "",
-        "willQos": "0",
-        "willPayload": ""
     },
     {
         "id": "3ac90f24.56fd3",
@@ -7697,8 +7659,8 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 1010,
-        "y": 320,
+        "x": 0,
+        "y": 0,
         "wires": []
     },
     {
@@ -7752,7 +7714,7 @@
         "type": "debug",
         "z": "77503e6c.9b55e8",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": true,
@@ -7760,7 +7722,7 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 610,
+        "x": 650,
         "y": 100,
         "wires": []
     },
@@ -7995,7 +7957,7 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1000,
+        "x": 980,
         "y": 20,
         "wires": []
     },
