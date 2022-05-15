@@ -1211,24 +1211,6 @@
         "collapse": true
     },
     {
-        "id": "cb216faf.d9136",
-        "type": "mqtt-broker",
-        "name": "",
-        "broker": "iot.eclipse.org",
-        "port": "1883",
-        "clientid": "",
-        "usetls": false,
-        "compatmode": true,
-        "keepalive": "60",
-        "cleansession": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthPayload": "",
-        "willTopic": "",
-        "willQos": "0",
-        "willPayload": ""
-    },
-    {
         "id": "3ac90f24.56fd3",
         "type": "ui_tab",
         "name": "Barra segura",
@@ -7673,8 +7655,8 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": null,
-        "y": null,
+        "x": 0,
+        "y": 0,
         "wires": []
     },
     {
