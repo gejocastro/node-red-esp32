@@ -7953,7 +7953,7 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 1000,
+        "x": 980,
         "y": 20,
         "wires": []
     },
