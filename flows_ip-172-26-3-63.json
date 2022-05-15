@@ -7,13 +7,6 @@
         "info": ""
     },
     {
-        "id": "c774982a.dc6c1",
-        "type": "tab",
-        "label": "Nautic",
-        "disabled": false,
-        "info": ""
-    },
-    {
         "id": "740b988e.6d58e",
         "type": "tab",
         "label": "Archivos y logs",
@@ -77,6 +70,87 @@
         "info": ""
     },
     {
+        "id": "c774982a.dc6c1",
+        "type": "tab",
+        "label": "Nautic",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "77503e6c.9b55e8",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "4038c84b.fd6978",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "5585da6e.c30924"
+                    },
+                    {
+                        "id": "16195dfc.9648aa"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 580,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "d2fed263.59022",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 580,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "16195dfc.9648aa",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [
+            {
+                "name": "text_VAR",
+                "type": "str",
+                "value": "",
+                "ui": {
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "num_VAR",
+                "type": "num",
+                "value": "100"
+            }
+        ],
+        "meta": {
+            "module": "Testing Subflow"
+        },
+        "color": "#DDAA99"
+    },
+    {
         "id": "3a8c6532.d84b42",
         "type": "group",
         "z": "d749cdc9.d28c6",
@@ -93,7 +167,9 @@
             "38df8497.a67acc"
         ],
         "x": -6,
-        "y": 99
+        "y": 99,
+        "w": 352,
+        "h": 362
     },
     {
         "id": "cfd71c3b.62ad5",
@@ -113,7 +189,9 @@
             "1cdf13dd.58452c"
         ],
         "x": 54,
-        "y": 979
+        "y": 979,
+        "w": 372,
+        "h": 402
     },
     {
         "id": "e9a3077.08c0378",
@@ -150,7 +228,9 @@
             "9673313b.249898"
         ],
         "x": 454,
-        "y": 279
+        "y": 279,
+        "w": 952,
+        "h": 682
     },
     {
         "id": "7e88e231.3018cc",
@@ -238,7 +318,9 @@
             "e8975340.59b4c"
         ],
         "x": -6,
-        "y": 479
+        "y": 479,
+        "w": 392,
+        "h": 402
     },
     {
         "id": "e808bf9.aaaecc",
@@ -278,7 +360,9 @@
             "b02391bd.5c47d"
         ],
         "x": 14,
-        "y": 399
+        "y": 399,
+        "w": 1412,
+        "h": 82
     },
     {
         "id": "1c64706a.59b6c8",
@@ -293,7 +377,9 @@
             "5d6e3ef.60bd6c"
         ],
         "x": 574,
-        "y": 599
+        "y": 599,
+        "w": 592,
+        "h": 82
     },
     {
         "id": "8382aa03.05f218",
@@ -335,6 +421,32 @@
         "y": 819,
         "w": 572,
         "h": 142
+    },
+    {
+        "id": "f7182fde.aa5948",
+        "type": "group",
+        "z": "77503e6c.9b55e8",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "38532770.e908a",
+            "f0e25561.2831b8",
+            "32c5c450.e30ffc",
+            "b101fa77.10a438",
+            "9dd32425.c23188",
+            "1da6331b.a775a5"
+        ],
+        "x": 114,
+        "y": 919,
+        "w": 1012,
+        "h": 382
     },
     {
         "id": "cd6b5625.5238f8",
@@ -1139,6 +1251,68 @@
         "willTopic": "",
         "willQos": "0",
         "willPayload": ""
+    },
+    {
+        "id": "3ac90f24.56fd3",
+        "type": "ui_tab",
+        "name": "Barra segura",
+        "icon": "power",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "42aa784b.2a0a48",
+        "type": "ui_group",
+        "name": "400VDC Input",
+        "tab": "3ac90f24.56fd3",
+        "order": 1,
+        "disp": true,
+        "width": "9",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8860dcf9.4290c8",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "3ac90f24.56fd3",
+        "order": 2,
+        "disp": true,
+        "width": "3",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "eeadf306.11db08",
+        "type": "ui_spacer",
+        "z": "77503e6c.9b55e8",
+        "name": "spacer",
+        "group": "8860dcf9.4290c8",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "className": ""
+    },
+    {
+        "id": "899bf6a1.99619",
+        "type": "ui_group",
+        "name": "LINES",
+        "tab": "3ac90f24.56fd3",
+        "order": 3,
+        "disp": true,
+        "width": "9",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "55997e8d.863c48",
+        "type": "ui_spacer",
+        "z": "c774982a.dc6c1",
+        "name": "spacer",
+        "group": "899bf6a1.99619",
+        "order": 1,
+        "width": 1,
+        "height": 1
     },
     {
         "id": "131bbded.d8d8da",
@@ -1988,7 +2162,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 640,
-        "y": 400,
+        "y": 460,
         "wires": [
             [
                 "efcee0a1.35f83"
@@ -2016,7 +2190,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 620,
-        "y": 460,
+        "y": 500,
         "wires": [
             [
                 "efcee0a1.35f83"
@@ -2044,7 +2218,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 590,
-        "y": 520,
+        "y": 540,
         "wires": [
             [
                 "efcee0a1.35f83"
@@ -4620,7 +4794,7 @@
         "type": "function",
         "z": "ea943a79.b3e358",
         "name": "Switch controller",
-        "func": "var string = JSON.stringify(msg.payload);\nvar objectValue = JSON.parse(string);\nvar temperature= objectValue['esp32/temperature'];\nvar humidity=objectValue['esp32/humidity'];\nif (temperature>24)\n    {msg.payload=\"on\";}\nelse if (humidity>75)   \n    {msg.payload=\"on\";}\nelse if (temperature*humidity>1248)\n    {msg.payload=\"on\";}\nelse \n    {msg.payload=\"off\";}\n\n//msg.payload= url;\nreturn msg;\n",
+        "func": "var string = JSON.stringify(msg.payload);\nvar objectValue = JSON.parse(string);\nvar temperature= objectValue['esp32/temperature'];\nvar humidity=objectValue['esp32/humidity'];\nif (temperature>24)\n    {msg.payload=\"on\";}\nelse if (humidity>75)   \n    {msg.payload=\"on\";}\nelse if (temperature*humidity>1448)\n    {msg.payload=\"on\";}\nelse \n    {msg.payload=\"off\";}\n\n//msg.payload= url;\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is started.\n//global.output=off;",
@@ -6028,6 +6202,7 @@
         "fwdInMessages": true,
         "resendOnRefresh": false,
         "templateScope": "local",
+        "className": "",
         "x": 950,
         "y": 280,
         "wires": [
@@ -6259,8 +6434,8 @@
         "initialize": "// Code added here will be run once\n// whenever the node is started.\nglobal.set(\"count\" , 0);\n",
         "finalize": "",
         "libs": [],
-        "x": 680,
-        "y": 200,
+        "x": 620,
+        "y": 220,
         "wires": [
             [
                 "31ade0c9.b1fb9",
@@ -6281,8 +6456,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 660,
-        "y": 300,
+        "x": 620,
+        "y": 280,
         "wires": [
             [
                 "31ade0c9.b1fb9",
@@ -7339,6 +7514,796 @@
         "statusType": "auto",
         "x": 1260,
         "y": 480,
+        "wires": []
+    },
+    {
+        "id": "92945880.4d9ce",
+        "type": "ui_gauge",
+        "z": "77503e6c.9b55e8",
+        "name": "DIS Input 1 Voltage",
+        "group": "42aa784b.2a0a48",
+        "order": 2,
+        "width": "3",
+        "height": "2",
+        "gtype": "gage",
+        "title": "Voltage",
+        "label": "VAC",
+        "format": "{{msg.payload.toFixed(0)}}",
+        "min": 0,
+        "max": "440",
+        "colors": [
+            "#ffff00",
+            "#00ff00",
+            "#ff8040"
+        ],
+        "seg1": "375",
+        "seg2": "425",
+        "className": "",
+        "x": 1010,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "ae55ad8f.85bc18",
+        "type": "inject",
+        "z": "77503e6c.9b55e8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "num",
+        "x": 170,
+        "y": 60,
+        "wires": [
+            [
+                "9bc16c3d.34823",
+                "7d4a782e.bd36b8"
+            ]
+        ]
+    },
+    {
+        "id": "9bc16c3d.34823",
+        "type": "random",
+        "z": "77503e6c.9b55e8",
+        "name": "",
+        "low": "375",
+        "high": "425",
+        "inte": "false",
+        "property": "payload",
+        "x": 380,
+        "y": 60,
+        "wires": [
+            [
+                "92945880.4d9ce",
+                "b3b003ed.67313"
+            ]
+        ]
+    },
+    {
+        "id": "14a957d0.977798",
+        "type": "ui_gauge",
+        "z": "77503e6c.9b55e8",
+        "name": "DIS Input Current",
+        "group": "42aa784b.2a0a48",
+        "order": 3,
+        "width": "3",
+        "height": "2",
+        "gtype": "gage",
+        "title": "Current",
+        "label": "A",
+        "format": "{{msg.payload.toFixed(1)}}",
+        "min": 0,
+        "max": "160",
+        "colors": [
+            "#00ff00",
+            "#ffff00",
+            "#ff0000"
+        ],
+        "seg1": "120",
+        "seg2": "150",
+        "className": "",
+        "x": 1010,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "7d4a782e.bd36b8",
+        "type": "random",
+        "z": "77503e6c.9b55e8",
+        "name": "",
+        "low": "0",
+        "high": "150",
+        "inte": "false",
+        "property": "payload",
+        "x": 380,
+        "y": 140,
+        "wires": [
+            [
+                "b3b003ed.67313",
+                "ab74481e.0b061",
+                "14a957d0.977798"
+            ]
+        ]
+    },
+    {
+        "id": "beefb9af.8f4808",
+        "type": "ui_gauge",
+        "z": "77503e6c.9b55e8",
+        "name": "DIS Input 1 Power",
+        "group": "42aa784b.2a0a48",
+        "order": 4,
+        "width": "3",
+        "height": "2",
+        "gtype": "gage",
+        "title": "Power",
+        "label": "kVA",
+        "format": "{{msg.payload.toFixed(1)}}",
+        "min": 0,
+        "max": "60",
+        "colors": [
+            "#00ff00",
+            "#ffff00",
+            "#ff0000"
+        ],
+        "seg1": "25",
+        "seg2": "50",
+        "className": "",
+        "x": 1010,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "b40984d6.ee4c28",
+        "type": "function",
+        "z": "77503e6c.9b55e8",
+        "name": "Aparent power",
+        "func": "msg.payload = msg.payload[1] * msg.payload[0]/1000\n// msg.payload = msg.payload.toFixed(1)\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 220,
+        "wires": [
+            [
+                "d8f88c2a.87a14",
+                "beefb9af.8f4808"
+            ]
+        ]
+    },
+    {
+        "id": "d8f88c2a.87a14",
+        "type": "debug",
+        "z": "77503e6c.9b55e8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "b3b003ed.67313",
+        "type": "join",
+        "z": "77503e6c.9b55e8",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 590,
+        "y": 220,
+        "wires": [
+            [
+                "b40984d6.ee4c28",
+                "f4a859e8.cf54b8"
+            ]
+        ]
+    },
+    {
+        "id": "f4a859e8.cf54b8",
+        "type": "debug",
+        "z": "77503e6c.9b55e8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 730,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "ab74481e.0b061",
+        "type": "debug",
+        "z": "77503e6c.9b55e8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 610,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "38532770.e908a",
+        "type": "ui_switch",
+        "z": "77503e6c.9b55e8",
+        "g": "f7182fde.aa5948",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "group": "8860dcf9.4290c8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 190,
+        "y": 960,
+        "wires": [
+            [
+                "32c5c450.e30ffc",
+                "9dd32425.c23188"
+            ]
+        ]
+    },
+    {
+        "id": "f0e25561.2831b8",
+        "type": "ui_template",
+        "z": "77503e6c.9b55e8",
+        "g": "f7182fde.aa5948",
+        "group": "42aa784b.2a0a48",
+        "name": "400VAC BUS",
+        "order": 9,
+        "width": "9",
+        "height": "2",
+        "format": "<style>\n   .container\n   {\n   overflow-y: hidden;\n   overflow-x: hidden;\n   }\n</style>\n<div class=\"container\">\n    <svg height=\"200\" width=\"480\">\n      <!-- Horizontal BUS -->\n      <line x1=\"0%\" y1=\"0\" x2=\"100%\" y2=\"0\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n      <!-- TM1 -->\n      <line x1=\"5%\" y1=\"0\" x2=\"5%\" y2=\"20\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n    </svg>\n</div>\n\n</body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 1030,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "32c5c450.e30ffc",
+        "type": "function",
+        "z": "77503e6c.9b55e8",
+        "g": "f7182fde.aa5948",
+        "name": "",
+        "func": "if (msg.payload == true)\n    {msg.color = \"#00DD00\";}\nelse \n    {msg.color = \"#6e6e6e\";}\nmsg.payload=15;\n/*cuenta= global.get (\"count\");\nif (cuenta > 3) {\n    cuenta =0;\n    }\nswitch (cuenta){\ncase 0:\n    msg.rotate=\"36deg\";\n    break;\ncase 1:\n    msg.rotate=\"72deg\"\n    break;\ncase 2:\n    msg.rotate=\"108deg\"\n    break;\ncase 3:\n    msg.rotate=\"144deg\"\n    break;\n}\ncuenta = cuenta +1;    \nglobal.set (\"count\", cuenta) ;*/\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 960,
+        "wires": [
+            [
+                "f0e25561.2831b8",
+                "b101fa77.10a438"
+            ]
+        ]
+    },
+    {
+        "id": "b101fa77.10a438",
+        "type": "debug",
+        "z": "77503e6c.9b55e8",
+        "g": "f7182fde.aa5948",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "color",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 880,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "9dd32425.c23188",
+        "type": "debug",
+        "z": "77503e6c.9b55e8",
+        "g": "f7182fde.aa5948",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 470,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "1da6331b.a775a5",
+        "type": "ui_template",
+        "z": "77503e6c.9b55e8",
+        "g": "f7182fde.aa5948",
+        "group": "42aa784b.2a0a48",
+        "name": "MIMIC",
+        "order": 10,
+        "width": "9",
+        "height": "4",
+        "format": "<style>\n   .container\n   {\n   overflow-y: hidden;\n   overflow-x: hidden;\n   }\n</style>\n<div class=\"container\">\n    <svg height=\"100\" width=\"1600\">\n      <!-- to SG4 -->\n      <line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"70\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n      <!-- vertical PS -->\n      <line x1=\"148\" y1=\"70\" x2=\"702\" y2=\"70\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n      <!-- to DG2 -->\n      <line x1=\"312\" y1=\"70\" x2=\"312\" y2=\"100\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n      <!-- to SG3 -->\n      <line x1=\"475\" y1=\"0\" x2=\"475\" y2=\"30\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n      <!-- SG3 breaker -->\n      <path d=\"M 475 70 v -15 l {{msg.payload}} -25\" stroke-linejoin=\"round\" style=\"fill:transparent;stroke:{{msg.color}};stroke-width:4\" />\n      <!-- vertical PS BT -->\n      <line x1=\"475\" y1=\"15\" x2=\"752\" y2=\"15\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n      <!-- to PS BT -->\n      <line x1=\"750\" y1=\"0\" x2=\"750\" y2=\"15\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n\n      <!-- to MSB -->\n      <line x1=\"700\" y1=\"70\" x2=\"700\" y2=\"100\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n      <!-- to MSB -->\n      <line x1=\"900\" y1=\"70\" x2=\"900\" y2=\"100\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n      <!-- vertical SB -->\n      <line x1=\"898\" y1=\"70\" x2=\"1452\" y2=\"70\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n      <!-- vertical SB BT -->\n      <line x1=\"848\" y1=\"15\" x2=\"1125\" y2=\"15\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n      <!-- to SB BT -->\n      <line x1=\"850\" y1=\"0\" x2=\"850\" y2=\"15\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n      <!-- to SG2 -->\n      <line x1=\"1125\" y1=\"0\" x2=\"1125\" y2=\"30\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n      <!-- SG2 breaker -->\n      <path d=\"M 1125 70 v -15 l {{msg.payload}} -25\" stroke-linejoin=\"round\" style=\"fill:transparent;stroke:{{msg.color}};stroke-width:4\" />\n      <!-- to DG1 -->\n      <line x1=\"1288\" y1=\"70\" x2=\"1288\" y2=\"100\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n      <!-- to SG1 -->\n      <line x1=\"1450\" y1=\"0\" x2=\"1450\" y2=\"70\" style=\"stroke:{{msg.color}};stroke-width:4\" />\n    </svg>\n</div>\n</body>\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 790,
+        "y": 1260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3efd85c7.457662",
+        "type": "ui_gauge",
+        "z": "77503e6c.9b55e8",
+        "name": "CC Bus Voltage",
+        "group": "42aa784b.2a0a48",
+        "order": 6,
+        "width": "3",
+        "height": "2",
+        "gtype": "gage",
+        "title": "Voltage",
+        "label": "VDC",
+        "format": "{{msg.payload.toFixed(0)}}",
+        "min": 0,
+        "max": "260",
+        "colors": [
+            "#ffff00",
+            "#00ff00",
+            "#ff8040"
+        ],
+        "seg1": "200",
+        "seg2": "240",
+        "className": "",
+        "x": 1020,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "6ba3efa6.094e5",
+        "type": "ui_gauge",
+        "z": "77503e6c.9b55e8",
+        "name": "CC  Bus current",
+        "group": "42aa784b.2a0a48",
+        "order": 7,
+        "width": "3",
+        "height": "2",
+        "gtype": "gage",
+        "title": "Current",
+        "label": "A",
+        "format": "{{msg.payload.toFixed(1)}}",
+        "min": 0,
+        "max": "160",
+        "colors": [
+            "#00ff00",
+            "#ffff00",
+            "#ff0000"
+        ],
+        "seg1": "120",
+        "seg2": "150",
+        "className": "",
+        "x": 1020,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "2394584e.d7ee08",
+        "type": "ui_gauge",
+        "z": "77503e6c.9b55e8",
+        "name": "CC BUS Power",
+        "group": "42aa784b.2a0a48",
+        "order": 8,
+        "width": "3",
+        "height": "2",
+        "gtype": "gage",
+        "title": "Power",
+        "label": "kVA",
+        "format": "{{msg.payload.toFixed(1)}}",
+        "min": 0,
+        "max": "60",
+        "colors": [
+            "#00ff00",
+            "#ffff00",
+            "#ff0000"
+        ],
+        "seg1": "25",
+        "seg2": "50",
+        "className": "",
+        "x": 1020,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "6a806e19.846e1",
+        "type": "ui_text",
+        "z": "77503e6c.9b55e8",
+        "group": "42aa784b.2a0a48",
+        "order": 1,
+        "width": "9",
+        "height": "1",
+        "name": "AC BUS Parameters",
+        "label": "AC BUS PArameters",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1000,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "5749e175.4f9fb8",
+        "type": "inject",
+        "z": "77503e6c.9b55e8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "num",
+        "x": 110,
+        "y": 480,
+        "wires": [
+            [
+                "130ab877.fbf8f",
+                "f8ade0e3.2af3f8"
+            ]
+        ]
+    },
+    {
+        "id": "130ab877.fbf8f",
+        "type": "random",
+        "z": "77503e6c.9b55e8",
+        "name": "",
+        "low": "190",
+        "high": "250",
+        "inte": "false",
+        "property": "payload",
+        "x": 320,
+        "y": 480,
+        "wires": [
+            [
+                "3e688824.7b97b",
+                "3efd85c7.457662",
+                "beefb515.eeb32"
+            ]
+        ]
+    },
+    {
+        "id": "f8ade0e3.2af3f8",
+        "type": "random",
+        "z": "77503e6c.9b55e8",
+        "name": "",
+        "low": "0",
+        "high": "100",
+        "inte": "false",
+        "property": "payload",
+        "x": 320,
+        "y": 560,
+        "wires": [
+            [
+                "3e688824.7b97b",
+                "e9eb22f4.92db98",
+                "6ba3efa6.094e5",
+                "beefb515.eeb32"
+            ]
+        ]
+    },
+    {
+        "id": "a8616fc3.52ce",
+        "type": "function",
+        "z": "77503e6c.9b55e8",
+        "name": "Aparent power",
+        "func": "msg.payload = msg.payload[1] * msg.payload[0]/1000\n// msg.payload = msg.payload.toFixed(1)\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 640,
+        "wires": [
+            [
+                "2394584e.d7ee08"
+            ]
+        ]
+    },
+    {
+        "id": "3e688824.7b97b",
+        "type": "join",
+        "z": "77503e6c.9b55e8",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 530,
+        "y": 640,
+        "wires": [
+            [
+                "a8616fc3.52ce",
+                "37e79337.c4c9bc"
+            ]
+        ]
+    },
+    {
+        "id": "37e79337.c4c9bc",
+        "type": "debug",
+        "z": "77503e6c.9b55e8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 630,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "e9eb22f4.92db98",
+        "type": "debug",
+        "z": "77503e6c.9b55e8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 550,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "7e922cf.1174a54",
+        "type": "ui_text",
+        "z": "77503e6c.9b55e8",
+        "group": "42aa784b.2a0a48",
+        "order": 5,
+        "width": "9",
+        "height": "1",
+        "name": "DC Bus Params",
+        "label": "DC Bus Params",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 560,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "d2fed263.59022",
+        "type": "function",
+        "z": "4038c84b.fd6978",
+        "name": "Aparent power",
+        "func": "msg.payload = msg.payload[1] * msg.payload[0]/1000\n// msg.payload = msg.payload.toFixed(1)\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5585da6e.c30924",
+        "type": "join",
+        "z": "4038c84b.fd6978",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 230,
+        "y": 100,
+        "wires": [
+            [
+                "d2fed263.59022"
+            ]
+        ]
+    },
+    {
+        "id": "16195dfc.9648aa",
+        "type": "random",
+        "z": "4038c84b.fd6978",
+        "name": "",
+        "low": "0",
+        "high": "${num_VAR}",
+        "inte": "true",
+        "property": "payload",
+        "x": 220,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "beefb515.eeb32",
+        "type": "subflow:4038c84b.fd6978",
+        "z": "77503e6c.9b55e8",
+        "name": "Test",
+        "env": [
+            {
+                "name": "text_VAR",
+                "value": "Texto a mostrar",
+                "type": "str"
+            },
+            {
+                "name": "num_VAR",
+                "value": "1000",
+                "type": "num"
+            }
+        ],
+        "x": 580,
+        "y": 800,
+        "wires": [
+            [
+                "92cef95f.300df8"
+            ],
+            [
+                "6695a816.b6b1c8"
+            ]
+        ]
+    },
+    {
+        "id": "92cef95f.300df8",
+        "type": "debug",
+        "z": "77503e6c.9b55e8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 930,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "6695a816.b6b1c8",
+        "type": "debug",
+        "z": "77503e6c.9b55e8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 942,
+        "y": 836,
+        "wires": []
+    },
+    {
+        "id": "b63dd5f2.eedf38",
+        "type": "ui_text",
+        "z": "4038c84b.fd6978",
+        "group": "899bf6a1.99619",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "${text_VAR}",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 580,
+        "y": 360,
         "wires": []
     }
 ]
