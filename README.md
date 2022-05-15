@@ -37,44 +37,26 @@ UI description
 - Group 3, retrieves and shows data log from google sheet in a filtered table (Timestamp, Temperature, Humidity, Analog, green led status
 
 # NR Modules 
-
-node-red | 1.3.3
-node-red-contrib-ewelink | 2.0.0
-node-red-contrib-git-nodes
-0.2.2
-node-red-contrib-git-ui
-0.1.10
-node-red-contrib-google-sheets
-1.1.2
-node-red-contrib-machine-learning-v2
-1.0.9
-node-red-contrib-play-audio
-2.5.0
-node-red-contrib-ui-clock
-1.0.2
-node-red-contrib-ui-led
-0.4.11
-node-red-contrib-ui-level
-0.1.46
-node-red-contrib-xstate-machine
-1.2.4
-node-red-dashboard
-3.1.7
-node-red-node-email
-1.15.1
-node-red-node-ping
-0.3.1
-node-red-node-random
-0.4.0
-node-red-node-rbe
-0.5.0
-node-red-node-serialport
-1.0.1
-node-red-node-smooth
-0.1.2
-node-red-node-tail
-0.3.2
-node-red-node-ui-table
-
+Modules available in palette (some of them used for testing playing around purposes only)
+node-red 1.3.3
+node-red-contrib-ewelink 2.0.0
+node-red-contrib-git-nodes 0.2.2 
+node-red-contrib-git-ui 0.1.10
+node-red-contrib-google-sheets 1.1.2
+node-red-contrib-machine-learning-v2 1.0.9
+node-red-contrib-play-audio 2.5.0
+node-red-contrib-ui-clock 1.0.2
+node-red-contrib-ui-led 0.4.11
+node-red-contrib-ui-level 0.1.46
+node-red-contrib-xstate-machine 1.2.4
+node-red-dashboard 3.1.7
+node-red-node-email 1.15.1
+node-red-node-ping 0.3.1
+node-red-node-random 0.4.0
+node-red-node-rbe 0.5.0
+node-red-node-serialport 1.0.1
+node-red-node-smooth 0.1.2
+node-red-node-tail 0.3.2
+node-red-node-ui-table 
 
 
