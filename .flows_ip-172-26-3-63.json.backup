@@ -77,6 +77,80 @@
         "info": ""
     },
     {
+        "id": "77503e6c.9b55e8",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "4038c84b.fd6978",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "5585da6e.c30924"
+                    },
+                    {
+                        "id": "16195dfc.9648aa"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 580,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "d2fed263.59022",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 580,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "16195dfc.9648aa",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [
+            {
+                "name": "text_VAR",
+                "type": "str",
+                "value": "",
+                "ui": {
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "num_VAR",
+                "type": "num",
+                "value": "100"
+            }
+        ],
+        "meta": {
+            "module": "Testing Subflow"
+        },
+        "color": "#DDAA99"
+    },
+    {
         "id": "3a8c6532.d84b42",
         "type": "group",
         "z": "d749cdc9.d28c6",
@@ -93,9 +167,7 @@
             "38df8497.a67acc"
         ],
         "x": -6,
-        "y": 99,
-        "w": 352,
-        "h": 362
+        "y": 99
     },
     {
         "id": "cfd71c3b.62ad5",
@@ -152,9 +224,7 @@
             "9673313b.249898"
         ],
         "x": 454,
-        "y": 279,
-        "w": 952,
-        "h": 682
+        "y": 279
     },
     {
         "id": "7e88e231.3018cc",
@@ -181,7 +251,9 @@
             "f912a3b8.1eb3a8"
         ],
         "x": 14,
-        "y": 419
+        "y": 419,
+        "w": 1052,
+        "h": 382
     },
     {
         "id": "c67599e8.f83b88",
@@ -197,7 +269,9 @@
             "f77985bc.76ec4"
         ],
         "x": 74,
-        "y": 919
+        "y": 919,
+        "w": 512,
+        "h": 122
     },
     {
         "id": "a495c9ab.3fd74",
@@ -216,7 +290,9 @@
             "182b238.026b35d"
         ],
         "x": 74,
-        "y": 19
+        "y": 19,
+        "w": 772,
+        "h": 222
     },
     {
         "id": "fd8a84dc.33c088",
@@ -254,7 +330,9 @@
             "64d8ffc2.e0f2a"
         ],
         "x": 84,
-        "y": 1139
+        "y": 1139,
+        "w": 642,
+        "h": 182
     },
     {
         "id": "dd07bb49.117478",
@@ -274,9 +352,7 @@
             "b02391bd.5c47d"
         ],
         "x": 14,
-        "y": 399,
-        "w": 1412,
-        "h": 82
+        "y": 399
     },
     {
         "id": "1c64706a.59b6c8",
@@ -291,9 +367,72 @@
             "5d6e3ef.60bd6c"
         ],
         "x": 574,
-        "y": 599,
-        "w": 592,
-        "h": 82
+        "y": 599
+    },
+    {
+        "id": "8382aa03.05f218",
+        "type": "group",
+        "z": "740b988e.6d58e",
+        "name": "Local csv log - Temp, Hum, Output",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "5dabfc2e.571294",
+            "86fdda3e.144fd8",
+            "10302c50.43b71c",
+            "54353e82.0b1248",
+            "3c1d802.6a5e3",
+            "af443fdd.0dd32",
+            "6d3bec88.249c74"
+        ],
+        "x": 14,
+        "y": 319
+    },
+    {
+        "id": "2bec55c6.5546ba",
+        "type": "group",
+        "z": "22e2030e.b824d4",
+        "name": "unused log function",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "51276878.1bb5b8",
+            "ca1b1d42.f6f8a",
+            "4c9be345.9b5ba4",
+            "298a7ad5.729f4e"
+        ],
+        "x": 54,
+        "y": 819,
+        "w": 572,
+        "h": 142
+    },
+    {
+        "id": "f7182fde.aa5948",
+        "type": "group",
+        "z": "77503e6c.9b55e8",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "38532770.e908a",
+            "f0e25561.2831b8",
+            "32c5c450.e30ffc",
+            "b101fa77.10a438",
+            "9dd32425.c23188",
+            "1da6331b.a775a5"
+        ],
+        "x": 114,
+        "y": 919,
+        "w": 1012,
+        "h": 382
     },
     {
         "id": "cd6b5625.5238f8",
@@ -1024,6 +1163,120 @@
         "order": null,
         "disp": true,
         "width": 6
+    },
+    {
+        "id": "20e57977.04f336",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "8df828eb.b80fe",
+        "order": 2,
+        "width": "28",
+        "height": 1
+    },
+    {
+        "id": "94b4d1c5.ca0c58",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "54eb79f4.6de7",
+        "order": 2,
+        "width": "13",
+        "height": 1
+    },
+    {
+        "id": "ff92d79e.6be32",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "54eb79f4.6de7",
+        "order": 4,
+        "width": "14",
+        "height": 1
+    },
+    {
+        "id": "57c5053d.5f6d04",
+        "type": "ui_group",
+        "name": "Presión atmosférica",
+        "tab": "b27a6bc6.fbb248",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "84139348.77a8c",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "5233a975.68bcd",
+        "order": 7,
+        "width": "6",
+        "height": 1
+    },
+    {
+        "id": "e40a2865.380ec8",
+        "type": "ui_group",
+        "name": "Messages",
+        "tab": "b27a6bc6.fbb248",
+        "order": 5,
+        "disp": true,
+        "width": "10",
+        "collapse": true
+    },
+    {
+        "id": "3ac90f24.56fd3",
+        "type": "ui_tab",
+        "name": "Barra segura",
+        "icon": "power",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "42aa784b.2a0a48",
+        "type": "ui_group",
+        "name": "400VDC Input",
+        "tab": "3ac90f24.56fd3",
+        "order": 1,
+        "disp": true,
+        "width": "9",
+        "collapse": false
+    },
+    {
+        "id": "8860dcf9.4290c8",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "3ac90f24.56fd3",
+        "order": 2,
+        "disp": true,
+        "width": "3",
+        "collapse": false
+    },
+    {
+        "id": "eeadf306.11db08",
+        "type": "ui_spacer",
+        "z": "77503e6c.9b55e8",
+        "name": "spacer",
+        "group": "8860dcf9.4290c8",
+        "order": 2,
+        "width": "0",
+        "height": "0"
+    },
+    {
+        "id": "899bf6a1.99619",
+        "type": "ui_group",
+        "name": "LINES",
+        "tab": "3ac90f24.56fd3",
+        "order": 3,
+        "disp": true,
+        "width": "9",
+        "collapse": false
+    },
+    {
+        "id": "55997e8d.863c48",
+        "type": "ui_spacer",
+        "z": "c774982a.dc6c1",
+        "name": "spacer",
+        "group": "899bf6a1.99619",
+        "order": 1,
+        "width": 1,
+        "height": 1
     },
     {
         "id": "131bbded.d8d8da",
@@ -4429,7 +4682,6 @@
         "tooltip": "",
         "color": "",
         "bgcolor": "",
-        "className": "",
         "icon": "",
         "payload": "test",
         "payloadType": "str",
@@ -4473,7 +4725,6 @@
         "topic": "topic",
         "topicType": "msg",
         "splitLayout": false,
-        "className": "",
         "x": 130,
         "y": 300,
         "wires": [
@@ -4836,7 +5087,6 @@
         "label": "",
         "format": "<b>Load Dataset</b> carga la base de datos y la separa en conjuntos de entreneamiento y testing (80,20).</p> <b>Classify Dataset</b> aprende del set de entrenamiento.</p><b> Evaluate Dataset</b> compara la salida del set de testeo con el resultado de aplicar la prediccion a las entradas. </p>Al ingresar un par<b> Temp, Humidity </b> y presionar <b> Predict</b>, predice el estado de salida de acuerdo al analisis.</b>",
         "layout": "row-left",
-        "className": "",
         "x": 1070,
         "y": 540,
         "wires": [],
@@ -5553,7 +5803,7 @@
         "method": "get",
         "action": "",
         "sheet": "1t87zKsf-IVLHc_1948lBuJFM0jjjdprb6qn3pAlpqkc",
-        "cells": "Sheet1!A2:F2100",
+        "cells": "Sheet1!A5000:F7000",
         "flatten": false,
         "name": "Get gsheet",
         "x": 270,
@@ -5937,7 +6187,6 @@
         "fwdInMessages": true,
         "resendOnRefresh": false,
         "templateScope": "local",
-        "className": "",
         "x": 950,
         "y": 280,
         "wires": [
@@ -6557,33 +6806,6 @@
         ]
     },
     {
-        "id": "20e57977.04f336",
-        "type": "ui_spacer",
-        "name": "spacer",
-        "group": "8df828eb.b80fe",
-        "order": 2,
-        "width": "28",
-        "height": 1
-    },
-    {
-        "id": "94b4d1c5.ca0c58",
-        "type": "ui_spacer",
-        "name": "spacer",
-        "group": "54eb79f4.6de7",
-        "order": 2,
-        "width": "13",
-        "height": 1
-    },
-    {
-        "id": "ff92d79e.6be32",
-        "type": "ui_spacer",
-        "name": "spacer",
-        "group": "54eb79f4.6de7",
-        "order": 4,
-        "width": "14",
-        "height": 1
-    },
-    {
         "id": "1cdf13dd.58452c",
         "type": "ui_button",
         "z": "d749cdc9.d28c6",
@@ -6685,234 +6907,6 @@
                 "81a9261c.6abe08"
             ]
         ]
-    },
-    {
-        "id": "77503e6c.9b55e8",
-        "type": "tab",
-        "label": "Flow 2",
-        "disabled": false,
-        "info": ""
-    },
-    {
-        "id": "4038c84b.fd6978",
-        "type": "subflow",
-        "name": "Subflow 1",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 60,
-                "y": 100,
-                "wires": [
-                    {
-                        "id": "5585da6e.c30924"
-                    },
-                    {
-                        "id": "16195dfc.9648aa"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 580,
-                "y": 100,
-                "wires": [
-                    {
-                        "id": "d2fed263.59022",
-                        "port": 0
-                    }
-                ]
-            },
-            {
-                "x": 580,
-                "y": 200,
-                "wires": [
-                    {
-                        "id": "16195dfc.9648aa",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [
-            {
-                "name": "text_VAR",
-                "type": "str",
-                "value": "",
-                "ui": {
-                    "type": "input",
-                    "opts": {
-                        "types": [
-                            "str"
-                        ]
-                    }
-                }
-            },
-            {
-                "name": "num_VAR",
-                "type": "num",
-                "value": "100"
-            }
-        ],
-        "meta": {
-            "module": "Testing Subflow"
-        },
-        "color": "#DDAA99"
-    },
-    {
-        "id": "8382aa03.05f218",
-        "type": "group",
-        "z": "740b988e.6d58e",
-        "name": "Local csv log - Temp, Hum, Output",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "5dabfc2e.571294",
-            "86fdda3e.144fd8",
-            "10302c50.43b71c",
-            "54353e82.0b1248",
-            "3c1d802.6a5e3",
-            "af443fdd.0dd32",
-            "6d3bec88.249c74"
-        ],
-        "x": 14,
-        "y": 319
-    },
-    {
-        "id": "2bec55c6.5546ba",
-        "type": "group",
-        "z": "22e2030e.b824d4",
-        "name": "unused log function",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "51276878.1bb5b8",
-            "ca1b1d42.f6f8a",
-            "4c9be345.9b5ba4",
-            "298a7ad5.729f4e"
-        ],
-        "x": 54,
-        "y": 819
-    },
-    {
-        "id": "f7182fde.aa5948",
-        "type": "group",
-        "z": "77503e6c.9b55e8",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "38532770.e908a",
-            "f0e25561.2831b8",
-            "32c5c450.e30ffc",
-            "b101fa77.10a438",
-            "9dd32425.c23188",
-            "1da6331b.a775a5"
-        ],
-        "x": 114,
-        "y": 919,
-        "w": 1012,
-        "h": 382
-    },
-    {
-        "id": "57c5053d.5f6d04",
-        "type": "ui_group",
-        "name": "Presión atmosférica",
-        "tab": "b27a6bc6.fbb248",
-        "order": 4,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "84139348.77a8c",
-        "type": "ui_spacer",
-        "name": "spacer",
-        "group": "5233a975.68bcd",
-        "order": 7,
-        "width": "6",
-        "height": 1
-    },
-    {
-        "id": "e40a2865.380ec8",
-        "type": "ui_group",
-        "name": "Messages",
-        "tab": "b27a6bc6.fbb248",
-        "order": 5,
-        "disp": true,
-        "width": "10",
-        "collapse": true
-    },
-    {
-        "id": "3ac90f24.56fd3",
-        "type": "ui_tab",
-        "name": "Barra segura",
-        "icon": "power",
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "42aa784b.2a0a48",
-        "type": "ui_group",
-        "name": "400VDC Input",
-        "tab": "3ac90f24.56fd3",
-        "order": 1,
-        "disp": true,
-        "width": "9",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "8860dcf9.4290c8",
-        "type": "ui_group",
-        "name": "Group 2",
-        "tab": "3ac90f24.56fd3",
-        "order": 2,
-        "disp": true,
-        "width": "3",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "eeadf306.11db08",
-        "type": "ui_spacer",
-        "z": "77503e6c.9b55e8",
-        "name": "spacer",
-        "group": "8860dcf9.4290c8",
-        "order": 2,
-        "width": "0",
-        "height": "0",
-        "className": ""
-    },
-    {
-        "id": "899bf6a1.99619",
-        "type": "ui_group",
-        "name": "LINES",
-        "tab": "3ac90f24.56fd3",
-        "order": 3,
-        "disp": true,
-        "width": "9",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "55997e8d.863c48",
-        "type": "ui_spacer",
-        "z": "c774982a.dc6c1",
-        "name": "spacer",
-        "group": "899bf6a1.99619",
-        "order": 1,
-        "width": 1,
-        "height": 1
     },
     {
         "id": "6ce59707.fd7968",
@@ -7460,7 +7454,6 @@
         "label": "Prediction input",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "className": "",
         "x": 1300,
         "y": 260,
         "wires": []
@@ -7504,7 +7497,6 @@
         ],
         "seg1": "375",
         "seg2": "425",
-        "className": "",
         "x": 1010,
         "y": 60,
         "wires": []
@@ -7579,7 +7571,6 @@
         ],
         "seg1": "120",
         "seg2": "150",
-        "className": "",
         "x": 1010,
         "y": 140,
         "wires": []
@@ -7625,7 +7616,6 @@
         ],
         "seg1": "25",
         "seg2": "50",
-        "className": "",
         "x": 1010,
         "y": 220,
         "wires": []
@@ -7756,7 +7746,6 @@
         "officon": "",
         "offcolor": "",
         "animate": false,
-        "className": "",
         "x": 190,
         "y": 960,
         "wires": [
@@ -7781,7 +7770,6 @@
         "fwdInMessages": true,
         "resendOnRefresh": false,
         "templateScope": "local",
-        "className": "",
         "x": 1030,
         "y": 960,
         "wires": [
@@ -7860,7 +7848,6 @@
         "fwdInMessages": true,
         "resendOnRefresh": false,
         "templateScope": "local",
-        "className": "",
         "x": 790,
         "y": 1260,
         "wires": [
@@ -7889,7 +7876,6 @@
         ],
         "seg1": "200",
         "seg2": "240",
-        "className": "",
         "x": 1020,
         "y": 480,
         "wires": []
@@ -7916,7 +7902,6 @@
         ],
         "seg1": "120",
         "seg2": "150",
-        "className": "",
         "x": 1020,
         "y": 560,
         "wires": []
@@ -7943,7 +7928,6 @@
         ],
         "seg1": "25",
         "seg2": "50",
-        "className": "",
         "x": 1020,
         "y": 640,
         "wires": []
@@ -7960,7 +7944,6 @@
         "label": "AC BUS PArameters",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "className": "",
         "x": 980,
         "y": 20,
         "wires": []
@@ -8124,12 +8107,11 @@
         "order": 5,
         "width": "9",
         "height": "1",
-        "name": "ENCLITA",
+        "name": "DC Bus Params",
         "label": "DC Bus Params",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "className": "",
-        "x": 540,
+        "x": 560,
         "y": 440,
         "wires": []
     },
@@ -8267,7 +8249,6 @@
         "label": "${text_VAR}",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
-        "className": "",
         "x": 580,
         "y": 360,
         "wires": []
