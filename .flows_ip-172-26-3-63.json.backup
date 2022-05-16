@@ -7,6 +7,13 @@
         "info": ""
     },
     {
+        "id": "c774982a.dc6c1",
+        "type": "tab",
+        "label": "Nautic",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "740b988e.6d58e",
         "type": "tab",
         "label": "Archivos y logs",
@@ -70,87 +77,6 @@
         "info": ""
     },
     {
-        "id": "c774982a.dc6c1",
-        "type": "tab",
-        "label": "Nautic",
-        "disabled": false,
-        "info": ""
-    },
-    {
-        "id": "77503e6c.9b55e8",
-        "type": "tab",
-        "label": "Flow 2",
-        "disabled": false,
-        "info": ""
-    },
-    {
-        "id": "4038c84b.fd6978",
-        "type": "subflow",
-        "name": "Subflow 1",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 60,
-                "y": 100,
-                "wires": [
-                    {
-                        "id": "5585da6e.c30924"
-                    },
-                    {
-                        "id": "16195dfc.9648aa"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 580,
-                "y": 100,
-                "wires": [
-                    {
-                        "id": "d2fed263.59022",
-                        "port": 0
-                    }
-                ]
-            },
-            {
-                "x": 580,
-                "y": 200,
-                "wires": [
-                    {
-                        "id": "16195dfc.9648aa",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [
-            {
-                "name": "text_VAR",
-                "type": "str",
-                "value": "",
-                "ui": {
-                    "type": "input",
-                    "opts": {
-                        "types": [
-                            "str"
-                        ]
-                    }
-                }
-            },
-            {
-                "name": "num_VAR",
-                "type": "num",
-                "value": "100"
-            }
-        ],
-        "meta": {
-            "module": "Testing Subflow"
-        },
-        "color": "#DDAA99"
-    },
-    {
         "id": "3a8c6532.d84b42",
         "type": "group",
         "z": "d749cdc9.d28c6",
@@ -167,7 +93,9 @@
             "38df8497.a67acc"
         ],
         "x": -6,
-        "y": 99
+        "y": 99,
+        "w": 352,
+        "h": 362
     },
     {
         "id": "cfd71c3b.62ad5",
@@ -224,7 +152,9 @@
             "9673313b.249898"
         ],
         "x": 454,
-        "y": 279
+        "y": 279,
+        "w": 952,
+        "h": 682
     },
     {
         "id": "7e88e231.3018cc",
@@ -364,69 +294,6 @@
         "y": 599,
         "w": 592,
         "h": 82
-    },
-    {
-        "id": "8382aa03.05f218",
-        "type": "group",
-        "z": "740b988e.6d58e",
-        "name": "Local csv log - Temp, Hum, Output",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "5dabfc2e.571294",
-            "86fdda3e.144fd8",
-            "10302c50.43b71c",
-            "54353e82.0b1248",
-            "3c1d802.6a5e3",
-            "af443fdd.0dd32",
-            "6d3bec88.249c74"
-        ],
-        "x": 14,
-        "y": 319
-    },
-    {
-        "id": "2bec55c6.5546ba",
-        "type": "group",
-        "z": "22e2030e.b824d4",
-        "name": "unused log function",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "51276878.1bb5b8",
-            "ca1b1d42.f6f8a",
-            "4c9be345.9b5ba4",
-            "298a7ad5.729f4e"
-        ],
-        "x": 54,
-        "y": 819
-    },
-    {
-        "id": "f7182fde.aa5948",
-        "type": "group",
-        "z": "77503e6c.9b55e8",
-        "style": {
-            "stroke": "#999999",
-            "stroke-opacity": "1",
-            "fill": "none",
-            "fill-opacity": "1",
-            "label": true,
-            "label-position": "nw",
-            "color": "#a4a4a4"
-        },
-        "nodes": [
-            "38532770.e908a",
-            "f0e25561.2831b8",
-            "32c5c450.e30ffc",
-            "b101fa77.10a438",
-            "9dd32425.c23188",
-            "1da6331b.a775a5"
-        ],
-        "x": 114,
-        "y": 919,
-        "w": 1012,
-        "h": 382
     },
     {
         "id": "cd6b5625.5238f8",
@@ -1157,124 +1024,6 @@
         "order": null,
         "disp": true,
         "width": 6
-    },
-    {
-        "id": "20e57977.04f336",
-        "type": "ui_spacer",
-        "name": "spacer",
-        "group": "8df828eb.b80fe",
-        "order": 2,
-        "width": "28",
-        "height": 1
-    },
-    {
-        "id": "94b4d1c5.ca0c58",
-        "type": "ui_spacer",
-        "name": "spacer",
-        "group": "54eb79f4.6de7",
-        "order": 2,
-        "width": "13",
-        "height": 1
-    },
-    {
-        "id": "ff92d79e.6be32",
-        "type": "ui_spacer",
-        "name": "spacer",
-        "group": "54eb79f4.6de7",
-        "order": 4,
-        "width": "14",
-        "height": 1
-    },
-    {
-        "id": "57c5053d.5f6d04",
-        "type": "ui_group",
-        "name": "Presión atmosférica",
-        "tab": "b27a6bc6.fbb248",
-        "order": 4,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "84139348.77a8c",
-        "type": "ui_spacer",
-        "name": "spacer",
-        "group": "5233a975.68bcd",
-        "order": 7,
-        "width": "6",
-        "height": 1
-    },
-    {
-        "id": "e40a2865.380ec8",
-        "type": "ui_group",
-        "name": "Messages",
-        "tab": "b27a6bc6.fbb248",
-        "order": 5,
-        "disp": true,
-        "width": "10",
-        "collapse": true
-    },
-    {
-        "id": "3ac90f24.56fd3",
-        "type": "ui_tab",
-        "name": "Barra segura",
-        "icon": "power",
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "42aa784b.2a0a48",
-        "type": "ui_group",
-        "name": "400VDC Input",
-        "tab": "3ac90f24.56fd3",
-        "order": 1,
-        "disp": true,
-        "width": "9",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "8860dcf9.4290c8",
-        "type": "ui_group",
-        "name": "Group 2",
-        "tab": "3ac90f24.56fd3",
-        "order": 2,
-        "disp": true,
-        "width": "3",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "eeadf306.11db08",
-        "type": "ui_spacer",
-        "z": "77503e6c.9b55e8",
-        "name": "spacer",
-        "group": "8860dcf9.4290c8",
-        "order": 2,
-        "width": "0",
-        "height": "0",
-        "className": ""
-    },
-    {
-        "id": "899bf6a1.99619",
-        "type": "ui_group",
-        "name": "LINES",
-        "tab": "3ac90f24.56fd3",
-        "order": 3,
-        "disp": true,
-        "width": "9",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "55997e8d.863c48",
-        "type": "ui_spacer",
-        "z": "c774982a.dc6c1",
-        "name": "spacer",
-        "group": "899bf6a1.99619",
-        "order": 1,
-        "width": 1,
-        "height": 1
     },
     {
         "id": "131bbded.d8d8da",
@@ -2573,6 +2322,30 @@
             ]
         ],
         "info": "Recibe los valores de las 4 variables de entrada, y las combina en un objeto. Hasta no recibir las 4 entradas no envía data. "
+    },
+    {
+        "id": "c018727a.996b58",
+        "type": "ui_template",
+        "z": "e924d20f.9ce478",
+        "d": true,
+        "group": "8ff5bd02.5b1d1",
+        "name": "HTTP Response",
+        "order": 1,
+        "width": 5,
+        "height": 11,
+        "format": "<div ng-bind-html=\"msg.payload\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "x": 1270,
+        "y": 140,
+        "wires": [
+            [
+                "6ce59707.fd7968"
+            ]
+        ],
+        "info": "Este nodo recibe la respuesta de google script y la publica"
     },
     {
         "id": "6fef3d8e.102544",
@@ -6784,6 +6557,33 @@
         ]
     },
     {
+        "id": "20e57977.04f336",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "8df828eb.b80fe",
+        "order": 2,
+        "width": "28",
+        "height": 1
+    },
+    {
+        "id": "94b4d1c5.ca0c58",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "54eb79f4.6de7",
+        "order": 2,
+        "width": "13",
+        "height": 1
+    },
+    {
+        "id": "ff92d79e.6be32",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "54eb79f4.6de7",
+        "order": 4,
+        "width": "14",
+        "height": 1
+    },
+    {
         "id": "1cdf13dd.58452c",
         "type": "ui_button",
         "z": "d749cdc9.d28c6",
@@ -6885,6 +6685,234 @@
                 "81a9261c.6abe08"
             ]
         ]
+    },
+    {
+        "id": "77503e6c.9b55e8",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "4038c84b.fd6978",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 60,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "5585da6e.c30924"
+                    },
+                    {
+                        "id": "16195dfc.9648aa"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 580,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "d2fed263.59022",
+                        "port": 0
+                    }
+                ]
+            },
+            {
+                "x": 580,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "16195dfc.9648aa",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [
+            {
+                "name": "text_VAR",
+                "type": "str",
+                "value": "",
+                "ui": {
+                    "type": "input",
+                    "opts": {
+                        "types": [
+                            "str"
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "num_VAR",
+                "type": "num",
+                "value": "100"
+            }
+        ],
+        "meta": {
+            "module": "Testing Subflow"
+        },
+        "color": "#DDAA99"
+    },
+    {
+        "id": "8382aa03.05f218",
+        "type": "group",
+        "z": "740b988e.6d58e",
+        "name": "Local csv log - Temp, Hum, Output",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "5dabfc2e.571294",
+            "86fdda3e.144fd8",
+            "10302c50.43b71c",
+            "54353e82.0b1248",
+            "3c1d802.6a5e3",
+            "af443fdd.0dd32",
+            "6d3bec88.249c74"
+        ],
+        "x": 14,
+        "y": 319
+    },
+    {
+        "id": "2bec55c6.5546ba",
+        "type": "group",
+        "z": "22e2030e.b824d4",
+        "name": "unused log function",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "51276878.1bb5b8",
+            "ca1b1d42.f6f8a",
+            "4c9be345.9b5ba4",
+            "298a7ad5.729f4e"
+        ],
+        "x": 54,
+        "y": 819
+    },
+    {
+        "id": "f7182fde.aa5948",
+        "type": "group",
+        "z": "77503e6c.9b55e8",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "38532770.e908a",
+            "f0e25561.2831b8",
+            "32c5c450.e30ffc",
+            "b101fa77.10a438",
+            "9dd32425.c23188",
+            "1da6331b.a775a5"
+        ],
+        "x": 114,
+        "y": 919,
+        "w": 1012,
+        "h": 382
+    },
+    {
+        "id": "57c5053d.5f6d04",
+        "type": "ui_group",
+        "name": "Presión atmosférica",
+        "tab": "b27a6bc6.fbb248",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "84139348.77a8c",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "5233a975.68bcd",
+        "order": 7,
+        "width": "6",
+        "height": 1
+    },
+    {
+        "id": "e40a2865.380ec8",
+        "type": "ui_group",
+        "name": "Messages",
+        "tab": "b27a6bc6.fbb248",
+        "order": 5,
+        "disp": true,
+        "width": "10",
+        "collapse": true
+    },
+    {
+        "id": "3ac90f24.56fd3",
+        "type": "ui_tab",
+        "name": "Barra segura",
+        "icon": "power",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "42aa784b.2a0a48",
+        "type": "ui_group",
+        "name": "400VDC Input",
+        "tab": "3ac90f24.56fd3",
+        "order": 1,
+        "disp": true,
+        "width": "9",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8860dcf9.4290c8",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "3ac90f24.56fd3",
+        "order": 2,
+        "disp": true,
+        "width": "3",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "eeadf306.11db08",
+        "type": "ui_spacer",
+        "z": "77503e6c.9b55e8",
+        "name": "spacer",
+        "group": "8860dcf9.4290c8",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "className": ""
+    },
+    {
+        "id": "899bf6a1.99619",
+        "type": "ui_group",
+        "name": "LINES",
+        "tab": "3ac90f24.56fd3",
+        "order": 3,
+        "disp": true,
+        "width": "9",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "55997e8d.863c48",
+        "type": "ui_spacer",
+        "z": "c774982a.dc6c1",
+        "name": "spacer",
+        "group": "899bf6a1.99619",
+        "order": 1,
+        "width": 1,
+        "height": 1
     },
     {
         "id": "6ce59707.fd7968",
@@ -7160,30 +7188,6 @@
                 "969feee0.81e0d8"
             ]
         ]
-    },
-    {
-        "id": "c018727a.996b58",
-        "type": "ui_template",
-        "z": "e924d20f.9ce478",
-        "d": true,
-        "group": "8ff5bd02.5b1d1",
-        "name": "HTTP Response",
-        "order": 1,
-        "width": 5,
-        "height": 11,
-        "format": "<div ng-bind-html=\"msg.payload\"></div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": false,
-        "templateScope": "local",
-        "x": 1270,
-        "y": 140,
-        "wires": [
-            [
-                "6ce59707.fd7968"
-            ]
-        ],
-        "info": "Este nodo recibe la respuesta de google script y la publica"
     },
     {
         "id": "edef8c94.98d498",
@@ -8120,12 +8124,12 @@
         "order": 5,
         "width": "9",
         "height": "1",
-        "name": "DC Bus Params",
+        "name": "ENCLITA",
         "label": "DC Bus Params",
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "className": "",
-        "x": 560,
+        "x": 540,
         "y": 440,
         "wires": []
     },
