@@ -36,6 +36,8 @@ UI description
 - Group 2, historical file data table, with order_by each column, and scroll bars. 
 - Group 3, retrieves and shows data log from google sheet in a filtered table (Timestamp, Temperature, Humidity, Analog, green led status
 
+
+=======
 # NR Modules 
 Modules available in palette (some of them used for testing playing around purposes only)
 node-red 1.3.3
