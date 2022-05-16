@@ -125,7 +125,7 @@ module.exports = {
         type: "credentials",
         users: [{
            username: "username",
-            password: "Hashed Password",
+            password: "Hashed password",
             permissions: "*"
         }]
     },
