@@ -7,7 +7,7 @@ Software: mqtt_node_red2.ino, Arduino IDE
 
 MQTT broker: Mosquito at 3.225.83.240:1883
 
-Supervisor software: Node-red at 3.225.83.240:1880 (AWS EC2 hosted)
+Supervisor software: Node-red (Debian 10 = bitnami, AWS EC2 hosted)
 
 
 Esp32 controller simulates random values of temperature (range 20-35) and humidity(range 70-100), and reads analog signal modified by hardware potentiometer.
