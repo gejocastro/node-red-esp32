@@ -14,13 +14,6 @@
         "info": ""
     },
     {
-        "id": "740b988e.6d58e",
-        "type": "tab",
-        "label": "Archivos y logs",
-        "disabled": false,
-        "info": ""
-    },
-    {
         "id": "1e1daf04.126739",
         "type": "tab",
         "label": "Tablero",
@@ -42,11 +35,25 @@
         "info": ""
     },
     {
+        "id": "740b988e.6d58e",
+        "type": "tab",
+        "label": "Archivos y logs",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "e924d20f.9ce478",
         "type": "tab",
         "label": "Google Sheet",
         "disabled": false,
         "info": "Recibe los datos de las variables publicados por el esp mediante MQTT, y los formatea para ser enviados a google script que escribe en google sheet. \nLevanta los datos de google sheets y los publica en tabla en el dashboard"
+    },
+    {
+        "id": "c2ab32d3.037fb8",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
     },
     {
         "id": "7fb1182.bf64368",
@@ -167,9 +174,7 @@
             "38df8497.a67acc"
         ],
         "x": -6,
-        "y": 99,
-        "w": 352,
-        "h": 362
+        "y": 99
     },
     {
         "id": "cfd71c3b.62ad5",
@@ -189,9 +194,7 @@
             "1cdf13dd.58452c"
         ],
         "x": 54,
-        "y": 979,
-        "w": 372,
-        "h": 402
+        "y": 979
     },
     {
         "id": "e9a3077.08c0378",
@@ -228,9 +231,7 @@
             "9673313b.249898"
         ],
         "x": 454,
-        "y": 279,
-        "w": 952,
-        "h": 682
+        "y": 279
     },
     {
         "id": "7e88e231.3018cc",
@@ -320,9 +321,7 @@
             "e8975340.59b4c"
         ],
         "x": -6,
-        "y": 479,
-        "w": 392,
-        "h": 402
+        "y": 479
     },
     {
         "id": "e808bf9.aaaecc",
@@ -400,9 +399,9 @@
             "af443fdd.0dd32",
             "6d3bec88.249c74"
         ],
-        "x": 14,
-        "y": 319,
-        "w": 1332,
+        "x": 34,
+        "y": 139,
+        "w": 1252,
         "h": 202
     },
     {
@@ -485,6 +484,48 @@
         "y": 719,
         "w": 1052,
         "h": 142
+    },
+    {
+        "id": "4735459.5cbe6bc",
+        "type": "group",
+        "z": "740b988e.6d58e",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "6fef3d8e.102544",
+            "65bcfde3.c92364",
+            "f2026c0a.990db",
+            "1ab91860.dd58a8",
+            "3a85b173.5ec2d6",
+            "7d0b755c.afaf34",
+            "c357b039.5c6ae",
+            "a18d01f5.000dc",
+            "cde0a4ab.62da5",
+            "4f13f7f8.d9021",
+            "eb4dd089.1f21b8",
+            "56437cde.2e2794",
+            "68d0a43c.e02984",
+            "3b2f0180.bc870e",
+            "fa191708.fb4ec",
+            "6b69c65a.414e78",
+            "f3460932.e62d78",
+            "769d58a0.3763d",
+            "b6e1f755.cb231",
+            "641c54af.0a93dc",
+            "1e2672f8.47a75d",
+            "9a1dbdf8.f9d2b8"
+        ],
+        "x": -6,
+        "y": 639,
+        "w": 1472,
+        "h": 742
     },
     {
         "id": "cd6b5625.5238f8",
@@ -850,12 +891,13 @@
     {
         "id": "9c98081c.cecc6",
         "type": "ui_group",
-        "name": "",
-        "tab": "",
+        "name": "SQL Query",
+        "tab": "bcda03fb.f472d8",
         "order": 1,
-        "disp": true,
+        "disp": false,
         "width": "26",
-        "collapse": false
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "a7eeab9.88e15d8",
@@ -1329,6 +1371,24 @@
         "order": 1,
         "width": 1,
         "height": 1
+    },
+    {
+        "id": "f8d5f459.cc757",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "nodered",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "bcda03fb.f472d8",
+        "type": "ui_tab",
+        "name": "SQL",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
     },
     {
         "id": "131bbded.d8d8da",
@@ -2624,7 +2684,8 @@
         "y": 140,
         "wires": [
             [
-                "58bd03dd.e075f4"
+                "58bd03dd.e075f4",
+                "8f62ac16.56f108"
             ]
         ],
         "info": "Recibe los valores de las 4 variables de entrada, y las combina en un objeto. Hasta no recibir las 4 entradas no envía data. "
@@ -2657,14 +2718,15 @@
         "id": "6fef3d8e.102544",
         "type": "file in",
         "z": "740b988e.6d58e",
+        "g": "4735459.5cbe6bc",
         "name": "load log file",
         "filename": "",
         "format": "utf8",
         "chunk": false,
         "sendError": false,
         "encoding": "none",
-        "x": 770,
-        "y": 760,
+        "x": 790,
+        "y": 740,
         "wires": [
             [
                 "f2026c0a.990db",
@@ -2676,6 +2738,7 @@
         "id": "65bcfde3.c92364",
         "type": "ui_button",
         "z": "740b988e.6d58e",
+        "g": "4735459.5cbe6bc",
         "name": "Get actual log",
         "group": "e5619d8f.db854",
         "order": 1,
@@ -2691,8 +2754,8 @@
         "payloadType": "bool",
         "topic": "",
         "topicType": "str",
-        "x": 260,
-        "y": 720,
+        "x": 280,
+        "y": 700,
         "wires": [
             [
                 "4f13f7f8.d9021"
@@ -2704,6 +2767,7 @@
         "id": "f2026c0a.990db",
         "type": "csv",
         "z": "740b988e.6d58e",
+        "g": "4735459.5cbe6bc",
         "name": "Parses csv",
         "sep": ",",
         "hdrin": false,
@@ -2715,8 +2779,8 @@
         "strings": false,
         "include_empty_strings": false,
         "include_null_values": "",
-        "x": 970,
-        "y": 760,
+        "x": 990,
+        "y": 740,
         "wires": [
             [
                 "1ab91860.dd58a8"
@@ -2736,8 +2800,8 @@
         "nl": false,
         "rap": true,
         "rh": 0,
-        "x": 130,
-        "y": 360,
+        "x": 150,
+        "y": 180,
         "wires": [
             [
                 "54353e82.0b1248"
@@ -2757,8 +2821,8 @@
         "nl": false,
         "rap": true,
         "rh": 0,
-        "x": 110,
-        "y": 480,
+        "x": 130,
+        "y": 300,
         "wires": [
             [
                 "54353e82.0b1248"
@@ -2778,8 +2842,8 @@
         "nl": false,
         "rap": true,
         "rh": 0,
-        "x": 120,
-        "y": 420,
+        "x": 140,
+        "y": 240,
         "wires": [
             [
                 "54353e82.0b1248"
@@ -2807,8 +2871,8 @@
         "reduceInit": "",
         "reduceInitType": "",
         "reduceFixup": "",
-        "x": 450,
-        "y": 440,
+        "x": 470,
+        "y": 260,
         "wires": [
             [
                 "3c1d802.6a5e3"
@@ -2828,8 +2892,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 720,
-        "y": 440,
+        "x": 700,
+        "y": 260,
         "wires": [
             [
                 "af443fdd.0dd32"
@@ -2848,8 +2912,8 @@
         "createDir": false,
         "overwriteFile": "false",
         "encoding": "none",
-        "x": 1030,
-        "y": 440,
+        "x": 930,
+        "y": 260,
         "wires": [
             [
                 "6d3bec88.249c74"
@@ -2889,12 +2953,13 @@
         "type": "tail",
         "z": "740b988e.6d58e",
         "d": true,
+        "g": "4735459.5cbe6bc",
         "name": "record.csv tail",
         "filetype": "text",
         "split": "[\\r]{0,1}\\n",
         "filename": "record.csv",
         "inputs": 0,
-        "x": 690,
+        "x": 790,
         "y": 680,
         "wires": [
             [
@@ -2906,6 +2971,7 @@
         "id": "1ab91860.dd58a8",
         "type": "function",
         "z": "740b988e.6d58e",
+        "g": "4735459.5cbe6bc",
         "name": "Reverse",
         "func": "msg.payload.reverse();\n//for (a=0 ; a < msg.payload.length; a++ ){\n//    if (msg.payload[a].Led == \"on\")\n//        msg.payload[a].Led =true; \n//    if (msg.payload[a].Led == \"off\")\n//        msg.payload[a].Led = false; \n//}\nreturn msg;",
         "outputs": 1,
@@ -2913,8 +2979,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1140,
-        "y": 760,
+        "x": 1160,
+        "y": 740,
         "wires": [
             [
                 "fa191708.fb4ec",
@@ -3934,7 +4000,7 @@
         "name": "",
         "label": "",
         "group": "9c98081c.cecc6",
-        "order": 2,
+        "order": 1,
         "width": 6,
         "height": 1,
         "passthru": false,
@@ -4304,6 +4370,7 @@
         "id": "3a85b173.5ec2d6",
         "type": "exec",
         "z": "740b988e.6d58e",
+        "g": "4735459.5cbe6bc",
         "command": "ls /home/bitnami/log/old",
         "addpay": "",
         "append": "",
@@ -4311,8 +4378,8 @@
         "timer": "",
         "oldrc": false,
         "name": "Lists files in dir",
-        "x": 300,
-        "y": 1120,
+        "x": 320,
+        "y": 1100,
         "wires": [
             [
                 "7d0b755c.afaf34"
@@ -4326,6 +4393,7 @@
         "id": "7d0b755c.afaf34",
         "type": "csv",
         "z": "740b988e.6d58e",
+        "g": "4735459.5cbe6bc",
         "name": "Formats to table",
         "sep": ",",
         "hdrin": false,
@@ -4337,8 +4405,8 @@
         "strings": false,
         "include_empty_strings": false,
         "include_null_values": "",
-        "x": 520,
-        "y": 1120,
+        "x": 540,
+        "y": 1100,
         "wires": [
             [
                 "cde0a4ab.62da5",
@@ -4351,6 +4419,7 @@
         "id": "c357b039.5c6ae",
         "type": "function",
         "z": "740b988e.6d58e",
+        "g": "4735459.5cbe6bc",
         "name": "Format selected filename",
         "func": "msg.filename=\"log/old/\"+msg.payload.File;\nreturn msg;\n\n",
         "outputs": 1,
@@ -4358,8 +4427,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 470,
-        "y": 780,
+        "x": 490,
+        "y": 760,
         "wires": [
             [
                 "6fef3d8e.102544",
@@ -4372,6 +4441,7 @@
         "id": "a18d01f5.000dc",
         "type": "inject",
         "z": "740b988e.6d58e",
+        "g": "4735459.5cbe6bc",
         "name": "Run once",
         "props": [
             {
@@ -4389,8 +4459,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 80,
-        "y": 960,
+        "x": 100,
+        "y": 940,
         "wires": [
             [
                 "3a85b173.5ec2d6",
@@ -4403,6 +4473,7 @@
         "type": "function",
         "z": "740b988e.6d58e",
         "d": true,
+        "g": "4735459.5cbe6bc",
         "name": "",
         "func": "/* var length=msg.payload.length;\nfor (i=0; i < length; i++)\n{msg.payload[length-i]=msg.payload[length-i-1]};\nmsg.payload[0]={File:\"../record.csv\"};*/ \nreturn msg;",
         "outputs": 1,
@@ -4410,8 +4481,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 720,
-        "y": 1040,
+        "x": 740,
+        "y": 1020,
         "wires": [
             [
                 "6b69c65a.414e78"
@@ -4423,6 +4494,7 @@
         "id": "4f13f7f8.d9021",
         "type": "function",
         "z": "740b988e.6d58e",
+        "g": "4735459.5cbe6bc",
         "name": "Format filename",
         "func": "msg.filename=\"log/record.csv\";\nreturn msg;\n\n",
         "outputs": 1,
@@ -4430,8 +4502,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 500,
-        "y": 720,
+        "x": 520,
+        "y": 700,
         "wires": [
             [
                 "6fef3d8e.102544",
@@ -4444,6 +4516,7 @@
         "id": "eb4dd089.1f21b8",
         "type": "ui_text",
         "z": "740b988e.6d58e",
+        "g": "4735459.5cbe6bc",
         "group": "9db1e284.270f5",
         "order": 1,
         "width": "15",
@@ -4452,14 +4525,15 @@
         "label": "<b>Mostrando archivo: ",
         "format": "<font color = red >{{msg.filename}}",
         "layout": "row-left",
-        "x": 1330,
-        "y": 900,
+        "x": 1350,
+        "y": 880,
         "wires": []
     },
     {
         "id": "56437cde.2e2794",
         "type": "function",
         "z": "740b988e.6d58e",
+        "g": "4735459.5cbe6bc",
         "name": "Extracts fileneme (pathless)",
         "func": "str=msg.filename;\n//msg.filename=str.substring(0, str.lastIndexOf(\"/\"));\n\n  x = str.lastIndexOf('/');\n  if (x >= 0) // Unix-based path\n    msg.filename=str.substr(x+1);\nreturn msg;\n\n",
         "outputs": 1,
@@ -4467,8 +4541,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 820,
-        "y": 900,
+        "x": 840,
+        "y": 880,
         "wires": [
             [
                 "eb4dd089.1f21b8"
@@ -4480,6 +4554,7 @@
         "id": "68d0a43c.e02984",
         "type": "function",
         "z": "740b988e.6d58e",
+        "g": "4735459.5cbe6bc",
         "name": "Add Filter and reverse",
         "func": "msg.ui_control = {};\nmsg.ui_control.tabulator = {\n    headerFilterPlaceholder:\"filtrar...\",\n    columns:[{headerFilter:true,field:\"File\"}]};\n\nmsg.payload.reverse();        \nreturn msg;\n/*v\nmsg.ui_control = {};\nmsg.ui_control.tabulator = {\n    headerFilterPlaceholder:\"filtrar...\",\n     columns:[{title:\"Timestamp\", field:\"Time\", headerFilter:true,  width:\"40%\",align:\"left\"},\n            {title:\"Temperature\", field:\"Temperature\", headerFilter:true, width:\"14%\",align:\"center\",topCalc:\"avg\",headerFilterPlaceholder:\"<=...\", headerFilterFunc:\"<=\",},\n            {title:\"Humidity\", field:\"Humidity\", headerFilter:true, width:\"14%\",align:\"center\"},\n            {title:\"Analog\", field:\"Analog\", headerFilter:true, width:\"14%\",align:\"center\"},\n            {title:\"Led2\", field:\"Led\", headerFilter:true, width:\"14%\",align:\"center\"}]} \n        \nreturn msg;*/",
         "outputs": 1,
@@ -4487,8 +4562,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 760,
-        "y": 1120,
+        "x": 780,
+        "y": 1100,
         "wires": [
             [
                 "6b69c65a.414e78"
@@ -4499,11 +4574,12 @@
         "id": "3b2f0180.bc870e",
         "type": "watch",
         "z": "740b988e.6d58e",
+        "g": "4735459.5cbe6bc",
         "name": "Watch for new files",
         "files": "/home/bitnami/log/old",
         "recursive": "",
-        "x": 90,
-        "y": 1280,
+        "x": 110,
+        "y": 1260,
         "wires": [
             [
                 "3a85b173.5ec2d6"
@@ -5341,6 +5417,7 @@
         "id": "fa191708.fb4ec",
         "type": "ui_table",
         "z": "740b988e.6d58e",
+        "g": "4735459.5cbe6bc",
         "group": "9db1e284.270f5",
         "name": "Presents logfile",
         "order": 2,
@@ -5390,14 +5467,15 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 1340,
-        "y": 760,
+        "x": 1360,
+        "y": 740,
         "wires": []
     },
     {
         "id": "6b69c65a.414e78",
         "type": "ui_table",
         "z": "740b988e.6d58e",
+        "g": "4735459.5cbe6bc",
         "group": "e5619d8f.db854",
         "name": "Shows file list",
         "order": 2,
@@ -5417,8 +5495,8 @@
         ],
         "outputs": 1,
         "cts": true,
-        "x": 1060,
-        "y": 1120,
+        "x": 1080,
+        "y": 1100,
         "wires": [
             [
                 "3a85b173.5ec2d6",
@@ -5933,6 +6011,7 @@
         "id": "f3460932.e62d78",
         "type": "exec",
         "z": "740b988e.6d58e",
+        "g": "4735459.5cbe6bc",
         "command": "ls -la ~",
         "addpay": "",
         "append": "",
@@ -5940,8 +6019,8 @@
         "timer": "",
         "oldrc": false,
         "name": "Lists files in dir",
-        "x": 464,
-        "y": 1224,
+        "x": 484,
+        "y": 1204,
         "wires": [
             [
                 "769d58a0.3763d"
@@ -5955,6 +6034,7 @@
         "id": "769d58a0.3763d",
         "type": "debug",
         "z": "740b988e.6d58e",
+        "g": "4735459.5cbe6bc",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -5964,8 +6044,8 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 710,
-        "y": 1220,
+        "x": 730,
+        "y": 1200,
         "wires": []
     },
     {
@@ -5973,6 +6053,7 @@
         "type": "inject",
         "z": "740b988e.6d58e",
         "d": true,
+        "g": "4735459.5cbe6bc",
         "name": "",
         "props": [
             {
@@ -5990,8 +6071,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 320,
-        "y": 1360,
+        "x": 340,
+        "y": 1340,
         "wires": [
             [
                 "f3460932.e62d78"
@@ -6012,8 +6093,8 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 1230,
-        "y": 440,
+        "x": 1170,
+        "y": 260,
         "wires": []
     },
     {
@@ -7251,7 +7332,7 @@
         "type": "debug",
         "z": "e924d20f.9ce478",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": true,
@@ -7259,8 +7340,8 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 1330,
-        "y": 240,
+        "x": 910,
+        "y": 220,
         "wires": []
     },
     {
@@ -7361,8 +7442,9 @@
         "id": "641c54af.0a93dc",
         "type": "debug",
         "z": "740b988e.6d58e",
+        "g": "4735459.5cbe6bc",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": true,
@@ -7370,14 +7452,15 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 1370,
-        "y": 820,
+        "x": 1350,
+        "y": 800,
         "wires": []
     },
     {
         "id": "1e2672f8.47a75d",
         "type": "debug",
         "z": "740b988e.6d58e",
+        "g": "4735459.5cbe6bc",
         "name": "",
         "active": false,
         "tosidebar": true,
@@ -7387,8 +7470,8 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 1010,
-        "y": 820,
+        "x": 1030,
+        "y": 800,
         "wires": []
     },
     {
@@ -8272,7 +8355,7 @@
         "type": "debug",
         "z": "77503e6c.9b55e8",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": true,
@@ -8289,7 +8372,7 @@
         "type": "debug",
         "z": "77503e6c.9b55e8",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": true,
@@ -8315,6 +8398,281 @@
         "layout": "row-spread",
         "x": 580,
         "y": 360,
+        "wires": []
+    },
+    {
+        "id": "3b8dcd20.5a2472",
+        "type": "mysql",
+        "z": "e924d20f.9ce478",
+        "mydb": "f8d5f459.cc757",
+        "name": "DB Test",
+        "x": 740,
+        "y": 280,
+        "wires": [
+            [
+                "647fff8a.5dda5"
+            ]
+        ]
+    },
+    {
+        "id": "8f62ac16.56f108",
+        "type": "function",
+        "z": "e924d20f.9ce478",
+        "name": "",
+        "func": "var string = JSON.stringify(msg.payload);\nvar objectValue = JSON.parse(string);\nvar temperature = objectValue['esp32/temperature'];\nvar humidity = objectValue['esp32/humidity'];\nvar pressure = objectValue['esp32/pressure'];\nvar led = objectValue['esp32/output'];\n//date = new Date()\nmsg.topic = \"INSERT INTO logs (Timestamp, Temperature,\\\n            Humidity, Pressure, Led) Values (?,?,?,?,?);\" \nmsg.payload = [String(new Date()), temperature, humidity, pressure, led]\n// Si guardo los datos como fecha tengo que establecer el tipo DATETIME en la BBDD, de lo contrario no me guarda el campo.\n// Si los guardo como string, tengo la ventaja que me traduce el formato a la hora local de la timezone establecida en el node de configuracion\n// de la BBDD.\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 280,
+        "wires": [
+            [
+                "3b8dcd20.5a2472",
+                "edef8c94.98d498"
+            ]
+        ],
+        "info": "Crea un string separado por comas como entrada para el csv"
+    },
+    {
+        "id": "647fff8a.5dda5",
+        "type": "debug",
+        "z": "e924d20f.9ce478",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 930,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "b28bd777.c9f4e8",
+        "type": "mysql",
+        "z": "c2ab32d3.037fb8",
+        "mydb": "f8d5f459.cc757",
+        "name": "",
+        "x": 320,
+        "y": 200,
+        "wires": [
+            [
+                "6a401d17.9393a4",
+                "5e29999d.febfc8"
+            ]
+        ]
+    },
+    {
+        "id": "41186330.55155c",
+        "type": "ui_button",
+        "z": "c2ab32d3.037fb8",
+        "name": "",
+        "group": "9c98081c.cecc6",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "SELECT * FROM logs ORDER BY Id DESC;",
+        "topicType": "str",
+        "x": 110,
+        "y": 200,
+        "wires": [
+            [
+                "b28bd777.c9f4e8",
+                "83d2a331.46eb48"
+            ]
+        ]
+    },
+    {
+        "id": "ea982e48.dce2b",
+        "type": "ui_table",
+        "z": "c2ab32d3.037fb8",
+        "group": "9c98081c.cecc6",
+        "name": "Presents logfile",
+        "order": 2,
+        "width": "26",
+        "height": "13",
+        "columns": [
+            {
+                "field": "TimeStamp",
+                "title": "Timestamp",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Temperature",
+                "title": "Temperature",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Humidity",
+                "title": "Humidity",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Pressure",
+                "title": "Pressure",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "Led",
+                "title": "Led",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 900,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "6a401d17.9393a4",
+        "type": "function",
+        "z": "c2ab32d3.037fb8",
+        "name": "Layout de tabla y filtros",
+        "func": "msg.ui_control = {};\nmsg.ui_control.tabulator = {\n    headerFilterPlaceholder:\"filtrar...\",\n     columns:[{title:\"TimeStamp\", field:\"TimeStamp\", headerFilter:true,  width:\"40%\",align:\"left\",},\n            {title:\"Temperature\", field:\"Temperature\", headerFilter:true, width:\"14%\",align:\"center\",topCalc:\"avg\",headerFilterPlaceholder:\"<=...\", headerFilterFunc:\"<=\",},\n            {title:\"Humidity\", field:\"Humidity\", headerFilter:true, width:\"14%\",align:\"center\"},\n            {title:\"Pressure\", field:\"Pressure\", headerFilter:true, width:\"14%\",align:\"center\",topCalc:\"avg\",headerFilterPlaceholder:\"<=...\", headerFilterFunc:\"<=\",},\n            //{title:\"Analog\", field:\"Analog\", headerFilter:true, width:\"13%\",align:\"center\"},\n            {title:\"Led2\", field:\"Led\", headerFilter:true, width:\"14%\",align:\"center\"}]} \n        \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 200,
+        "wires": [
+            [
+                "ea982e48.dce2b",
+                "d01435a5.4a48a"
+            ]
+        ]
+    },
+    {
+        "id": "5e29999d.febfc8",
+        "type": "debug",
+        "z": "c2ab32d3.037fb8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 550,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "d01435a5.4a48a",
+        "type": "debug",
+        "z": "c2ab32d3.037fb8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "ui_control",
+        "targetType": "msg",
+        "statusVal": "ui_control",
+        "statusType": "auto",
+        "x": 840,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "8a5eab4.4158a58",
+        "type": "ui_text",
+        "z": "c2ab32d3.037fb8",
+        "d": true,
+        "group": "9c98081c.cecc6",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "{{msg.topic}}",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 750,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "83d2a331.46eb48",
+        "type": "function",
+        "z": "c2ab32d3.037fb8",
+        "d": true,
+        "name": "",
+        "func": "msg.payload = new Date();\nmsg.topic =String(msg.payload);\nreturn msg;  ",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 540,
+        "wires": [
+            [
+                "8a5eab4.4158a58",
+                "3666f16e.c2beb6"
+            ]
+        ],
+        "info": "Crea un string separado por comas como entrada para el csv"
+    },
+    {
+        "id": "3666f16e.c2beb6",
+        "type": "debug",
+        "z": "c2ab32d3.037fb8",
+        "d": true,
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "topic",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 910,
+        "y": 480,
         "wires": []
     }
 ]
