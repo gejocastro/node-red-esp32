@@ -87,7 +87,7 @@
         "id": "77503e6c.9b55e8",
         "type": "tab",
         "label": "Flow 2",
-        "disabled": false,
+        "disabled": true,
         "info": ""
     },
     {
@@ -361,9 +361,7 @@
             "b02391bd.5c47d"
         ],
         "x": 14,
-        "y": 399,
-        "w": 1412,
-        "h": 82
+        "y": 399
     },
     {
         "id": "1c64706a.59b6c8",
@@ -378,9 +376,7 @@
             "5d6e3ef.60bd6c"
         ],
         "x": 574,
-        "y": 599,
-        "w": 592,
-        "h": 82
+        "y": 599
     },
     {
         "id": "8382aa03.05f218",
@@ -400,9 +396,7 @@
             "6d3bec88.249c74"
         ],
         "x": 34,
-        "y": 139,
-        "w": 1252,
-        "h": 202
+        "y": 139
     },
     {
         "id": "2bec55c6.5546ba",
@@ -523,9 +517,7 @@
             "9a1dbdf8.f9d2b8"
         ],
         "x": -6,
-        "y": 639,
-        "w": 1472,
-        "h": 742
+        "y": 639
     },
     {
         "id": "cd6b5625.5238f8",
@@ -1317,6 +1309,7 @@
     {
         "id": "3ac90f24.56fd3",
         "type": "ui_tab",
+        "d": true,
         "name": "Barra segura",
         "icon": "power",
         "disabled": false,
@@ -1379,7 +1372,7 @@
         "host": "127.0.0.1",
         "port": "3306",
         "db": "nodered",
-        "tz": "",
+        "tz": "-03:00",
         "charset": "UTF8"
     },
     {
@@ -1389,6 +1382,16 @@
         "icon": "dashboard",
         "disabled": false,
         "hidden": false
+    },
+    {
+        "id": "34740606.537cda",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "nodered",
+        "tz": "-03:00",
+        "charset": "UTF8"
     },
     {
         "id": "131bbded.d8d8da",
@@ -7051,7 +7054,7 @@
         "type": "debug",
         "z": "e924d20f.9ce478",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": true,
@@ -7059,7 +7062,7 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 1330,
+        "x": 1290,
         "y": 240,
         "wires": []
     },
@@ -7340,7 +7343,7 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 910,
+        "x": 770,
         "y": 220,
         "wires": []
     },
@@ -8406,7 +8409,7 @@
         "z": "e924d20f.9ce478",
         "mydb": "f8d5f459.cc757",
         "name": "DB Test",
-        "x": 740,
+        "x": 760,
         "y": 280,
         "wires": [
             [
@@ -8440,7 +8443,7 @@
         "type": "debug",
         "z": "e924d20f.9ce478",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": true,
@@ -8448,7 +8451,7 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 930,
+        "x": 970,
         "y": 280,
         "wires": []
     },
@@ -8456,7 +8459,7 @@
         "id": "b28bd777.c9f4e8",
         "type": "mysql",
         "z": "c2ab32d3.037fb8",
-        "mydb": "f8d5f459.cc757",
+        "mydb": "34740606.537cda",
         "name": "",
         "x": 320,
         "y": 200,
@@ -8559,7 +8562,7 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 900,
+        "x": 920,
         "y": 200,
         "wires": []
     },
@@ -8673,6 +8676,16 @@
         "statusType": "auto",
         "x": 910,
         "y": 480,
+        "wires": []
+    },
+    {
+        "id": "5d84930c.9e2c94",
+        "type": "comment",
+        "z": "c2ab32d3.037fb8",
+        "name": "Apuntes",
+        "info": "",
+        "x": 470,
+        "y": 120,
         "wires": []
     }
 ]
