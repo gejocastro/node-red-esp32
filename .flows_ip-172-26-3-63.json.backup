@@ -91,6 +91,13 @@
         "info": ""
     },
     {
+        "id": "68429893.aeedf",
+        "type": "tab",
+        "label": "Historic chart",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "4038c84b.fd6978",
         "type": "subflow",
         "name": "Subflow 1",
@@ -324,26 +331,6 @@
         "y": 479
     },
     {
-        "id": "e808bf9.aaaecc",
-        "type": "group",
-        "z": "ea943a79.b3e358",
-        "name": "Control PWM de led mediante slider y presentación en pantalla",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "e7db3dfa.0c52",
-            "f248ce86.f4ca6",
-            "f6b1b4b1.df8978",
-            "c2a283d4.e5cdf8",
-            "64d8ffc2.e0f2a"
-        ],
-        "x": 1104,
-        "y": 679,
-        "w": 602,
-        "h": 182
-    },
-    {
         "id": "dd07bb49.117478",
         "type": "group",
         "z": "e924d20f.9ce478",
@@ -361,7 +348,9 @@
             "b02391bd.5c47d"
         ],
         "x": 14,
-        "y": 399
+        "y": 399,
+        "w": 1412,
+        "h": 82
     },
     {
         "id": "1c64706a.59b6c8",
@@ -376,7 +365,9 @@
             "5d6e3ef.60bd6c"
         ],
         "x": 574,
-        "y": 599
+        "y": 599,
+        "w": 592,
+        "h": 82
     },
     {
         "id": "8382aa03.05f218",
@@ -437,9 +428,7 @@
             "1da6331b.a775a5"
         ],
         "x": 114,
-        "y": 919,
-        "w": 1012,
-        "h": 382
+        "y": 919
     },
     {
         "id": "aa236057.ef4d7",
@@ -518,6 +507,27 @@
         ],
         "x": -6,
         "y": 639
+    },
+    {
+        "id": "e808bf9.aaaecc",
+        "type": "group",
+        "z": "ea943a79.b3e358",
+        "name": "Control PWM de led mediante slider y presentación en pantalla",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "e7db3dfa.0c52",
+            "f248ce86.f4ca6",
+            "f6b1b4b1.df8978",
+            "c2a283d4.e5cdf8",
+            "64d8ffc2.e0f2a",
+            "ae885910.297aa8"
+        ],
+        "x": 1124,
+        "y": 659,
+        "w": 602,
+        "h": 262
     },
     {
         "id": "cd6b5625.5238f8",
@@ -1309,6 +1319,7 @@
     {
         "id": "3ac90f24.56fd3",
         "type": "ui_tab",
+        "d": true,
         "name": "Barra segura",
         "icon": "power",
         "disabled": false,
@@ -1391,6 +1402,25 @@
         "db": "nodered",
         "tz": "-03:00",
         "charset": "UTF8"
+    },
+    {
+        "id": "805fee0a.038368",
+        "type": "ui_tab",
+        "name": "Charts",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c9f12755.44e5e8",
+        "type": "ui_group",
+        "name": "Charts",
+        "tab": "805fee0a.038368",
+        "order": 1,
+        "disp": true,
+        "width": "22",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "131bbded.d8d8da",
@@ -4045,96 +4075,6 @@
         ]
     },
     {
-        "id": "c2a283d4.e5cdf8",
-        "type": "function",
-        "z": "ea943a79.b3e358",
-        "g": "e808bf9.aaaecc",
-        "name": "Escalona luminosidad",
-        "func": "if (msg.payload!=0)\nmsg.payload=Math.trunc (msg.payload / 25)+1;\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1380,
-        "y": 780,
-        "wires": [
-            [
-                "64d8ffc2.e0f2a"
-            ]
-        ]
-    },
-    {
-        "id": "e7db3dfa.0c52",
-        "type": "mqtt out",
-        "z": "ea943a79.b3e358",
-        "g": "e808bf9.aaaecc",
-        "name": "",
-        "topic": "esp32/led_control",
-        "qos": "",
-        "retain": "true",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "cd6b5625.5238f8",
-        "x": 1590,
-        "y": 720,
-        "wires": []
-    },
-    {
-        "id": "f248ce86.f4ca6",
-        "type": "ui_slider",
-        "z": "ea943a79.b3e358",
-        "g": "e808bf9.aaaecc",
-        "name": "",
-        "label": "Led PWM",
-        "tooltip": "",
-        "group": "5233a975.68bcd",
-        "order": 6,
-        "width": "6",
-        "height": "1",
-        "passthru": true,
-        "outs": "end",
-        "topic": "topic",
-        "topicType": "msg",
-        "min": 0,
-        "max": "100",
-        "step": 1,
-        "x": 1190,
-        "y": 720,
-        "wires": [
-            [
-                "e7db3dfa.0c52",
-                "c2a283d4.e5cdf8"
-            ]
-        ],
-        "info": "Slider que establece el valor analogico a pasar al esp32 por esp32/led_control. EL valor es escalado en el esp multiplicando por 2.55 (poría escalarse acá y pasar ya el valor 8 bits)"
-    },
-    {
-        "id": "f6b1b4b1.df8978",
-        "type": "mqtt in",
-        "z": "ea943a79.b3e358",
-        "d": true,
-        "g": "e808bf9.aaaecc",
-        "name": "",
-        "topic": "esp32/led_control",
-        "qos": "2",
-        "datatype": "auto",
-        "broker": "cd6b5625.5238f8",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "x": 1220,
-        "y": 820,
-        "wires": [
-            [
-                "f248ce86.f4ca6"
-            ]
-        ]
-    },
-    {
         "id": "e04685e6.66c3e",
         "type": "ui_template",
         "z": "f931e135.d0c29",
@@ -4964,7 +4904,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 130,
+        "x": 90,
         "y": 420,
         "wires": [
             [
@@ -5047,7 +4987,7 @@
         "format": "{{msg.payload|number:4}}",
         "layout": "row-spread",
         "x": 1310,
-        "y": 400,
+        "y": 420,
         "wires": []
     },
     {
@@ -5350,58 +5290,6 @@
         "wires": []
     },
     {
-        "id": "64d8ffc2.e0f2a",
-        "type": "ui_led",
-        "z": "ea943a79.b3e358",
-        "g": "e808bf9.aaaecc",
-        "order": 5,
-        "group": "5233a975.68bcd",
-        "width": "6",
-        "height": "1",
-        "label": "PWM intensity",
-        "labelPlacement": "left",
-        "labelAlignment": "left",
-        "colorForValue": [
-            {
-                "color": "#fffffb",
-                "value": "0",
-                "valueType": "num"
-            },
-            {
-                "color": "#ffffd2",
-                "value": "1",
-                "valueType": "num"
-            },
-            {
-                "color": "#ffff9b",
-                "value": "2",
-                "valueType": "num"
-            },
-            {
-                "color": "#ffff62",
-                "value": "3",
-                "valueType": "num"
-            },
-            {
-                "color": "#ffff24",
-                "value": "4",
-                "valueType": "num"
-            },
-            {
-                "color": "#ffff00",
-                "value": "5",
-                "valueType": "num"
-            }
-        ],
-        "allowColorForValueInMessage": true,
-        "shape": "circle",
-        "showGlow": false,
-        "name": "led amarillo",
-        "x": 1610,
-        "y": 780,
-        "wires": []
-    },
-    {
         "id": "15dc2864.4d4cf8",
         "type": "ui_clock",
         "z": "d749cdc9.d28c6",
@@ -5647,8 +5535,8 @@
         "partition": "test.csv",
         "input": false,
         "output": true,
-        "x": 370,
-        "y": 440,
+        "x": 290,
+        "y": 380,
         "wires": [
             [
                 "76a6c129.9b00e"
@@ -5666,8 +5554,8 @@
         "partition": "test.csv",
         "input": true,
         "output": false,
-        "x": 250,
-        "y": 660,
+        "x": 270,
+        "y": 480,
         "wires": [
             [
                 "9dbc742.8b6ef88"
@@ -5679,10 +5567,10 @@
         "id": "ba4782d5.5219b8",
         "type": "predictor",
         "z": "22e2030e.b824d4",
-        "name": "decision tree classifier predictor",
+        "name": "DT classifier predictor",
         "modelPath": "ai/dt",
         "modelName": "model",
-        "x": 770,
+        "x": 740,
         "y": 300,
         "wires": [
             [
@@ -5695,11 +5583,11 @@
         "id": "26e8c19b.f12546",
         "type": "predictor",
         "z": "22e2030e.b824d4",
-        "name": "decision tree classifier predictor",
+        "name": "DT classifier predictor",
         "modelPath": "ai/dt",
         "modelName": "model",
-        "x": 630,
-        "y": 580,
+        "x": 520,
+        "y": 560,
         "wires": [
             [
                 "e12aeae4.0dfe88"
@@ -5713,7 +5601,7 @@
         "z": "22e2030e.b824d4",
         "name": "",
         "score": "accuracy_score",
-        "x": 830,
+        "x": 810,
         "y": 420,
         "wires": [
             [
@@ -5782,15 +5670,15 @@
         "id": "76a6c129.9b00e",
         "type": "function",
         "z": "22e2030e.b824d4",
-        "name": "Filtro de saltos de linea",
+        "name": "Filtro saltos de linea",
         "func": "if (msg.payload.length > 1)\n{return msg}",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 590,
-        "y": 420,
+        "x": 600,
+        "y": 380,
         "wires": [
             [
                 "121b537b.6a540d"
@@ -5801,15 +5689,15 @@
         "id": "9dbc742.8b6ef88",
         "type": "function",
         "z": "22e2030e.b824d4",
-        "name": "Filtro de saltos de linea",
+        "name": "Filtro saltos de linea",
         "func": "if (msg.payload.length > 1)\n{return msg}",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 390,
-        "y": 540,
+        "x": 280,
+        "y": 560,
         "wires": [
             [
                 "26e8c19b.f12546"
@@ -5827,8 +5715,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 790,
-        "y": 520,
+        "x": 590,
+        "y": 640,
         "wires": [
             [
                 "121b537b.6a540d"
@@ -5847,7 +5735,7 @@
         "finalize": "",
         "libs": [],
         "x": 1050,
-        "y": 400,
+        "y": 420,
         "wires": [
             [
                 "f9090332.155098"
@@ -5923,10 +5811,11 @@
         "nl": false,
         "rap": true,
         "rh": 0,
-        "x": 130,
-        "y": 740,
+        "x": 110,
+        "y": 760,
         "wires": [
             [
+                "cf6e41d7.36875",
                 "9629da92.563ca"
             ]
         ]
@@ -5935,6 +5824,7 @@
         "id": "9629da92.563ca",
         "type": "GSheet",
         "z": "22e2030e.b824d4",
+        "d": true,
         "creds": "9c643f4a.77ad3",
         "method": "get",
         "action": "",
@@ -5942,8 +5832,8 @@
         "cells": "Sheet1!A5000:F7000",
         "flatten": false,
         "name": "Get gsheet",
-        "x": 270,
-        "y": 740,
+        "x": 290,
+        "y": 760,
         "wires": [
             [
                 "f219ab94.2f8e3"
@@ -5966,8 +5856,8 @@
         "strings": false,
         "include_empty_strings": false,
         "include_null_values": "",
-        "x": 500,
-        "y": 740,
+        "x": 520,
+        "y": 760,
         "wires": [
             [
                 "cf2ceaca.4002b"
@@ -5985,7 +5875,7 @@
         "overwriteFile": "true",
         "encoding": "none",
         "x": 760,
-        "y": 740,
+        "y": 760,
         "wires": [
             []
         ]
@@ -8686,5 +8576,1187 @@
         "x": 470,
         "y": 120,
         "wires": []
+    },
+    {
+        "id": "4f82552a.7acca4",
+        "type": "mysql",
+        "z": "22e2030e.b824d4",
+        "mydb": "f8d5f459.cc757",
+        "name": "DB Test",
+        "x": 540,
+        "y": 1020,
+        "wires": [
+            [
+                "bcc17d56.75c87"
+            ]
+        ]
+    },
+    {
+        "id": "cf6e41d7.36875",
+        "type": "ui_button",
+        "z": "22e2030e.b824d4",
+        "name": "",
+        "group": "71690d76.e2725c",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "SELECT * FROM logs WHERE Id BETWEEN 2000 AND 4000",
+        "topicType": "str",
+        "x": 310,
+        "y": 1020,
+        "wires": [
+            [
+                "4f82552a.7acca4"
+            ]
+        ]
+    },
+    {
+        "id": "2e5a0a30.944676",
+        "type": "debug",
+        "z": "22e2030e.b824d4",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "bcc17d56.75c87",
+        "type": "csv",
+        "z": "22e2030e.b824d4",
+        "name": "Obj Array to csv string",
+        "sep": ",",
+        "hdrin": false,
+        "hdrout": "none",
+        "multi": "mult",
+        "ret": "\\n",
+        "temp": "TimeStamp, Temperature, Humidity, Pressure, Analog, Led",
+        "skip": "0",
+        "strings": false,
+        "include_empty_strings": false,
+        "include_null_values": "",
+        "x": 780,
+        "y": 1020,
+        "wires": [
+            [
+                "59d1dd22.3a2d84",
+                "2e5a0a30.944676"
+            ]
+        ]
+    },
+    {
+        "id": "4360f8cc.29b3e",
+        "type": "debug",
+        "z": "22e2030e.b824d4",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1250,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "59d1dd22.3a2d84",
+        "type": "file",
+        "z": "22e2030e.b824d4",
+        "name": "write gsheet.csv",
+        "filename": "log/gsheet.csv",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1040,
+        "y": 1020,
+        "wires": [
+            [
+                "4360f8cc.29b3e"
+            ]
+        ]
+    },
+    {
+        "id": "b22278f1.67a12",
+        "type": "mysql",
+        "z": "c2ab32d3.037fb8",
+        "mydb": "34740606.537cda",
+        "name": "",
+        "x": 260,
+        "y": 400,
+        "wires": [
+            [
+                "20daecd7.7eeb3c"
+            ]
+        ]
+    },
+    {
+        "id": "20daecd7.7eeb3c",
+        "type": "debug",
+        "z": "c2ab32d3.037fb8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 450,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "7e8ae0be.7cce",
+        "type": "inject",
+        "z": "c2ab32d3.037fb8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "SELECT COUNT(*) FROM logs",
+        "payload": "",
+        "payloadType": "date",
+        "x": 80,
+        "y": 400,
+        "wires": [
+            [
+                "b22278f1.67a12"
+            ]
+        ]
+    },
+    {
+        "id": "e7db3dfa.0c52",
+        "type": "mqtt out",
+        "z": "ea943a79.b3e358",
+        "g": "e808bf9.aaaecc",
+        "name": "",
+        "topic": "esp32/led_control",
+        "qos": "",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "cd6b5625.5238f8",
+        "x": 1610,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "f248ce86.f4ca6",
+        "type": "ui_slider",
+        "z": "ea943a79.b3e358",
+        "g": "e808bf9.aaaecc",
+        "name": "",
+        "label": "Led PWM",
+        "tooltip": "",
+        "group": "5233a975.68bcd",
+        "order": 6,
+        "width": "6",
+        "height": "1",
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "x": 1210,
+        "y": 700,
+        "wires": [
+            [
+                "e7db3dfa.0c52",
+                "c2a283d4.e5cdf8"
+            ]
+        ],
+        "info": "Slider que establece el valor analogico a pasar al esp32 por esp32/led_control. EL valor es escalado en el esp multiplicando por 2.55 (poría escalarse acá y pasar ya el valor 8 bits)"
+    },
+    {
+        "id": "f6b1b4b1.df8978",
+        "type": "mqtt in",
+        "z": "ea943a79.b3e358",
+        "g": "e808bf9.aaaecc",
+        "name": "",
+        "topic": "esp32/led_control",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "cd6b5625.5238f8",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 1250,
+        "y": 880,
+        "wires": [
+            [
+                "ae885910.297aa8"
+            ]
+        ]
+    },
+    {
+        "id": "c2a283d4.e5cdf8",
+        "type": "function",
+        "z": "ea943a79.b3e358",
+        "g": "e808bf9.aaaecc",
+        "name": "Escalona luminosidad",
+        "func": "if (msg.payload!=0)\nmsg.payload=Math.trunc (msg.payload / 25)+1;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1400,
+        "y": 760,
+        "wires": [
+            [
+                "64d8ffc2.e0f2a"
+            ]
+        ]
+    },
+    {
+        "id": "64d8ffc2.e0f2a",
+        "type": "ui_led",
+        "z": "ea943a79.b3e358",
+        "g": "e808bf9.aaaecc",
+        "order": 5,
+        "group": "5233a975.68bcd",
+        "width": "6",
+        "height": "1",
+        "label": "PWM intensity",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#fffffb",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffffd2",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff9b",
+                "value": "2",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff62",
+                "value": "3",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff24",
+                "value": "4",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "5",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": true,
+        "shape": "circle",
+        "showGlow": false,
+        "name": "led amarillo",
+        "x": 1630,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "ae885910.297aa8",
+        "type": "delay",
+        "z": "ea943a79.b3e358",
+        "g": "e808bf9.aaaecc",
+        "name": "",
+        "pauseType": "queue",
+        "timeout": "2",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "2",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 1490,
+        "y": 880,
+        "wires": [
+            [
+                "f248ce86.f4ca6"
+            ]
+        ]
+    },
+    {
+        "id": "86074505.d10178",
+        "type": "mysql",
+        "z": "68429893.aeedf",
+        "mydb": "34740606.537cda",
+        "name": "",
+        "x": 680,
+        "y": 60,
+        "wires": [
+            [
+                "f4f64999.c64ad8",
+                "7b25dd84.75ed94"
+            ]
+        ]
+    },
+    {
+        "id": "ef158442.2f4dd8",
+        "type": "ui_button",
+        "z": "68429893.aeedf",
+        "d": true,
+        "name": "",
+        "group": "c9f12755.44e5e8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "update 1",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "SELECT * FROM logs WHERE (Id % 100 = 0) ORDER BY Id;",
+        "topicType": "str",
+        "x": 520,
+        "y": 60,
+        "wires": [
+            [
+                "86074505.d10178"
+            ]
+        ]
+    },
+    {
+        "id": "da64e4d6.939bc",
+        "type": "ui_chart",
+        "z": "68429893.aeedf",
+        "name": "",
+        "group": "c9f12755.44e5e8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Historic chart",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "ddd DD MMM YYYY HH:mm:ss GMT Z",
+        "interpolate": "step",
+        "nodata": "##",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "2",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ff8040",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1150,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7b25dd84.75ed94",
+        "type": "function",
+        "z": "68429893.aeedf",
+        "name": "",
+        "func": "var temperature = [];\nvar pressure = [];\nvar stamp = [];\nflow.set('point_count',  msg.payload.length);\n\nmsg.payload.forEach(function(value) {\n    temperature.push(value['Temperature']);\n    pressure.push(value['Pressure']);\n    stamp.push(value['TimeStamp']);\n});\n\nmsg.payload = [{\n    series: [\"Temperature\",'Pressure'],\n    data: [temperature, pressure],\n    labels: stamp\n    }];\n//msg.action = \"load\";\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 120,
+        "wires": [
+            [
+                "ca1e9b7d.73af08",
+                "da64e4d6.939bc",
+                "661e631a.cf851c",
+                "8fbeac8a.2c033"
+            ]
+        ]
+    },
+    {
+        "id": "661e631a.cf851c",
+        "type": "function",
+        "z": "68429893.aeedf",
+        "name": "",
+        "func": "msg.payload = new Date(msg.payload[0].labels[0]);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 300,
+        "wires": [
+            [
+                "9481fec2.55d948"
+            ]
+        ]
+    },
+    {
+        "id": "ca1e9b7d.73af08",
+        "type": "debug",
+        "z": "68429893.aeedf",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1170,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "e589d32c.982da",
+        "type": "mysql",
+        "z": "68429893.aeedf",
+        "mydb": "34740606.537cda",
+        "name": "",
+        "x": 480,
+        "y": 400,
+        "wires": [
+            [
+                "f38480c2.7f5a4",
+                "7b25dd84.75ed94"
+            ]
+        ]
+    },
+    {
+        "id": "8fbeac8a.2c033",
+        "type": "ui_template",
+        "z": "68429893.aeedf",
+        "group": "c9f12755.44e5e8",
+        "name": "Line chart no template",
+        "order": 8,
+        "width": "15",
+        "height": "10",
+        "format": "<canvas id=\"myChart\" width=600 height =300></canvas>\n{{payload}}\n<script>\n\n    //console.dir(scope) // this also works\n    //console.dir(scope.msg) // This doesn't because scope.msg doesn't yet exist\n    // Lambda function to access the Angular Scope\n    (function(scope) {\n        //console.log('--- SCOPE ---')\n        //console.dir(scope) // this works but you only get it once (on startup)\n        //console.dir(scope.msg) // Doesn't work for  because scope.msg doesn't yet exist\n\n        //Have to use $watch so we pick up new, incoming msg's\n        scope.$watch('msg.payload', function(newVal, oldVal) {\n            console.log('- Scope.msg -');\n            console.dir(scope.msg.payload[0].labels);\n            window.etiquetas = scope.msg.payload[0].labels;\n            console.dir(scope.msg.payload[0].data[0]);\n            window.temp = scope.msg.payload[0].data[0];\n            window.pres = scope.msg.payload[0].data[1];\n            \n        })\n\n    })(scope);\n    \nvar textcolor = getComputedStyle(document.documentElement).getPropertyValue('--nr-dashboard-widgetTextColor');\nvar gridcolor = getComputedStyle(document.documentElement).getPropertyValue('--nr-dashboard-groupBorderColor');\nvar linecolors = ['#FF0000','#00FF00'];\n//document.write (temp);\nvar ctx = document.getElementById('myChart').getContext('2d');\nvar chart = new Chart(ctx, {\n    // The type of chart we want to create\n    type: 'line',\n    \n    // The data for our dataset\n    data: {\n        labels: etiquetas , //*/[\"one\", \"two\", \"three\", \"four\", \"five\", \"six\", \"seven\", \"eight\", \"nine\", \"ten\"],\n        datasets: [\n            {\n                type:'line',\n                pointRadius: 1,\n                label: 'Temperature',\n                backgroundColor: linecolors[0],\n                borderColor: linecolors[0],\n                data: temp ,  // [20,20,20,20,20,20,20,20,20,20],// temp ,// temperature,//{{msg.payload[0].data[0]}},\n                yAxisID: 'left-y-axis',\n                steppedLine: false,\n                fill: false,\n                borderWidth: 1,\n            },\n            {\n                type:'line',\n                pointRadius: 1,\n                label: 'Pressure',\n                backgroundColor: linecolors[1],\n                borderColor: linecolors[1],\n                data:  pres,/*{{msg.payload[0].data[1]}} [2,4,6,8,10,12,14,16,18,20],*/\n                yAxisID: 'right-y-axis',\n                steppedLine: false,\n                fill: false,\n                borderWidth: 1,\n                //barPercentage: 0.5,\n                //barThickness: 6,\n                //maxBarThickness: 8,\n                //minBarLength: 2,\n            }\n        ]\n    },\n\n    // Configuration options go here\n    options: {\n        scales: {\n            yAxes: [\n                {\n                    gridLines :{display:false},\n                    id: 'left-y-axis',\n                    type: 'linear',\n                    position: 'left',\n                    ticks: {\n                        fontColor: linecolors[0]\n                    }\n                },\n                {\n                    gridLines :{zeroLineColor:gridcolor,color:gridcolor,lineWidth:0.5},\n                    id: 'right-y-axis',\n                    type: 'linear',\n                    position: 'right',\n                    ticks: {\n                        fontColor:linecolors[1]\n                    }\n                }\n            ],\n            xAxes: [\n                {\n                    gridLines :{zeroLineColor:gridcolor,color:gridcolor,lineWidth:0.5},\n                    \n                    ticks: {\n                        fontColor:textcolor\n                    }\n                }\n            ]\n        }\n    }\n});\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 1180,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9481fec2.55d948",
+        "type": "debug",
+        "z": "68429893.aeedf",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "1ac83024.c12d78",
+        "type": "ui_numeric",
+        "z": "68429893.aeedf",
+        "name": "",
+        "label": "Divisor",
+        "tooltip": "",
+        "group": "c9f12755.44e5e8",
+        "order": 5,
+        "width": "6",
+        "height": "1",
+        "wrap": false,
+        "passthru": true,
+        "topic": "topic",
+        "topicType": "msg",
+        "format": "{{msg.payload}}",
+        "min": 0,
+        "max": "1000",
+        "step": 1,
+        "className": "",
+        "x": 70,
+        "y": 20,
+        "wires": [
+            [
+                "91bf38f1.60d74",
+                "1353bc41.713e4c"
+            ]
+        ]
+    },
+    {
+        "id": "e850f5ed.f6684",
+        "type": "ui_dropdown",
+        "z": "68429893.aeedf",
+        "name": "",
+        "label": "Start date",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "c9f12755.44e5e8",
+        "order": 3,
+        "width": "11",
+        "height": "1",
+        "passthru": false,
+        "multiple": false,
+        "options": [],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 800,
+        "y": 600,
+        "wires": [
+            [
+                "fa8e7866.1863b",
+                "7ae0b73e.672c7"
+            ]
+        ]
+    },
+    {
+        "id": "4e5eddee.fd5064",
+        "type": "function",
+        "z": "68429893.aeedf",
+        "name": "",
+        "func": "var stamp = [];\nmsg.options = [\"1\", \"2\"];\nmsg.enabled = true;\n\nmsg.payload.forEach(function(value) {\n    stamp.push((value['TimeStamp']) );\n\n});\nmsg.options = stamp;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 640,
+        "wires": [
+            [
+                "e850f5ed.f6684",
+                "d82a8dab.99c2d8",
+                "d12c94ef.bab618"
+            ]
+        ]
+    },
+    {
+        "id": "7d4378b.cf6d208",
+        "type": "ui_button",
+        "z": "68429893.aeedf",
+        "name": "",
+        "group": "c9f12755.44e5e8",
+        "order": 6,
+        "width": "8",
+        "height": "1",
+        "passthru": true,
+        "label": "update",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "query",
+        "payloadType": "str",
+        "topic": "SELECT TimeStamp FROM logs WHERE (Id %250 = 0) ;",
+        "topicType": "str",
+        "x": 80,
+        "y": 400,
+        "wires": [
+            [
+                "5a0e7949.84ace8",
+                "bc8a4337.d06288"
+            ]
+        ]
+    },
+    {
+        "id": "d82a8dab.99c2d8",
+        "type": "ui_dropdown",
+        "z": "68429893.aeedf",
+        "name": "",
+        "label": "End date",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "c9f12755.44e5e8",
+        "order": 4,
+        "width": "11",
+        "height": "1",
+        "passthru": false,
+        "multiple": false,
+        "options": [],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 800,
+        "y": 660,
+        "wires": [
+            [
+                "875f5573.b7d4c8"
+            ]
+        ]
+    },
+    {
+        "id": "fa8e7866.1863b",
+        "type": "debug",
+        "z": "68429893.aeedf",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1030,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "7ae0b73e.672c7",
+        "type": "change",
+        "z": "68429893.aeedf",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "start_date",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1010,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "875f5573.b7d4c8",
+        "type": "change",
+        "z": "68429893.aeedf",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "end_date",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1010,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5a0e7949.84ace8",
+        "type": "debug",
+        "z": "68429893.aeedf",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 290,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "bc8a4337.d06288",
+        "type": "function",
+        "z": "68429893.aeedf",
+        "name": "",
+        "func": "var start_date = flow.get('start_date');\nvar end_date = flow.get ('end_date');\nvar divisor = flow.get('divisor');\nvar count = flow.get('num_points');\nvar points = Math.floor(divisor / count);\n\nvar query = 'SELECT * FROM logs WHERE Id BETWEEN (SELECT Id FROM logs WHERE TimeStamp = \"' \n            + start_date + '\") AND (SELECT Id FROM logs WHERE TimeStamp =\"' \n            + end_date + '\") AND (Id % ' + divisor + ' = 0);'  ;\nmsg.topic = query;\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 400,
+        "wires": [
+            [
+                "e589d32c.982da",
+                "92fe3da3.e056b8"
+            ]
+        ]
+    },
+    {
+        "id": "92fe3da3.e056b8",
+        "type": "debug",
+        "z": "68429893.aeedf",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 450,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "1e310992.c7ed96",
+        "type": "inject",
+        "z": "68429893.aeedf",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "SELECT TimeStamp FROM logs WHERE (Id % 250 = 0); ",
+        "payload": "init_query",
+        "payloadType": "str",
+        "x": 110,
+        "y": 620,
+        "wires": [
+            [
+                "afc69d0e.25c718"
+            ]
+        ]
+    },
+    {
+        "id": "afc69d0e.25c718",
+        "type": "mysql",
+        "z": "68429893.aeedf",
+        "mydb": "34740606.537cda",
+        "name": "",
+        "x": 340,
+        "y": 640,
+        "wires": [
+            [
+                "4e5eddee.fd5064",
+                "cca731b6.e67768"
+            ]
+        ]
+    },
+    {
+        "id": "d12c94ef.bab618",
+        "type": "debug",
+        "z": "68429893.aeedf",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 770,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "cca731b6.e67768",
+        "type": "debug",
+        "z": "68429893.aeedf",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 550,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "f38480c2.7f5a4",
+        "type": "debug",
+        "z": "68429893.aeedf",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 750,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "a7ab30f5.10236",
+        "type": "ui_button",
+        "z": "68429893.aeedf",
+        "name": "",
+        "group": "c9f12755.44e5e8",
+        "order": 7,
+        "width": "2",
+        "height": "1",
+        "passthru": true,
+        "label": "update dates",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "query",
+        "payloadType": "str",
+        "topic": "SELECT TimeStamp FROM logs WHERE (Id % 250 = 0);",
+        "topicType": "str",
+        "x": 110,
+        "y": 680,
+        "wires": [
+            [
+                "afc69d0e.25c718"
+            ]
+        ]
+    },
+    {
+        "id": "24b35540.f1fb2a",
+        "type": "change",
+        "z": "68429893.aeedf",
+        "name": "Init start_date",
+        "rules": [
+            {
+                "t": "set",
+                "p": "start_date",
+                "pt": "flow",
+                "to": "Fri May 20 2022 02:20:34 GMT-0300 (Uruguay Standard Time)",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d7a5c6a3.4c07d",
+        "type": "inject",
+        "z": "68429893.aeedf",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "",
+        "topic": "SELECT TimeStamp FROM logs ; ",
+        "payload": "init_query",
+        "payloadType": "str",
+        "x": 90,
+        "y": 200,
+        "wires": [
+            [
+                "24b35540.f1fb2a",
+                "cfcf1b37.33076",
+                "6269f9f0.03cb78",
+                "2d52b116.dc030e"
+            ]
+        ]
+    },
+    {
+        "id": "cfcf1b37.33076",
+        "type": "change",
+        "z": "68429893.aeedf",
+        "name": "Init end_date",
+        "rules": [
+            {
+                "t": "set",
+                "p": "end_date",
+                "pt": "flow",
+                "to": "Fri May 23 2022 02:20:34 GMT-0300 (Uruguay Standard Time)",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 270,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f4f64999.c64ad8",
+        "type": "debug",
+        "z": "68429893.aeedf",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 890,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "6269f9f0.03cb78",
+        "type": "change",
+        "z": "68429893.aeedf",
+        "name": "Init divisor",
+        "rules": [
+            {
+                "t": "set",
+                "p": "divisor",
+                "pt": "flow",
+                "to": "100",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 260,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "91bf38f1.60d74",
+        "type": "change",
+        "z": "68429893.aeedf",
+        "name": "Set divisor",
+        "rules": [
+            {
+                "t": "set",
+                "p": "divisor",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 250,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1353bc41.713e4c",
+        "type": "debug",
+        "z": "68429893.aeedf",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 250,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "2d52b116.dc030e",
+        "type": "change",
+        "z": "68429893.aeedf",
+        "name": "Init num_points",
+        "rules": [
+            {
+                "t": "set",
+                "p": "divisor",
+                "pt": "flow",
+                "to": "1000",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5fe8d4c0.900a84",
+        "type": "ui_text",
+        "z": "68429893.aeedf",
+        "group": "c9f12755.44e5e8",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 610,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "785546da.c640f8",
+        "type": "inject",
+        "z": "68429893.aeedf",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "3",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "point_count",
+        "payloadType": "flow",
+        "x": 490,
+        "y": 260,
+        "wires": [
+            [
+                "5fe8d4c0.900a84"
+            ]
+        ]
+    },
+    {
+        "id": "991c5a67.90092",
+        "type": "ui_button",
+        "z": "68429893.aeedf",
+        "name": "",
+        "group": "c9f12755.44e5e8",
+        "order": 6,
+        "width": "8",
+        "height": "1",
+        "passthru": true,
+        "label": "Reset?",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "[]",
+        "payloadType": "json",
+        "topic": "Reset",
+        "topicType": "str",
+        "x": 860,
+        "y": 180,
+        "wires": [
+            [
+                "8fbeac8a.2c033"
+            ]
+        ]
     }
 ]
