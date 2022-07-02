@@ -440,9 +440,7 @@
             "6d3bec88.249c74"
         ],
         "x": 34,
-        "y": 139,
-        "w": 1252,
-        "h": 202
+        "y": 139
     },
     {
         "id": "2bec55c6.5546ba",
@@ -459,9 +457,7 @@
             "298a7ad5.729f4e"
         ],
         "x": 54,
-        "y": 819,
-        "w": 572,
-        "h": 142
+        "y": 819
     },
     {
         "id": "f7182fde.aa5948",
@@ -563,9 +559,7 @@
             "9a1dbdf8.f9d2b8"
         ],
         "x": -6,
-        "y": 639,
-        "w": 1472,
-        "h": 742
+        "y": 639
     },
     {
         "id": "e808bf9.aaaecc",
@@ -1166,7 +1160,8 @@
     },
     {
         "id": "9c643f4a.77ad3",
-        "type": "gauth"
+        "type": "gauth",
+        "name": "google-sheets@api-project-155205507088.iam.gserviceaccount.com"
     },
     {
         "id": "722857b3.91f78",
@@ -1506,6 +1501,7 @@
     {
         "id": "fa0b2252.4c36b",
         "type": "ui_tab",
+        "d": true,
         "name": "PID",
         "icon": "dashboard",
         "disabled": false,
@@ -8473,7 +8469,8 @@
         "wires": [
             [
                 "b28bd777.c9f4e8",
-                "83d2a331.46eb48"
+                "83d2a331.46eb48",
+                "51e3391a.f4821"
             ]
         ]
     },
@@ -8788,6 +8785,7 @@
         "id": "b22278f1.67a12",
         "type": "mysql",
         "z": "c2ab32d3.037fb8",
+        "d": true,
         "mydb": "34740606.537cda",
         "name": "",
         "x": 260,
@@ -9989,8 +9987,8 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 1030,
-        "y": 660,
+        "x": 910,
+        "y": 640,
         "wires": []
     },
     {
@@ -10350,5 +10348,22 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "51e3391a.f4821",
+        "type": "debug",
+        "z": "c2ab32d3.037fb8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 270,
+        "y": 300,
+        "wires": []
     }
 ]
