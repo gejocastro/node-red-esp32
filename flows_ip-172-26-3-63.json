@@ -51,14 +51,7 @@
     {
         "id": "c2ab32d3.037fb8",
         "type": "tab",
-        "label": "Flow 1",
-        "disabled": false,
-        "info": ""
-    },
-    {
-        "id": "7fb1182.bf64368",
-        "type": "tab",
-        "label": "Sound Output",
+        "label": "SQL Logs",
         "disabled": false,
         "info": ""
     },
@@ -98,6 +91,13 @@
         "info": ""
     },
     {
+        "id": "60cf6178.c3c7a",
+        "type": "tab",
+        "label": "PID control",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "e6a345da.572ba",
         "type": "tab",
         "label": "Flow 6",
@@ -105,10 +105,17 @@
         "info": ""
     },
     {
-        "id": "60cf6178.c3c7a",
+        "id": "fe027335.47683",
         "type": "tab",
-        "label": "PID control",
-        "disabled": true,
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "7fb1182.bf64368",
+        "type": "tab",
+        "label": "Sound Output",
+        "disabled": false,
         "info": ""
     },
     {
@@ -318,9 +325,7 @@
             "f912a3b8.1eb3a8"
         ],
         "x": 14,
-        "y": 319,
-        "w": 1052,
-        "h": 382
+        "y": 319
     },
     {
         "id": "c67599e8.f83b88",
@@ -336,9 +341,7 @@
             "f77985bc.76ec4"
         ],
         "x": 1114,
-        "y": 359,
-        "w": 512,
-        "h": 122
+        "y": 359
     },
     {
         "id": "a495c9ab.3fd74",
@@ -359,9 +362,7 @@
             "1d3030a4.0847af"
         ],
         "x": 294,
-        "y": 19,
-        "w": 772,
-        "h": 282
+        "y": 19
     },
     {
         "id": "fd8a84dc.33c088",
@@ -401,7 +402,7 @@
             "b02391bd.5c47d"
         ],
         "x": 14,
-        "y": 399,
+        "y": 419,
         "w": 1412,
         "h": 82
     },
@@ -496,9 +497,7 @@
             "9015ecb6.aac73"
         ],
         "x": 1114,
-        "y": 539,
-        "w": 512,
-        "h": 82
+        "y": 539
     },
     {
         "id": "be5afe4.dc8d38",
@@ -517,9 +516,7 @@
             "d7653b36.520aa"
         ],
         "x": 14,
-        "y": 719,
-        "w": 1052,
-        "h": 142
+        "y": 719
     },
     {
         "id": "4735459.5cbe6bc",
@@ -578,15 +575,13 @@
             "ae885910.297aa8"
         ],
         "x": 1124,
-        "y": 659,
-        "w": 602,
-        "h": 262
+        "y": 659
     },
     {
         "id": "cd6b5625.5238f8",
         "type": "mqtt-broker",
         "name": "",
-        "broker": "3.225.83.240",
+        "broker": "54.174.142.146:",
         "port": "1883",
         "clientid": "",
         "usetls": false,
@@ -797,11 +792,13 @@
     {
         "id": "56032ee3.3718a8",
         "type": "ui_group",
-        "name": "Group 4",
+        "name": "RT Graph",
         "tab": "6ea8b2b6.d3a0dc",
         "order": 4,
         "disp": true,
-        "width": 6
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "11c86017.7c55e",
@@ -1365,12 +1362,14 @@
     {
         "id": "e40a2865.380ec8",
         "type": "ui_group",
+        "d": true,
         "name": "Messages",
         "tab": "b27a6bc6.fbb248",
         "order": 5,
         "disp": true,
         "width": "10",
-        "collapse": true
+        "collapse": true,
+        "className": ""
     },
     {
         "id": "3ac90f24.56fd3",
@@ -1501,11 +1500,32 @@
     {
         "id": "fa0b2252.4c36b",
         "type": "ui_tab",
-        "d": true,
         "name": "PID",
         "icon": "dashboard",
         "disabled": false,
         "hidden": false
+    },
+    {
+        "id": "cc43ebac.b42078",
+        "type": "ui_group",
+        "name": "Group 2",
+        "tab": "fa0b2252.4c36b",
+        "order": 2,
+        "disp": true,
+        "width": "14",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "153d7011.ceb718",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "fa0b2252.4c36b",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "131bbded.d8d8da",
@@ -1514,7 +1534,7 @@
         "g": "7e88e231.3018cc",
         "name": "",
         "topic": "esp32/temperature",
-        "qos": "2",
+        "qos": "0",
         "datatype": "auto",
         "broker": "cd6b5625.5238f8",
         "nl": false,
@@ -2682,7 +2702,7 @@
         "z": "e924d20f.9ce478",
         "name": "",
         "topic": "esp32/temperature",
-        "qos": "2",
+        "qos": "0",
         "datatype": "utf8",
         "broker": "cd6b5625.5238f8",
         "nl": false,
@@ -2762,7 +2782,7 @@
         "type": "function",
         "z": "e924d20f.9ce478",
         "name": "Creates request url for gscript",
-        "func": "//var GAS_ID=\"AKfycbwmJ2vtlly8Ssb28i2aoQuN1WGoQN3iCimZVIedZ-1SH9RA5jD5w9x3xmfk38H0gYl3\";\n//var GAS_ID=\"AKfycbwlDAJ8p5mE8yxE_8IDN3Ku97DQ-Jl9i2wMBBD4ZPizbchZzCvDjIh5Gm3cMFneSq8w\";\n//var GAS_ID=\"AKfycbx3_RU5X5gF8T-fxFtbvqU4KqlHiy1nrrS3vSI_yKdWZG2pPWYThsRsx--SNLTEa55Q\";\nvar GAS_ID = \"AKfycbwE-yRQb7qpnwu58VMCHFDYW7BrzeiyxE-Me5VOf2q5DL-oytTXfx0Dmxo5IbH2zeYg\"\nvar string = JSON.stringify(msg.payload);\nvar objectValue = JSON.parse(string);\nvar temperature= objectValue['esp32/temperature'];\nvar humidity=objectValue['esp32/humidity'];\nvar pressure = objectValue['esp32/pressure'];\nvar moisture=objectValue['esp32/analog'];\nvar event=objectValue['esp32/output'];\nhost = \"script.google.com\";\nmsg.payload = host+\"/macros/s/\" + GAS_ID + \n            \"/exec?temperature=\" + temperature + \n            \"&humidity=\" + humidity + \n            \"&pressure=\" + pressure + \n            \"&moisture=\" + moisture + \n            \"&event=\" + event; \n//msg.payload= url;\nreturn msg;\n\n",
+        "func": "//var GAS_ID=\"AKfycbwmJ2vtlly8Ssb28i2aoQuN1WGoQN3iCimZVIedZ-1SH9RA5jD5w9x3xmfk38H0gYl3\";\n//var GAS_ID=\"AKfycbwlDAJ8p5mE8yxE_8IDN3Ku97DQ-Jl9i2wMBBD4ZPizbchZzCvDjIh5Gm3cMFneSq8w\";\n//var GAS_ID=\"AKfycbx3_RU5X5gF8T-fxFtbvqU4KqlHiy1nrrS3vSI_yKdWZG2pPWYThsRsx--SNLTEa55Q\";\n//AKfycbzmGB9YZOhIcvUQ13QeFFiMRkWVD71RlSgvjsj1DP1olzXvPMUX6R1s6zG5qTE1ZAwq\n//AKfycbwt-pkDyYQxQNMdqqFCXODhDFZcSjIRJv1Tie9v5AhnvgNhNQKg_i6W-6U29KWx5-_Q\n//AKfycbxd3nuiQYtGyL1ab6ZAVJGO6_D4sesa8DNtqufp_yombvDhqtTaDJUryo6Xqa9EGbqZ\n\nvar GAS_ID = \"AKfycbwt-pkDyYQxQNMdqqFCXODhDFZcSjIRJv1Tie9v5AhnvgNhNQKg_i6W-6U29KWx5-_Q\"\nvar string = JSON.stringify(msg.payload);\nvar objectValue = JSON.parse(string);\nvar temperature= objectValue['esp32/temperature'];\nvar humidity=objectValue['esp32/humidity'];\nvar pressure = objectValue['esp32/pressure'];\nvar moisture=objectValue['esp32/analog'];\nvar event=objectValue['esp32/output'];\nhost = \"script.google.com\";\nmsg.payload = host+\"/macros/s/\" + GAS_ID + \n            \"/exec?temperature=\" + temperature + \n            \"&humidity=\" + humidity + \n            \"&pressure=\" + pressure + \n            \"&moisture=\" + moisture + \n            \"&event=\" + event; \n//msg.payload= url;\nreturn msg;\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2772,7 +2792,8 @@
         "y": 140,
         "wires": [
             [
-                "cf07fe3.c3218"
+                "cf07fe3.c3218",
+                "e784f43a.213008"
             ]
         ],
         "info": "Crea la URL que se enviará a http request. Para ello, levanta los valores de las corrrespondientes claves dentro del objeto, y los coloca en variables que luego concatenará para construir la URL.\n\nEl GAS_ID es el código de aplicación de google script apps"
@@ -2802,7 +2823,8 @@
         "wires": [
             [
                 "58bd03dd.e075f4",
-                "8f62ac16.56f108"
+                "8f62ac16.56f108",
+                "edef8c94.98d498"
             ]
         ],
         "info": "Recibe los valores de las 4 variables de entrada, y las combina en un objeto. Hasta no recibir las 4 entradas no envía data. "
@@ -2822,6 +2844,7 @@
         "fwdInMessages": true,
         "resendOnRefresh": false,
         "templateScope": "local",
+        "className": "",
         "x": 1270,
         "y": 140,
         "wires": [
@@ -2911,7 +2934,7 @@
         "g": "8382aa03.05f218",
         "name": "",
         "topic": "esp32/temperature",
-        "qos": "2",
+        "qos": "0",
         "datatype": "utf8",
         "broker": "cd6b5625.5238f8",
         "nl": false,
@@ -4173,8 +4196,8 @@
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "global",
-        "x": 790,
-        "y": 500,
+        "x": 730,
+        "y": 520,
         "wires": [
             []
         ]
@@ -4642,7 +4665,7 @@
         "finalize": "",
         "libs": [],
         "x": 1150,
-        "y": 440,
+        "y": 460,
         "wires": [
             [
                 "8a422262.6b0558",
@@ -4663,7 +4686,7 @@
         "finalize": "",
         "libs": [],
         "x": 940,
-        "y": 440,
+        "y": 460,
         "wires": [
             [
                 "4eeed860.8e5e5"
@@ -4688,7 +4711,7 @@
         "include_empty_strings": false,
         "include_null_values": "",
         "x": 740,
-        "y": 440,
+        "y": 460,
         "wires": [
             [
                 "8b0e1df2.8058e8"
@@ -4732,7 +4755,7 @@
         "include_empty_strings": false,
         "include_null_values": "",
         "x": 500,
-        "y": 440,
+        "y": 460,
         "wires": [
             [
                 "5cfbd44e.45dbbc"
@@ -4788,7 +4811,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 110,
-        "y": 440,
+        "y": 460,
         "wires": [
             [
                 "ed55918a.04b688"
@@ -5276,12 +5299,12 @@
         "creds": "9c643f4a.77ad3",
         "method": "get",
         "action": "",
-        "sheet": "1t87zKsf-IVLHc_1948lBuJFM0jjjdprb6qn3pAlpqkc",
+        "sheet": "1-2B3ISaa8MUK3k-EI8vPs5vZIqeuq4daK06wslJfXbY",
         "cells": "Sheet1!A2:F1000000",
         "flatten": false,
         "name": "Get gsheet",
         "x": 290,
-        "y": 440,
+        "y": 460,
         "wires": [
             [
                 "d2b0304d.19c73"
@@ -5381,7 +5404,7 @@
         "d": true,
         "name": "",
         "group": "71690d76.e2725c",
-        "order": 1,
+        "order": 2,
         "width": "2",
         "height": "2",
         "x": 470,
@@ -5494,7 +5517,7 @@
         "outputs": 1,
         "cts": true,
         "x": 1350,
-        "y": 440,
+        "y": 460,
         "wires": [
             []
         ]
@@ -7309,7 +7332,7 @@
         "type": "debug",
         "z": "e924d20f.9ce478",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": true,
@@ -7408,6 +7431,7 @@
         "fwdInMessages": true,
         "resendOnRefresh": true,
         "templateScope": "local",
+        "className": "",
         "x": 1450,
         "y": 220,
         "wires": [
@@ -8406,8 +8430,7 @@
         "y": 280,
         "wires": [
             [
-                "3b8dcd20.5a2472",
-                "edef8c94.98d498"
+                "3b8dcd20.5a2472"
             ]
         ],
         "info": "Crea un string separado por comas como entrada para el csv"
@@ -8417,7 +8440,7 @@
         "type": "debug",
         "z": "e924d20f.9ce478",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": true,
@@ -8425,7 +8448,7 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 1010,
+        "x": 990,
         "y": 280,
         "wires": []
     },
@@ -8462,7 +8485,7 @@
         "icon": "",
         "payload": "1",
         "payloadType": "str",
-        "topic": "SELECT * FROM logs ORDER BY Id DESC;",
+        "topic": "SELECT * FROM logs WHERE Id > 700000 ORDER BY Id DESC;",
         "topicType": "str",
         "x": 110,
         "y": 200,
@@ -8546,7 +8569,7 @@
         "type": "function",
         "z": "c2ab32d3.037fb8",
         "name": "Layout de tabla y filtros",
-        "func": "msg.ui_control = {};\nmsg.ui_control.tabulator = {\n    headerFilterPlaceholder:\"filtrar...\",\n     columns:[{title:\"TimeStamp\", field:\"TimeStamp\", headerFilter:true,  width:\"40%\",align:\"left\",},\n            {title:\"Temperature\", field:\"Temperature\", headerFilter:true, width:\"14%\",align:\"center\",topCalc:\"avg\",headerFilterPlaceholder:\"<=...\", headerFilterFunc:\"<=\",},\n            {title:\"Humidity\", field:\"Humidity\", headerFilter:true, width:\"14%\",align:\"center\"},\n            {title:\"Pressure\", field:\"Pressure\", headerFilter:true, width:\"14%\",align:\"center\",topCalc:\"avg\",headerFilterPlaceholder:\"<=...\", headerFilterFunc:\"<=\",},\n            //{title:\"Analog\", field:\"Analog\", headerFilter:true, width:\"13%\",align:\"center\"},\n            {title:\"Led2\", field:\"Led\", headerFilter:true, width:\"14%\",align:\"center\"}]} \n        \nreturn msg;",
+        "func": "msg.ui_control = {};\nmsg.ui_control.tabulator = {\n    headerFilterPlaceholder:\"filtrar...\",\n     columns:[{title:\"Timestamp\", field:\"TimeStamp\", headerFilter:true,  width:\"40%\",align:\"left\"},\n            {title:\"Temperature\", field:\"Temperature\", headerFilter:true, width:\"14%\",align:\"center\",topCalc:\"avg\",headerFilterPlaceholder:\"<=...\", headerFilterFunc:\"<=\",},\n            {title:\"Humidity\", field:\"Humidity\", headerFilter:true, width:\"14%\",align:\"center\"},\n            {title:\"Pressure\", field:\"Pressure\", headerFilter:true, width:\"14%\",align:\"center\",topCalc:\"avg\",headerFilterPlaceholder:\"<=...\", headerFilterFunc:\"<=\",},\n            //{title:\"Analog\", field:\"Analog\", headerFilter:true, width:\"13%\",align:\"center\"},\n            {title:\"Led2\", field:\"Led\", headerFilter:true, width:\"14%\",align:\"center\"}]} \n        \nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8557,7 +8580,8 @@
         "wires": [
             [
                 "ea982e48.dce2b",
-                "d01435a5.4a48a"
+                "d01435a5.4a48a",
+                "dfae2d0f.f88e"
             ]
         ]
     },
@@ -8683,7 +8707,7 @@
         "z": "22e2030e.b824d4",
         "name": "",
         "group": "71690d76.e2725c",
-        "order": 2,
+        "order": 3,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -9772,6 +9796,18 @@
         "type": "inject",
         "z": "df521596.125698",
         "name": "Trigger restore",
+        "props": [
+            {
+                "p": "payload",
+                "v": "",
+                "vt": "date"
+            },
+            {
+                "p": "topic",
+                "v": "",
+                "vt": "string"
+            }
+        ],
         "repeat": "",
         "crontab": "",
         "once": true,
@@ -10092,7 +10128,7 @@
         "z": "60cf6178.c3c7a",
         "name": "",
         "topic": "esp32/temperature",
-        "qos": "2",
+        "qos": "0",
         "datatype": "auto",
         "broker": "cd6b5625.5238f8",
         "nl": false,
@@ -10111,19 +10147,91 @@
         "type": "function",
         "z": "60cf6178.c3c7a",
         "name": "PID function",
-        "func": "stamp = msg.payload.stamp;\nsetpoint = msg.payload.setpoint;\np_gain = msg.payload.p_gain;\ni_gain = msg.payload.i_gain;\ntemp = msg.payload.temp;\nerror = temp - setpoint;\nvar interval = stamp - flow.get('prev_stamp');\nvar acum = flow.get('acum');\nflow.set('acum', acum + acum * interval/1000);\n\noutput = error * p_gain + acum * i_gain; // % \n\npl = {'output': output, 'error':error, 'acum': acum, 'stamp':stamp,\n'interval':interval, \n};\n\nif (typeof temp == num ){\nflow.set('prev_value', temp)}\nif (typeof stamp == num){\nflow.set('prev_stamp', stamp)}\n\nmsg.payload = pl;\nreturn msg;",
+        "func": "var stamp = msg.payload.stamp;\nvar setpoint = flow.get('setpoint');\nvar p_gain = flow.get('p_gain');\nvar i_gain = flow.get('i_gain');\nvar d_gain = flow.get('d_gain');\nvar i_time = flow.get('i_time');\nvar low_limit = flow.get('low_limit');\nvar high_limit = flow.get('high_limit');\nvar temperature = msg.payload.temperature;\nvar error = setpoint - temperature;\nvar interval = stamp - flow.get('prev_stamp');\nvar acum = flow.get('acum');\nvar min_windup = flow.get('min_windup');\nvar max_windup = flow.get('max_windup');\nvar acum_min_limit = min_windup / i_gain ;\nvar acum_max_limit = max_windup / i_gain ;\n\nnew_acum = acum + error * (interval/1000 /* / i_time */ )\n\nif (i_gain != 0){ \n    if (new_acum < acum_min_limit) {\n        acum = acum_min_limit\n        }  \n    else if (new_acum > acum_max_limit) {\n        acum = acum_max_limit\n        }\n    else {acum = new_acum}\nflow.set('acum', acum);\n    \n} \nelse {flow.set('acum', 0)}\n\n\n //cuantas veces entra el intervalo \n\n// en el tiempo integral\n\nvar p_term = error * p_gain;\ni_term = acum * i_gain ; // unidades de error .  intervalo integral \n\n/*if (i_term < min_windup) {\n    flow.set('acum',  acum_min_limit);\n    i_term = min_windup; \n    }\n\nif (i_term > max_windup){\n    flow.set('acum', acum_max_limit);\n    i_term = max_windup; \n    } */\n \nvar d_term = 0;\nif (flow.get('prev_value')!= undefined){\n    d_term = ( temperature - flow.get('prev_value') ) / interval * 1000; //cambio de la variable por segundo\n    }\n\nvar output = p_term + i_term + d_term; \nif (output < low_limit) {output = low_limit}\nif (output > high_limit) {output = high_limit}\n\npl = {'output': output, 'error':error, 'acum': acum, 'stamp':stamp,\n'interval':interval,'p_term':p_term, 'i_term':i_term, 'd_term':d_term, 'setpoint':setpoint, 'temperature':temperature \n};\n\n//pl = [output, error, acum, stamp, interval, p_term, i_term, d_term, setpoint, temperature]\n\nflow.set('prev_value', temperature);\nflow.set('prev_stamp', stamp);\n\nmsg.payload = pl;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 850,
+        "x": 590,
         "y": 200,
         "wires": [
             [
-                "8f9ae4c0.b0384"
+                "8f9ae4c0.b0384",
+                "f152fbd7.95058",
+                "8d3ae58b.1e9078"
             ]
         ]
+    },
+    {
+        "id": "8f9ae4c0.b0384",
+        "type": "debug",
+        "z": "60cf6178.c3c7a",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "b33decbb.dee0a8",
+        "type": "function",
+        "z": "60cf6178.c3c7a",
+        "name": "Translate function",
+        "func": "//msg.payload = {};\npl = {'temperature':parseFloat(msg.payload),'stamp': Date.now()};\nmsg.payload = pl;\nmsg.send = true; \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 200,
+        "wires": [
+            [
+                "cf258c50.ae6c58"
+            ]
+        ]
+    },
+    {
+        "id": "51e3391a.f4821",
+        "type": "debug",
+        "z": "c2ab32d3.037fb8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 270,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "e784f43a.213008",
+        "type": "debug",
+        "z": "e924d20f.9ce478",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 60,
+        "wires": []
     },
     {
         "id": "acebf605.82037",
@@ -10132,17 +10240,10 @@
         "name": "",
         "label": "",
         "group": "71690d76.e2725c",
-        "order": 3,
+        "order": 4,
         "width": 0,
         "height": 0,
         "options": [
-            {
-                "label": "Point value",
-                "value": "temp",
-                "type": "number",
-                "required": false,
-                "rows": null
-            },
             {
                 "label": "Setpoint",
                 "value": "setpoint",
@@ -10173,19 +10274,50 @@
             },
             {
                 "label": "Integral time",
-                "value": " i_time",
+                "value": "i_time",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Output Low Limit",
+                "value": "low_limit",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Output High Limit",
+                "value": "high_limit",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Min I windup",
+                "value": "min_windup",
+                "type": "number",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Max I windup",
+                "value": "max_windup",
                 "type": "number",
                 "required": false,
                 "rows": null
             }
         ],
         "formValue": {
-            "temp": "",
             "setpoint": "",
             "p_gain": "",
             "i_gain": "",
             "d_gain": "",
-            " i_time": ""
+            "i_time": "",
+            "low_limit": "",
+            "high_limit": "",
+            "min_windup": "",
+            "max_windup": ""
         },
         "payload": "",
         "submit": "Submit",
@@ -10194,106 +10326,34 @@
         "topicType": "msg",
         "splitLayout": false,
         "className": "",
-        "x": 590,
-        "y": 240,
+        "x": 550,
+        "y": 620,
         "wires": [
             [
-                "5e853830.403e5",
-                "40e3845c.8cb8cc",
-                "cf258c50.ae6c58"
+                "4e5e4157.cf0318",
+                "63d28100.15f1b8"
             ]
         ]
     },
     {
-        "id": "5e853830.403e5",
-        "type": "debug",
-        "z": "60cf6178.c3c7a",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 1010,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "8f9ae4c0.b0384",
-        "type": "debug",
-        "z": "60cf6178.c3c7a",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 1150,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "40e3845c.8cb8cc",
+        "id": "1c0debee.6bcdb4",
         "type": "function",
         "z": "60cf6178.c3c7a",
-        "name": "Latch function",
-        "func": "\nreturn msg;",
+        "name": "Initialize form y vars",
+        "func": "msg.payload = {\"setpoint\":20,\"p_gain\":0.02,\"i_gain\":0.005,\"d_gain\":0.01,\"i_time\":10, 'low_limit':0, 'high_limit':1,\n        \"max_windup\": 0.4, 'min_windup':-0.4};\nmsg.send = true; \nflow.set('prev_stamp', Date.now());-\nflow.set('acum', 0);\n\n\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 620,
-        "y": 60,
-        "wires": [
-            [
-                "acebf605.82037"
-            ]
-        ]
-    },
-    {
-        "id": "b33decbb.dee0a8",
-        "type": "function",
-        "z": "60cf6178.c3c7a",
-        "name": "Translate function",
-        "func": "//msg.payload = {};\npl = {'temp':parseFloat(msg.payload),'stamp': Date.now()};\nmsg.payload = pl;\nmsg.send = true; \nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 370,
-        "y": 200,
+        "x": 330,
+        "y": 500,
         "wires": [
             [
                 "acebf605.82037",
-                "95f02d76.7a563",
-                "cf258c50.ae6c58"
+                "63d28100.15f1b8"
             ]
         ]
-    },
-    {
-        "id": "95f02d76.7a563",
-        "type": "debug",
-        "z": "60cf6178.c3c7a",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": true,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 530,
-        "y": 380,
-        "wires": []
     },
     {
         "id": "2b8929d7.30d876",
@@ -10312,45 +10372,257 @@
         "repeat": "",
         "crontab": "",
         "once": true,
-        "onceDelay": 0.1,
+        "onceDelay": "0.1",
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 150,
+        "x": 130,
         "y": 500,
         "wires": [
             [
-                "233e8be8.e5b3ec"
+                "1c0debee.6bcdb4"
             ]
         ]
     },
     {
-        "id": "233e8be8.e5b3ec",
-        "type": "change",
+        "id": "4e5e4157.cf0318",
+        "type": "function",
+        "z": "60cf6178.c3c7a",
+        "name": "Latch",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 560,
+        "wires": [
+            [
+                "acebf605.82037"
+            ]
+        ]
+    },
+    {
+        "id": "63d28100.15f1b8",
+        "type": "function",
+        "z": "60cf6178.c3c7a",
+        "name": "Global set",
+        "func": "flow.set('setpoint', msg.payload.setpoint);\nflow.set('p_gain', msg.payload.p_gain);\nflow.set('i_gain', msg.payload.i_gain);\nflow.set('d_gain', msg.payload.d_gain);\nflow.set('i_time', msg.payload.i_time);\nflow.set('low_limit', msg.payload.low_limit);\nflow.set('high_limit', msg.payload.high_limit);\nflow.set('min_windup', msg.payload.min_windup);\nflow.set('max_windup', msg.payload.max_windup);\nreturn;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 730,
+        "y": 500,
+        "wires": [
+            [
+                "b01e905b.9d5d6"
+            ]
+        ]
+    },
+    {
+        "id": "b01e905b.9d5d6",
+        "type": "debug",
         "z": "60cf6178.c3c7a",
         "name": "",
-        "rules": [
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 990,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "f152fbd7.95058",
+        "type": "ui_form",
+        "z": "60cf6178.c3c7a",
+        "name": "",
+        "label": "",
+        "group": "cc43ebac.b42078",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
             {
-                "t": "set",
-                "p": "acum",
-                "pt": "flow",
-                "to": "0",
-                "tot": "num"
+                "label": "Output",
+                "value": "output",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Error",
+                "value": "error",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Acumulated",
+                "value": "acum",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "stamp",
+                "value": "stamp",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "interval",
+                "value": "interval",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Proportional term",
+                "value": "p_term",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Integral term",
+                "value": "i_term",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "d_term",
+                "value": "d_term",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Setpoint",
+                "value": "setpoint",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Temperature",
+                "value": "temperature",
+                "type": "text",
+                "required": false,
+                "rows": null
             }
         ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 350,
-        "y": 500,
+        "formValue": {
+            "output": "",
+            "error": "",
+            "acum": "",
+            "stamp": "",
+            "interval": "",
+            "p_term": "",
+            "i_term": "",
+            "d_term": "",
+            "setpoint": "",
+            "temperature": ""
+        },
+        "payload": "",
+        "submit": "",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 950,
+        "y": 280,
         "wires": [
             []
         ]
     },
     {
-        "id": "51e3391a.f4821",
+        "id": "bb719ccc.3d4128",
+        "type": "ui_chart",
+        "z": "60cf6178.c3c7a",
+        "name": "",
+        "group": "153d7011.ceb718",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "2",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 970,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8d3ae58b.1e9078",
+        "type": "function",
+        "z": "60cf6178.c3c7a",
+        "name": "PID function",
+        "func": "var output = {};\nvar temperature = {};\nvar setpoint = {};\nvar error= {};\nvar integral = {};\n\noutput.payload = msg.payload.output*100;\noutput.topic = 'output';\ntemperature.payload = msg.payload.temperature;\ntemperature.topic = 'temperature';\nsetpoint.payload = msg.payload.setpoint;\nsetpoint.topic = 'SP'; \nerror.payload = msg.payload.error ;\nerror.topic = 'Error';\nintegral.payload = msg.payload.i_term*100;\nintegral.topic = 'Int comp';\n\n\nreturn [output, temperature, setpoint, error, integral];",
+        "outputs": 5,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 360,
+        "wires": [
+            [
+                "bb719ccc.3d4128"
+            ],
+            [
+                "bb719ccc.3d4128"
+            ],
+            [
+                "bb719ccc.3d4128"
+            ],
+            [
+                "bb719ccc.3d4128"
+            ],
+            [
+                "bb719ccc.3d4128"
+            ]
+        ]
+    },
+    {
+        "id": "dfae2d0f.f88e",
         "type": "debug",
         "z": "c2ab32d3.037fb8",
         "name": "",
@@ -10360,10 +10632,10 @@
         "tostatus": true,
         "complete": "payload",
         "targetType": "msg",
-        "statusVal": "payload",
+        "statusVal": "ui_control",
         "statusType": "auto",
-        "x": 270,
-        "y": 300,
+        "x": 910,
+        "y": 100,
         "wires": []
     }
 ]
