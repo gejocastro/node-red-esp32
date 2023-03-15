@@ -94,7 +94,7 @@
         "id": "60cf6178.c3c7a",
         "type": "tab",
         "label": "PID control",
-        "disabled": false,
+        "disabled": true,
         "info": ""
     },
     {
@@ -241,7 +241,9 @@
             "38df8497.a67acc"
         ],
         "x": -6,
-        "y": 99
+        "y": 99,
+        "w": 352,
+        "h": 362
     },
     {
         "id": "cfd71c3b.62ad5",
@@ -261,7 +263,9 @@
             "1cdf13dd.58452c"
         ],
         "x": 54,
-        "y": 979
+        "y": 979,
+        "w": 372,
+        "h": 402
     },
     {
         "id": "e9a3077.08c0378",
@@ -298,7 +302,9 @@
             "9673313b.249898"
         ],
         "x": 454,
-        "y": 279
+        "y": 279,
+        "w": 952,
+        "h": 682
     },
     {
         "id": "7e88e231.3018cc",
@@ -325,7 +331,9 @@
             "f912a3b8.1eb3a8"
         ],
         "x": 14,
-        "y": 319
+        "y": 319,
+        "w": 1052,
+        "h": 382
     },
     {
         "id": "c67599e8.f83b88",
@@ -341,7 +349,9 @@
             "f77985bc.76ec4"
         ],
         "x": 1114,
-        "y": 359
+        "y": 359,
+        "w": 512,
+        "h": 122
     },
     {
         "id": "a495c9ab.3fd74",
@@ -359,10 +369,13 @@
             "49acb94c.e04f9",
             "182b238.026b35d",
             "2e1fae52.20b19a",
-            "1d3030a4.0847af"
+            "1d3030a4.0847af",
+            "7482bd1d.e06bb4"
         ],
         "x": 294,
-        "y": 19
+        "y": 19,
+        "w": 772,
+        "h": 282
     },
     {
         "id": "fd8a84dc.33c088",
@@ -382,7 +395,9 @@
             "e8975340.59b4c"
         ],
         "x": -6,
-        "y": 479
+        "y": 479,
+        "w": 392,
+        "h": 402
     },
     {
         "id": "dd07bb49.117478",
@@ -402,9 +417,7 @@
             "b02391bd.5c47d"
         ],
         "x": 14,
-        "y": 419,
-        "w": 1412,
-        "h": 82
+        "y": 419
     },
     {
         "id": "1c64706a.59b6c8",
@@ -419,9 +432,7 @@
             "5d6e3ef.60bd6c"
         ],
         "x": 574,
-        "y": 599,
-        "w": 592,
-        "h": 82
+        "y": 599
     },
     {
         "id": "8382aa03.05f218",
@@ -458,7 +469,9 @@
             "298a7ad5.729f4e"
         ],
         "x": 54,
-        "y": 819
+        "y": 819,
+        "w": 572,
+        "h": 142
     },
     {
         "id": "f7182fde.aa5948",
@@ -497,7 +510,9 @@
             "9015ecb6.aac73"
         ],
         "x": 1114,
-        "y": 539
+        "y": 539,
+        "w": 512,
+        "h": 82
     },
     {
         "id": "be5afe4.dc8d38",
@@ -516,7 +531,9 @@
             "d7653b36.520aa"
         ],
         "x": 14,
-        "y": 719
+        "y": 719,
+        "w": 1052,
+        "h": 142
     },
     {
         "id": "4735459.5cbe6bc",
@@ -575,7 +592,9 @@
             "ae885910.297aa8"
         ],
         "x": 1124,
-        "y": 659
+        "y": 659,
+        "w": 602,
+        "h": 262
     },
     {
         "id": "cd6b5625.5238f8",
@@ -1534,7 +1553,7 @@
         "g": "7e88e231.3018cc",
         "name": "",
         "topic": "esp32/temperature",
-        "qos": "0",
+        "qos": "2",
         "datatype": "auto",
         "broker": "cd6b5625.5238f8",
         "nl": false,
@@ -1569,8 +1588,8 @@
         "dot": false,
         "ymin": "0",
         "ymax": "40",
-        "removeOlder": "30",
-        "removeOlderPoints": "",
+        "removeOlder": "15",
+        "removeOlderPoints": "100",
         "removeOlderUnit": "60",
         "cutout": 0,
         "useOneColor": false,
@@ -1588,6 +1607,7 @@
         ],
         "outputs": 1,
         "useDifferentColor": false,
+        "className": "",
         "x": 910,
         "y": 360,
         "wires": [
@@ -2513,7 +2533,7 @@
         "dot": false,
         "ymin": "0",
         "ymax": "100",
-        "removeOlder": "30",
+        "removeOlder": "15",
         "removeOlderPoints": "",
         "removeOlderUnit": "60",
         "cutout": 0,
@@ -2532,6 +2552,7 @@
         ],
         "outputs": 1,
         "useDifferentColor": false,
+        "className": "",
         "x": 900,
         "y": 500,
         "wires": [
@@ -4390,7 +4411,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1210,
+        "x": 1230,
         "y": 60,
         "wires": [
             [
@@ -4802,9 +4823,10 @@
         "height": 0,
         "passthru": true,
         "label": "Actualizar de gsheet",
-        "tooltip": "Descarga el registro de la BBDD de Ssheet",
+        "tooltip": "Descarga el registro de la BBDD de Gsheet",
         "color": "",
         "bgcolor": "",
+        "className": "",
         "icon": "fa-download",
         "payload": "",
         "payloadType": "str",
@@ -5268,8 +5290,8 @@
         "label": "",
         "format": "<b>Load Dataset</b> carga la base de datos y la separa en conjuntos de entreneamiento y testing (80,20).</p> <b>Classify Dataset</b> aprende del set de entrenamiento.</p><b> Evaluate Dataset</b> compara la salida del set de testeo con el resultado de aplicar la prediccion a las entradas. </p>Al ingresar un par<b> Temp, Humidity </b> y presionar <b> Predict</b>, predice el estado de salida de acuerdo al analisis.</b>",
         "layout": "row-left",
-        "x": 1070,
-        "y": 540,
+        "x": 1090,
+        "y": 560,
         "wires": [],
         "info": "**Load Dataset**, Lee el csv de datos, y divide su contenido en sets de entrenamiento y prueba. Classify dataset genera el modelo de predicción basado en el set de entrenamiento. Evaluate DS compara las salidas del set de testeo con el resultado del modelo para los inputs del set de testeo, indicando el grado de exactitud lograda. En el cuadro de texto se ingresa un par tempreatura, humedad, y al enviarlo se predice el estado de la salida predicha en función de las variables de entrada. El botón Clear borra el contenido mostrado."
     },
@@ -7133,7 +7155,7 @@
         "dot": false,
         "ymin": "",
         "ymax": "",
-        "removeOlder": "30",
+        "removeOlder": "15",
         "removeOlderPoints": "",
         "removeOlderUnit": "60",
         "cutout": 0,
@@ -7152,6 +7174,7 @@
         ],
         "outputs": 1,
         "useDifferentColor": false,
+        "className": "",
         "x": 900,
         "y": 600,
         "wires": [
@@ -7208,8 +7231,8 @@
         "g": "be5afe4.dc8d38",
         "name": "",
         "topic": "esp32/refresh_time",
-        "qos": "",
-        "retain": "",
+        "qos": "0",
+        "retain": "false",
         "respTopic": "",
         "contentType": "",
         "userProps": "",
@@ -10126,6 +10149,7 @@
         "id": "fe66e0c4.a9af9",
         "type": "mqtt in",
         "z": "60cf6178.c3c7a",
+        "d": true,
         "name": "",
         "topic": "esp32/temperature",
         "qos": "0",
